@@ -1,10 +1,10 @@
 # Rural-revitalization-agricultural-assistance-services
+
 乡村振兴，助农服务前端开发项目
 
 ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-critical)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
-
 
 ## 内容列表
 
@@ -18,7 +18,6 @@
   - [维护者](#维护者)
   - [如何贡献](#如何贡献)
     - [贡献者](#贡献者)
-
 
 ## 对代码的提交规定如下：
 
@@ -76,7 +75,7 @@
 
 ## 维护者
 
-[@mason369](https://github.com/mason369)  
+[@mason369](https://github.com/mason369)
 
 ## 如何贡献
 
@@ -92,10 +91,9 @@
 
 ---
 
-
 **当前进度**：
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
+- [ ]
+- [ ]
