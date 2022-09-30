@@ -3,19 +3,24 @@ body {
 		Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
 	color: #333;
 
-	/* 公共样式 */
+	/* 高度塌陷修复 */
 	.clearfix::before,
 	.clearfix::after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-
-	/* 设置一个类，用来表示中间容器的宽度 */
-	.w {
+  background-color: #f3f3f3;
+	/*---------------- head部分---------------- */
+	.header {
 		/* 固定容器的宽度 */
 		width: 1226px;
 		/* 设置容器居中 */
 		margin: 0 auto;
+		box-sizing: border-box; //IE盒模型
 	}
+
+
+
+  /*---------------- 脚部---------------- */
 }

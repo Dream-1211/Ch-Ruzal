@@ -2,8 +2,10 @@
 body {
   font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   color: #333;
-  /* 公共样式 */
-  /* 设置一个类，用来表示中间容器的宽度 */
+  /* 高度塌陷修复 */
+  background-color: #f3f3f3;
+  /*---------------- head部分---------------- */
+  /*---------------- 脚部---------------- */
 }
 body .clearfix::before,
 body .clearfix::after {
@@ -11,11 +13,12 @@ body .clearfix::after {
   display: table;
   clear: both;
 }
-body .w {
+body .header {
   /* 固定容器的宽度 */
   width: 1226px;
   /* 设置容器居中 */
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* v2.0 | 20110126
