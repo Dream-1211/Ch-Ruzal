@@ -1,3 +1,9 @@
+@font-face {
+	/* 指定字体的名字 */
+	font-family: "myfont";
+	/* 服务器中字体的路径 */
+	src: url("../fonts/FZSuHJW.TTF") format("truetype");
+}
 body {
 	$size: 65px; //qrcode
 
@@ -35,7 +41,58 @@ body {
 		border-bottom: 1px solid rgb(220, 220, 220);
 	}
 	.head {
-		background: linear-gradient(-220deg, #048eb0, #8dc742);
+		background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+	}
+	.header-footer {
+		background-color: #f3f3f3;
+		.header-footer-footer {
+			/* 固定容器的宽度 */
+			width: 1226px;
+			/* 设置容器居中 */
+			margin: 0 auto;
+			height: 40px;
+			display: flex;
+			justify-content: space-between;
+			a {
+				
+				border-right: 1px solid #616161;
+				color:  rgb(134, 191, 50);
+				padding: 11px 40px;
+				&:hover {
+					background-color: #f3f3f3;
+				}
+			}
+			ol {
+				display: flex;
+				width: 100%;
+				align-self: center;
+			}
+			.classification {
+				width: 124px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				a {
+					padding: 13px 32px;
+				}
+			}
+			.footer-bar {
+				display: flex;
+				justify-content: flex-end;
+				.topbar {
+					&:first-child{
+						
+					}
+					width: 1000px;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		
 	}
 	.header-box {
 		color: #f3f3f3;
@@ -110,47 +167,11 @@ body {
 				}
 			}
 		}
-		.header-footer {
-			height: 40px;
-			display: flex;
-			justify-content: space-between;
-			a {
-				padding: 11px 40px;
-				&:hover {
-					background-color: #f3f3f3;
-				}
-			}
-			ol {
-				display: flex;
-				width: 100%;
-				align-self: center;
-			}
-			.classification {
-				width: 124px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				a {
-					padding: 13px 32px;
-				}
-			}
 
-			.footer-bar {
-				display: flex;
-				justify-content: flex-end;
-				.topbar {
-					width: 1000px;
-					height: 100%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-			}
-		}
 		/*---------------- qrcode---------------- */
 		.qr {
 			position: relative;
-			top: 16px;
+			top: 8px;
 			right: -40px;
 			height: 100%;
 			p {
@@ -235,7 +256,7 @@ body {
 	}
 	/*---------------- 脚部---------------- */
 	.footer-head {
-		background: linear-gradient(-300deg, #048eb0, #8dc742);
+		background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 		.footer-header {
 			/* 固定容器的宽度 */
 			width: 1226px;
@@ -259,17 +280,18 @@ body {
 					color: #f3f3f3;
 				}
 				.foolter-header-title {
+					font-family: "myfont";
+					font-size: 22px;
 					position: absolute;
 					top: -25px;
-					left: 45px;
+					left: 42px;
 					color: #f3f3f3;
 				}
 			}
 		}
 	}
 	.footer-head-body {
-		
-		background: linear-gradient(-220deg, #048eb0, #8dc742);
+		background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 		.footer-header-body {
 			/* 固定容器的宽度 */
 			width: 1226px;
@@ -278,14 +300,20 @@ body {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			span{
-				width: 210px;
+			span {
+				position: relative;
+				top: -30px;
+				left: 5px;
+				width: 170px;
+				color: #f3f3f3;
+				font-size: 14px;
 			}
 		}
 	}
 	.footer-body {
 		background-color: rgb(64, 64, 64);
 		.about {
+			padding-top: 10px;
 			height: 30px;
 			display: flex;
 			justify-content: center;
@@ -297,11 +325,15 @@ body {
 		}
 	}
 	.foolter-bootm {
+		padding-top: 10px;
 		background-color: rgb(64, 64, 64);
 		color: #f3f3f3;
 		font-size: 14px;
 		.infor {
 			text-align: center;
+			li {
+				padding-top: 5px;
+			}
 		}
 	}
 }

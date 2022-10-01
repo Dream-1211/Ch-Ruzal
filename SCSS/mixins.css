@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  /* 指定字体的名字 */
+  font-family: "myfont";
+  /* 服务器中字体的路径 */
+  src: url("../fonts/FZSuHJW.TTF") format("truetype");
+}
 body {
   font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   color: #333;
@@ -34,7 +40,52 @@ body .header {
   border-bottom: 1px solid rgb(220, 220, 220);
 }
 body .head {
-  background: linear-gradient(-220deg, #048eb0, #8dc742);
+  background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+}
+body .header-footer {
+  background-color: #f3f3f3;
+}
+body .header-footer .header-footer-footer {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+body .header-footer .header-footer-footer a {
+  border-right: 1px solid #616161;
+  color: rgb(134, 191, 50);
+  padding: 11px 40px;
+}
+body .header-footer .header-footer-footer a:hover {
+  background-color: #f3f3f3;
+}
+body .header-footer .header-footer-footer ol {
+  display: flex;
+  width: 100%;
+  align-self: center;
+}
+body .header-footer .header-footer-footer .classification {
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header-footer .header-footer-footer .classification a {
+  padding: 13px 32px;
+}
+body .header-footer .header-footer-footer .footer-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+body .header-footer .header-footer-footer .footer-bar .topbar {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .header-box {
   color: #f3f3f3;
@@ -111,45 +162,9 @@ body .header-box .header-body .search .camera {
   top: 14px;
   right: 55px;
 }
-body .header-box .header-footer {
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-body .header-box .header-footer a {
-  padding: 11px 40px;
-}
-body .header-box .header-footer a:hover {
-  background-color: #f3f3f3;
-}
-body .header-box .header-footer ol {
-  display: flex;
-  width: 100%;
-  align-self: center;
-}
-body .header-box .header-footer .classification {
-  width: 124px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .header-box .header-footer .classification a {
-  padding: 13px 32px;
-}
-body .header-box .header-footer .footer-bar {
-  display: flex;
-  justify-content: flex-end;
-}
-body .header-box .header-footer .footer-bar .topbar {
-  width: 1000px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body .header-box .qr {
   position: relative;
-  top: 16px;
+  top: 8px;
   right: -40px;
   height: 100%;
 }
@@ -228,7 +243,7 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
-  background: linear-gradient(-300deg, #048eb0, #8dc742);
+  background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 }
 body .footer-head .footer-header {
   /* 固定容器的宽度 */
@@ -255,13 +270,15 @@ body .footer-head .footer-header .introduce i {
   color: #f3f3f3;
 }
 body .footer-head .footer-header .introduce .foolter-header-title {
+  font-family: "myfont";
+  font-size: 22px;
   position: absolute;
   top: -25px;
-  left: 45px;
+  left: 42px;
   color: #f3f3f3;
 }
 body .footer-head-body {
-  background: linear-gradient(-220deg, #048eb0, #8dc742);
+  background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 }
 body .footer-head-body .footer-header-body {
   /* 固定容器的宽度 */
@@ -273,12 +290,18 @@ body .footer-head-body .footer-header-body {
   align-items: center;
 }
 body .footer-head-body .footer-header-body span {
-  width: 210px;
+  position: relative;
+  top: -30px;
+  left: 5px;
+  width: 170px;
+  color: #f3f3f3;
+  font-size: 14px;
 }
 body .footer-body {
   background-color: rgb(64, 64, 64);
 }
 body .footer-body .about {
+  padding-top: 10px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -289,12 +312,16 @@ body .footer-body .about span {
   margin: 0 18px;
 }
 body .foolter-bootm {
+  padding-top: 10px;
   background-color: rgb(64, 64, 64);
   color: #f3f3f3;
   font-size: 14px;
 }
 body .foolter-bootm .infor {
   text-align: center;
+}
+body .foolter-bootm .infor li {
+  padding-top: 5px;
 }
 
 /* v2.0 | 20110126
