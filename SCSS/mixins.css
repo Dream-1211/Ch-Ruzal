@@ -13,14 +13,51 @@ body .clearfix::after {
   display: table;
   clear: both;
 }
-body .header {
+body a {
+  color: #000;
+  text-decoration: none;
+}
+body .contain {
   /* 固定容器的宽度 */
   width: 1226px;
   /* 设置容器居中 */
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+body .header-box {
+  height: 220px;
+}
+body .header-box .header-top {
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+}
+body .header-box .header-top .header-left {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .header-box .header-top .header-right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .header-box .header-body {
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header-box .header-body .logo {
+  height: 100%;
+  width: 190px;
+}
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)

@@ -10,18 +10,56 @@ body {
 		display: table;
 		clear: both;
 	}
-  background-color: #f3f3f3;
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+	background-color: #f3f3f3;
 	/*---------------- head部分---------------- */
-	.header {
+	.contain {
 		/* 固定容器的宽度 */
 		width: 1226px;
 		/* 设置容器居中 */
 		margin: 0 auto;
 		box-sizing: border-box; //IE盒模型
 	}
-  
+	.header-box {
+		height: 220px;
+		.header-top {
+			height: 24px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			font-size: 14px;
+			.header-left {
+				width: 150px;
+				height: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			.header-right {
+				height: 100%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+		}
+		.header-body{
+			height: 115px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.logo{
+				height: 100%;
+				width: 190px;
+			}
+			.header-body-right{
+				
+			}
+		}
+	}
 
-
-
-  /*---------------- 脚部---------------- */
+	/*---------------- 脚部---------------- */
 }
