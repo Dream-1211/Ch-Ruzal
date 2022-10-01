@@ -38,6 +38,7 @@ body .head {
 }
 body .header-box {
   color: #f3f3f3;
+  /*---------------- qrcode---------------- */
 }
 body .header-box .header-top {
   height: 24px;
@@ -227,7 +228,7 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
-  background-color: #53a624;
+  background: linear-gradient(-300deg, #048eb0, #8dc742);
 }
 body .footer-head .footer-header {
   /* 固定容器的宽度 */
@@ -260,13 +261,19 @@ body .footer-head .footer-header .introduce .foolter-header-title {
   color: #f3f3f3;
 }
 body .footer-head-body {
-  background-color: #53a624;
+  background: linear-gradient(-220deg, #048eb0, #8dc742);
 }
 body .footer-head-body .footer-header-body {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+}
+body .footer-head-body .footer-header-body span {
+  width: 210px;
 }
 body .footer-body {
   background-color: rgb(64, 64, 64);

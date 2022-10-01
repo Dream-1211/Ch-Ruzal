@@ -147,6 +147,7 @@ body {
 				}
 			}
 		}
+		/*---------------- qrcode---------------- */
 		.qr {
 			position: relative;
 			top: 16px;
@@ -232,9 +233,9 @@ body {
 			}
 		}
 	}
-
+	/*---------------- 脚部---------------- */
 	.footer-head {
-		background-color: #53a624;
+		background: linear-gradient(-300deg, #048eb0, #8dc742);
 		.footer-header {
 			/* 固定容器的宽度 */
 			width: 1226px;
@@ -244,20 +245,20 @@ body {
 			justify-content: space-around;
 			align-items: center;
 			height: 200px;
-			.introduce{
+			.introduce {
 				position: relative;
 				width: 120px;
 				height: 120px;
 				border: 1px solid #f3f3f3;
 				border-radius: 50%;
-				i{
+				i {
 					position: absolute;
 					top: 50px;
 					left: 50px;
 					transform: scale(3.5, 3.5);
 					color: #f3f3f3;
 				}
-				.foolter-header-title{
+				.foolter-header-title {
 					position: absolute;
 					top: -25px;
 					left: 45px;
@@ -266,13 +267,20 @@ body {
 			}
 		}
 	}
-	.footer-head-body{
-		background-color: #53a624;
-		.footer-header-body{
+	.footer-head-body {
+		
+		background: linear-gradient(-220deg, #048eb0, #8dc742);
+		.footer-header-body {
+			/* 固定容器的宽度 */
+			width: 1226px;
+			/* 设置容器居中 */
+			margin: 0 auto;
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
 			align-items: center;
-			flex-wrap: wrap;
+			span{
+				width: 210px;
+			}
 		}
 	}
 	.footer-body {
@@ -296,6 +304,4 @@ body {
 			text-align: center;
 		}
 	}
-
-	/*---------------- 脚部---------------- */
 }
