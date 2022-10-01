@@ -226,6 +226,60 @@ body .header-box .scan .qrcode::after {
     opacity: 1;
   }
 }
+body .footer-head {
+  background-color: #53a624;
+}
+body .footer-head .footer-header {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+body .footer-head .footer-header .introduce {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #f3f3f3;
+  border-radius: 50%;
+}
+body .footer-head .footer-header .introduce i {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: scale(3.5, 3.5);
+  color: #f3f3f3;
+}
+body .footer-head .footer-header .introduce .foolter-header-title {
+  position: absolute;
+  top: -25px;
+  left: 45px;
+  color: #f3f3f3;
+}
+body .footer-body {
+  background-color: rgb(64, 64, 64);
+}
+body .footer-body .about {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer-body .about span {
+  color: #000;
+  margin: 0 18px;
+}
+body .foolter-bootm {
+  background-color: rgb(64, 64, 64);
+  color: #f3f3f3;
+  font-size: 14px;
+}
+body .foolter-bootm .infor {
+  text-align: center;
+}
 
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/ 

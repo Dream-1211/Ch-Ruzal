@@ -1,5 +1,5 @@
 body {
-	$size:65px;	//qrcode
+	$size: 65px; //qrcode
 
 	font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
 		Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
@@ -21,7 +21,6 @@ body {
 		&:hover {
 			color: #8dc742;
 		}
-
 	}
 	background-color: #f3f3f3;
 	/*---------------- head部分---------------- */
@@ -115,13 +114,13 @@ body {
 			height: 40px;
 			display: flex;
 			justify-content: space-between;
-			a{
+			a {
 				padding: 11px 40px;
-				&:hover{
+				&:hover {
 					background-color: #f3f3f3;
 				}
 			}
-			ol{
+			ol {
 				display: flex;
 				width: 100%;
 				align-self: center;
@@ -130,8 +129,8 @@ body {
 				width: 124px;
 				display: flex;
 				justify-content: center;
-				align-items: center;;
-				a{
+				align-items: center;
+				a {
 					padding: 13px 32px;
 				}
 			}
@@ -139,7 +138,7 @@ body {
 			.footer-bar {
 				display: flex;
 				justify-content: flex-end;
-				.topbar{
+				.topbar {
 					width: 1000px;
 					height: 100%;
 					display: flex;
@@ -148,12 +147,12 @@ body {
 				}
 			}
 		}
-		.qr{
+		.qr {
 			position: relative;
 			top: 16px;
-			right:-40px;
+			right: -40px;
 			height: 100%;
-			p{
+			p {
 				display: flex;
 				justify-content: center;
 				font-size: 10px;
@@ -175,14 +174,14 @@ body {
 				background-size: $size;
 				background-repeat: no-repeat;
 				animation: animateText 2s linear infinite;
-			  }
-			
-			  .qrcode {
+			}
+
+			.qrcode {
 				position: relative;
-				width:$size;
-				height:$size;
+				width: $size;
+				height: $size;
 				background: url(../img/Qrcode/QR_Code01.png);
-				background-size:$size;
+				background-size: $size;
 				&::before {
 					content: "";
 					position: absolute;
@@ -190,12 +189,11 @@ body {
 					left: 0;
 					width: 100%;
 					background: url(../img/Qrcode/QR_Code02.png);
-					background-size:$size;
+					background-size: $size;
 					overflow: hidden;
 					animation: animate 4s ease-in-out infinite;
-					
-				  }
-				  &::after {
+				}
+				&::after {
 					content: "";
 					position: absolute;
 					inset: 8px;
@@ -204,40 +202,91 @@ body {
 					background: #35fd5c;
 					filter: drop-shadow(0 0 20px #35fd5c) drop-shadow(0 0 60px #35fd5c);
 					animation: animateLine 4s ease-in-out infinite;
-				  }
-			  }
-		  }
-		  @keyframes animate {
-			0%, 100% {
-			  height: 20px;
+				}
+			}
+		}
+		@keyframes animate {
+			0%,
+			100% {
+				height: 20px;
 			}
 			50% {
-			  height: calc(100% - 20px);
+				height: calc(100% - 20px);
 			}
-		  }
-		  @keyframes animateLine {
+		}
+		@keyframes animateLine {
 			0% {
-			  top: 0;
+				top: 0;
 			}
 			50% {
-			  top: calc(100% - 20px);
+				top: calc(100% - 20px);
 			}
-		  }
-		  @keyframes animateText {
-			0%, 100% {
-			  opacity: 0;
+		}
+		@keyframes animateText {
+			0%,
+			100% {
+				opacity: 0;
 			}
 			50% {
-			  opacity: 1;
+				opacity: 1;
 			}
-		  }
+		}
 	}
-	
 
-
-
-  
-  
+	.footer-head {
+		background-color: #53a624;
+		.footer-header {
+			/* 固定容器的宽度 */
+			width: 1226px;
+			/* 设置容器居中 */
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 200px;
+			.introduce{
+				position: relative;
+				width: 120px;
+				height: 120px;
+				border: 1px solid #f3f3f3;
+				border-radius: 50%;
+				i{
+					position: absolute;
+					top: 50px;
+					left: 50px;
+					transform: scale(3.5, 3.5);
+					color: #f3f3f3;
+				}
+				.foolter-header-title{
+					position: absolute;
+					top: -25px;
+					left: 45px;
+					color: #f3f3f3;
+				}
+			}
+		}
+	}
+	.footer-body {
+		background-color: rgb(64, 64, 64);
+		.about {
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			span {
+				color: #000;
+				margin: 0 18px;
+			}
+		}
+	}
+	.foolter-bootm {
+		background-color: rgb(64, 64, 64);
+		color: #f3f3f3;
+		font-size: 14px;
+		.infor {
+			text-align: center;
+		}
+	}
 
 	/*---------------- 脚部---------------- */
 }
