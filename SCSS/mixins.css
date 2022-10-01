@@ -24,8 +24,11 @@ body .contain {
   margin: 0 auto;
   box-sizing: border-box;
 }
-body .header-box {
-  height: 220px;
+body .header {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+body .head {
+  background: linear-gradient(70deg, #04B098, #8DC742);
 }
 body .header-box .header-top {
   height: 24px;
@@ -36,16 +39,17 @@ body .header-box .header-top {
   font-size: 14px;
 }
 body .header-box .header-top .header-left {
-  width: 150px;
+  width: 120px;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 body .header-box .header-top .header-right {
   height: 100%;
+  width: 480px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 body .header-box .header-body {
@@ -56,8 +60,13 @@ body .header-box .header-body {
 }
 body .header-box .header-body .logo {
   height: 100%;
-  width: 190px;
 }
+body .header-box .header-body .header-body-right {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)

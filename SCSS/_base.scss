@@ -23,8 +23,13 @@ body {
 		margin: 0 auto;
 		box-sizing: border-box; //IE盒模型
 	}
+	.header{
+		 border-bottom: 1px solid rgb(0, 0, 0);
+	}
+	.head{
+		background: linear-gradient(70deg, #04B098, #8DC742);
+	}
 	.header-box {
-		height: 220px;
 		.header-top {
 			height: 24px;
 			display: flex;
@@ -32,31 +37,34 @@ body {
 			align-items: center;
 			position: relative;
 			font-size: 14px;
+
 			.header-left {
-				width: 150px;
+				width: 120px;
 				height: 100%;
 				display: flex;
-				justify-content: flex-start;
+				justify-content: space-between;
 				align-items: center;
 			}
 			.header-right {
 				height: 100%;
+				width: 480px;
 				display: flex;
-				justify-content: flex-end;
+				justify-content: space-between;
 				align-items: center;
 			}
 		}
-		.header-body{
+		.header-body {
 			height: 115px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			.logo{
+			.logo {
 				height: 100%;
-				width: 190px;
 			}
-			.header-body-right{
-				
+			.header-body-right {
+				width: 220px;
+				display: flex;
+				justify-content: space-between;
 			}
 		}
 	}
