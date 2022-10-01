@@ -19,7 +19,6 @@
   - [如何贡献](#如何贡献)
     - [贡献者](#贡献者)
     - [特别感谢：](#特别感谢)
-  - [<img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png" width="200px"/>](#)
 
 ## 对代码的提交规定如下：
 
@@ -99,11 +98,11 @@
 [Visual Studio Code](https://code.visualstudio.com/)在 Windows、macOS 和 Linux 上运行的独立源代码编辑器。 JavaScript 和 Web 开发人员的最佳选择，具有几乎可支持任何编程语言的扩展。
 
 <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png" width="200px"/>
----
+
 
 **当前进度**：
 
-- [ ] 任务一
+- [x] 任务一
 - [ ] 任务二
 - [ ] 任务三
 - [ ] 任务四

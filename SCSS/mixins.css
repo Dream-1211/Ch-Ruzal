@@ -259,6 +259,15 @@ body .footer-head .footer-header .introduce .foolter-header-title {
   left: 45px;
   color: #f3f3f3;
 }
+body .footer-head-body {
+  background-color: #53a624;
+}
+body .footer-head-body .footer-header-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 body .footer-body {
   background-color: rgb(64, 64, 64);
 }

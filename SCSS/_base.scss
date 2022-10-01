@@ -266,6 +266,15 @@ body {
 			}
 		}
 	}
+	.footer-head-body{
+		background-color: #53a624;
+		.footer-header-body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
 	.footer-body {
 		background-color: rgb(64, 64, 64);
 		.about {
