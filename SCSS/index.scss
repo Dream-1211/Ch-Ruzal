@@ -1,4 +1,6 @@
 body {
+	$width: 1226px;
+	$width-contain: 1400px;
 	/* 主页index.html的样式表 */
 	.header-wrapper {
 		/* 固定容器的宽度 */
@@ -39,6 +41,7 @@ body {
 	}
 
 	.left-menu a i {
+		font-size: 18px;
 		float: right;
 		line-height: 42px;
 	}
@@ -444,10 +447,11 @@ body {
 	/*------------------------ 爱心助力-------------------- */
 	.lovef-title {
 		height: 77px;
-		margin-bottom: 50px;
 		text-align: center;
 	}
 	.lovef-title h2 {
+		margin: 10px 0;
+		font-family: "myfont";
 		font-size: 40px;
 		color: #3a880e;
 	}
@@ -456,8 +460,9 @@ body {
 		color: #999999;
 	}
 	.slideshow {
+		margin-top: 30px;
 		width: 1450px;
-		margin: 0 auto;
+		margin: 25px auto;
 		height: 461px;
 		display: flex;
 		justify-content: space-around;
@@ -765,7 +770,9 @@ body {
 		margin-bottom: 48px;
 	}
 	.issue h3 {
-		font-size: 24px;
+		margin-bottom: 30px;
+		font-family: "myfont";
+		font-size: 34px;
 		color: #404040;
 	}
 	.answer {
@@ -790,5 +797,184 @@ body {
 	.answer .answer-1 .a1-text-1 {
 		font-size: 14px;
 		color: #8b8989;
+	}
+	.picture-info {
+		height: 600px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.picture-info .right-img {
+		width: 1100px;
+		margin: auto;
+	}
+	.right-img-3 {
+		background-color: rgb(216, 216, 216);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+	.right-img-3 a img {
+		transition: all 1s;
+	}
+	.right-img-3 a:hover img {
+		transform: scale(1.1);
+	}
+	.right-img-3-1 {
+		width: 200px;
+		height: 270px;
+		background-color: #ffffff;
+		padding-top: 5px;
+		margin-bottom: 10px;
+	}
+	.right-img-3-1 .img-3 {
+		margin: 0 12px;
+	}
+	.img-nuber {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 0 10px;
+		margin-bottom: 5px;
+	}
+	.img-nuber .nuber-1 {
+		font-size: 12px;
+		color: #e4393c;
+	}
+	.img-nuber .nuber-1 > span {
+		font-size: 22px;
+		color: #e4393c;
+	}
+	.img-nuber .nuber-2 {
+		font-size: 12px;
+		color: #a0a0a0;
+		line-height: 30px;
+	}
+	.img-text {
+		display: flex;
+		justify-content: center;
+		font-size: 14px;
+		color: #404040;
+		margin-bottom: 8px;
+	}
+	.img-text-1 {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 13px;
+	}
+	.img-text-1 .it-1 {
+		font-size: 12px;
+		color: #a0a0a0;
+	}
+	.img-text-1 .it-2 {
+		font-size: 12px;
+		color: #3a880e;
+	}
+	.page {
+		height: 40px;
+		display: flex;
+		flex-wrap: nowrap;
+		margin-bottom: 45px;
+	}
+	.page .up {
+		width: 84px;
+		height: 100%;
+		background-color: #ffffff;
+		border: solid 1px #dddddd;
+		margin-left: 438px;
+		font-size: 14px;
+		color: #cccccc;
+		display: flex;
+		padding: 10px 12px;
+		margin-right: 20px;
+	}
+	.page p.up-1 {
+		line-height: 40px;
+		font-size: 14px;
+		color: #626262;
+	}
+	.page .up-2 {
+		width: 38px;
+		height: 38px;
+		background-color: #f6f6f6;
+		border: solid 1px #dddddd;
+		line-height: 38px;
+		text-align: center;
+		margin-left: 15px;
+		margin-right: 5px;
+		font-size: 14px;
+		color: #626262;
+	}
+	.page .up-3 {
+		width: 38px;
+		height: 38px;
+		background-color: #f6f6f6;
+		border: solid 1px #dddddd;
+		line-height: 38px;
+		text-align: center;
+		margin: 0 5px;
+		font-size: 14px;
+		color: #626262;
+	}
+	.page .up-4 {
+		margin: 0 10px;
+	}
+	.page .down {
+		width: 84px;
+		height: 100%;
+		background-color: #f6f6f6;
+		border: solid 1px #dddddd;
+		color: #626262;
+		font-size: 14px;
+		display: flex;
+		padding: 10px 12px;
+		margin-right: 20px;
+	}
+	.page .up-4 {
+		margin-left: 10px;
+	}
+	.page .up-5 {
+		width: 38px;
+		height: 38px;
+		background-color: #ffffff;
+		border: solid 1px #dddddd;
+		color: #626262;
+		font-size: 14px;
+		text-align: center;
+		line-height: 38px;
+		margin-right: 20px;
+	}
+	.page .up-6 {
+		width: 56px;
+		height: 38px;
+		background-color: #f6f6f6;
+		border: solid 1px #dddddd;
+		text-align: center;
+		line-height: 38px;
+	}
+	.right-img-contain {
+		width: $width;
+		margin: 0 auto;
+		.right-img-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			.right-img-3-1 {
+				flex: 1;
+				margin: 0 50px 25px 0;
+				&:nth-child(5n) {
+					// 去除第3n个的margin-right
+					margin-right: 0;
+				}
+				&:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    cursor: pointer;
+				}
+			}
+		}
 	}
 }

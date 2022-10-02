@@ -63,6 +63,7 @@ body ul.left-menu li a:hover {
   background-color: rgb(134, 191, 50);
 }
 body .left-menu a i {
+  font-size: 18px;
   float: right;
   line-height: 42px;
 }
@@ -415,10 +416,11 @@ body .picture img:hover {
 }
 body .lovef-title {
   height: 77px;
-  margin-bottom: 50px;
   text-align: center;
 }
 body .lovef-title h2 {
+  margin: 10px 0;
+  font-family: "myfont";
   font-size: 40px;
   color: #3a880e;
 }
@@ -427,8 +429,9 @@ body .lovef-title span {
   color: #999999;
 }
 body .slideshow {
+  margin-top: 30px;
   width: 1450px;
-  margin: 0 auto;
+  margin: 25px auto;
   height: 461px;
   display: flex;
   justify-content: space-around;
@@ -729,7 +732,9 @@ body .issue {
   margin-bottom: 48px;
 }
 body .issue h3 {
-  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "myfont";
+  font-size: 34px;
   color: #404040;
 }
 body .answer {
@@ -754,4 +759,182 @@ body .answer .answer-1 .a1-text {
 body .answer .answer-1 .a1-text-1 {
   font-size: 14px;
   color: #8b8989;
+}
+body .picture-info {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body .picture-info .right-img {
+  width: 1100px;
+  margin: auto;
+}
+body .right-img-3 {
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+body .right-img-3 a img {
+  transition: all 1s;
+}
+body .right-img-3 a:hover img {
+  transform: scale(1.1);
+}
+body .right-img-3-1 {
+  width: 200px;
+  height: 270px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+body .right-img-3-1 .img-3 {
+  margin: 0 12px;
+}
+body .img-nuber {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+body .img-nuber .nuber-1 {
+  font-size: 12px;
+  color: #e4393c;
+}
+body .img-nuber .nuber-1 > span {
+  font-size: 22px;
+  color: #e4393c;
+}
+body .img-nuber .nuber-2 {
+  font-size: 12px;
+  color: #a0a0a0;
+  line-height: 30px;
+}
+body .img-text {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #404040;
+  margin-bottom: 8px;
+}
+body .img-text-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+body .img-text-1 .it-1 {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+body .img-text-1 .it-2 {
+  font-size: 12px;
+  color: #3a880e;
+}
+body .page {
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 45px;
+}
+body .page .up {
+  width: 84px;
+  height: 100%;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  margin-left: 438px;
+  font-size: 14px;
+  color: #cccccc;
+  display: flex;
+  padding: 10px 12px;
+  margin-right: 20px;
+}
+body .page p.up-1 {
+  line-height: 40px;
+  font-size: 14px;
+  color: #626262;
+}
+body .page .up-2 {
+  width: 38px;
+  height: 38px;
+  background-color: #f6f6f6;
+  border: solid 1px #dddddd;
+  line-height: 38px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #626262;
+}
+body .page .up-3 {
+  width: 38px;
+  height: 38px;
+  background-color: #f6f6f6;
+  border: solid 1px #dddddd;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #626262;
+}
+body .page .up-4 {
+  margin: 0 10px;
+}
+body .page .down {
+  width: 84px;
+  height: 100%;
+  background-color: #f6f6f6;
+  border: solid 1px #dddddd;
+  color: #626262;
+  font-size: 14px;
+  display: flex;
+  padding: 10px 12px;
+  margin-right: 20px;
+}
+body .page .up-4 {
+  margin-left: 10px;
+}
+body .page .up-5 {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  color: #626262;
+  font-size: 14px;
+  text-align: center;
+  line-height: 38px;
+  margin-right: 20px;
+}
+body .page .up-6 {
+  width: 56px;
+  height: 38px;
+  background-color: #f6f6f6;
+  border: solid 1px #dddddd;
+  text-align: center;
+  line-height: 38px;
+}
+body .right-img-contain {
+  width: 1226px;
+  margin: 0 auto;
+}
+body .right-img-contain .right-img-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+body .right-img-contain .right-img-box .right-img-3-1 {
+  flex: 1;
+  margin: 0 50px 25px 0;
+}
+body .right-img-contain .right-img-box .right-img-3-1:nth-child(5n) {
+  margin-right: 0;
+}
+body .right-img-contain .right-img-box .right-img-3-1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
