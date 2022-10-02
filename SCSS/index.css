@@ -26,9 +26,9 @@ body .header-wrapper {
 }
 body .contain-1 {
   /* 固定容器的宽度 */
-  width: 1226px;
+  width: 757px;
   /* 设置容器居中 */
-  margin: 0 auto auto 360px;
+  margin: 0 auto;
 }
 body .left-menu {
   width: 234px;
@@ -136,7 +136,7 @@ body .banner img {
 body .pointer {
   position: absolute;
   bottom: 22px;
-  right: 222px;
+  right: -232px;
 }
 body .pointer a {
   float: left;
@@ -172,7 +172,7 @@ body .prev-next .prev:hover {
 body .prev-next .next {
   background-color: #5f5750;
   opacity: 0.5;
-  right: 196px;
+  right: -272px;
   background-position: -125px 0;
 }
 body .prev-next .next:hover {
@@ -182,19 +182,19 @@ body .Activity {
   /* 固定容器的宽度 */
   width: 1226px;
   /* 设置容器居中 */
-  margin: 0 auto;
+  margin: 10px auto;
   box-sizing: border-box;
 }
 body .Activity .shortcut,
 body .Activity .imgs,
-body .Activity li {
+body .Activity {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 body .Activity .shortcut {
   width: 228px;
-  height: 168px;
+  height: 200px;
   background-color: #5f5750;
   margin-right: 14px;
   padding-top: 2px;
@@ -251,6 +251,13 @@ body .Activity .imgs li:last-child {
   margin: 0;
 }
 body .Activity .imgs img {
-  width: 100%;
+  width: 316px;
   vertical-align: top;
+}
+body .fruit-infor-head {
+  position: absolute;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=index.css.map */
