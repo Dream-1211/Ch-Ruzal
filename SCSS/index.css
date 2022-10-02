@@ -1,1 +1,256 @@
-/*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+body {
+  /* 主页index.html的样式表 */
+  /* 设置左侧导航条的样式 */
+  /* 隐藏全部商品 */
+  /* .nav li:not(:first-of-type):not(:nth-child(10)):not(:nth-child(9)):hover ~ .goods-info, */
+  /* 设置搜索框的容器 */
+  /* 设置input获取焦点后的样式 */
+  /* 设置banner */
+  /* 设置5个导航点 */
+  /* 设置两个箭头 */
+  /* 设置下部的广告区域 */
+  /* 设置左侧快捷方式 */
+  /* 设置上边框 */
+  /* 设置左边框 */
+  /* 设置快捷方式中的超链接 */
+  /* 设置图标字体 */
+  /* 设置左侧的图片 */
+}
+body .header-wrapper {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body .contain-1 {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto auto 360px;
+}
+body .left-menu {
+  width: 234px;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 999;
+  line-height: 1;
+}
+body ul.left-menu li a {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  color: white;
+  margin-right: 0;
+  padding: 0 30px;
+  font-size: 14px;
+}
+body ul.left-menu li a:hover {
+  color: white;
+  background-color: rgb(134, 191, 50);
+}
+body .left-menu a i {
+  float: right;
+  line-height: 42px;
+}
+body .nav-wrapper li a {
+  display: block;
+  font-size: 16px;
+  margin-right: 20px;
+}
+body .nav-wrapper li a:hover {
+  color: #ff6700;
+}
+body .all-goods {
+  visibility: hidden;
+}
+body .nav .goods-info {
+  /* height: 228px; */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  transition: height 0.3s;
+  z-index: 9999;
+}
+body .nav .show-goods:hover ~ .goods-info,
+body .goods-info:hover {
+  height: 228px;
+  border-top: 1px solid rgb(224, 224, 224);
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+body .search-wrapper {
+  width: 296px;
+  height: 50px;
+  float: right;
+  margin-top: 25px;
+}
+body .search-wrapper .search-inp {
+  box-sizing: border-box;
+  width: 244px;
+  border: none;
+  float: left;
+  padding: 0 10px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid rgb(224, 224, 224);
+  outline: none;
+}
+body .search-wrapper .search-inp:focus,
+body .search-wrapper .search-inp:focus + button {
+  border-color: #ff6700;
+}
+body .search-wrapper .search-btn {
+  float: left;
+  height: 50px;
+  width: 52px;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  color: #616161;
+  font-size: 16px;
+  border: 1px solid rgb(224, 224, 224);
+  border-left: none;
+}
+body .search-wrapper .search-btn:hover {
+  background-color: #ff6700;
+  color: white;
+  border: none;
+}
+body .banner {
+  position: relative;
+  height: 290px;
+}
+body .banner .img-list li {
+  position: absolute;
+}
+body .banner img {
+  width: 1030px;
+  vertical-align: top;
+}
+body .pointer {
+  position: absolute;
+  bottom: 22px;
+  right: 222px;
+}
+body .pointer a {
+  float: left;
+  width: 6px;
+  height: 6px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 6px;
+}
+body .pointer a:hover,
+body .pointer a.active {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+body .prev-next a {
+  width: 41px;
+  height: 69px;
+  background-image: url(../img/icon-slides.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+body .prev-next .prev {
+  background-position: -84px 0;
+  background-color: #5f5750;
+  opacity: 0.5;
+}
+body .prev-next .prev:hover {
+  background-position: 0 0;
+}
+body .prev-next .next {
+  background-color: #5f5750;
+  opacity: 0.5;
+  right: 196px;
+  background-position: -125px 0;
+}
+body .prev-next .next:hover {
+  background-position: -42px 0;
+}
+body .Activity {
+  /* 固定容器的宽度 */
+  width: 1226px;
+  /* 设置容器居中 */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body .Activity .shortcut,
+body .Activity .imgs,
+body .Activity li {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+body .Activity .shortcut {
+  width: 228px;
+  height: 168px;
+  background-color: #5f5750;
+  margin-right: 14px;
+  padding-top: 2px;
+  padding-left: 6px;
+}
+body .Activity .shortcut li {
+  position: relative;
+}
+body .Activity .shortcut li::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 1px;
+  background-color: #665e57;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+}
+body .Activity .shortcut li::after {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  background-color: #665e57;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+}
+body .Activity .shortcut a {
+  display: block;
+  color: #cfccca;
+  height: 84px;
+  width: 76px;
+  text-align: center;
+  font-size: 12px;
+  overflow: hidden;
+}
+body .Activity .shortcut a:hover {
+  color: #fff;
+}
+body .Activity .shortcut i {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+body .Activity .imgs li {
+  width: 316px;
+  margin-right: 15px;
+}
+body .Activity .imgs li:last-child {
+  margin: 0;
+}
+body .Activity .imgs img {
+  width: 100%;
+  vertical-align: top;
+}/*# sourceMappingURL=index.css.map */

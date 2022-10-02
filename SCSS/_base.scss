@@ -219,6 +219,9 @@ body {
 					color: rgb(195, 195, 195);
 				}
 				.search-btn {
+					&:hover{
+						background-color: rgb(117, 167, 43);
+					}
 					color: rgb(195, 195, 195);
 					height: 44px;
 					width: 52px;

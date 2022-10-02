@@ -227,6 +227,9 @@ body .header-box .header-body .search .search-btn {
   border: 1px solid rgb(224, 224, 224);
   border-left: none;
 }
+body .header-box .header-body .search .search-btn:hover {
+  background-color: rgb(117, 167, 43);
+}
 body .header-box .header-body .search .camera {
   color: rgb(200, 200, 200);
   position: absolute;
