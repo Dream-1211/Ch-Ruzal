@@ -26,6 +26,7 @@ body {
   /* <!-- -------------------------合照图片--------------------------- --> */
   /* <!-- -------------------------长久以来，承蒙关照---------------------------
   --> */
+  /* -------------------------常见问题--------------------------- */
 }
 body .header-wrapper {
   /* 固定容器的宽度 */
@@ -722,4 +723,35 @@ body .t-background p {
   margin-top: 30px;
   font-size: 30px;
   color: #3a880e;
+}
+body .issue {
+  text-align: center;
+  margin-bottom: 48px;
+}
+body .issue h3 {
+  font-size: 24px;
+  color: #404040;
+}
+body .answer {
+  width: 1200px;
+  height: 169px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+body .answer .answer-1 {
+  width: 554px;
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .answer .answer-1 .a1-text {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+body .answer .answer-1 .a1-text-1 {
+  font-size: 14px;
+  color: #8b8989;
 }/*# sourceMappingURL=index.css.map */

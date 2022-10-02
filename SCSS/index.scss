@@ -759,4 +759,36 @@ body {
 		font-size: 30px;
 		color: #3a880e;
 	}
+	/* -------------------------常见问题--------------------------- */
+	.issue {
+		text-align: center;
+		margin-bottom: 48px;
+	}
+	.issue h3 {
+		font-size: 24px;
+		color: #404040;
+	}
+	.answer {
+		width: 1200px;
+		height: 169px;
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-content: space-between;
+		flex-wrap: wrap;
+	}
+	.answer .answer-1 {
+		width: 554px;
+		height: 65px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.answer .answer-1 .a1-text {
+		font-size: 16px;
+		color: #2e2e2e;
+	}
+	.answer .answer-1 .a1-text-1 {
+		font-size: 14px;
+		color: #8b8989;
+	}
 }

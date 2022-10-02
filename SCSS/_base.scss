@@ -5,7 +5,7 @@
 	src: url("../fonts/FZSuHJW.TTF") format("truetype");
 }
 body {
-	overflow-x: hidden;
+	overflow-x:hidden;
 	$size: 65px; //qrcode
 
 	font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
@@ -412,12 +412,11 @@ body {
 			}
 		}
 	}
-
-	.container {
-		/* 固定容器的宽度 */
-		width: 1200px;
-		/* 设置容器居中 */
-		margin: 0 auto;
-		box-sizing: border-box; //IE盒模型
+	.container{
+			/* 固定容器的宽度 */
+			width: 1200px;
+			/* 设置容器居中 */
+			margin: 0 auto;
+			box-sizing: border-box; //IE盒模型
 	}
 }
