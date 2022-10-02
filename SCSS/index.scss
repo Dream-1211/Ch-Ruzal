@@ -220,12 +220,11 @@ body {
 
 	/* 设置左侧快捷方式 */
 	.Activity .shortcut {
-		width: 228px;
+		width: 235px;
 		height: 200px;
 		background-color: #5f5750;
 		margin-right: 14px;
 		padding-top: 2px;
-		padding-left: 6px;
 	}
 	.Activity .shortcut li {
 		position: relative;
@@ -324,7 +323,6 @@ body {
 			&:nth-child(1) {
 				position: absolute;
 				left: 38px;
-                
 			}
 			&:nth-child(2) {
 				position: absolute;
@@ -336,4 +334,99 @@ body {
 			}
 		}
 	}
+	/* -----------------爱心助农----------------- */
+	.lovef {
+		margin: 65px auto;
+	}
+	.lovef h2 {
+		font-size: 32px;
+		font-weight: normal;
+		letter-spacing: 3px;
+		color: #404040;
+		background: url(../img/public/leaf1.png) center no-repeat;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.lovef p {
+		font-size: 18px;
+		letter-spacing: 2px;
+		color: #666666;
+		text-align: center;
+	}
+	.lovef_img {
+		.lovef_imgs {
+			width: 1226px;
+			height: 219px;
+			background-color: #eee;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 18px;
+		}
+		overflow: hidden;
+		width: 100%;
+		margin: 0 auto;
+		height: 219px;
+		background-color: #eee;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 18px;
+	}
+	.lovef_img img {
+		transition: all 1.5s;
+	}
+	.lovef_img img:hover {
+		transform: scale(1.05);
+		box-shadow: 0px 3px 13px 3px rgba(87, 87, 87, 0.418);
+	}
+	.lovef .lovef_btn {
+		width: 272px;
+		height: 46px;
+		background-color: #3a880e;
+		border-radius: 46px;
+		text-align: center;
+		line-height: 46px;
+		margin: 30px auto;
+		font-size: 30px;
+		letter-spacing: 3px;
+		color: #ffffff;
+	}
+	/* -----------------产品展示----------------- */
+	.showpro h2 {
+		background: url(../images/public/leaf1.png) center no-repeat;
+		font-size: 32px;
+		letter-spacing: 3px;
+		color: #404040;
+		text-align: center;
+		margin-top: 65px;
+	}
+	.showpro .showpro-img {
+		width: 1072px;
+		height: 206px;
+		margin: 36px auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.showpro .showpro-img img {
+		width: 124px;
+		background-color: #ffffff;
+		margin: 0 5px;
+		transition: all 0.5s;
+	}
+	.showpro .showpro-img .showpro-img-single img:hover {
+		transform: scale(1.05);
+		box-shadow: 0px 3px 13px 3px rgba(87, 87, 87, 0.418);
+	}
+	.showpro-img {
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 2px;
+		color: #404040;
+	}
+	* {
+		box-sizing: border-box;
+	}
+    
 }
