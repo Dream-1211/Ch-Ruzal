@@ -947,4 +947,51 @@ body .right-img-contain .right-img-box .right-img-3-1:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+body .sale {
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+body .sale .sale-left {
+  width: 80px;
+  height: 270px;
+  background-color: #b3d465;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #404040;
+  padding: 0 24px;
+}
+body .sale .sale-centre {
+  width: 196px;
+  height: 270px;
+  background-color: #ffffff;
+  border: solid 1px #c5c5c5;
+}
+body .price-buy-container {
+  width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body .price-buy-container .price-buy-infor {
+  margin: 0 8px;
+  height: 270px;
+  width: 80px;
+  writing-mode: vertical-rl;
+  background-color: rgb(134, 191, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .price-buy-container .price-buy-infor p {
+  font-size: 40px;
+  font-family: "myfont";
+}
+body .price-buy-container .price-buy {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */
