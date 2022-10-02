@@ -12,6 +12,7 @@ body {
   background-color: #f3f3f3;
   /*---------------- head部分---------------- */
   /*---------------- 脚部---------------- */
+  /*------------------------ 滞销产品-------------------- */
 }
 body .clearfix::before,
 body .clearfix::after {
@@ -317,6 +318,7 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
+  margin-top: 30px;
   background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 }
 body .footer-head .footer-header {
@@ -396,6 +398,89 @@ body .foolter-bootm .infor {
 }
 body .foolter-bootm .infor li {
   padding-top: 5px;
+}
+body .finally {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+body .finally .f-content {
+  display: flex;
+  justify-content: center;
+}
+body .finally .f-content .fc-picture {
+  width: 638px;
+  height: 400px;
+}
+body .finally .f-content .fc-text {
+  width: 510px;
+  padding-top: 10px;
+}
+body .finally .f-content .fc-text .fct-one {
+  font-size: 14px;
+  color: #f75e61;
+  margin-bottom: 20px;
+}
+body .finally .f-content .fc-text .fct-two {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+body .finally .f-content .fc-text .fct-three {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+body .finally .f-content .fc-plan {
+  width: 510px;
+  height: 15px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+body .finally .f-content .fc-plan div {
+  width: 100px;
+  height: 15px;
+  background-color: #3a880e;
+  border-radius: 15px;
+}
+body .finally .f-content .fc-text .fct-data {
+  width: 510px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body .finally .f-content .fc-text .fct-data .fctd-text {
+  text-align: center;
+}
+body .f-content .fc-button {
+  width: 480px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .f-content .fc-button .fcb-a a {
+  display: block;
+  width: 180px;
+  height: 53px;
+  background-color: #3a880e;
+  border-radius: 53px;
+  text-align: center;
+  line-height: 53px;
+  color: #ffffff;
+}
+body .f-content .fc-button .fcb-a-1 a {
+  background-color: #1d99e3;
+  display: block;
+  width: 180px;
+  height: 53px;
+  border: solid 5px #d2d4d3;
+  border-radius: 53px;
+  text-align: center;
+  line-height: 53px;
 }
 
 /* v2.0 | 20110126

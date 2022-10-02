@@ -18,6 +18,8 @@ body {
   /* 设置左侧的图片 */
   /* -----------------爱心助农----------------- */
   /* -----------------产品展示----------------- */
+  /*------------------------ banenr-------------------- */
+  /*------------------------ 爱心助力-------------------- */
 }
 body .header-wrapper {
   /* 固定容器的宽度 */
@@ -358,7 +360,7 @@ body .lovef .lovef_btn {
   color: #ffffff;
 }
 body .showpro h2 {
-  background: url(../images/public/leaf1.png) center no-repeat;
+  background: url(../img/public/leaf1.png) center no-repeat;
   font-size: 32px;
   letter-spacing: 3px;
   color: #404040;
@@ -389,6 +391,88 @@ body .showpro-img {
   letter-spacing: 2px;
   color: #404040;
 }
-body * {
-  box-sizing: border-box;
+body .picture {
+  overflow: hidden;
+  margin-bottom: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+body .picture img {
+  width: 100%;
+  transition: all 1s;
+}
+body .picture img:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+body .lovef-title {
+  height: 77px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body .lovef-title h2 {
+  font-size: 40px;
+  color: #3a880e;
+}
+body .lovef-title span {
+  font-size: 14px;
+  color: #999999;
+}
+body .slideshow {
+  width: 1450px;
+  margin: 0 auto;
+  height: 461px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .details {
+  width: 370px;
+  height: 446px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+  border: solid 1px #eeeeee;
+  padding: 20px;
+}
+body .details img {
+  margin-bottom: 25px;
+  transition: all 1s;
+}
+body .details img:hover {
+  transform: scale(1.1);
+}
+body .details img + p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+body .details img + p + p {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+body .details .d-plan {
+  width: 330px;
+  height: 15px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+body .details .d-plan div {
+  width: 164px;
+  height: 15px;
+  background-color: #3a880e;
+  border-radius: 15px;
+}
+body .details .d-data {
+  width: 331px;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .details .d-data .d-d-text {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
