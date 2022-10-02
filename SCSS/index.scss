@@ -381,6 +381,7 @@ body {
 		box-shadow: 0px 3px 13px 3px rgba(87, 87, 87, 0.418);
 	}
 	.lovef .lovef_btn {
+		font-family: "myfont";
 		width: 272px;
 		height: 46px;
 		background-color: #3a880e;
@@ -444,7 +445,7 @@ body {
 	.lovef-title {
 		height: 77px;
 		margin-bottom: 50px;
-        text-align: center;
+		text-align: center;
 	}
 	.lovef-title h2 {
 		font-size: 40px;
@@ -455,8 +456,8 @@ body {
 		color: #999999;
 	}
 	.slideshow {
-        width: 1450px;
-        margin: 0 auto;
+		width: 1450px;
+		margin: 0 auto;
 		height: 461px;
 		display: flex;
 		justify-content: space-around;
@@ -512,5 +513,4 @@ body {
 	.details .d-data .d-d-text {
 		text-align: center;
 	}
-
 }

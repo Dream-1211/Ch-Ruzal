@@ -13,6 +13,9 @@ body {
   /*---------------- head部分---------------- */
   /*---------------- 脚部---------------- */
   /*------------------------ 滞销产品-------------------- */
+  /* <!-- -------------------------合照图片--------------------------- --> */
+  /* <!-- -------------------------长久以来，承蒙关照---------------------------
+  --> */
 }
 body .clearfix::before,
 body .clearfix::after {
@@ -481,6 +484,76 @@ body .f-content .fc-button .fcb-a-1 a {
   border-radius: 53px;
   text-align: center;
   line-height: 53px;
+}
+body .flow {
+  width: 100%;
+  height: 309px;
+  background-color: #222222;
+  background-image: url(../img/lovetofarmer/main_bg_03.png);
+}
+body .flow h2 {
+  font-size: 40px;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 45px;
+}
+body .flow .flow-icon {
+  width: 1163px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+body .flow .flow-icon .fi-1 {
+  width: 33px;
+  height: 24px;
+  margin-top: 26px;
+}
+body .map {
+  width: 100%;
+  height: 600px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+body .map .map-case {
+  width: 1172px;
+  height: 502px;
+  display: flex;
+  justify-content: space-between;
+}
+body .map .map-case .map-text h3 {
+  font-size: 40px;
+  color: #3a880e;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+body .map .map-case .map-text h3 + p {
+  font-size: 15px;
+  color: #2b2b2b;
+}
+body .tupian {
+  width: 1187px;
+  height: 546px;
+  margin-bottom: 42px;
+}
+body .t-background {
+  height: 39px;
+  background-image: url(../img/public/leaf1.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  margin-bottom: 47px;
+}
+body .t-background p {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #3a880e;
+}
+body .container {
+  /* 固定容器的宽度 */
+  width: 1200px;
+  /* 设置容器居中 */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* v2.0 | 20110126
