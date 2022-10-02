@@ -197,6 +197,7 @@ body .Activity {
   margin: 10px auto;
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 30px;
 }
 body .Activity .shortcut,
 body .Activity,
@@ -839,25 +840,68 @@ body .page {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 45px;
+  justify-content: center;
+}
+body .page .in-in {
+  width: 40px;
+  padding: 0 2px;
+  outline: none;
+  border: 1px solid #3a880e;
+}
+body .page .up-100 {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+body .page a {
+  display: block;
+  line-height: 40px;
+  width: 40px;
+  color: #616161;
+  cursor: pointer;
+}
+body .page a:hover {
+  background-color: #616161;
+  color: #fff;
+}
+body .page .up- {
+  margin: 10px 10px;
+}
+body .page .up-1 {
+  background-color: #616161;
+}
+body .page .up-1 a {
+  color: #f6f6f6;
 }
 body .page .up {
-  width: 84px;
-  height: 100%;
+  width: 80px;
+  height: 18px;
   background-color: #ffffff;
   border: solid 1px #dddddd;
-  margin-left: 438px;
   font-size: 14px;
-  color: #cccccc;
+  color: #626262;
   display: flex;
   padding: 10px 12px;
   margin-right: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
-body .page p.up-1 {
-  line-height: 40px;
-  font-size: 14px;
-  color: #626262;
+body .page .down {
+  cursor: pointer;
 }
-body .page .up-2 {
+body .page .up-6 {
+  cursor: pointer;
+}
+body .page .up-2,
+body .up-1,
+body .up-3,
+body .up-4,
+body .up-5,
+body .up-6,
+body .up-7 {
   width: 38px;
   height: 38px;
   background-color: #f6f6f6;
@@ -869,23 +913,9 @@ body .page .up-2 {
   font-size: 14px;
   color: #626262;
 }
-body .page .up-3 {
-  width: 38px;
-  height: 38px;
-  background-color: #f6f6f6;
-  border: solid 1px #dddddd;
-  line-height: 38px;
-  text-align: center;
-  margin: 0 5px;
-  font-size: 14px;
-  color: #626262;
-}
-body .page .up-4 {
-  margin: 0 10px;
-}
 body .page .down {
-  width: 84px;
-  height: 100%;
+  width: 80px;
+  height: 18px;
   background-color: #f6f6f6;
   border: solid 1px #dddddd;
   color: #626262;
@@ -893,28 +923,8 @@ body .page .down {
   display: flex;
   padding: 10px 12px;
   margin-right: 20px;
-}
-body .page .up-4 {
-  margin-left: 10px;
-}
-body .page .up-5 {
-  width: 38px;
-  height: 38px;
-  background-color: #ffffff;
-  border: solid 1px #dddddd;
-  color: #626262;
-  font-size: 14px;
-  text-align: center;
-  line-height: 38px;
-  margin-right: 20px;
-}
-body .page .up-6 {
-  width: 56px;
-  height: 38px;
-  background-color: #f6f6f6;
-  border: solid 1px #dddddd;
-  text-align: center;
-  line-height: 38px;
+  justify-content: center;
+  align-items: center;
 }
 body .right-img-contain {
   width: 1226px;
