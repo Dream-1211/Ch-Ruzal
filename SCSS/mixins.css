@@ -6,16 +6,13 @@
   src: url("../fonts/FZSuHJW.TTF") format("truetype");
 }
 body {
+  overflow-x: hidden;
   font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   color: #333;
   /* 高度塌陷修复 */
   background-color: #f3f3f3;
   /*---------------- head部分---------------- */
   /*---------------- 脚部---------------- */
-  /*------------------------ 滞销产品-------------------- */
-  /* <!-- -------------------------合照图片--------------------------- --> */
-  /* <!-- -------------------------长久以来，承蒙关照---------------------------
-  --> */
 }
 body .clearfix::before,
 body .clearfix::after {
@@ -379,14 +376,14 @@ body .footer-head-body .footer-header-body span {
 body .footer-body {
   background-color: rgb(64, 64, 64);
 }
-body .footer-body .about {
+body .footer-body .aboutt {
   padding-top: 10px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .footer-body .about span {
+body .footer-body .aboutt span {
   color: #000;
   margin: 0 18px;
 }
@@ -401,152 +398,6 @@ body .foolter-bootm .infor {
 }
 body .foolter-bootm .infor li {
   padding-top: 5px;
-}
-body .finally {
-  background-color: #f6f6f6;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-body .finally .f-content {
-  display: flex;
-  justify-content: center;
-}
-body .finally .f-content .fc-picture {
-  width: 638px;
-  height: 400px;
-}
-body .finally .f-content .fc-text {
-  width: 510px;
-  padding-top: 10px;
-}
-body .finally .f-content .fc-text .fct-one {
-  font-size: 14px;
-  color: #f75e61;
-  margin-bottom: 20px;
-}
-body .finally .f-content .fc-text .fct-two {
-  font-size: 24px;
-  color: #000000;
-  font-weight: 900;
-  margin-bottom: 15px;
-}
-body .finally .f-content .fc-text .fct-three {
-  font-size: 14px;
-  color: #999999;
-  margin-bottom: 30px;
-}
-body .finally .f-content .fc-plan {
-  width: 510px;
-  height: 15px;
-  background-color: #eeeeee;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-body .finally .f-content .fc-plan div {
-  width: 100px;
-  height: 15px;
-  background-color: #3a880e;
-  border-radius: 15px;
-}
-body .finally .f-content .fc-text .fct-data {
-  width: 510px;
-  height: 38px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-body .finally .f-content .fc-text .fct-data .fctd-text {
-  text-align: center;
-}
-body .f-content .fc-button {
-  width: 480px;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body .f-content .fc-button .fcb-a a {
-  display: block;
-  width: 180px;
-  height: 53px;
-  background-color: #3a880e;
-  border-radius: 53px;
-  text-align: center;
-  line-height: 53px;
-  color: #ffffff;
-}
-body .f-content .fc-button .fcb-a-1 a {
-  background-color: #1d99e3;
-  display: block;
-  width: 180px;
-  height: 53px;
-  border: solid 5px #d2d4d3;
-  border-radius: 53px;
-  text-align: center;
-  line-height: 53px;
-}
-body .flow {
-  width: 100%;
-  height: 309px;
-  background-color: #222222;
-  background-image: url(../img/lovetofarmer/main_bg_03.png);
-}
-body .flow h2 {
-  font-size: 40px;
-  color: whitesmoke;
-  text-align: center;
-  margin-bottom: 45px;
-}
-body .flow .flow-icon {
-  width: 1163px;
-  height: 65px;
-  display: flex;
-  justify-content: space-between;
-}
-body .flow .flow-icon .fi-1 {
-  width: 33px;
-  height: 24px;
-  margin-top: 26px;
-}
-body .map {
-  width: 100%;
-  height: 600px;
-  background-color: #f6f6f6;
-  padding: 50px;
-  margin-bottom: 10px;
-}
-body .map .map-case {
-  width: 1172px;
-  height: 502px;
-  display: flex;
-  justify-content: space-between;
-}
-body .map .map-case .map-text h3 {
-  font-size: 40px;
-  color: #3a880e;
-  margin-top: 180px;
-  margin-bottom: 20px;
-}
-body .map .map-case .map-text h3 + p {
-  font-size: 15px;
-  color: #2b2b2b;
-}
-body .tupian {
-  width: 1187px;
-  height: 546px;
-  margin-bottom: 42px;
-}
-body .t-background {
-  height: 39px;
-  background-image: url(../img/public/leaf1.png);
-  text-align: center;
-  background-repeat: no-repeat;
-  margin-bottom: 47px;
-}
-body .t-background p {
-  margin-top: 30px;
-  font-size: 30px;
-  color: #3a880e;
 }
 body .container {
   /* 固定容器的宽度 */

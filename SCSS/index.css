@@ -20,6 +20,12 @@ body {
   /* -----------------产品展示----------------- */
   /*------------------------ banenr-------------------- */
   /*------------------------ 爱心助力-------------------- */
+  /*------------------------ banner-------------------- */
+  /*------------------------ 关于我们-------------------- */
+  /*------------------------ 滞销产品-------------------- */
+  /* <!-- -------------------------合照图片--------------------------- --> */
+  /* <!-- -------------------------长久以来，承蒙关照---------------------------
+  --> */
 }
 body .header-wrapper {
   /* 固定容器的宽度 */
@@ -476,4 +482,244 @@ body .details .d-data {
 }
 body .details .d-data .d-d-text {
   text-align: center;
+}
+body .image {
+  width: 1200px;
+  height: 531px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+body .image img {
+  width: 100%;
+}
+body .about {
+  width: 1199px;
+  height: 35px;
+  background-image: url(../img/public/leaf1.png);
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 51px;
+}
+body .about p {
+  font-size: 32px;
+  color: #404040;
+}
+body .about_contain {
+  margin-top: 22px;
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+body .about_contain .picture img {
+  transition: all 1s;
+}
+body .about_contain .picture:hover img {
+  opacity: 0.3;
+  transform: scale(1.1);
+  transform: rotateY(360deg);
+}
+body .about_contain .text {
+  margin-right: 75px;
+}
+body .about_contain .text:nth-child(2) {
+  margin-left: 75px;
+}
+body .about_contain .text p {
+  font-size: 16px;
+  line-height: 30px;
+}
+body .about_contain .text .text-1 {
+  margin-bottom: 26px;
+}
+body .about_contain-1 {
+  width: 1200px;
+  height: 340px;
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+body .about_contain-1 .picture-1 img {
+  transition: all 1s;
+}
+body .about_contain-1 .picture-1:hover img {
+  transform: scale(1.1);
+  transform: rotateX(360deg);
+}
+body .about_contain-1 .picture-1 {
+  margin-right: 80px;
+}
+body .about_contain-1 .bamboo .bamboo-1 {
+  margin-right: 125px;
+  margin-bottom: 27px;
+}
+body .about_contain-1 .bamboo .bamboo-1 p img {
+  width: 15px;
+  height: 11px;
+}
+body .image-1 {
+  width: 1480px;
+  margin: 0 auto;
+  height: 180px;
+  background-color: #000000;
+  margin-bottom: 91px;
+  background-image: url(../img/aboutus/广告位.jpg);
+  position: relative;
+}
+body .image-1 a {
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  top: 112px;
+  left: 1150px;
+}
+body .finally {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+body .finally .f-content {
+  display: flex;
+  justify-content: center;
+}
+body .finally .f-content .fc-picture {
+  width: 638px;
+  height: 400px;
+}
+body .finally .f-content .fc-text {
+  width: 510px;
+  padding-top: 10px;
+}
+body .finally .f-content .fc-text .fct-one {
+  font-size: 14px;
+  color: #f75e61;
+  margin-bottom: 20px;
+}
+body .finally .f-content .fc-text .fct-two {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+body .finally .f-content .fc-text .fct-three {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+body .finally .f-content .fc-plan {
+  width: 510px;
+  height: 15px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+body .finally .f-content .fc-plan div {
+  width: 100px;
+  height: 15px;
+  background-color: #3a880e;
+  border-radius: 15px;
+}
+body .finally .f-content .fc-text .fct-data {
+  width: 510px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body .finally .f-content .fc-text .fct-data .fctd-text {
+  text-align: center;
+}
+body .f-content .fc-button {
+  width: 480px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .f-content .fc-button .fcb-a a {
+  display: block;
+  width: 180px;
+  height: 53px;
+  background-color: #3a880e;
+  border-radius: 53px;
+  text-align: center;
+  line-height: 53px;
+  color: #ffffff;
+}
+body .f-content .fc-button .fcb-a-1 a {
+  background-color: #1d99e3;
+  display: block;
+  width: 180px;
+  height: 53px;
+  border: solid 5px #d2d4d3;
+  border-radius: 53px;
+  text-align: center;
+  line-height: 53px;
+}
+body .flow {
+  width: 1480px;
+  margin: 0 auto;
+  height: 309px;
+  background-color: #222222;
+  background-image: url(../img/lovetofarmer/main_bg_03.png);
+}
+body .flow h2 {
+  font-size: 40px;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 45px;
+}
+body .flow .flow-icon {
+  width: 1163px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+body .flow .flow-icon .fi-1 {
+  width: 33px;
+  height: 24px;
+  margin-top: 26px;
+}
+body .map {
+  width: 100%;
+  height: 600px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+body .map .map-case {
+  width: 1172px;
+  height: 502px;
+  display: flex;
+  justify-content: space-between;
+}
+body .map .map-case .map-text h3 {
+  font-size: 40px;
+  color: #3a880e;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+body .map .map-case .map-text h3 + p {
+  font-size: 15px;
+  color: #2b2b2b;
+}
+body .tupian {
+  width: 1187px;
+  height: 546px;
+  margin-bottom: 42px;
+}
+body .t-background {
+  height: 39px;
+  background-image: url(../img/public/leaf1.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  margin-bottom: 47px;
+}
+body .t-background p {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #3a880e;
 }/*# sourceMappingURL=index.css.map */
