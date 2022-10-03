@@ -1,14 +1,4 @@
 @charset "UTF-8";
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #3493d1;
-    --main: #f3f3f3;
-    --light: #ececec;
-    --lighter: #666;
-    --border: #e6e6e6;
-    --bg: #333333;
-  }
-}
 @font-face {
   /* 指定字体的名字 */
   font-family: "myfont";
@@ -55,6 +45,7 @@ body .head {
 }
 body .header-footer {
   background-color: #f9f9f9;
+  border-bottom: 3px solid rgb(134, 191, 50);
 }
 body .header-footer .header-footer-footer {
   /* 固定容器的宽度 */
@@ -66,7 +57,7 @@ body .header-footer .header-footer-footer {
   justify-content: space-between;
 }
 body .header-footer .header-footer-footer a {
-  border-right: 1px solid #616161;
+  border-right: 2px solid #1d99e3;
   color: rgb(134, 191, 50);
   padding: 11px 40px;
 }
@@ -86,7 +77,7 @@ body .header-footer .header-footer-footer .classification {
   align-items: center;
 }
 body .header-footer .header-footer-footer .classification a {
-  border-left: 1px solid #616161;
+  border-left: 2px solid #1d99e3;
   padding: 13px 33px;
 }
 body .header-footer .header-footer-footer .footer-bar {
@@ -104,7 +95,7 @@ body .header-footer .header-footer-footer .footer-bar .topbar li {
   line-height: 40px;
 }
 body .header-footer .header-footer-footer .footer-bar .topbar li:first-child {
-  border-left: 1px solid #616161;
+  border-left: 2px solid #1d99e3;
 }
 body .header-box {
   color: #f3f3f3;

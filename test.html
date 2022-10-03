@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>鼠标移入下划线展开</title>
+		<style type="text/css">
+			#underline {
+				width: 200px;
+				height: 50px;
+				background: #ddd;
+				margin: 20px;
+				position: relative;
+			}
+			#underline:after {
+				content: "";
+				width: 0;
+				height: 5px;
+				background: blue;
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transition: all 0.8s;
+			}
+			#underline:hover:after {
+				left: 0%;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="underline"></div>
+	</body>
+</html>

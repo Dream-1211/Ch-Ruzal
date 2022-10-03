@@ -1261,9 +1261,19 @@ body {
 	}
 	.news-list {
 		.news-list-container {
+			position: relative;
+			.news-list {
+				position: absolute;
+				top: 40px;
+				right: 150px;
+			}
 			.news-list-box {
 				display: flex;
 				justify-content: center;
+				position: absolute;
+				top: 8px;
+				right: 150px;
+
 				.news-list-header {
 					h3 {
 						line-height: 30px;
@@ -1302,7 +1312,7 @@ body {
 			.news-list {
 				display: flex;
 				justify-content: center;
-				height: 324px;
+				height: 366px;
 				overflow: hidden;
 				.news-list-items {
 					width: 550px;
@@ -1313,9 +1323,9 @@ body {
 							line-height: 18px;
 							width: 14px;
 							scale: 0.85;
-							border-top: 2px solid #F63051;
+							border-top: 2px solid #f63051;
 							margin-right: 6px;
-							color: #F63051;
+							color: #f63051;
 						}
 						p {
 							margin-left: 8px;
@@ -1361,6 +1371,89 @@ body {
 						}
 						line-height: 36px;
 					}
+				}
+			}
+		}
+	}
+	.recommend-box {
+		.recommend-head {
+			margin-left: 120px;
+			a {
+				color: #616161;
+				// &:hover {
+				// 	color: $green-color;
+				// 	border-bottom: 3px solid $bule-color;
+				// }
+				display: inline-block;
+					position: relative;
+				
+				&:after {
+					content: "";
+					width: 0;
+					height: 3px;
+					background: $bule-color;
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					transition: all 0.6s;
+				}
+				&:hover:after {
+					left: 0%;
+					width: 100%;
+				}
+				
+				&:nth-child(2) {
+					border-bottom: 3px solid $bule-color;
+				}
+				margin-right: 10px;
+			}
+		}
+		.recommend-box-body {
+			width: 335px;
+			margin-left: 105px;
+			display: flex;
+			flex-direction: column;
+			.recommend {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				width: 300px;
+				height: 150px;
+				.infor {
+					p {
+						font-size: 16px;
+						font-weight: bold;
+					}
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					width: 140px;
+					height: 100px;
+					span span {
+						color: #bb281c;
+						font-size: 14px;
+						font-weight: bold;
+					}
+					.number {
+						width: 110px;
+						align-items: center;
+						display: flex;
+						flex-wrap: nowrap;
+					}
+					.price {
+						color: #bb281c;
+						font-size: 14px;
+						font-weight: bold;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+				.img-background {
+					width: 111px;
+					height: 111px;
+					background: url(../img/news/background/12.png);
+					background-position: -157px -92px;
 				}
 			}
 		}

@@ -1,13 +1,3 @@
-@media (prefers-color-scheme: dark) {
-	:root {
-	  --accent: #3493d1;
-	  --main: #f3f3f3;
-	  --light: #ececec;
-	  --lighter: #666;
-	  --border: #e6e6e6;
-	  --bg: #333333;
-	}
-  }
   
 @font-face {
 	/* 指定字体的名字 */
@@ -16,6 +6,10 @@
 	src: url("../fonts/FZSuHJW.TTF") format("truetype");
 }
 body {
+	$bule-color: #1d99e3;
+	$green-color: rgb(134, 191, 50);
+	$width: 1226px;
+	$width-contain: 1400px;
 	overflow-x: hidden;
 	$size: 65px; //qrcode
 
@@ -57,6 +51,7 @@ body {
 	}
 	.header-footer {
 		background-color: #f9f9f9;
+		border-bottom: 3px solid $green-color;
 		.header-footer-footer {
 			/* 固定容器的宽度 */
 			width: 1226px;
@@ -66,7 +61,7 @@ body {
 			display: flex;
 			justify-content: space-between;
 			a {
-				border-right: 1px solid #616161;
+				border-right: 2px solid $bule-color;
 				color: rgb(134, 191, 50);
 				padding: 11px 40px;
 				&:hover {
@@ -85,7 +80,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				a {
-					border-left: 1px solid #616161;
+					border-left: 2px solid $bule-color;
 					padding: 13px 33px;
 				}
 			}
@@ -96,7 +91,7 @@ body {
 					li {
 						line-height: 40px;
 						&:first-child {
-							border-left: 1px solid #616161;
+							border-left: 2px solid $bule-color;
 						}
 					}
 					width: 1000px;
