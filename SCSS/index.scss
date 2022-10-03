@@ -823,6 +823,10 @@ body {
 		transform: scale(1.1);
 	}
 	.right-img-3-1 {
+		&:hover{
+			transform: translateY(-4px);
+			box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+		}
 		width: 200px;
 		height: 270px;
 		background-color: #ffffff;
@@ -1013,6 +1017,7 @@ body {
 	}
 	.price-buy-container {
 		.price-buy-infor {
+			
 			margin: 0 8px;
 			height: 270px;
 			width: 80px;
@@ -1030,9 +1035,16 @@ body {
 		margin: 0 auto;
 		box-sizing: border-box;
 		.price-buy {
+			
             margin-top: 35px;
 			display: flex;
 			justify-content: space-around;
 		}
+	}
+	.nolike {
+		color: #999;
+		text-align: center;
+		font-size: 16px;
+		margin: 20px 0;
 	}
 }

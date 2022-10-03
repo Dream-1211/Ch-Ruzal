@@ -123,6 +123,9 @@ body .header-box .header-top .header-right {
   justify-content: space-between;
   align-items: center;
 }
+body .header-box .header-top .header-right a:hover {
+  color: #1d99e3;
+}
 body .header-box .header-top .header-right .loc-an-box {
   height: 64px;
   line-height: 64px;
@@ -136,6 +139,7 @@ body .header-box .header-top .header-right .loc-an-box {
   height: 22px;
   overflow: hidden;
   display: block;
+  color: #e6560e;
 }
 body .header-box .header-top .header-right .loc-mc-box {
   width: 90px;
@@ -160,6 +164,7 @@ body .header-box .header-top .header-right .loc-mc-box .loc-mc-box__text:nth-chi
   width: 100%;
   line-height: 36px;
   text-align: center;
+  color: #f3f3f3;
 }
 body .header-box .header-top .header-right .loc-mc-box .loc-mc-box__text:nth-child(3) {
   position: absolute;
@@ -407,33 +412,8 @@ body .container {
   box-sizing: border-box;
 }
 body .shar-to .shar-to-one .shar-one {
-  color: #18191c;
-  display: inline-block;
-  width: 46px;
-  height: 60px;
-  position: fixed;
-  top: 510px;
-  right: 2px;
-  font-size: 12px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  border-radius: 6px;
-}
-body .shar-to .shar-to-one .shar-one i {
-  padding: 12px 16px;
-  scale: 1.5;
-  color: #18191c;
-}
-body .shar-to .shar-to-one .shar-one p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .shar-to .shar-to-one .shar-one:hover {
-  background-color: #e3e5e7;
-}
-body .shar-to .shar-to-two .shar-two {
-  color: #18191c;
+  background-color: #F3F3F3;
+  color: #494949;
   display: inline-block;
   width: 46px;
   height: 60px;
@@ -445,10 +425,51 @@ body .shar-to .shar-to-two .shar-two {
   cursor: pointer;
   border-radius: 6px;
 }
+body .shar-to .shar-to-one .shar-one i {
+  padding: 12px 16px;
+  scale: 1.5;
+  color: #494949;
+}
+body .shar-to .shar-to-one .shar-one p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .shar-to .shar-to-one .shar-one:hover {
+  background-color: #e3e5e7;
+}
+body .shar-to {
+  display: block;
+}
+body .shar-to .shar-to-two {
+  background-color: #F3F3F3;
+  position: fixed;
+  top: 519px;
+  right: 2px;
+  width: 46px;
+  height: 51px;
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 6px;
+}
+body .shar-to .shar-to-two .shar-two {
+  color: #494949;
+  display: inline-block;
+  width: 46px;
+  height: 60px;
+  font-size: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  animation: locmoveclipslider 6s infinite ease-out;
+  animation-delay: 1.5s;
+}
 body .shar-to .shar-to-two .shar-two i {
   padding: 12px 16px;
   scale: 1.5;
-  color: #18191c;
+  color: #494949;
 }
 body .shar-to .shar-to-two .shar-two p {
   display: flex;
@@ -458,8 +479,25 @@ body .shar-to .shar-to-two .shar-two p {
 body .shar-to .shar-to-two .shar-two:hover {
   background-color: #e3e5e7;
 }
+body .shar-to .shar-to-two .shar-two:nth-child(1) {
+  position: relative;
+  top: -2px;
+  height: 55px;
+}
+body .shar-to .shar-to-two .shar-two:nth-child(2) {
+  scale: 1.2;
+  position: relative;
+  top: -5px;
+  height: 55px;
+  margin-top: 25px;
+}
+body .shar-to .shar-to-two .shar-two:nth-child(3) {
+  position: relative;
+  top: -32px;
+}
 body .shar-to .shar-to-three .shar-three {
-  color: #18191c;
+  background-color: #F3F3F3;
+  color: #494949;
   display: inline-block;
   width: 46px;
   height: 64px;
@@ -474,7 +512,7 @@ body .shar-to .shar-to-three .shar-three {
 body .shar-to .shar-to-three .shar-three i {
   padding: 9px 16px;
   scale: 1.5;
-  color: #18191c;
+  color: #494949;
 }
 body .shar-to .shar-to-three .shar-three p {
   display: flex;
