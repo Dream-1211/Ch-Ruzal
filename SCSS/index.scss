@@ -1,6 +1,6 @@
 body {
-	$bule-color:#1d99e3;
-	$green-color:rgb(134, 191, 50);
+	$bule-color: #1d99e3;
+	$green-color: rgb(134, 191, 50);
 	$width: 1226px;
 	$width-contain: 1400px;
 	/* 主页index.html的样式表 */
@@ -1007,6 +1007,7 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-left: 35px;
 			.search {
 				position: relative;
 				box-sizing: border-box;
@@ -1045,5 +1046,47 @@ body {
 				right: 29px;
 			}
 		}
+	}
+	.adv {
+		height: 110px;
+		margin: 15px auto;
+	}
+	/* ---------------- 产品导航明细 ------------------ */
+	.product-1 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		height: 110px;
+		background-color: #f9f9f9;
+		border: solid 1px #c5c5c5;
+		margin: 0 auto;
+		padding-left: 90px;
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.product-1 .pro-nav {
+		display: flex;
+		flex-wrap: nowrap;
+		font-size: 12px;
+		color: #404040;
+		margin-bottom: 13px;
+		justify-content: space-between;
+	}
+	.product-1 .pro-nav ul {
+		width: 625px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.pro-nav ul > li > a {
+		font-size: 12px;
+		color: #1859a4;
+	}
+	.pro-seek {
+		display: flex;
+		margin-bottom: 13px;
+	}
+	.pro-seek > p {
+		line-height: 42px;
 	}
 }
