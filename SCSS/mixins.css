@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3493d1;
+    --main: #f3f3f3;
+    --light: #ececec;
+    --lighter: #666;
+    --border: #e6e6e6;
+    --bg: #333333;
+  }
+}
 @font-face {
   /* 指定字体的名字 */
   font-family: "myfont";
