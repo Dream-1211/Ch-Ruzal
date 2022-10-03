@@ -280,6 +280,11 @@ body {
 			a {
 				display: block;
 				margin-top: 15px;
+				@keyframes more {
+					0%{
+						display: none;
+					}
+				}
 			}
 			&:nth-child(1) {
 				position: absolute;
@@ -656,6 +661,13 @@ body {
 		line-height: 53px;
 	}
 	.flow {
+		.help-infor {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		display: flex;
+		justify-content: center;
 		width: 1480px;
 		margin: 0 auto;
 		height: 309px;
@@ -663,6 +675,7 @@ body {
 		background-image: url(../img/lovetofarmer/main_bg_03.png);
 	}
 	.flow h2 {
+		font-weight: 900;
 		font-size: 40px;
 		color: whitesmoke;
 		text-align: center;
@@ -672,7 +685,12 @@ body {
 		width: 1163px;
 		height: 65px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
+		&:nth-child(2n) {
+			width: 40px;
+			height: 29px;
+		}
 	}
 	.flow .flow-icon .fi-1 {
 		width: 33px;
@@ -693,12 +711,14 @@ body {
 		justify-content: space-between;
 	}
 	.map .map-case .map-text h3 {
+		font-family: "myfont";
 		font-size: 40px;
 		color: #3a880e;
 		margin-top: 180px;
 		margin-bottom: 20px;
 	}
 	.map .map-case .map-text h3 + p {
+		line-height: 38px;
 		font-size: 15px;
 		color: #2b2b2b;
 	}
@@ -728,7 +748,7 @@ body {
 		margin-bottom: 48px;
 	}
 	.issue h3 {
-		margin-bottom: 30px;
+		margin: 100px 0 48px 0;
 		font-family: "myfont";
 		font-size: 34px;
 		color: #404040;
@@ -1088,5 +1108,155 @@ body {
 	}
 	.pro-seek > p {
 		line-height: 42px;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+		align-content: space-between;
+		flex-wrap: wrap;
+	}
+	.title .title-head {
+		height: 430px;
+		margin-bottom: 20px;
+	}
+	.title .z-dl-head {
+		width: 588px;
+		height: 43px;
+		background-color: #ffffff;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.title .z-dl-head .z-dl-head-l {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 7px 23px 7px 23px;
+	}
+	.title .z-dl-head .z-dl-head-l p {
+		font-size: 26px;
+		letter-spacing: 3px;
+		color: #ca7f72;
+	}
+	.title .z-dl-head .z-dl-head-l a {
+		display: block;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: #626262;
+	}
+	.title .z-dl {
+		overflow: hidden;
+		width: 588px;
+		height: 380px;
+		display: flex;
+	}
+	.z-dl .z-dl-left {
+		width: 197px;
+		height: 380px;
+		background-image: url("../img/index/display/1.png");
+		padding-top: 117px;
+		padding-left: 22px;
+	}
+	.title .z-dl .z-dl-left h4 {
+		font-size: 36px;
+		letter-spacing: 4px;
+		color: #ffffff;
+		margin-bottom: 8px;
+	}
+	.title .z-dl .z-dl-left p {
+		font-size: 20px;
+		letter-spacing: 1px;
+		color: #ffffff;
+		margin-bottom: 24px;
+	}
+	.z-dl-left a {
+		width: 111px;
+		padding: 8px 14px;
+		background-color: #fbd4c688;
+		border-radius: 14px;
+		color: #fff;
+		font-size: 20px;
+	}
+	.z-dl-right {
+		width: 400px;
+		height: 380px;
+		display: flex;
+		justify-content: space-between;
+		align-content: space-between;
+		flex-wrap: wrap;
+	}
+	.right_pro-l {
+		background-color: rgb(230, 230, 230);
+		width: 189px;
+		height: 186px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.imgbox {
+		width: 80%;
+		height: 80%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.imgbox img {
+		width: 100%;
+		width: auto;
+		transition: all 1s;
+	}
+	.imgbox img:hover {
+		transform: scale(1.2);
+	}
+	.right_pro_l_l p {
+		display: block;
+		float: left;
+		width: 100px;
+		height: 24px;
+		font-size: 12px;
+		color: #666;
+	}
+	.right_pro_l_l span {
+		display: inline-block;
+		font-size: 14px;
+		padding: 3px 6px;
+		color: rgb(235, 235, 235);
+		background-color: #3a880e;
+		margin-right: 10px;
+	}
+	.right_pro-price1 {
+		float: left;
+		font-size: 22px;
+		font-weight: normal;
+		color: #e40c61;
+	}
+	.right_pro-price2 {
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #a09e9e;
+		text-decoration: line-through;
+	}
+	.flow-famer {
+		width: $width;
+		margin: 20px auto;
+		display: flex;
+		justify-content: space-around;
+		.print {
+			p {
+				font-size: 18px;
+				margin-top: 12px;
+			}
+			text-align: center;
+			.print-1 {
+				i {
+					scale: 3.7;
+					line-height: 7;
+				}
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				border: 1px solid #616161;
+			}
+		}
 	}
 }
