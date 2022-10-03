@@ -1234,12 +1234,12 @@ body .news-list .news-list-container .news-list-box {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 8px;
-  right: 150px;
+  top: -6px;
+  right: 200px;
 }
 body .news-list .news-list-container .news-list-box .news-list-header {
   line-height: 25px;
-  width: 550px;
+  width: 502px;
   display: flex;
   justify-content: space-between;
 }
@@ -1274,6 +1274,8 @@ body .news-list .news-list-container .news-list {
   justify-content: center;
   height: 366px;
   overflow: hidden;
+  position: absolute;
+  top: 20px;
 }
 body .news-list .news-list-container .news-list .news-list-items {
   width: 550px;
@@ -1349,8 +1351,8 @@ body .recommend-box .recommend-head a:after {
   background: #1d99e3;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transition: all 0.6s;
+  left: 0%;
+  transition: all 0.4s;
 }
 body .recommend-box .recommend-head a:hover:after {
   left: 0%;
@@ -1370,7 +1372,7 @@ body .recommend-box .recommend-box-body .recommend {
   justify-content: space-around;
   align-items: center;
   width: 300px;
-  height: 150px;
+  height: 120px;
 }
 body .recommend-box .recommend-box-body .recommend .infor {
   display: flex;
