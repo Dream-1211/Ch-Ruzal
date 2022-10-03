@@ -82,50 +82,7 @@ body {
 		box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
 	}
 
-	/* 设置搜索框的容器 */
-	.search-wrapper {
-		width: 296px;
-		height: 50px;
-		float: right;
-		margin-top: 25px;
-	}
-
-	.search-wrapper .search-inp {
-		box-sizing: border-box;
-		width: 244px;
-		border: none;
-		float: left;
-		padding: 0 10px;
-		height: 50px;
-		font-size: 16px;
-		border: 1px solid rgb(224, 224, 224);
-		outline: none;
-	}
-
-	/* 设置input获取焦点后的样式 */
-	.search-wrapper .search-inp:focus,
-	.search-wrapper .search-inp:focus + button {
-		border-color: #ff6700;
-	}
-
-	.search-wrapper .search-btn {
-		float: left;
-		height: 50px;
-		width: 52px;
-		padding: 0;
-		border: none;
-		background-color: #fff;
-		color: #616161;
-		font-size: 16px;
-		border: 1px solid rgb(224, 224, 224);
-		border-left: none;
-	}
-
-	.search-wrapper .search-btn:hover {
-		background-color: #ff6700;
-		color: white;
-		border: none;
-	}
+	
 
 	/* 设置banner */
 	.banner {

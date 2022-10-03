@@ -4,8 +4,6 @@ body {
   /* 设置左侧导航条的样式 */
   /* 隐藏全部商品 */
   /* .nav li:not(:first-of-type):not(:nth-child(10)):not(:nth-child(9)):hover ~ .goods-info, */
-  /* 设置搜索框的容器 */
-  /* 设置input获取焦点后的样式 */
   /* 设置banner */
   /* 设置5个导航点 */
   /* 设置两个箭头 */
@@ -95,44 +93,6 @@ body .goods-info:hover {
   height: 228px;
   border-top: 1px solid rgb(224, 224, 224);
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
-}
-body .search-wrapper {
-  width: 296px;
-  height: 50px;
-  float: right;
-  margin-top: 25px;
-}
-body .search-wrapper .search-inp {
-  box-sizing: border-box;
-  width: 244px;
-  border: none;
-  float: left;
-  padding: 0 10px;
-  height: 50px;
-  font-size: 16px;
-  border: 1px solid rgb(224, 224, 224);
-  outline: none;
-}
-body .search-wrapper .search-inp:focus,
-body .search-wrapper .search-inp:focus + button {
-  border-color: #ff6700;
-}
-body .search-wrapper .search-btn {
-  float: left;
-  height: 50px;
-  width: 52px;
-  padding: 0;
-  border: none;
-  background-color: #fff;
-  color: #616161;
-  font-size: 16px;
-  border: 1px solid rgb(224, 224, 224);
-  border-left: none;
-}
-body .search-wrapper .search-btn:hover {
-  background-color: #ff6700;
-  color: white;
-  border: none;
 }
 body .banner {
   position: relative;
