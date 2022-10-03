@@ -964,4 +964,46 @@ body .nolike {
   text-align: center;
   font-size: 16px;
   margin: 20px 0;
+}
+body .search-wapper .search-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .search-wapper .search-plus .search {
+  position: relative;
+  box-sizing: border-box;
+  width: 550px;
+  float: left;
+  padding: 0 10px;
+  height: 44px;
+  font-size: 16px;
+  border: 5px solid #1d99e3;
+  border-right: 22px solid #fff;
+  border-left: 18px solid #fff;
+  outline: none;
+  border-radius: 5px;
+  color: rgb(195, 195, 195);
+}
+body .search-wapper .search-plus .search-btn {
+  position: relative;
+  right: 29px;
+  color: rgb(195, 195, 195);
+  height: 44px;
+  width: 108px;
+  padding: 0;
+  border: none;
+  background-color: #1d99e3;
+  color: #f3f3f3;
+  font-size: 16px;
+  border-radius: 9px;
+  border-left: none;
+}
+body .search-wapper .search-plus .search-btn:hover {
+  background-color: rgb(117, 167, 43);
+}
+body .search-wapper .search-plus .camera {
+  color: rgb(200, 200, 200);
+  position: relative;
+  right: 29px;
 }/*# sourceMappingURL=index.css.map */

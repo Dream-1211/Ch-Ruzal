@@ -1,4 +1,6 @@
 body {
+	$bule-color:#1d99e3;
+	$green-color:rgb(134, 191, 50);
 	$width: 1226px;
 	$width-contain: 1400px;
 	/* 主页index.html的样式表 */
@@ -81,8 +83,6 @@ body {
 		border-top: 1px solid rgb(224, 224, 224);
 		box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
 	}
-
-	
 
 	/* 设置banner */
 	.banner {
@@ -646,7 +646,7 @@ body {
 		color: #ffffff;
 	}
 	.f-content .fc-button .fcb-a-1 a {
-		background-color: #1d99e3;
+		background-color: $bule-color;
 		display: block;
 		width: 180px;
 		height: 53px;
@@ -780,7 +780,7 @@ body {
 		transform: scale(1.1);
 	}
 	.right-img-3-1 {
-		&:hover{
+		&:hover {
 			transform: translateY(-4px);
 			box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 		}
@@ -974,15 +974,14 @@ body {
 	}
 	.price-buy-container {
 		.price-buy-infor {
-			
 			margin: 0 8px;
 			height: 270px;
 			width: 80px;
 			writing-mode: vertical-rl;
 			background-color: rgb(134, 191, 50);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			p {
 				font-size: 40px;
 				font-family: "myfont";
@@ -992,8 +991,7 @@ body {
 		margin: 0 auto;
 		box-sizing: border-box;
 		.price-buy {
-			
-            margin-top: 35px;
+			margin-top: 35px;
 			display: flex;
 			justify-content: space-around;
 		}
@@ -1003,5 +1001,49 @@ body {
 		text-align: center;
 		font-size: 16px;
 		margin: 20px 0;
+	}
+	.search-wapper {
+		.search-plus {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.search {
+				position: relative;
+				box-sizing: border-box;
+				width: 550px;
+				float: left;
+				padding: 0 10px;
+				height: 44px;
+				font-size: 16px;
+				border: 5px solid $bule-color;
+				border-right: 22px solid #fff;
+				border-left: 18px solid #fff;
+				outline: none;
+				border-radius: 5px;
+				color: rgb(195, 195, 195);
+			}
+			.search-btn {
+				position: relative;
+				right: 29px;
+				&:hover {
+					background-color: rgb(117, 167, 43);
+				}
+				color: rgb(195, 195, 195);
+				height: 44px;
+				width: 108px;
+				padding: 0;
+				border: none;
+				background-color: $bule-color;
+				color: #f3f3f3;
+				font-size: 16px;
+				border-radius: 9px;
+				border-left: none;
+			}
+			.camera {
+				color: rgb(200, 200, 200);
+				position: relative;
+				right: 29px;
+			}
+		}
 	}
 }
