@@ -72,6 +72,14 @@ function animate(obj, target, callback) {
 // 返回顶部
 var reback = document.querySelector('.shar-three');
 reback.addEventListener('click', function(){
-	window.scroll(0,0)
 	animate(window,0)
 })
+
+// 关闭二维码
+ // 1. 获取元素 
+ var btn = document.querySelector('.close-btn');
+ var box = document.querySelector('.box-qr');
+ // 2.注册事件 程序处理
+ btn.onclick = function() {
+	 box.style.display = 'none';
+ }
