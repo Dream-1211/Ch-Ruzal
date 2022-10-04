@@ -1416,6 +1416,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			.recommend {
+				border: 1px solid #1d99e35c;
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
@@ -1472,15 +1473,23 @@ body {
 		.table-box{
 			width: 980px;
 			margin: 0 auto;
-			border: 1px solid red;
 			background-color: #FCFCFC;
+			
 			a{
 				color: #616161;
 				background-color: #fcfcfc;
+				
 			}
 			.img-revolving-lantern{
+				border: 1px solid $green-color;
 				padding: 0 20px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+				box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+			}
+			.img-header-a{
+				a{
+					display: block;
+
+				}
 			}
 		}
 }

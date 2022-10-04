@@ -37,7 +37,7 @@ body .contain {
   margin: 0 auto;
   box-sizing: border-box;
 }
-body .header:nth-child(1) {
+body .header {
   border-bottom: 1px solid rgb(220, 220, 220);
 }
 body .head {

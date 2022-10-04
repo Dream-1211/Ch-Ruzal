@@ -44,10 +44,8 @@ body {
 		box-sizing: border-box; //IE盒模型
 	}
 	.header {
-		&:nth-child(1){
-			
 		border-bottom: 1px solid rgb(220, 220, 220);
-		}
+		
 	}
 	.head {
 		background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));

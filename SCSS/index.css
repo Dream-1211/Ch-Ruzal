@@ -1368,6 +1368,7 @@ body .recommend-box .recommend-box-body {
   flex-direction: column;
 }
 body .recommend-box .recommend-box-body .recommend {
+  border: 1px solid rgba(29, 153, 227, 0.3607843137);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1421,7 +1422,6 @@ body .right-btn {
 body .table-box {
   width: 980px;
   margin: 0 auto;
-  border: 1px solid red;
   background-color: #FCFCFC;
 }
 body .table-box a {
@@ -1429,6 +1429,10 @@ body .table-box a {
   background-color: #fcfcfc;
 }
 body .table-box .img-revolving-lantern {
+  border: 1px solid rgb(134, 191, 50);
   padding: 0 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body .table-box .img-header-a a {
+  display: block;
 }/*# sourceMappingURL=index.css.map */
