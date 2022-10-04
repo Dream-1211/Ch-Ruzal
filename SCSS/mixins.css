@@ -608,4 +608,9 @@ body .ad {
   z-index: 999;
   top: 100px;
   left: 500px;
+}
+body .aixinzhunong,
+body .guanyuwomen,
+body .caigoudating {
+  display: none;
 }/*# sourceMappingURL=mixins.css.map */

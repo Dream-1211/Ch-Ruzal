@@ -92,20 +92,51 @@ setTimeout(function () {
 var wangzhanshouye = document.querySelector(".wangzhanshouye");
 var aixinzhunong = document.querySelector(".aixinzhunong");
 var guanyuwomen = document.querySelector(".guanyuwomen");
-var caigoudating = document.querySelector("caigoudating");
+var caigoudating = document.querySelector(".caigoudating");
 var topbar = document.querySelectorAll(".topbar li");
-var topbars = document.querySelectorAll(".footer-bar ul");
-// 
+var index = document.querySelector(".topbar .index");
+var caigou = document.querySelector(".topbar .caigou");
+var aixin = document.querySelector(".topbar .aixin");
+var nongye = document.querySelector(".topbar .nongye");
+var guanyu = document.querySelector(".topbar .guanyu");
+//
+topbar[0].style.backgroundColor = "#f3f3f3";
+topbar[0].childNodes[0].style.color = "rgb(134,191, 50"
 for (var i = 0; i < topbar.length; i++) {
 	topbar[i].onclick = function () {
 		for (var i = 0; i < topbar.length; i++) {
 			topbar[i].style.backgroundColor = "";
 			topbar[i].childNodes[0].style.color = "";
-			
 		}
 		this.style.backgroundColor = "#F3F3F3";
 		this.childNodes[0].style.color = "rgb(134, 191, 50)";
-
 	};
 }
-console.log(topbars.children)
+index.onclick = function(){
+	wangzhanshouye.style.display = "block";
+	aixinzhunong.style.display = "none";
+	guanyuwomen.style.display = "none";
+	caigoudating.style.display = "none";
+}
+aixin.onclick = function(){
+	aixinzhunong.style.display = "block";
+	wangzhanshouye.style.display = "none";
+	guanyuwomen.style.display = "none";
+	caigoudating.style.display = "none";
+	console.log(this);
+};
+guanyu.onclick = function(){
+	guanyuwomen.style.display = "block";
+	aixinzhunong.style.display = "none";
+	wangzhanshouye.style.display = "none";
+	caigoudating.style.display = "none";
+	console.log(this);
+};
+caigou.onclick = function(){
+	caigoudating.style.display = "block";
+	aixinzhunong.style.display = "none";
+	guanyuwomen.style.display = "none";
+	wangzhanshouye.style.display = "none";
+	console.log(this);
+};
+
