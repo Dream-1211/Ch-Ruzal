@@ -1,4 +1,4 @@
-
+@import'./color';
 body{
     .box-qr {
         position: fixed;
@@ -9,7 +9,7 @@ body{
         border: 1px solid #ccc;
         font-size: 12px;
         text-align: center;
-        color: $bule-color;
+        color: $black-color;
         /* display: block; */
     }
     
@@ -30,4 +30,13 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
     }
+    // 弹出广告
+    .ad{
+        position: fixed;
+        z-index: 999;
+        top: 100px;
+        left: 500px;
+    }
 }
+
+

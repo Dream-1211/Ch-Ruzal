@@ -83,3 +83,9 @@ reback.addEventListener('click', function(){
  btn.onclick = function() {
 	 box.style.display = 'none';
  }
+
+//弹出广告
+var ad = document.querySelector('.ad');
+        setTimeout(function() {
+            ad.style.display = 'none';
+        }, 4000);  

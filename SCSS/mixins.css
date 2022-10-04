@@ -584,7 +584,7 @@ body .box-qr {
   border: 1px solid #ccc;
   font-size: 12px;
   text-align: center;
-  color: #1d99e3;
+  color: #616161;
   /* display: block; */
 }
 body .box-qr img {
@@ -602,4 +602,10 @@ body .close-btn {
   line-height: 14px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+body .ad {
+  position: fixed;
+  z-index: 999;
+  top: 100px;
+  left: 500px;
 }/*# sourceMappingURL=mixins.css.map */
