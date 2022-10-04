@@ -83,10 +83,10 @@ btn.onclick = function () {
 };
 
 //弹出广告
-var ad = document.querySelector(".ad");
-setTimeout(function () {
-	ad.style.display = "none";
-}, 4000);
+// var ad = document.querySelector(".ad");
+// setTimeout(function () {
+// 	ad.style.display = "none";
+// }, 4000);
 
 // 页面切换
 var wangzhanshouye = document.querySelector(".wangzhanshouye");
@@ -94,14 +94,14 @@ var aixinzhunong = document.querySelector(".aixinzhunong");
 var guanyuwomen = document.querySelector(".guanyuwomen");
 var caigoudating = document.querySelector(".caigoudating");
 var topbar = document.querySelectorAll(".topbar li");
-var index = document.querySelector(".topbar .index");
-var caigou = document.querySelector(".topbar .caigou");
-var aixin = document.querySelector(".topbar .aixin");
-var nongye = document.querySelector(".topbar .nongye");
-var guanyu = document.querySelector(".topbar .guanyu");
+var index = document.querySelector('#index');
+var caigou = document.querySelector('#caigou');
+var aixin = document.querySelector('#aixin');
+var guanyu = document.querySelector('#guanyu');
 //
 topbar[0].style.backgroundColor = "#f3f3f3";
 topbar[0].childNodes[0].style.color = "rgb(134,191, 50"
+// 排他算法
 for (var i = 0; i < topbar.length; i++) {
 	topbar[i].onclick = function () {
 		for (var i = 0; i < topbar.length; i++) {
@@ -112,11 +112,14 @@ for (var i = 0; i < topbar.length; i++) {
 		this.childNodes[0].style.color = "rgb(134, 191, 50)";
 	};
 }
+console.log(aixin)
+
 index.onclick = function(){
 	wangzhanshouye.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";
 	caigoudating.style.display = "none";
+	console.log(this);
 }
 aixin.onclick = function(){
 	aixinzhunong.style.display = "block";

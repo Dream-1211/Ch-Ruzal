@@ -42,4 +42,50 @@ body {
 	.caigoudating {
 		display: none;
 	}
+	.left-menu {
+		.more-box-hover {
+            
+            display: none;
+			width: 810px;
+			position: absolute;
+			left: 234px;
+			top: 0;
+			z-index: 24;
+			border: 1px solid #e0e0e0;
+			border-left: 0;
+			background: #fff;
+			-webkit-box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+			box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+			height: 286px;
+			padding: 2px 0;
+			.more-box-head {
+				float: left;
+				width: 265px;
+
+				margin: 0;
+				a {
+					color: $black-color;
+					position: relative;
+					float: left;
+					width: 200px;
+					height: 57px;
+                    span{
+                        display: block;
+                        margin-top: 6px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        color: $words-color;
+                        transition: all .2s;
+                    }
+				}
+				img {
+					float: left;
+                    margin:5px 15px 0 27px ;
+					vertical-align: middle;
+					width: 45px;
+				}
+			}
+		}
+	}
 }
