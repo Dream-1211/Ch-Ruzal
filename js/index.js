@@ -88,19 +88,18 @@ btn.onclick = function () {
 // 	ad.style.display = "none";
 // }, 4000);
 
-// 页面切换
 var wangzhanshouye = document.querySelector(".wangzhanshouye");
 var aixinzhunong = document.querySelector(".aixinzhunong");
 var guanyuwomen = document.querySelector(".guanyuwomen");
 var caigoudating = document.querySelector(".caigoudating");
 var topbar = document.querySelectorAll(".topbar li");
-var index = document.querySelector('#index');
-var caigou = document.querySelector('#caigou');
-var aixin = document.querySelector('#aixin');
-var guanyu = document.querySelector('#guanyu');
-//
+var index = document.querySelector("#index");
+var caigou = document.querySelector("#caigou");
+var aixin = document.querySelector("#aixin");
+var guanyu = document.querySelector("#guanyu");
+//导航颜色切换
 topbar[0].style.backgroundColor = "#f3f3f3";
-topbar[0].childNodes[0].style.color = "rgb(134,191, 50"
+topbar[0].childNodes[0].style.color = "rgb(134,191, 50";
 // 排他算法
 for (var i = 0; i < topbar.length; i++) {
 	topbar[i].onclick = function () {
@@ -112,30 +111,30 @@ for (var i = 0; i < topbar.length; i++) {
 		this.childNodes[0].style.color = "rgb(134, 191, 50)";
 	};
 }
-console.log(aixin)
 
-index.onclick = function(){
+//页面切换
+index.onclick = function () {
 	wangzhanshouye.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";
 	caigoudating.style.display = "none";
 	console.log(this);
-}
-aixin.onclick = function(){
+};
+aixin.onclick = function () {
 	aixinzhunong.style.display = "block";
 	wangzhanshouye.style.display = "none";
 	guanyuwomen.style.display = "none";
 	caigoudating.style.display = "none";
 	console.log(this);
 };
-guanyu.onclick = function(){
+guanyu.onclick = function () {
 	guanyuwomen.style.display = "block";
 	aixinzhunong.style.display = "none";
 	wangzhanshouye.style.display = "none";
 	caigoudating.style.display = "none";
 	console.log(this);
 };
-caigou.onclick = function(){
+caigou.onclick = function () {
 	caigoudating.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";

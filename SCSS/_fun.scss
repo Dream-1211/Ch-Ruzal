@@ -43,6 +43,11 @@ body {
 		display: none;
 	}
 	.left-menu {
+        .menu-btn{
+            &:hover .more-box-hover{
+                display: block;/*这里把里面的内容显示出来*/
+            }
+        }
 		.more-box-hover {
             
             display: none;

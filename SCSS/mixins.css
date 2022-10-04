@@ -614,6 +614,9 @@ body .guanyuwomen,
 body .caigoudating {
   display: none;
 }
+body .left-menu .menu-btn:hover .more-box-hover {
+  display: block; /*这里把里面的内容显示出来*/
+}
 body .left-menu .more-box-hover {
   display: none;
   width: 810px;
