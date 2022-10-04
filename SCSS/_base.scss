@@ -44,14 +44,22 @@ body {
 		box-sizing: border-box; //IE盒模型
 	}
 	.header {
+		&:nth-child(1){
+			
 		border-bottom: 1px solid rgb(220, 220, 220);
+		}
 	}
 	.head {
 		background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 	}
 	.header-footer {
 		background-color: #f9f9f9;
-		border-bottom: 3px solid $green-color;
+
+		background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+		// border: 2px solid;
+		// border-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50)) 1;
+		// border-image-slice: 1;
+		// border-image-repeat: stretch;
 		.header-footer-footer {
 			/* 固定容器的宽度 */
 			width: 1226px;
@@ -61,12 +69,10 @@ body {
 			display: flex;
 			justify-content: space-between;
 			a {
-				border-right: 2px solid $bule-color;
-				color: rgb(134, 191, 50);
 				padding: 11px 40px;
 				&:hover {
-					color: #f3f3f3;
-					background-color: rgb(134, 191, 50);
+					color: rgb(134, 191, 50);
+					background-color: #f3f3f3;
 				}
 			}
 			ol {
@@ -80,7 +86,6 @@ body {
 				justify-content: center;
 				align-items: center;
 				a {
-					border-left: 2px solid $bule-color;
 					padding: 13px 33px;
 				}
 			}
@@ -90,9 +95,6 @@ body {
 				.topbar {
 					li {
 						line-height: 40px;
-						&:first-child {
-							border-left: 2px solid $bule-color;
-						}
 					}
 					width: 1000px;
 					height: 100%;

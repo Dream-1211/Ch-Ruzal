@@ -1409,4 +1409,26 @@ body .recommend-box .recommend-box-body .recommend .img-background {
   height: 111px;
   background: url(../img/news/background/12.png);
   background-position: -157px -92px;
+}
+body #colee_right {
+  width: 948px;
+  margin: 0 auto;
+}
+body .right-btn {
+  width: 948px;
+  margin: 0 auto;
+}
+body .table-box {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background-color: #FCFCFC;
+}
+body .table-box a {
+  color: #616161;
+  background-color: #fcfcfc;
+}
+body .table-box .img-revolving-lantern {
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=index.css.map */
