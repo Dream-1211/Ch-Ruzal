@@ -1,3 +1,5 @@
+import './animate'
+// 滚动动画
 var speed = 20; //速度数值越大速度越慢
 var colee_right2 = document.getElementById("colee_right2");
 var colee_right1 = document.getElementById("colee_right1");
@@ -38,3 +40,9 @@ colee_right.onmouseover = function () {
 colee_right.onmouseout = function () {
 	MyMar4 = setInterval(Marquee, speed);
 };
+// 返回顶部
+var reback = document.querySelector('.shar-three');
+reback.addEventListener('click', function(){
+	window.scroll(0,0)
+	animate(window,0)
+})
