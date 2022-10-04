@@ -94,6 +94,7 @@ var aixinzhunong = document.querySelector(".aixinzhunong");
 var guanyuwomen = document.querySelector(".guanyuwomen");
 var caigoudating = document.querySelector("caigoudating");
 var topbar = document.querySelectorAll(".topbar li");
+var topbars = document.querySelectorAll(".footer-bar ul");
 // 
 for (var i = 0; i < topbar.length; i++) {
 	topbar[i].onclick = function () {
@@ -107,3 +108,4 @@ for (var i = 0; i < topbar.length; i++) {
 
 	};
 }
+console.log(topbars.children)
