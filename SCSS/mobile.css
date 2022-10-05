@@ -198,9 +198,7 @@ body .topbar .top-bar-head input {
   padding: 0 10px;
   height: 30px;
   font-size: 16px;
-  border: 4px solid #8dc742;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border: 1px solid;
   outline: none;
   color: rgb(195, 195, 195);
 }
@@ -218,8 +216,6 @@ body .topbar .top-bar-head .i-btn {
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  border-right: 4px solid #8dc742;
-  border-left: 2px solid #8dc742;
   width: 30px;
   height: 30px;
   color: #f3f3f3;
