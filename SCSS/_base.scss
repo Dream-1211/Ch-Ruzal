@@ -8,12 +8,12 @@
 body {
 	$bule-color: #1d99e3;
 	$green-color: rgb(134, 191, 50);
-	$width: 1226px;
-	$width-contain: 1400px;
+	$width: 76.625rem;
+	$width-contain: 87.5rem;
 	overflow-x: hidden;
-	$size: 65px; //qrcode
+	$size: 4.0625rem; //qrcode
 
-	font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+	font: .875rem/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
 		Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
 	color: #333;
 
@@ -25,7 +25,7 @@ body {
 		clear: both;
 	}
 	i {
-		padding: 0 4px;
+		padding: 0 .25rem;
 	}
 	a {
 		color: #f3f3f3;
@@ -38,13 +38,13 @@ body {
 	/*---------------- head部分---------------- */
 	.contain {
 		/* 固定容器的宽度 */
-		width: 1226px;
+		width: 76.625rem;
 		/* 设置容器居中 */
 		margin: 0 auto;
 		box-sizing: border-box; //IE盒模型
 	}
 	.header {
-		border-bottom: 1px solid rgb(220, 220, 220);
+		border-bottom: .0625rem solid rgb(220, 220, 220);
 		
 	}
 	.head {
@@ -54,20 +54,20 @@ body {
 		background-color: #f9f9f9;
 
 		background: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
-		// border: 2px solid;
+		// border: .125rem solid;
 		// border-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50)) 1;
 		// border-image-slice: 1;
 		// border-image-repeat: stretch;
 		.header-footer-footer {
 			/* 固定容器的宽度 */
-			width: 1226px;
+			width: 76.625rem;
 			/* 设置容器居中 */
 			margin: 0 auto;
-			height: 40px;
+			height: 2.5rem;
 			display: flex;
 			justify-content: space-between;
 			a {
-				padding: 11px 40px;
+				padding: .6875rem 2.5rem;
 				&:hover {
 					color: rgb(134, 191, 50);
 					background-color: #f3f3f3;
@@ -79,12 +79,12 @@ body {
 				align-self: center;
 			}
 			.classification {
-				width: 124px;
+				width: 7.75rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				a {
-					padding: 13px 33px;
+					padding: .8125rem 2.0625rem;
 				}
 			}
 			.footer-bar {
@@ -92,9 +92,9 @@ body {
 				justify-content: flex-end;
 				.topbar {
 					li {
-						line-height: 40px;
+						line-height: 2.5rem;
 					}
-					width: 1000px;
+					width: 62.5rem;
 					height: 100%;
 					display: flex;
 					justify-content: center;
@@ -106,15 +106,15 @@ body {
 	.header-box {
 		color: #f3f3f3;
 		.header-top {
-			height: 24px;
+			height: 1.5rem;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			position: relative;
-			font-size: 14px;
+			font-size: .875rem;
 			color: #f3f3f3;
 			.header-left {
-				width: 150px;
+				width: 9.375rem;
 				height: 100%;
 				display: flex;
 				justify-content: space-between;
@@ -127,23 +127,23 @@ body {
 					}
 				}
 				.loc-an-box {
-					height: 64px;
-					line-height: 64px;
+					height: 4rem;
+					line-height: 4rem;
 					cursor: pointer;
 				}
 				.loc-an-box {
 					position: relative;
 					top: 0;
 					left: 0;
-					width: 90px;
-					height: 22px;
+					width: 5.625rem;
+					height: 1.375rem;
 					overflow: hidden;
 					display: block;
 					color: #e6560e;
 				}
 				.loc-mc-box {
-					width: 90px;
-					height: 160px;
+					width: 5.625rem;
+					height: 10rem;
 					overflow: hidden;
 					position: relative;
 					animation: locmoveclipslider 6s infinite ease-out;
@@ -151,27 +151,27 @@ body {
 					.loc-mc-box__text {
 						&:nth-child(1) {
 							position: absolute;
-							top: -6px;
-							left: 5px;
+							top: -0.375rem;
+							left: .3125rem;
 							width: 100%;
-							line-height: 36px;
+							line-height: 2.25rem;
 							text-align: center;
 						}
 						&:nth-child(2) {
 							position: absolute;
-							top: 50px;
-							left: 5px;
+							top: 3.125rem;
+							left: .3125rem;
 							width: 100%;
-							line-height: 36px;
+							line-height: 2.25rem;
 							text-align: center;
 							color: #f3f3f3;
 						}
 						&:nth-child(3) {
 							position: absolute;
-							top: 103px;
-							left: 5px;
+							top: 6.4375rem;
+							left: .3125rem;
 							width: 100%;
-							line-height: 36px;
+							line-height: 2.25rem;
 							text-align: center;
 						}
 					}
@@ -182,30 +182,30 @@ body {
 					}
 
 					5% {
-						transform: translateY(-57px);
+						transform: translateY(-3.5625rem);
 					}
 
 					50% {
-						transform: translateY(-57px);
+						transform: translateY(-3.5625rem);
 					}
 
 					55% {
-						transform: translateY(-110px);
+						transform: translateY(-6.875rem);
 					}
 
 					to {
-						transform: translateY(-110px);
+						transform: translateY(-6.875rem);
 					}
 				}
 				height: 100%;
-				width: 520px;
+				width: 32.5rem;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 			}
 		}
 		.header-body {
-			height: 95px;
+			height: 5.9375rem;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -213,7 +213,7 @@ body {
 				height: 100%;
 			}
 			.header-body-right {
-				width: 270px;
+				width: 16.875rem;
 				display: flex;
 				justify-content: space-between;
 			}
@@ -221,14 +221,14 @@ body {
 				position: relative;
 				.search {
 					box-sizing: border-box;
-					width: 540px;
+					width: 33.75rem;
 					float: left;
-					padding: 0 10px;
-					height: 44px;
-					font-size: 16px;
-					border: 5px solid #8dc742;
-					border-right: 6px solid #fff;
-					border-left: 6px solid #fff;
+					padding: 0 .625rem;
+					height: 2.75rem;
+					font-size: 1rem;
+					border: .3125rem solid #8dc742;
+					border-right: .375rem solid #fff;
+					border-left: .375rem solid #fff;
 					outline: none;
 					color: rgb(195, 195, 195);
 				}
@@ -237,21 +237,21 @@ body {
 						background-color: rgb(117, 167, 43);
 					}
 					color: rgb(195, 195, 195);
-					height: 44px;
-					width: 52px;
+					height: 2.75rem;
+					width: 3.25rem;
 					padding: 0;
 					border: none;
 					background-color: rgb(134, 191, 50);
 					color: #616161;
-					font-size: 16px;
-					border: 1px solid rgb(224, 224, 224);
+					font-size: 1rem;
+					border: .0625rem solid rgb(224, 224, 224);
 					border-left: none;
 				}
 				.camera {
 					color: rgb(200, 200, 200);
 					position: absolute;
-					top: 14px;
-					right: 55px;
+					top: .875rem;
+					right: 3.4375rem;
 				}
 			}
 		}
@@ -259,13 +259,13 @@ body {
 		/*---------------- qrcode---------------- */
 		.qr {
 			position: relative;
-			top: 8px;
-			right: -40px;
+			top: .5rem;
+			right: -2.5rem;
 			height: 100%;
 			p {
 				display: flex;
 				justify-content: center;
-				font-size: 10px;
+				font-size: .625rem;
 			}
 			&:hover {
 				color: #f3f3f3;
@@ -306,11 +306,11 @@ body {
 				&::after {
 					content: "";
 					position: absolute;
-					inset: 8px;
-					width: calc(100% - 15px);
-					height: 2px;
+					inset: .5rem;
+					width: calc(100% - .9375rem);
+					height: .125rem;
 					background: #35fd5c;
-					filter: drop-shadow(0 0 20px #35fd5c) drop-shadow(0 0 60px #35fd5c);
+					filter: drop-shadow(0 0 1.25rem #35fd5c) drop-shadow(0 0 3.75rem #35fd5c);
 					animation: animateLine 4s ease-in-out infinite;
 				}
 			}
@@ -318,10 +318,10 @@ body {
 		@keyframes animate {
 			0%,
 			100% {
-				height: 20px;
+				height: 1.25rem;
 			}
 			50% {
-				height: calc(100% - 20px);
+				height: calc(100% - 1.25rem);
 			}
 		}
 		@keyframes animateLine {
@@ -329,7 +329,7 @@ body {
 				top: 0;
 			}
 			50% {
-				top: calc(100% - 20px);
+				top: calc(100% - 1.25rem);
 			}
 		}
 		@keyframes animateText {
@@ -344,36 +344,36 @@ body {
 	}
 	/*---------------- 脚部---------------- */
 	.footer-head {
-		margin-top: 30px;
+		margin-top: 1.875rem;
 		background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 		.footer-header {
 			/* 固定容器的宽度 */
-			width: 1226px;
+			width: 76.625rem;
 			/* 设置容器居中 */
 			margin: 0 auto;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			height: 200px;
+			height: 12.5rem;
 			.introduce {
 				position: relative;
-				width: 120px;
-				height: 120px;
-				border: 1px solid #f3f3f3;
+				width: 7.5rem;
+				height: 7.5rem;
+				border: .0625rem solid #f3f3f3;
 				border-radius: 50%;
 				i {
 					position: absolute;
-					top: 50px;
-					left: 50px;
+					top: 3.125rem;
+					left: 3.125rem;
 					transform: scale(3.5, 3.5);
 					color: #f3f3f3;
 				}
 				.foolter-header-title {
 					font-family: "myfont";
-					font-size: 22px;
+					font-size: 1.375rem;
 					position: absolute;
-					top: -25px;
-					left: 39px;
+					top: -1.5625rem;
+					left: 2.4375rem;
 					color: #f3f3f3;
 				}
 			}
@@ -383,7 +383,7 @@ body {
 		background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 		.footer-header-body {
 			/* 固定容器的宽度 */
-			width: 1226px;
+			width: 76.625rem;
 			/* 设置容器居中 */
 			margin: 0 auto;
 			display: flex;
@@ -391,45 +391,45 @@ body {
 			align-items: center;
 			span {
 				position: relative;
-				top: -30px;
-				left: 5px;
-				width: 170px;
+				top: -1.875rem;
+				left: .3125rem;
+				width: 10.625rem;
 				color: #f3f3f3;
-				font-size: 14px;
+				font-size: .875rem;
 			}
 		}
 	}
 	.footer-body {
 		background-color: rgb(64, 64, 64);
 		.aboutt {
-			padding-top: 10px;
-			height: 30px;
+			padding-top: .625rem;
+			height: 1.875rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			span {
 				color: #000;
-				margin: 0 18px;
+				margin: 0 1.125rem;
 			}
 		}
 	}
 	.foolter-bootm {
-		padding-top: 10px;
+		padding-top: .625rem;
 		background-color: rgb(64, 64, 64);
 		color: #f3f3f3;
-		font-size: 14px;
+		font-size: .875rem;
 		.infor {
 			text-align: center;
 			li {
-				padding-top: 5px;
+				padding-top: .3125rem;
 			}
 		}
 	}
 	.container {
 		/* 固定容器的宽度 */
-		width: 1200px;
+		width: 75rem;
 		/* 设置容器居中 */
-		margin: 25px auto;
+		margin: 1.5625rem auto;
 		box-sizing: border-box; //IE盒模型
 	}
 	.shar-to {
@@ -437,21 +437,21 @@ body {
 			.shar-one {
 				background-color: #F3F3F3;
 				i {
-					padding: 12px 16px;
+					padding: .75rem 1rem;
 					scale: 1.5;
 					color: #494949;
 				}
 				color: #494949;
 				display: inline-block;
-				width: 46px;
-				height: 60px;
+				width: 2.875rem;
+				height: 3.75rem;
 				position: fixed;
-				top: 580px;
-				right: 2px;
-				font-size: 12px;
-				box-shadow: 0 0 6px rgb(0 0 0 / 30%);
+				top: 36.25rem;
+				right: .125rem;
+				font-size: .75rem;
+				box-shadow: 0 0 .375rem rgb(0 0 0 / 30%);
 				cursor: pointer;
-				border-radius: 6px;
+				border-radius: .375rem;
 				p {
 					display: flex;
 					justify-content: center;
@@ -469,28 +469,28 @@ body {
 			
 			background-color: #F3F3F3;
 			position: fixed;
-			top: 519px;
-			right: 2px;
-			width: 46px;
-			height: 51px;
+			top: 32.4375rem;
+			right: .125rem;
+			width: 2.875rem;
+			height: 3.1875rem;
 			overflow: hidden;
 			display: block;
-			box-shadow: 0 0 6px rgb(0 0 0 / 30%);
+			box-shadow: 0 0 .375rem rgb(0 0 0 / 30%);
 			cursor: pointer;
-			border-radius: 6px;
+			border-radius: .375rem;
 			.shar-two {
 				i {
-					padding: 12px 16px;
+					padding: .75rem 1rem;
 					scale: 1.5;
 					color: #494949;
 					
 				}
 				color: #494949;
 				display: inline-block;
-				width: 46px;
-				height: 60px;
-				font-size: 12px;
-				border-radius: 6px;
+				width: 2.875rem;
+				height: 3.75rem;
+				font-size: .75rem;
+				border-radius: .375rem;
 				p {
 					display: flex;
 					justify-content: center;
@@ -505,19 +505,19 @@ body {
 				animation-delay: 1.5s;
 				&:nth-child(1){
 					position: relative;
-					top: -2px;
-					height: 55px;
+					top: -0.125rem;
+					height: 3.4375rem;
 				}
 				&:nth-child(2){
 					scale: 1.2;
 					position: relative;
-					top: -5px;
-					height: 55px;
-					margin-top: 25px;
+					top: -0.3125rem;
+					height: 3.4375rem;
+					margin-top: 1.5625rem;
 				}
 				&:nth-child(3){
 					position: relative;
-					top: -32px;
+					top: -2rem;
 				}
 			}
 		}
@@ -528,28 +528,28 @@ body {
 				
 				background-color: #F3F3F3;
 				i {
-					padding: 9px 16px;
+					padding: .5625rem 1rem;
 					scale: 1.5;
 					color: #494949;
 				}
 				color: #494949;
 				display: inline-block;
-				width: 46px;
-				height: 64px;
+				width: 2.875rem;
+				height: 4rem;
 				position: fixed;
-				top: 650px;
-				right: 2px;
-				font-size: 12px;
-				box-shadow: 0 0 6px rgb(0 0 0 / 30%);
+				top: 40.625rem;
+				right: .125rem;
+				font-size: .75rem;
+				box-shadow: 0 0 .375rem rgb(0 0 0 / 30%);
 				cursor: pointer;
-				border-radius: 6px;
+				border-radius: .375rem;
 				p {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					width: 35px;
+					width: 2.1875rem;
 					position: absolute;
-					left: 11px;
+					left: .6875rem;
 				}
 				&:hover {
 					background-color: #e3e5e7;
