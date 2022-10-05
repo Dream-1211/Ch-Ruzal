@@ -17,6 +17,13 @@
 .course-list {
 	width: 17.325rem;
 	margin: 0 auto;
+    span{
+        font-weight: bold;
+        color: $bule-color;
+        font-size: 18px;
+        border-top:  2px solid $bule-color;
+        margin: 8px 0;
+    }
 }
 
 html {
@@ -32,7 +39,7 @@ a {
 }
 
 .course-list {
-	height: 9.85rem;
+	height: 12rem;
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -59,6 +66,7 @@ a {
 
 .item-list {
 	width: 18rem;
+    height: 100%;
 	display: flex;
 	overflow: auto;
 }
@@ -67,7 +75,7 @@ a {
 	flex: none;
 	box-sizing: border-box;
 	width: 8rem;
-	height: 8.1rem;
+	height: 8.5rem;
 	padding: 0 0.55rem;
 	background-color: #fff;
 	box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
@@ -76,6 +84,12 @@ a {
 	flex-flow: column;
 	justify-content: space-evenly;
 	margin-right: 0.6rem;
+
+	.cover {
+		img {
+			height: 104px;
+		}
+	}
 }
 
 .item img {
@@ -84,28 +98,48 @@ a {
 }
 
 .item .course-title {
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	color: #24253d;
 }
 
 .item .user-info {
 	display: flex;
 	align-items: center;
+    justify-content: center;
 }
 
 .item .avatar {
-	width: 1.05rem;
-	height: 1.05rem;
+    display: flex;
+    align-items: center;
+	height: 100%;
+    .right_ {
+		float: left;
+		font-size: 22px;
+		font-weight: normal;
+		color: #e40c61;
+	}
 }
 
 .item .nickname {
-	margin-left: 0.375rem;
+   span{
+    width: 24px;
+   }
+	margin-left: 2rem;
 	font-size: 0.6rem;
 	color: #969393;
+	
+	span {
+		display: inline-block;
+		font-size: 12px;
+		padding: 3px 6px;
+		color: rgb(235, 235, 235);
+		background-color: #3a880e;
+		margin-right: 10px;
+	}
 }
 body {
 	.footer-banner {
-        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		background-color: $words-color;
 		bottom: 0;
 		position: fixed;
@@ -119,6 +153,9 @@ body {
 			justify-content: space-around;
 			align-items: center;
 			.footer-btn {
+				&:first-child {
+					color: $bule-color;
+				}
 				color: $huihei-color;
 				display: flex;
 				height: 44px;
@@ -133,8 +170,7 @@ body {
 		}
 	}
 	.topbar {
-        
-        background-color: $words-color;
+		background-color: $words-color;
 		position: fixed;
 		text-align: center;
 		right: 0;
@@ -142,17 +178,18 @@ body {
 		width: 100%;
 		margin: 0 auto;
 		.top-bar-head {
-            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-            align-items: center;
+			align-items: center;
 			.logo {
 				img {
 					width: 90px;
 				}
 			}
 			input {
+				position: relative;
 				box-sizing: border-box;
 				width: 190px;
 				float: left;
@@ -165,79 +202,75 @@ body {
 				outline: none;
 				color: rgb(195, 195, 195);
 			}
-            i{
-                color: $black-color;
-            }
-                .fa-search{
-                    width: 24px;
-                    height: 100%;
-                    border: 5px solid $green-color;
-                    border-left: 4px solid $green-color;
-                }
+			.input-btn {
+				position: relative;
+			}
+			.fa-user {
+				margin-right: 15px;
+			}
+			i {
+				color: $black-color;
+				scale: 0.6;
+			}
+			.i-btn {
+				box-sizing: border-box;
+				position: absolute;
+				right: 0;
+				border-right: 4px solid #8dc742;
+				border-left: 2px solid #8dc742;
+				width: 30px;
+				height: 30px;
+				color: $words-color;
+			}
 			.topbar-footer {
-                p{
-                    width: 63px;
-                    height: 26px;
-                    font-size: 16px;
-                    text-align: center;
-                    font-family: 'myfont';
-                    &:nth-child(1){
-                        border-bottom: 3px solid $bule-color;
-                    }
-                }
+				p {
+					width: 63px;
+					height: 26px;
+					font-size: 16px;
+					text-align: center;
+					font-family: "myfont";
+					&:nth-child(1) {
+						border-bottom: 3px solid $bule-color;
+					}
+				}
 				display: flex;
-                justify-content: space-around;
-                align-items: center;
+				justify-content: space-around;
+				align-items: center;
 			}
 		}
 	}
-    .banner{
-        img{
-            margin-top: 100px;
-        }
+	.banner {
+		img {
+			margin-top: 100px;
+		}
+	}
+	.menu {
+		a {
+			color: $huihei-color;
+		}
+	}
+
+	.menu {
+		height: 18.225rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-content: space-evenly;
         
-    }
-    .menu{
-        a{
-            color: $huihei-color;
+	}
 
+	.menu a {
+		width: 8.175rem;
+		height: 6.6rem;
+		line-height: 2.6rem;
+		color: white;
+		border-radius: 0.25rem;
+        background: url(../img/index/hot/1.png);
+        background-position: -40px 0;
+        i{
+            margin-left: 10px;
         }
-    }
-    
-.menu {
-    height: 8.225rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-evenly
-}
+	}
 
-.menu a {
-    width: 8.175rem;
-    height: 2.6rem;
-    line-height: 2.6rem;
-    color: white;
-    border-radius: .25rem
-}
-
-.menu a i {
-    margin: 0 .5rem 0 .95rem
-}
-
-.menu .course {
-    background-color: $bule-color;
-}
-
-.menu .star {
-    background-color: $green-color
-}
-
-.menu .sub {
-    background-color: #76b02a
-}
-
-.menu .download {
-    background-color: #1bc4fb
-}
-
+	
 }
