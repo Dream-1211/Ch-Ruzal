@@ -1,3 +1,10 @@
+@charset "UTF-8";
+@font-face {
+  /* 指定字体的名字 */
+  font-family: "myfont";
+  /* 服务器中字体的路径 */
+  src: url("../fonts/FZSuHJW.TTF") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,24 +26,6 @@ html {
 
 a {
   text-decoration: none;
-}
-
-.top-bar {
-  display: flex;
-  height: 4.375rem;
-  line-height: 4.375rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.top-bar a {
-  color: #24253d;
-  font-size: 1.25rem;
-}
-
-.top-bar a i {
-  color: #999;
-  font-size: 1rem;
 }
 
 .banner img {
@@ -117,6 +106,7 @@ a {
 }
 
 body .footer-banner {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: #f3f3f3;
   bottom: 0;
   position: fixed;
@@ -142,4 +132,95 @@ body .footer-banner .footer-banner-header .footer-btn {
 }
 body .footer-banner .footer-banner-header .footer-btn span {
   font-size: 13px;
+}
+body .topbar {
+  background-color: #f3f3f3;
+  position: fixed;
+  text-align: center;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+body .topbar .top-bar-head {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .topbar .top-bar-head .logo img {
+  width: 90px;
+}
+body .topbar .top-bar-head input {
+  box-sizing: border-box;
+  width: 190px;
+  float: left;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 16px;
+  border: 4px solid #8dc742;
+  border-right: 4px solid #fff;
+  border-left: 4px solid #fff;
+  outline: none;
+  color: rgb(195, 195, 195);
+}
+body .topbar .top-bar-head i {
+  color: #616161;
+}
+body .topbar .top-bar-head .fa-search {
+  width: 24px;
+  height: 100%;
+  border: 5px solid rgb(134, 191, 50);
+  border-left: 4px solid rgb(134, 191, 50);
+}
+body .topbar .top-bar-head .topbar-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .topbar .top-bar-head .topbar-footer p {
+  width: 63px;
+  height: 26px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "myfont";
+}
+body .topbar .top-bar-head .topbar-footer p:nth-child(1) {
+  border-bottom: 3px solid #1d99e3;
+}
+body .banner img {
+  margin-top: 100px;
+}
+body .menu a {
+  color: #434343;
+}
+body .menu {
+  height: 8.225rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+body .menu a {
+  width: 8.175rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  color: white;
+  border-radius: 0.25rem;
+}
+body .menu a i {
+  margin: 0 0.5rem 0 0.95rem;
+}
+body .menu .course {
+  background-color: #1d99e3;
+}
+body .menu .star {
+  background-color: rgb(134, 191, 50);
+}
+body .menu .sub {
+  background-color: #76b02a;
+}
+body .menu .download {
+  background-color: #1bc4fb;
 }/*# sourceMappingURL=mobile.css.map */

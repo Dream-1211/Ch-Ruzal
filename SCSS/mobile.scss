@@ -1,4 +1,10 @@
 @import "./color";
+@font-face {
+	/* 指定字体的名字 */
+	font-family: "myfont";
+	/* 服务器中字体的路径 */
+	src: url("../fonts/FZSuHJW.TTF") format("truetype");
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -21,25 +27,6 @@ html {
 a {
 	text-decoration: none;
 }
-
-.top-bar {
-	display: flex;
-	height: 4.375rem;
-	line-height: 4.375rem;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.top-bar a {
-	color: #24253d;
-	font-size: 1.25rem;
-}
-
-.top-bar a i {
-	color: #999;
-	font-size: 1rem;
-}
-
 .banner img {
 	width: 100%;
 }
@@ -118,30 +105,139 @@ a {
 }
 body {
 	.footer-banner {
-        background-color: $words-color;
-        bottom: 0;
-        position: fixed;
-        text-align: center;
-        right: 0;
-        left: 0;
-        width: 100%;
-        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+		background-color: $words-color;
+		bottom: 0;
+		position: fixed;
+		text-align: center;
+		right: 0;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
 		.footer-banner-header {
 			display: flex;
 			justify-content: space-around;
-            align-items: center;
-            .footer-btn{
-                color: $huihei-color;
-                display: flex;
-                height: 44px;
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-                margin-top: 5px;
-                span{
-                    font-size: 13px;
-                }
-            }
+			align-items: center;
+			.footer-btn {
+				color: $huihei-color;
+				display: flex;
+				height: 44px;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				margin-top: 5px;
+				span {
+					font-size: 13px;
+				}
+			}
 		}
 	}
+	.topbar {
+        
+        background-color: $words-color;
+		position: fixed;
+		text-align: center;
+		right: 0;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+		.top-bar-head {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+            align-items: center;
+			.logo {
+				img {
+					width: 90px;
+				}
+			}
+			input {
+				box-sizing: border-box;
+				width: 190px;
+				float: left;
+				padding: 0 10px;
+				height: 30px;
+				font-size: 16px;
+				border: 4px solid #8dc742;
+				border-right: 4px solid #fff;
+				border-left: 4px solid #fff;
+				outline: none;
+				color: rgb(195, 195, 195);
+			}
+            i{
+                color: $black-color;
+            }
+                .fa-search{
+                    width: 24px;
+                    height: 100%;
+                    border: 5px solid $green-color;
+                    border-left: 4px solid $green-color;
+                }
+			.topbar-footer {
+                p{
+                    width: 63px;
+                    height: 26px;
+                    font-size: 16px;
+                    text-align: center;
+                    font-family: 'myfont';
+                    &:nth-child(1){
+                        border-bottom: 3px solid $bule-color;
+                    }
+                }
+				display: flex;
+                justify-content: space-around;
+                align-items: center;
+			}
+		}
+	}
+    .banner{
+        img{
+            margin-top: 100px;
+        }
+        
+    }
+    .menu{
+        a{
+            color: $huihei-color;
+
+        }
+    }
+    
+.menu {
+    height: 8.225rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly
+}
+
+.menu a {
+    width: 8.175rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    color: white;
+    border-radius: .25rem
+}
+
+.menu a i {
+    margin: 0 .5rem 0 .95rem
+}
+
+.menu .course {
+    background-color: $bule-color;
+}
+
+.menu .star {
+    background-color: $green-color
+}
+
+.menu .sub {
+    background-color: #76b02a
+}
+
+.menu .download {
+    background-color: #1bc4fb
+}
+
 }
