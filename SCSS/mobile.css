@@ -301,13 +301,14 @@ body .header-banner-head .header-banner-body .head-banner-left p {
   font-size: 16px;
 }
 body .header-banner-head .header-banner-body .head-banner-left i {
-  color: #FF6900;
+  color: #ff6900;
+  font-size: 16px;
 }
 body .header-banner-head .header-banner-body .head-banner-left .ad-price {
-  color: #FF6900;
+  color: #ff6900;
 }
 body .header-banner-head .header-banner-body span:last-child {
-  background-color: #FF6900;
+  background-color: #ff6900;
   color: #f3f3f3;
   font-size: 16px;
   font-family: "myfont";
@@ -333,4 +334,46 @@ body .footer-more .footer-head i {
   justify-content: flex-end;
   width: 44px;
   align-items: center;
+}
+body .lovef {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+body .lovef h2 {
+  font-family: "myfont";
+}
+body .lovef p {
+  font-size: 14px;
+}
+body .lovef .lovef_img {
+  width: 300px;
+}
+body .lovef .lovef_img .lovef_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+body .lovef .lovef_img .lovef_imgs img {
+  width: 120px;
+  margin-top: 20px;
+}
+body .lovef .lovef_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "myfont";
+  width: 152px;
+  height: 36px;
+  background-color: #3a880e;
+  border-radius: 46px;
+  line-height: 46px;
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #ffffff;
 }/*# sourceMappingURL=mobile.css.map */
