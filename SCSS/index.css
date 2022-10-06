@@ -120,6 +120,9 @@ body .pointer a {
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 6px;
 }
+body .zixun {
+  display: none;
+}
 body .pointer a:hover,
 body .pointer a.active {
   border-color: rgba(0, 0, 0, 0.4);
