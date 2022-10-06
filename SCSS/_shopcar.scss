@@ -6,6 +6,7 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: $grey-color;
+        color: $black-color;
 	}
 	.infor-shop-car {
 		height: 25px;
@@ -23,6 +24,9 @@
 		justify-content: space-around;
 		align-items: center;
 		color: $huihei-color;
+        h3{
+            font-size: 16px;
+        }
 		.more-shop-car-right {
 			font-size: 14px;
 			width: 70px;
@@ -31,4 +35,40 @@
 			justify-content: space-around;
 		}
 	}
+    .shop-car-body{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey-color;
+        color: $huihei-color;
+        font-size: 16px;
+        span{
+            color: $black-color;
+            height: 19px;
+            padding: 3px 6px;
+            border: 1px solid;
+            font-size: 13px;
+            line-height: 19px;
+        }
+        p{
+            margin: 0 10px;
+            font-size: 14px;
+        }
+    }
+    .more-goods{
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        span{
+            border-top: none;
+            color: $black-color;
+        }
+        p{
+            display: block;
+            margin: 0 10px;
+        }
+    }
 }

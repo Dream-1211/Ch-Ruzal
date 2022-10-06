@@ -616,6 +616,7 @@ body div:hover ul {
   justify-content: space-between;
   align-items: center;
   background-color: #ccc;
+  color: #616161;
 }
 .shop-car-infor .infor-shop-car {
   height: 25px;
@@ -634,10 +635,49 @@ body div:hover ul {
   align-items: center;
   color: #434343;
 }
+.shop-car-infor .more-shop-car h3 {
+  font-size: 16px;
+}
 .shop-car-infor .more-shop-car .more-shop-car-right {
   font-size: 14px;
   width: 70px;
   color: #616161;
   display: flex;
   justify-content: space-around;
+}
+.shop-car-infor .shop-car-body {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: #434343;
+  font-size: 16px;
+}
+.shop-car-infor .shop-car-body span {
+  color: #616161;
+  height: 19px;
+  padding: 3px 6px;
+  border: 1px solid;
+  font-size: 13px;
+  line-height: 19px;
+}
+.shop-car-infor .shop-car-body p {
+  margin: 0 10px;
+  font-size: 14px;
+}
+.shop-car-infor .more-goods {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.shop-car-infor .more-goods span {
+  border-top: none;
+  color: #616161;
+}
+.shop-car-infor .more-goods p {
+  display: block;
+  margin: 0 10px;
 }/*# sourceMappingURL=mixins_mobile.css.map */
