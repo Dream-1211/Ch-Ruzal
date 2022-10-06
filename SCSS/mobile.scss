@@ -143,6 +143,8 @@ body {
 		background-color: $words-color;
 		bottom: 0;
 		position: fixed;
+		
+		z-index: 999;
 		text-align: center;
 		right: 0;
 		left: 0;
@@ -353,13 +355,12 @@ body {
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
-        h2{
-            font-family: 'myfont';
-
-        }
-        p{
-            font-size: 14px;
-        }
+		h2 {
+			font-family: "myfont";
+		}
+		p {
+			font-size: 14px;
+		}
 
 		.lovef_img {
 			width: 300px;
@@ -371,24 +372,80 @@ body {
 				align-content: space-evenly;
 				img {
 					width: 120px;
-                    margin-top: 20px;
+					margin-top: 20px;
 				}
 			}
 		}
-        .lovef_btn{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "myfont";
-            width: 152px;
-            height: 36px;
-            background-color: #3a880e;
-            border-radius: 46px;
-            line-height: 46px;
-            margin-top: 15px;
-            font-size: 16px;
-            letter-spacing: 3px;
-            color: #ffffff;
-        }
+		.lovef_btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: "myfont";
+			width: 152px;
+			height: 36px;
+			background-color: #3a880e;
+			border-radius: 46px;
+			line-height: 46px;
+			margin-top: 15px;
+			font-size: 16px;
+			letter-spacing: 3px;
+			color: #ffffff;
+		}
+	}
+.nolike{
+	color: #999;
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0;
+	span{
+		margin: 20px;
+	}
+}
+	.light-box-head {
+		background-color: $words-color;
+	overflow: auto;
+		width: 373px;
+		height: 135px;
+		margin: 20px auto;
+		border: 1px solid $green-color;
+		border-left: none;
+		border-right: none;
+		overflow: hidden;
+		.light-box {
+			position: relative;
+			z-index: auto;
+			p{
+				font-size: 12px;
+				text-align: center;
+				margin: 10px 0;
+			}
+		width: 2000px;
+		height: 270px;
+		animation: move 20s infinite linear;
+		li {
+			border-bottom: none;
+			float: left;
+			margin: 0 20px;
+			height: auto;
+			padding: 0 8px;
+			border-left: 1px solid $green-color;
+			border-right: 1px solid $green-color;
+			
+			img {
+				width: 100px;
+			}
+		}
+	}
+
+	}
+	
+	/*走马灯动画效果*/
+	@keyframes move {
+		to {
+			transform: translatex(-1400px);
+		}
+	}
+	div:hover ul {
+		animation-play-state: paused;
 	}
 }

@@ -139,11 +139,15 @@ a {
   margin-right: 10px;
 }
 
+body {
+  /*走马灯动画效果*/
+}
 body .footer-banner {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: #f3f3f3;
   bottom: 0;
   position: fixed;
+  z-index: 999;
   text-align: center;
   right: 0;
   left: 0;
@@ -376,4 +380,56 @@ body .lovef .lovef_btn {
   font-size: 16px;
   letter-spacing: 3px;
   color: #ffffff;
+}
+body .nolike {
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+}
+body .nolike span {
+  margin: 20px;
+}
+body .light-box-head {
+  background-color: #f3f3f3;
+  overflow: auto;
+  width: 373px;
+  height: 135px;
+  margin: 20px auto;
+  border: 1px solid rgb(134, 191, 50);
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+}
+body .light-box-head .light-box {
+  position: relative;
+  z-index: auto;
+  width: 2000px;
+  height: 270px;
+  animation: move 20s infinite linear;
+}
+body .light-box-head .light-box p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+body .light-box-head .light-box li {
+  border-bottom: none;
+  float: left;
+  margin: 0 20px;
+  height: auto;
+  padding: 0 8px;
+  border-left: 1px solid rgb(134, 191, 50);
+  border-right: 1px solid rgb(134, 191, 50);
+}
+body .light-box-head .light-box li img {
+  width: 100px;
+}
+@keyframes move {
+  to {
+    transform: translatex(-1400px);
+  }
+}
+body div:hover ul {
+  animation-play-state: paused;
 }/*# sourceMappingURL=mobile.css.map */
