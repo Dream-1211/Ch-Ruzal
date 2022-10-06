@@ -1,1 +1,55 @@
 // 采购
+body {
+	.price-buy {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		background-color: #fff;
+		.buy-head {
+			position: relative;
+			width: 160px;
+			height: 260px;
+			img {
+				width: 150px;
+			}
+			text-align: center;
+			h3 {
+				font-size: 16px;
+			}
+			p {
+				font-size: 12px;
+				color: gray;
+				&:nth-child(4) {
+					color: #eb625c;
+				}
+				margin: 5px 0;
+			}
+			a {
+				display: inline-block;
+				background-color: #eb625c;
+				color: $words-color;
+				padding: 10px 20px;
+			}
+			.shop-quan {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+				right: 0;
+				top: 90px;
+				width: 55px;
+				height: 55px;
+				border-radius: 50px;
+				background-color: #eb625c;
+				position: absolute;
+				p {
+                    width: 50px;
+                    text-align: center;
+					color: $words-color;
+					font-size: 12px;
+                    margin-right: 0;
+				}
+				
+			}
+		}
+	}
+}
