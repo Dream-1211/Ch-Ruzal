@@ -6,17 +6,65 @@ body .guanyuwomen .about {
   text-align: center;
   font-family: "myfont";
 }
-body .guanyuwomen .text {
+body .guanyuwomen .about_contain {
   font-size: 12px;
 }
-body .guanyuwomen .picture-1 img {
-  width: 100px;
-  float: left;
+body .guanyuwomen .flow-famer {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
 }
-body .guanyuwomen .picture-2 img {
-  width: 100px;
-  float: right;
+body .guanyuwomen .flow-famer .print {
+  text-align: center;
 }
+body .guanyuwomen .flow-famer .print p {
+  font-size: 12px;
+  font-family: "myfont";
+  margin-top: 12px;
+}
+body .guanyuwomen .flow-famer .print .print-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #616161;
+}
+body .guanyuwomen .flow-famer .print .print-1 i {
+  scale: 1.2;
+  line-height: 52px;
+}
+body .guanyuwomen .issue {
+  text-align: center;
+  margin-bottom: 48px;
+}
+body .guanyuwomen .issue h3 {
+  margin: 70px 0 48px 0;
+  font-family: "myfont";
+  font-size: 24px;
+  color: #404040;
+}
+body .guanyuwomen .answer {
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+body .guanyuwomen .answer .answer-1 {
+  width: 167px;
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .guanyuwomen .answer .answer-1 .a1-text {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+body .guanyuwomen .answer .answer-1 .a1-text-1 {
+  font-size: 12px;
+  color: #8b8989;
+}
+
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)
