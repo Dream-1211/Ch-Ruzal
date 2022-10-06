@@ -790,6 +790,121 @@ body .more-arr-more .arr-an-more .arr-an:nth-child(2) {
     opacity: 0;
   }
 }
+body .login-regster-box .login-regster {
+  background-color: #f3f3f3;
+  height: 600px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  border: 1px solid red;
+}
+body .login-regster-box .login-regster .login-regster-head {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #434343;
+}
+body .login-regster-box .login-regster .login-regster-head h3 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+body .login-regster-box .login-regster .login-regster-head p {
+  margin-right: 10px;
+}
+body .login-regster-box .login-regster .login-regster-body {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .login-regster-box .login-regster .login-regster-body h2, body .login-regster-box .login-regster .login-regster-body p, body .login-regster-box .login-regster .login-regster-body .login-regster-weixin, body .login-regster-box .login-regster .login-regster-body .login-regster-icon {
+  width: 100%;
+  text-align: center;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-weixin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-weixin p {
+  width: 100px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-weixin i {
+  color: #06c152;
+}
+body .login-regster-box .login-regster .login-regster-body h2 {
+  line-height: 80px;
+  font-size: 30px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a {
+  text-align: center;
+  width: 90px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:nth-child(2) {
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 8px;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:not(body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:first-child) {
+  color: #00965E;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:hover {
+  color: #00784b;
+}
+body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:first-child {
+  color: #434343;
+}
+body .login-regster-box .login-regster .login-regster-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 62px;
+}
+body .login-regster-box .login-regster .login-regster-icon .fa-google {
+  color: #3182F6;
+}
+body .login-regster-box .login-regster .login-regster-icon .fa-github {
+  color: #333333;
+}
+body .login-regster-box .login-regster .login-regster-icon .fa-gitlab {
+  color: #E24329;
+}
+body .login-regster-box .login-regster .login-regster-icon i {
+  font-size: 20px;
+}
+body .login-regster-box .login-regster .login-regster-icon .points-login-regster {
+  font-weight: 600;
+  font-size: 16px;
+  color: #616161;
+  padding: 0 3px;
+}
+body .login-regster-box .login-regster .loginregster-footer {
+  display: flex;
+  line-height: 40px;
+}
+body .login-regster-box .login-regster .loginregster-footer a {
+  color: #616161;
+  display: block;
+  width: auto;
+  margin: 0 5px;
+}
+body .login-regster-box .login-regster .loginregster-footer p {
+  width: auto;
+}
 
 .navigation-right a:nth-child(4) {
   background-color: rgb(227, 226, 226);
