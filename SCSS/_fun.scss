@@ -129,9 +129,6 @@ body {
 		.fa-github {
 			color: #171a1f;
 		}
-		.fa-facebook {
-			color: #077ae9;
-		}
 		a {
 			display: flex;
 			color: $black-color;
@@ -152,6 +149,89 @@ body {
 	.shar-to-two {
 		&:hover .shar-more-more {
 			display: block; /*这里把里面的内容显示出来*/
+		}
+	}
+	.shar-more-more-1 {
+		box-shadow: 0 0 6px rgb(0 0 0 / 30%);
+		background-color: $words-color;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		position: fixed;
+		top: 590px;
+		right: 57px;
+		width: 150px;
+		height: 120px;
+		span {
+			position: fixed;
+
+			top: 600px;
+			right: 35px;
+			border: 11px solid transparent;
+			border-left-color: $words-color;
+		}
+
+		.fa-qq {
+			color: $bule-color;
+		}
+		.fa-weixin {
+			color: #03d669;
+		}
+		.fa-line {
+			color: #06c152;
+		}
+		.fa-github {
+			color: #171a1f;
+		}
+		a {
+			display: flex;
+			color: $black-color;
+			&:hover {
+				color: $bule-color;
+			}
+		}
+		.shar-more-qq-1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 60px;
+		}
+	}
+	.shar-more-more-1 {
+		display: none;
+	}
+	.shar-to-one {
+		&:hover .shar-more-more-1 {
+			display: block; /*这里把里面的内容显示出来*/
+		}
+	}
+	.more-arr-more {
+		.arr-an-more {
+			display: flex;
+			p {
+				font-size: 20px;
+			}
+			.arr-an {
+				animation: arrow-load 1s infinite;
+			}
+			.arr-an:nth-child(1) {
+				animation-delay: -0.4s;
+			}
+			.arr-an:nth-child(2) {
+				animation-delay: -0.2s;
+			}
+			@keyframes arrow-load {
+				0% {
+					opacity: 0;
+				}
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
 		}
 	}
 }

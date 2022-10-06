@@ -263,11 +263,10 @@ body .fruit-infor-head .fruit-infor h3 {
 body .fruit-infor-head .fruit-infor a {
   display: block;
   margin-top: 15px;
+  color: #434343;
 }
-@keyframes more {
-  0% {
-    display: none;
-  }
+body .fruit-infor-head .fruit-infor a:hover {
+  color: #fff;
 }
 body .fruit-infor-head .fruit-infor:nth-child(1) {
   position: absolute;
@@ -1086,7 +1085,7 @@ body .title .title-head {
 }
 body .title .z-dl-head {
   width: 588px;
-  height: 43px;
+  height: 50px;
   background-color: #ffffff;
   border-radius: 10px 10px 0px 0px;
 }

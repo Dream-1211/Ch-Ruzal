@@ -694,9 +694,6 @@ body .shar-more-more .fa-line {
 body .shar-more-more .fa-github {
   color: #171a1f;
 }
-body .shar-more-more .fa-facebook {
-  color: #077ae9;
-}
 body .shar-more-more a {
   display: flex;
   color: #616161;
@@ -715,6 +712,83 @@ body .shar-more-more {
 }
 body .shar-to-two:hover .shar-more-more {
   display: block; /*这里把里面的内容显示出来*/
+}
+body .shar-more-more-1 {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 590px;
+  right: 57px;
+  width: 150px;
+  height: 120px;
+}
+body .shar-more-more-1 span {
+  position: fixed;
+  top: 600px;
+  right: 35px;
+  border: 11px solid transparent;
+  border-left-color: #f3f3f3;
+}
+body .shar-more-more-1 .fa-qq {
+  color: #1d99e3;
+}
+body .shar-more-more-1 .fa-weixin {
+  color: #03d669;
+}
+body .shar-more-more-1 .fa-line {
+  color: #06c152;
+}
+body .shar-more-more-1 .fa-github {
+  color: #171a1f;
+}
+body .shar-more-more-1 a {
+  display: flex;
+  color: #616161;
+}
+body .shar-more-more-1 a:hover {
+  color: #1d99e3;
+}
+body .shar-more-more-1 .shar-more-qq-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+body .shar-more-more-1 {
+  display: none;
+}
+body .shar-to-one:hover .shar-more-more-1 {
+  display: block; /*这里把里面的内容显示出来*/
+}
+body .more-arr-more .arr-an-more {
+  display: flex;
+}
+body .more-arr-more .arr-an-more p {
+  font-size: 20px;
+}
+body .more-arr-more .arr-an-more .arr-an {
+  animation: arrow-load 1s infinite;
+}
+body .more-arr-more .arr-an-more .arr-an:nth-child(1) {
+  animation-delay: -0.4s;
+}
+body .more-arr-more .arr-an-more .arr-an:nth-child(2) {
+  animation-delay: -0.2s;
+}
+@keyframes arrow-load {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .navigation-right a:nth-child(4) {

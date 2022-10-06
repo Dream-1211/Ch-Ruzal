@@ -1,3 +1,4 @@
+@import'./color';
 body {
 	$bule-color: #1d99e3;
 	$green-color: rgb(134, 191, 50);
@@ -282,10 +283,9 @@ body {
 			a {
 				display: block;
 				margin-top: 15px;
-				@keyframes more {
-					0% {
-						display: none;
-					}
+				color: $huihei-color;
+				&:hover{
+					color: #fff;
 				}
 			}
 			&:nth-child(1) {
@@ -1123,7 +1123,7 @@ body {
 	}
 	.title .z-dl-head {
 		width: 588px;
-		height: 43px;
+		height: 50px;
 		background-color: #ffffff;
 		border-radius: 10px 10px 0px 0px;
 	}
