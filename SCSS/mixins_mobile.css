@@ -3,6 +3,7 @@ body .guanyuwomen .image img {
   width: 373px;
 }
 body .guanyuwomen .about {
+  margin: 20px 0;
   text-align: center;
   font-family: "myfont";
 }
@@ -123,7 +124,7 @@ body .price-buy {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #F6F6F4;
 }
 body .price-buy .buy-head {
   position: relative;
@@ -618,6 +619,9 @@ body div:hover ul {
   background-color: #ccc;
   color: #616161;
 }
+.shop-car-infor i {
+  margin: 0 15px;
+}
 .shop-car-infor .infor-shop-car {
   height: 25px;
   font-size: 12px;
@@ -644,6 +648,9 @@ body div:hover ul {
   color: #616161;
   display: flex;
   justify-content: space-around;
+}
+.shop-car-infor .more-shop-car .more-shop-car-right i {
+  margin: 0 10px;
 }
 .shop-car-infor .shop-car-body {
   height: 50px;
@@ -680,4 +687,24 @@ body div:hover ul {
 .shop-car-infor .more-goods p {
   display: block;
   margin: 0 10px;
+}
+.shop-car-infor .goods-more-tuijian {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f6f6f4;
+  width: 343px;
+}
+.shop-car-infor .goods-more-tuijian .goods-tuijain-body img {
+  width: 150px;
+}
+.shop-car-infor .goods-more-tuijian .goods-tuijain-body h3 {
+  margin: 8px 0;
+  font-size: 15px;
+}
+.shop-car-infor .goods-more-tuijian .goods-tuijain-body p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #eb625c;
 }/*# sourceMappingURL=mixins_mobile.css.map */
