@@ -96,6 +96,16 @@ form.sign-in-form {
   color: #616161;
 }
 
+.input-field input::-moz-placeholder {
+  color: #616161;
+  font-weight: 500;
+}
+
+.input-field input:-ms-input-placeholder {
+  color: #616161;
+  font-weight: 500;
+}
+
 .input-field input::placeholder {
   color: #616161;
   font-weight: 500;
