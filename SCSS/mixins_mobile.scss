@@ -1,4 +1,7 @@
 @import "./color";
+@import "./mobile-about";
+@import "./reset";
+
 @font-face {
 	/* 指定字体的名字 */
 	font-family: "myfont";
@@ -143,7 +146,7 @@ body {
 		background-color: $words-color;
 		bottom: 0;
 		position: fixed;
-		
+
 		z-index: 999;
 		text-align: center;
 		right: 0;
@@ -174,6 +177,7 @@ body {
 	.topbar {
 		background-color: $words-color;
 		position: fixed;
+		z-index: 999;
 		text-align: center;
 		top: 50px;
 		right: 0;
@@ -281,6 +285,7 @@ body {
 	}
 
 	.header-banner-head {
+		z-index: 999;
 		position: fixed;
 		text-align: center;
 		right: 0;
@@ -392,18 +397,18 @@ body {
 			color: #ffffff;
 		}
 	}
-.nolike{
-	color: #999;
-    text-align: center;
-    font-size: 12px;
-    margin: 20px 0;
-	span{
-		margin: 20px;
+	.nolike {
+		color: #999;
+		text-align: center;
+		font-size: 12px;
+		margin: 20px 0;
+		span {
+			margin: 20px;
+		}
 	}
-}
 	.light-box-head {
 		background-color: $words-color;
-	overflow: auto;
+		overflow: auto;
 		width: 373px;
 		height: 135px;
 		margin: 20px auto;
@@ -414,31 +419,30 @@ body {
 		.light-box {
 			position: relative;
 			z-index: auto;
-			p{
+			p {
 				font-size: 12px;
 				text-align: center;
 				margin: 10px 0;
 			}
-		width: 2000px;
-		height: 270px;
-		animation: move 20s infinite linear;
-		li {
-			border-bottom: none;
-			float: left;
-			margin: 0 20px;
-			height: auto;
-			padding: 0 8px;
-			border-left: 1px solid $green-color;
-			border-right: 1px solid $green-color;
-			
-			img {
-				width: 100px;
+			width: 2000px;
+			height: 270px;
+			animation: move 20s infinite linear;
+			li {
+				border-bottom: none;
+				float: left;
+				margin: 0 20px;
+				height: auto;
+				padding: 0 8px;
+				border-left: 1px solid $green-color;
+				border-right: 1px solid $green-color;
+
+				img {
+					width: 100px;
+				}
 			}
 		}
 	}
 
-	}
-	
 	/*走马灯动画效果*/
 	@keyframes move {
 		to {

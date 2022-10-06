@@ -1,0 +1,32 @@
+
+body {
+	// 关于我们
+	.guanyuwomen {
+		.image {
+			img {
+				width: 373px;
+			}
+		}
+		.about {
+			text-align: center;
+			font-family: "myfont";
+		}
+		.text {
+			font-size: 12px;
+		}
+		.picture-1 {
+			img {
+				width: 100px;
+				float: left;
+			}
+		}
+		.picture-2 {
+			img {
+				width: 100px;
+				float: right;
+			}
+		}
+		.about_contain {
+		}
+	}
+}
