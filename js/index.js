@@ -113,33 +113,42 @@ for (var i = 0; i < topbar.length; i++) {
 }
 
 //页面切换
+var nongye= document.querySelector('#nongye');
+var zixun = document.querySelector('.zixun');
 index.onclick = function () {
 	wangzhanshouye.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";
 	caigoudating.style.display = "none";
-	console.log(this);
+	zixun.style.display = "none";
 };
 aixin.onclick = function () {
 	aixinzhunong.style.display = "block";
 	wangzhanshouye.style.display = "none";
 	guanyuwomen.style.display = "none";
+	zixun.style.display = "none";
 	caigoudating.style.display = "none";
-	console.log(this);
 };
 guanyu.onclick = function () {
 	guanyuwomen.style.display = "block";
 	aixinzhunong.style.display = "none";
 	wangzhanshouye.style.display = "none";
 	caigoudating.style.display = "none";
-	console.log(this);
+	zixun.style.display = "none";
 };
 caigou.onclick = function () {
 	caigoudating.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";
 	wangzhanshouye.style.display = "none";
-	console.log(this);
+	zixun.style.display = "none";
+};
+nongye.onclick = function () {
+	caigoudating.style.display = "none";
+	aixinzhunong.style.display = "none";
+	guanyuwomen.style.display = "none";
+	wangzhanshouye.style.display = "none";
+	zixun.style.display = "block";
 };
 
 // 以下为轮播图js
