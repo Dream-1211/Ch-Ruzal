@@ -150,6 +150,7 @@ body .price-buy .buy-head a {
   background-color: #eb625c;
   color: #f3f3f3;
   padding: 10px 20px;
+  border-radius: 5px;
 }
 body .price-buy .buy-head .shop-quan {
   display: flex;
@@ -606,4 +607,37 @@ body .light-box-head .light-box li img {
 }
 body div:hover ul {
   animation-play-state: paused;
+}
+
+.shop-car-infor .shop-car-infor-head {
+  height: 35px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccc;
+}
+.shop-car-infor .infor-shop-car {
+  height: 25px;
+  font-size: 12px;
+  background-color: #f3f3f3;
+  line-height: 25px;
+}
+.shop-car-infor .more-shop-car {
+  border: 1.5px solid #ccc;
+  border-left: none;
+  border-right: none;
+  height: 45px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #434343;
+}
+.shop-car-infor .more-shop-car .more-shop-car-right {
+  font-size: 14px;
+  width: 70px;
+  color: #616161;
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=mixins_mobile.css.map */

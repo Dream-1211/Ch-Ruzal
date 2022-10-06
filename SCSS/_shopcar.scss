@@ -1,0 +1,34 @@
+.shop-car-infor {
+	.shop-car-infor-head {
+		height: 35px;
+		width: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $grey-color;
+	}
+	.infor-shop-car {
+		height: 25px;
+		font-size: 12px;
+		background-color: $words-color;
+		line-height: 25px;
+	}
+	.more-shop-car {
+		border: 1.5px solid $grey-color;
+		border-left: none;
+		border-right: none;
+		height: 45px;
+		background-color: $words-color;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		color: $huihei-color;
+		.more-shop-car-right {
+			font-size: 14px;
+			width: 70px;
+			color: $black-color;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}
