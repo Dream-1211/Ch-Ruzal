@@ -260,6 +260,11 @@ body .fruit-infor-head .fruit-infor a {
   display: block;
   margin-top: 15px;
 }
+@-webkit-keyframes more {
+  0% {
+    display: none;
+  }
+}
 @keyframes more {
   0% {
     display: none;
@@ -965,7 +970,8 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;

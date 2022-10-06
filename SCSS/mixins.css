@@ -141,8 +141,10 @@ body .header-box .header-top .header-right .loc-mc-box {
   height: 160px;
   overflow: hidden;
   position: relative;
-  animation: locmoveclipslider 6s infinite ease-out;
-  animation-delay: 1s;
+  -webkit-animation: locmoveclipslider 6s infinite ease-out;
+          animation: locmoveclipslider 6s infinite ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 body .header-box .header-top .header-right .loc-mc-box .loc-mc-box__text:nth-child(1) {
   position: absolute;
@@ -168,6 +170,23 @@ body .header-box .header-top .header-right .loc-mc-box .loc-mc-box__text:nth-chi
   width: 100%;
   line-height: 36px;
   text-align: center;
+}
+@-webkit-keyframes locmoveclipslider {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-57px);
+  }
+  50% {
+    transform: translateY(-57px);
+  }
+  55% {
+    transform: translateY(-110px);
+  }
+  to {
+    transform: translateY(-110px);
+  }
 }
 @keyframes locmoveclipslider {
   0% {
@@ -263,7 +282,8 @@ body .header-box .scan .broder {
   background: url(../img/Qrcode/border.png);
   background-size: 65px;
   background-repeat: no-repeat;
-  animation: animateText 2s linear infinite;
+  -webkit-animation: animateText 2s linear infinite;
+          animation: animateText 2s linear infinite;
 }
 body .header-box .scan .qrcode {
   position: relative;
@@ -281,7 +301,8 @@ body .header-box .scan .qrcode::before {
   background: url(../img/Qrcode/QR_Code02.png);
   background-size: 65px;
   overflow: hidden;
-  animation: animate 4s ease-in-out infinite;
+  -webkit-animation: animate 4s ease-in-out infinite;
+          animation: animate 4s ease-in-out infinite;
 }
 body .header-box .scan .qrcode::after {
   content: "";
@@ -291,7 +312,16 @@ body .header-box .scan .qrcode::after {
   height: 2px;
   background: #35fd5c;
   filter: drop-shadow(0 0 20px #35fd5c) drop-shadow(0 0 60px #35fd5c);
-  animation: animateLine 4s ease-in-out infinite;
+  -webkit-animation: animateLine 4s ease-in-out infinite;
+          animation: animateLine 4s ease-in-out infinite;
+}
+@-webkit-keyframes animate {
+  0%, 100% {
+    height: 20px;
+  }
+  50% {
+    height: calc(100% - 20px);
+  }
 }
 @keyframes animate {
   0%, 100% {
@@ -301,12 +331,28 @@ body .header-box .scan .qrcode::after {
     height: calc(100% - 20px);
   }
 }
+@-webkit-keyframes animateLine {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 20px);
+  }
+}
 @keyframes animateLine {
   0% {
     top: 0;
   }
   50% {
     top: calc(100% - 20px);
+  }
+}
+@-webkit-keyframes animateText {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 @keyframes animateText {
@@ -458,8 +504,10 @@ body .shar-to .shar-to-two .shar-two {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  animation: locmoveclipslider 6s infinite ease-out;
-  animation-delay: 1.5s;
+  -webkit-animation: locmoveclipslider 6s infinite ease-out;
+          animation: locmoveclipslider 6s infinite ease-out;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 body .shar-to .shar-to-two .shar-two i {
   padding: 12px 16px;
@@ -627,7 +675,6 @@ body .left-menu .more-box-hover {
   border: 1px solid #e0e0e0;
   border-left: 0;
   background: #fff;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
   height: 286px;
   padding: 2px 0;
@@ -695,7 +742,8 @@ body .left-menu .more-box-hover .more-box-head img {
 
 .consulting-text-1 h3 {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   color: #000000;
 }
 
@@ -703,6 +751,9 @@ body .left-menu .more-box-hover .more-box-head img {
   font-size: 14px;
   color: #898b89;
   margin-bottom: 20px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin: -0.25em 0;
 }
 
 .consulting-text-1 a {
@@ -721,6 +772,7 @@ body .left-menu .more-box-hover .more-box-head img {
 
 .geng {
   float: right;
+  margin-top: -50px;
 }
 
 .geng a {
@@ -732,7 +784,6 @@ body .left-menu .more-box-hover .more-box-head img {
 }
 
 .recommend-text-1 {
-  width: 200px;
   height: 40px;
   line-height: 40px;
   font-size: 24px;
@@ -742,6 +793,10 @@ body .left-menu .more-box-hover .more-box-head img {
   background-color: #009900;
   margin-left: 30px;
   z-index: 1;
+}
+
+.recommend-text-1 p {
+  width: 100px;
 }
 
 .recommend-img-2 {
@@ -783,7 +838,7 @@ body .left-menu .more-box-hover .more-box-head img {
   margin: 15px 0;
 }
 
-.headline-images {
+.headline-img {
   display: flex;
 }
 
@@ -792,14 +847,17 @@ body .left-menu .more-box-hover .more-box-head img {
 }
 
 .healine-img-right-img img {
+  width: 250px;
+  height: 100px;
+  margin-top: 35px;
   margin-bottom: 25px;
-  margin-left: 0px;
 }
 
 .headline-img-right-1 {
-  width: 400px;
-  height: 990px;
+  width: 265px;
+  height: 920px;
   margin-top: -115px;
+  margin-left: -104px;
   border: 1px solid black;
 }
 
@@ -852,8 +910,4 @@ body .left-menu .more-box-hover .more-box-head img {
 .right-content-right img {
   margin-top: 15px;
   margin-left: 25px;
-}
-
-.headline {
-  display: flex;
 }/*# sourceMappingURL=mixins.css.map */
