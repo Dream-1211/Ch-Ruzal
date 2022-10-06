@@ -3,7 +3,7 @@ body {
 	.box-qr {
 		background-color: $words-color;
 		position: fixed;
-		
+
 		z-index: 9999;
 		top: 180px;
 		left: 25px;
@@ -108,33 +108,31 @@ body {
 		right: 57px;
 		width: 150px;
 		height: 300px;
-		span{
+		span {
 			position: fixed;
-			
+
 			top: 535px;
 			right: 35px;
-			border:11px solid transparent;
+			border: 11px solid transparent;
 			border-left-color: $words-color;
 		}
-		
-		.fa-qq{
-		
+
+		.fa-qq {
 			color: $bule-color;
 		}
-		.fa-weixin{
-			color: #03D669;
+		.fa-weixin {
+			color: #03d669;
 		}
-		.fa-line{
-			color: #06C152;
+		.fa-line {
+			color: #06c152;
 		}
-		.fa-github{
-			color: #171A1F;
+		.fa-github {
+			color: #171a1f;
 		}
-		.fa-facebook{
-			color: #077AE9;
+		.fa-facebook {
+			color: #077ae9;
 		}
 		a {
-			
 			display: flex;
 			color: $black-color;
 			&:hover {
@@ -146,16 +144,14 @@ body {
 			justify-content: center;
 			align-items: center;
 			height: 60px;
-		} 
+		}
 	}
-	.shar-more-more{
+	.shar-more-more {
 		display: none;
 	}
-	.shar-to-two{
-		
-			&:hover .shar-more-more {
-				display: block; /*这里把里面的内容显示出来*/
-			}
-		
+	.shar-to-two {
+		&:hover .shar-more-more {
+			display: block; /*这里把里面的内容显示出来*/
+		}
 	}
 }
