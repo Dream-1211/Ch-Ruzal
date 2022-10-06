@@ -114,7 +114,7 @@ body {
 		background-color: rgba(0, 0, 0, 0.4);
 		margin-left: 6px;
 	}
-	.zixun{
+	.zixun {
 		display: none;
 	}
 	.pointer a:hover,
@@ -1463,35 +1463,46 @@ body {
 			}
 		}
 	}
-		#colee_right{
-			width: 948px;
-			margin: 0 auto;
-		}	
-		.right-btn{
-			
-			width: 948px;
-			margin: 0 auto;
-		}
-		.table-box{
-			width: 980px;
-			margin: 0 auto;
-			background-color: #FCFCFC;
-			
-			a{
-				color: #616161;
-				background-color: #fcfcfc;
-				
-			}
-			.img-revolving-lantern{
-				border: 1px solid $green-color;
-				padding: 0 20px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, .2)
-			}
-			.img-header-a{
-				a{
-					display: block;
+	#colee_right {
+		width: 948px;
+		margin: 0 auto;
+	}
+	.right-btn {
+		width: 948px;
+		margin: 0 auto;
+	}
+	.table-box {
+		width: 980px;
+		margin: 0 auto;
+		background-color: #fcfcfc;
 
-				}
+		a {
+			color: #616161;
+			background-color: #fcfcfc;
+		}
+		.img-revolving-lantern {
+			border: 1px solid $green-color;
+			padding: 0 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		.img-header-a {
+			a {
+				display: block;
 			}
 		}
+	}
+	/* 轮播图基础设置    不能删！！！*/
+	.img-list {
+		/* 指针样式 */
+		cursor: pointer;
+	}
+	.img-list img {
+		/* 轮播图过度时间 */
+		opacity: 0;
+		transition: all 1.5s;
+	}
+	.img-list .show {
+		/* 轮播图显示时间 */
+		opacity: 1;
+	}
 }

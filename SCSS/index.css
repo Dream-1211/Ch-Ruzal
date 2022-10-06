@@ -26,6 +26,7 @@ body {
   --> */
   /* -------------------------常见问题--------------------------- */
   /* ---------------- 产品导航明细 ------------------ */
+  /* 轮播图基础设置    不能删！！！*/
 }
 body .header-wrapper {
   /* 固定容器的宽度 */
@@ -1425,7 +1426,7 @@ body .right-btn {
 body .table-box {
   width: 980px;
   margin: 0 auto;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
 }
 body .table-box a {
   color: #616161;
@@ -1438,4 +1439,17 @@ body .table-box .img-revolving-lantern {
 }
 body .table-box .img-header-a a {
   display: block;
+}
+body .img-list {
+  /* 指针样式 */
+  cursor: pointer;
+}
+body .img-list img {
+  /* 轮播图过度时间 */
+  opacity: 0;
+  transition: all 1.5s;
+}
+body .img-list .show {
+  /* 轮播图显示时间 */
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
