@@ -582,8 +582,7 @@ body .light-box-head .light-box {
   z-index: auto;
   width: 2000px;
   height: 270px;
-  -webkit-animation: move 20s infinite linear;
-          animation: move 20s infinite linear;
+  animation: move 20s infinite linear;
 }
 body .light-box-head .light-box p {
   font-size: 12px;
@@ -602,19 +601,13 @@ body .light-box-head .light-box li {
 body .light-box-head .light-box li img {
   width: 100px;
 }
-@-webkit-keyframes move {
-  to {
-    transform: translatex(-1400px);
-  }
-}
 @keyframes move {
   to {
     transform: translatex(-1400px);
   }
 }
 body div:hover ul {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .shop-car-infor .shop-car-infor-head {
