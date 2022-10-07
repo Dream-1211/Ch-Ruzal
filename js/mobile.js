@@ -40,4 +40,38 @@
 //     bannerlist[index].className='active';
 //     },2000)
 // })
-var 
+var advertise = document.querySelector(".header-banner-head");
+var topbar = document.querySelector(".topbar");
+var zhuye = document.querySelector(".zhuye");
+var about = document.querySelector(".guanyuwomen");
+var price_buy = document.querySelector(".price-buy-box");
+var shop_car = document.querySelector(".shop-car-infor");
+var footer = document.querySelector(".footer-more");
+var topbar_ele = document.querySelectorAll(".topbar-footer p");
+var ele = [zhuye, price_buy, about];
+price_buy.style.display = "none";
+topbar_ele[0].style.borderBottom = "3px solid #1d99e3";
+// 排他算法
+for (var i = 0; i < topbar_ele.length; i++) {
+	topbar_ele[i].onclick = function () {
+		for (var i = 0; i < topbar_ele.length; i++) {
+			topbar_ele[i].style.borderBottom = "";
+		}
+		this.style.borderBottom = "3px solid #1d99e3";
+	};
+}
+topbar_ele[0].addEventListener("click", function () {
+	ele[0].style.display = "block";
+    ele[1].style.display = "none";
+    ele[2].style.display = "none";
+});
+topbar_ele[1].addEventListener("click", function () {
+	ele[0].style.display = "none";
+    ele[1].style.display = "block";
+    ele[2].style.display = "none";
+});
+topbar_ele[5].addEventListener("click", function () {
+	ele[0].style.display = "none";
+    ele[1].style.display = "none";
+    ele[2].style.display = "block";
+});

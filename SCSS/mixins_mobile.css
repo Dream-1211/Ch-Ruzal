@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body .guanyuwomen {
+  display: none;
+}
 body .guanyuwomen .image img {
   width: 373px;
 }
@@ -418,9 +421,6 @@ body .topbar .top-bar-head .topbar-footer p {
   text-align: center;
   font-family: "myfont";
 }
-body .topbar .top-bar-head .topbar-footer p:nth-child(1) {
-  border-bottom: 3px solid #1d99e3;
-}
 body .banner img {
   margin-top: 160px;
 }
@@ -617,6 +617,9 @@ body div:hover ul {
   animation-play-state: paused;
 }
 
+.shop-car-infor {
+  display: none;
+}
 .shop-car-infor .shop-car-infor-head {
   height: 35px;
   width: auto;
