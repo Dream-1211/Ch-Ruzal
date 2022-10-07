@@ -113,8 +113,8 @@ for (var i = 0; i < topbar.length; i++) {
 }
 
 //页面切换
-var nongye= document.querySelector('#nongye');
-var zixun = document.querySelector('.zixun');
+var nongye = document.querySelector("#nongye");
+var zixun = document.querySelector(".zixun");
 index.onclick = function () {
 	wangzhanshouye.style.display = "block";
 	aixinzhunong.style.display = "none";
@@ -152,92 +152,130 @@ nongye.onclick = function () {
 };
 
 // 以下为轮播图js
-var banner=document.querySelector('#banner-1');
-var bannerImg=document.querySelectorAll('.img-list img');
-var bannerlist=document.querySelectorAll('.pointer a');
-var index=0;
+var banner = document.querySelector("#banner-1");
+var bannerImg = document.querySelectorAll(".img-list img");
+var bannerlist = document.querySelectorAll(".pointer a");
+var index = 0;
 //  (1.鼠标不在轮播图区域的时候 轮播图正常播放)
-var t=setInterval(function(){
-    if(index==2){
-        index=0;
-    }else{
-        index++;
-    }
-    for(var n=0;n<=2;n++){
-        bannerImg[n].className='';
-    }
-    bannerImg[index].className='show';
-    for(var n=0;n<=2;n++){
-        bannerlist[n].className='';
-    }
-    bannerlist[index].className='active';
-}, 2000)
+var t = setInterval(function () {
+	if (index == 2) {
+		index = 0;
+	} else {
+		index++;
+	}
+	for (var n = 0; n <= 2; n++) {
+		bannerImg[n].className = "";
+	}
+	bannerImg[index].className = "show";
+	for (var n = 0; n <= 2; n++) {
+		bannerlist[n].className = "";
+	}
+	bannerlist[index].className = "active";
+}, 2000);
 //  (2.鼠标移入轮播图区域 轮播图播放暂停)
-banner.addEventListener('mouseenter',function(){
-    clearInterval(t);
-})
+banner.addEventListener("mouseenter", function () {
+	clearInterval(t);
+});
 //  (3.鼠标移出轮播图区域 轮播图恢复播放)
-banner.addEventListener('mouseleave',function(){
-    t=setInterval(function(){
-        if(index==2){
-        index=0;
-    }else{
-        index++;
-    }
-    for(var n=0;n<=2;n++){
-        bannerImg[n].className='';
-    }
-    bannerImg[index].className='show';
-    for(var n=0;n<=2;n++){
-        bannerlist[n].className='';
-    }
-    bannerlist[index].className='active';
-    },2000)
-})
-var bannerLeft=document.querySelector('#bannerLeft');
-var bannerRight=document.querySelector('#bannerRight');
-bannerLeft.addEventListener('click',function(){
-    if(index==0){
-        index=2;
-    }else{
-        index--;
-    }
-    for(var n=0;n<=2;n++){
-        bannerImg[n].className='';
-    }
-    bannerImg[index].className='show';
-    for(var n=0;n<=2;n++){
-        bannerlist[n].className='';
-    }
-    bannerlist[index].className='active';
-})
-bannerRight.addEventListener('click',function(){
-    if(index==2){
-        index=0;
-    }else{
-        index++;
-    }
-    for(var n=0;n<=2;n++){
-        bannerImg[n].className='';
-    }
-    bannerImg[index].className='show';
-    for(var n=0;n<=2;n++){
-        bannerlist[n].className='';
-    }
-    bannerlist[index].className='active';
-})
+banner.addEventListener("mouseleave", function () {
+	t = setInterval(function () {
+		if (index == 2) {
+			index = 0;
+		} else {
+			index++;
+		}
+		for (var n = 0; n <= 2; n++) {
+			bannerImg[n].className = "";
+		}
+		bannerImg[index].className = "show";
+		for (var n = 0; n <= 2; n++) {
+			bannerlist[n].className = "";
+		}
+		bannerlist[index].className = "active";
+	}, 2000);
+});
+var bannerLeft = document.querySelector("#bannerLeft");
+var bannerRight = document.querySelector("#bannerRight");
+bannerLeft.addEventListener("click", function () {
+	if (index == 0) {
+		index = 2;
+	} else {
+		index--;
+	}
+	for (var n = 0; n <= 2; n++) {
+		bannerImg[n].className = "";
+	}
+	bannerImg[index].className = "show";
+	for (var n = 0; n <= 2; n++) {
+		bannerlist[n].className = "";
+	}
+	bannerlist[index].className = "active";
+});
+bannerRight.addEventListener("click", function () {
+	if (index == 2) {
+		index = 0;
+	} else {
+		index++;
+	}
+	for (var n = 0; n <= 2; n++) {
+		bannerImg[n].className = "";
+	}
+	bannerImg[index].className = "show";
+	for (var n = 0; n <= 2; n++) {
+		bannerlist[n].className = "";
+	}
+	bannerlist[index].className = "active";
+});
 // 鼠标移入左下方导航（小圆点）切换到对应的图片
-for(var n=0;n<=2;n++){
-    bannerlist[n].index=n;
-    bannerlist[n].addEventListener('mouseenter',function(){
-        for(var n=0;n<=2;n++){
-            bannerImg[n].className='';
-        }
-        index=this.index;
-        for(var n=0;n<=2;n++){
-            bannerlist[n].className='';
-        }
-        bannerImg[index].className='show';
-        bannerlist[index].className='active';
-    })
+for (var n = 0; n <= 2; n++) {
+	bannerlist[n].index = n;
+	bannerlist[n].addEventListener("mouseenter", function () {
+		for (var n = 0; n <= 2; n++) {
+			bannerImg[n].className = "";
+		}
+		index = this.index;
+		for (var n = 0; n <= 2; n++) {
+			bannerlist[n].className = "";
+		}
+		bannerImg[index].className = "show";
+		bannerlist[index].className = "active";
+	});
 }
+// 登录显示
+var login = document.querySelector(".header-body-right");
+var login_regster = document.querySelector(".login-regster-box");
+var closed_login = document.querySelector("#closed-login");
+var root_login = document.querySelector("#root-login");
+var login_regster_btn = document.querySelector("#login-regster-btn");
+var title = document.querySelector('.login-regster-head');
+var login_body = document.querySelector(".login-regster-box");
+//拖拽
+// (1) 鼠标按下， 就获得鼠标在盒子内的坐标
+title.addEventListener("mousedown", function (e) {
+	var x = e.pageX - login_body.offsetLeft;
+	var y = e.pageY - login_body.offsetTop;
+	// (2) 鼠标移动的时候，把鼠标在页面中的坐标，减去 鼠标在盒子内的坐标就是模态框的left和top值
+	document.addEventListener("mousemove", move);
+
+	function move(e) {
+		login_body.style.left = e.pageX - x + "px";
+		login_body.style.top = e.pageY - y + "px";
+	}
+	// (3) 鼠标弹起，就让鼠标移动事件移除
+	document.addEventListener("mouseup", function () {
+		document.removeEventListener("mousemove", move);
+	});
+});
+
+login.addEventListener("click", function () {
+	//点击后显示登录注册
+	login_regster.style.display = "block";
+});
+closed_login.addEventListener("click", function () {
+	//点击后隐藏登录注册
+	login_regster.style.display = "none";
+});
+root_login.addEventListener("click", function () {
+	login_regster_btn.style.display = "none";
+	login_regster.style.display = "none";
+});

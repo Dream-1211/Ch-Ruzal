@@ -219,6 +219,9 @@ body .header-box .header-body .header-body-right {
   display: flex;
   justify-content: space-between;
 }
+body .header-box .header-body .header-body-right a:hover {
+  color: #1d99e3;
+}
 body .header-box .header-body .search {
   position: relative;
 }
@@ -865,6 +868,7 @@ body .login-regster-box .login-regster {
   transform: translate(-50%, -50%);
 }
 body .login-regster-box .login-regster .login-regster-head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 60px;

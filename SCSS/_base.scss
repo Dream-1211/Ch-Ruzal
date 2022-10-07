@@ -216,6 +216,11 @@ body {
 				width: 270px;
 				display: flex;
 				justify-content: space-between;
+				a{
+					&:hover{
+						color: $bule-color;
+					}
+				}
 			}
 			.search {
 				position: relative;
