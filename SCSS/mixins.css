@@ -790,6 +790,9 @@ body .more-arr-more .arr-an-more .arr-an:nth-child(2) {
     opacity: 0;
   }
 }
+body .login-regster-box {
+  display: none;
+}
 body .login-regster-box .login-regster {
   background-color: #fff;
   height: 550px;
@@ -847,6 +850,9 @@ body .login-regster-box .login-regster .login-regster-body .login-regster-weixin
 body .login-regster-box .login-regster .login-regster-body h2 {
   line-height: 80px;
   font-size: 30px;
+}
+body .login-regster-box .login-regster .login-regster-body img {
+  width: 160px;
 }
 body .login-regster-box .login-regster .login-regster-body .login-regster-body-head {
   display: flex;

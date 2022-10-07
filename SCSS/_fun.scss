@@ -236,6 +236,7 @@ body {
 		}
 	}
 	.login-regster-box{
+		display: none;
 		.login-regster{
 			background-color: $white-color;
 			height: 550px;
@@ -291,6 +292,9 @@ body {
 				h2{
 					line-height: 80px;
 					font-size: 30px;
+				}
+				img{
+					width: 160px;
 				}
 				.login-regster-body-head{
 					display: flex;
