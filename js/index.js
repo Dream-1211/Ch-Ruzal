@@ -248,7 +248,7 @@ var closed_login = document.querySelector("#closed-login");
 var root_login = document.querySelector("#root-login");
 var login_regster_btn = document.querySelector("#login-regster-btn");
 var title = document.querySelector('.login-regster-head');
-var login_body = document.querySelector(".login-regster-box");
+var login_body = document.querySelector(".login-regster");
 //拖拽
 // (1) 鼠标按下， 就获得鼠标在盒子内的坐标
 title.addEventListener("mousedown", function (e) {
