@@ -237,31 +237,37 @@ body {
 	}
 	.login-regster-box{
 		.login-regster{
-			background-color: $words-color;
-			height: 600px;
-			width: 550px;
-			position: absolute;
+			background-color: $white-color;
+			height: 550px;
+			border-radius: 5px;
+			width: 510px;
+			position: fixed;
 			top: 50%;
 			left: 50%;
-			margin: -50px 0 0 -50px;
-			border: 1px solid red;
+			transform: translate(-50%, -50%);
 			.login-regster-head{
-				border: 1px solid red;
 				display: flex;
 				justify-content: space-between;
 				height: 60px;
 				align-items: center;
-				border-bottom: 1px solid $huihei-color;
+				border-bottom: 1px solid $grey-color;
 				h3{
 					margin-left: 10px;
 					font-size: 20px;
 				}
-				p{
+				button{
+					border: none;
+					background-color: $white-color;
 					margin-right: 10px;
+					font-size: 20px;
+					color: $black-color;
+					&:hover{
+						cursor: pointer;
+						color: #404040;
+					}
 				}
 			}
 			.login-regster-body{
-				border: 1px solid red;
 				display: flex;
 				justify-content: center;
 				align-items: center;
