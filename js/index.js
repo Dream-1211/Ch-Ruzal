@@ -138,6 +138,7 @@ guanyu.onclick = function () {
 };
 caigou.onclick = function () {
 	caigoudating.style.display = "block";
+	advert.style.display = "block";
 	aixinzhunong.style.display = "none";
 	guanyuwomen.style.display = "none";
 	wangzhanshouye.style.display = "none";
@@ -227,6 +228,7 @@ bannerRight.addEventListener("click", function () {
 	bannerlist[index].className = "active";
 });
 // 鼠标移入左下方导航（小圆点）切换到对应的图片
+<<<<<<< Updated upstream
 for (var n = 0; n <= 2; n++) {
 	bannerlist[n].index = n;
 	bannerlist[n].addEventListener("mouseenter", function () {
@@ -279,3 +281,29 @@ root_login.addEventListener("click", function () {
 	login_regster_btn.style.display = "none";
 	login_regster.style.display = "none";
 });
+=======
+for(var n=0;n<=2;n++){
+    bannerlist[n].index=n;
+    bannerlist[n].addEventListener('mouseenter',function(){
+        for(var n=0;n<=2;n++){
+            bannerImg[n].className='';
+        }
+        index=this.index;
+        for(var n=0;n<=2;n++){
+            bannerlist[n].className='';
+        }
+        bannerImg[index].className='show';
+        bannerlist[index].className='active';
+    })
+}
+var advert= document.querySelector('.advert');
+var spans = document.querySelector('.span-s');
+spans.onclick = function(){
+	advert.style.display = "none";
+}
+
+// 该效果未实现！！！
+// $(function(){
+// 	$('.advert').stop().slideDown(1000).fadeOut.dadeln(1000);
+// })
+>>>>>>> Stashed changes
