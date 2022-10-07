@@ -34,9 +34,28 @@ html {
 a {
 	text-decoration: none;
 }
-.banner img {
+
+.banneres {
+    padding-top: 150px;
+	width: 375px;
+	height: 140px;
+  }
+.banneres img{
 	width: 100%;
-}
+	overflow: hidden;
+	// opacity: 0;
+  }
+
+// /* 轮播图基础设置    不能删！！！*/
+//   .banneres img{
+// 	/* 轮播图过度时间 */
+// 	opacity: 0;
+// 	transition: all 1.5s;
+//   }
+//   .banneres .show{
+// 	/* 轮播图显示时间 */
+// 	opacity: 1;
+//   }
 
 .course-list {
 	height: 12rem;

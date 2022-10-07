@@ -213,6 +213,17 @@ a {
   text-decoration: none;
 }
 
+.banneres {
+  padding-top: 150px;
+  width: 375px;
+  height: 140px;
+}
+
+.banneres img {
+  width: 100%;
+  overflow: hidden;
+}
+
 .course-list {
   height: 12rem;
   display: flex;
