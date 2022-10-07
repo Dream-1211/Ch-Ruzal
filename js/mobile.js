@@ -48,6 +48,7 @@ var price_buy = document.querySelector(".price-buy-box");
 var shop_car = document.querySelector(".shop-car-infor");
 var footer = document.querySelector(".footer-more");
 var topbar_ele = document.querySelectorAll(".topbar-footer p");
+var topbar_head= document.querySelector(".topabr");
 var ele = [zhuye, price_buy, about];
 price_buy.style.display = "none";
 topbar_ele[0].style.borderBottom = "3px solid #1d99e3";
@@ -60,18 +61,32 @@ for (var i = 0; i < topbar_ele.length; i++) {
 		this.style.borderBottom = "3px solid #1d99e3";
 	};
 }
-topbar_ele[0].addEventListener("click", function () {
+for(var i = 0; i < 3; i++) {
+    ele[i].style.paddingTop = "150px";
+}
+topbar_ele[0].addEventListener("click", () => {
 	ele[0].style.display = "block";
-    ele[1].style.display = "none";
-    ele[2].style.display = "none";
+	ele[1].style.display = "none";
+	ele[2].style.display = "none";
 });
-topbar_ele[1].addEventListener("click", function () {
+topbar_ele[1].addEventListener("click", () => {
 	ele[0].style.display = "none";
-    ele[1].style.display = "block";
-    ele[2].style.display = "none";
+	ele[1].style.display = "block";
+	ele[2].style.display = "none";
 });
-topbar_ele[5].addEventListener("click", function () {
+topbar_ele[5].addEventListener("click", () => {
 	ele[0].style.display = "none";
-    ele[1].style.display = "none";
-    ele[2].style.display = "block";
+	ele[1].style.display = "none";
+	ele[2].style.display = "block";
 });
+// 关闭广告
+var ad_btn = document.querySelector(".closed-btn-1");
+var top_banner_head = document.querySelector(".top-bar-head");
+ad_btn.addEventListener("click", () => {
+    advertise.style.display = "none";
+    topbar.style.cssText = "top: 0"
+    ele[0].style.cssText = "padding-top: 105px"
+    ele[1].style.cssText = "padding-top: 105px"
+    ele[2].style.cssText = "padding-top: 105px"
+});
+

@@ -217,9 +217,8 @@ a {
 }
 
 .banneres {
-  padding-top: 150px;
   width: 375px;
-  height: 140px;
+  height: 110px;
 }
 
 .banneres img {
@@ -478,11 +477,10 @@ body .header-banner-head .header-banner-body .head-banner-left {
   justify-content: space-between;
   align-items: center;
 }
-body .header-banner-head .header-banner-body .head-banner-left span {
+body .header-banner-head .header-banner-body .head-banner-left .closed-btn-1 {
+  padding: 6px;
   scale: 0.7;
-}
-body .header-banner-head .header-banner-body .head-banner-left span {
-  margin: 0 8px;
+  border: none;
 }
 body .header-banner-head .header-banner-body .head-banner-left p {
   font-size: 16px;

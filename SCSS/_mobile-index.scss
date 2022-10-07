@@ -36,9 +36,8 @@ a {
 }
 
 .banneres {
-    padding-top: 150px;
 	width: 375px;
-	height: 140px;
+	height: 110px;
   }
 .banneres img{
 	width: 100%;
@@ -312,14 +311,14 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			.head-banner-left {
-				span {
+				.closed-btn-1 {
+					padding: 6px;
 					scale: 0.7;
+					border: none;
 				}
 				font-weight: 600;
 				color: $black-color;
-				span {
-					margin: 0 8px;
-				}
+				
 				p {
 					font-size: 16px;
 				}
