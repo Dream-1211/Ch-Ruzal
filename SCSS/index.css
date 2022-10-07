@@ -14,6 +14,7 @@ body {
   /* 设置快捷方式中的超链接 */
   /* 设置图标字体 */
   /* 设置左侧的图片 */
+  /* 农业咨询 */
   /* -----------------爱心助农----------------- */
   /* -----------------产品展示----------------- */
   /*------------------------ banenr-------------------- */
@@ -279,6 +280,103 @@ body .fruit-infor-head .fruit-infor:nth-child(2) {
 body .fruit-infor-head .fruit-infor:nth-child(3) {
   position: absolute;
   left: 722px;
+}
+body .far_question {
+  background: url(../img/index/footer/footer.png) no-repeat center;
+  height: 350px;
+}
+body .consulting h2 {
+  background: url(../img/public/leaf1.png) center no-repeat;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+body .news {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+body .news-item {
+  width: 350px;
+  height: 180px;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  border-color: #009900;
+}
+body .ni-icon {
+  width: 41px;
+  height: 41px;
+  font-size: 24px;
+  background: #009900;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 41px;
+  float: left;
+  margin-left: 160px;
+  margin-top: -20px;
+}
+body .ni-img img {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-left: -180px;
+  margin-top: 40px;
+}
+body .nic-text {
+  width: 120px;
+  height: 120px;
+  float: right;
+  margin-right: 60px;
+  margin-top: 15px;
+}
+body .nic-text a {
+  font-size: 12px;
+}
+body .nic-text h3 {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #5e5e5e;
+}
+body .nic-text .nict-title {
+  /*
+  文字显示一行思路
+  1.设置inline-block换行
+  2.强制不换行
+  3.固定高度
+  4.隐藏超出部分
+  5.显示“...”
+
+  display: inline-block;
+  white-space: nowrap;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  */
+  /*
+  文字显示二行思路
+  1.超出的文本隐藏
+  2.溢出用省略号代替
+  3.溢出不换行
+  4.将对象作为弹性伸缩盒子模型显示
+  5.从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+  */
+  width: 160px;
+  word-break: break-all;
+  display: -webkit-box;
+  /* 这个需要组合下面两个属性，表示显示的行数 */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #a5a5a5;
+  margin-bottom: 9px;
+}
+body .nic-text .nict-more {
+  color: #a5a5a5;
 }
 body .lovef {
   margin: 65px auto;
@@ -968,7 +1066,8 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;
