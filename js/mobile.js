@@ -40,3 +40,4 @@
 //     bannerlist[index].className='active';
 //     },2000)
 // })
+var 

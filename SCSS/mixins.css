@@ -809,6 +809,7 @@ body .login-regster-box .login-regster {
   transform: translate(-50%, -50%);
 }
 body .login-regster-box .login-regster .login-regster-head {
+  cursor: move;
   width: 100%;
   display: flex;
   justify-content: space-between;
