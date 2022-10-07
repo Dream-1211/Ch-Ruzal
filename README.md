@@ -86,9 +86,17 @@
 
 ### 贡献者
 
-<a href="https://github.com/mason369"><img style="border-radius:50% !important;height:60px" src="https://avatars.githubusercontent.com/u/93964390?s=96&v=4" /></a>
+感谢以下参与项目的人：
 
-感谢以上人员的参与！
+<a href="https://github.com/liusxs"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101164913?v=4" /></a>
+<a href="https://github.com/LingASDJ"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/70191651?v=4" /></a>
+<a href="https://github.com/mason369"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/93964390?s=96&v=4" /></a>
+<a href="https://github.com/mason369"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101233711?v=4" /></a>
+<a href="https://github.com/zenbing"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/102287712?v=4" /></a>
+<a href="https://github.com/pujiurong"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/102287710?v=4" /></a>
+<a href="https://github.com/xiaokouhan"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101168929?v=4" /></a>
+<a href="https://github.com/YUANYUAN04"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101186294?v=4" /></a>
+
 ### 特别感谢：
 
 [IntelliJ WebStorm](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一款在各方面最大限度地提高开发人员生产力的 IDE，适用于前端平台语言。
@@ -103,7 +111,7 @@
 **当前进度**：
 
 - [x] 任务一
-- [ ] 任务二
-- [ ] 任务三
-- [ ] 任务四
-- [ ] 任务五
+- [x] 任务二
+- [x] 任务三
+- [x] 任务四
+- [x] 任务五
