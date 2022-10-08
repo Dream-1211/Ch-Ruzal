@@ -286,6 +286,7 @@ root_login.addEventListener("click", function () {
 	login_parent.children[0].innerHTML="您好，游客"
 	login_parent.children[0].href="#"
 	login_parent.children[0].className="hello-user"
+	login_parent.className="login-display"
 });
 
 for (var n = 0; n <= 2; n++) {

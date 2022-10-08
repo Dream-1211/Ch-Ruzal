@@ -932,19 +932,21 @@ body .login-regster-box .login-regster .loginregster-footer a {
 body .login-regster-box .login-regster .loginregster-footer p {
   width: auto;
 }
-body .hello-user-box {
-  border-radius: 10px;
-}
 body .hello-user-box .ren {
-  position: relative;
+  z-index: 999999;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 100px;
+  right: 220px;
   width: 300px;
-  height: 400px;
+  height: 420px;
   margin: 0 auto;
   /* background-color: aqua; */
 }
 body .hello-user-box .ren .arr-hello-user {
   position: absolute;
   top: -22px;
+  left: 30px;
   border: 11px solid transparent;
   border-bottom-color: #1d99e3;
 }
@@ -970,10 +972,12 @@ body .hello-user-box .head i {
   margin-top: 35px;
 }
 body .hello-user-box .text {
+  color: #404040;
   width: 300px;
-  height: 20px;
+  height: 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 body .hello-user-box .text span {
   width: 120px;
@@ -983,20 +987,26 @@ body .hello-user-box .text span {
   border-radius: 50px;
 }
 body .hello-user-box .text-z {
+  font-size: 21px;
   width: 300px;
-  height: 20px;
+  height: 45px;
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  align-items: center;
+  color: #EFCD89;
 }
 body .hello-user-box .list {
   width: 300px;
-  height: 100px;
+  height: 200px;
   display: flex;
+  justify-content: flex-start;
 }
 body .hello-user-box .list li {
   list-style: none;
-  margin-bottom: 20px;
+  margin-left: 14px;
+  display: flex;
+  height: 35px;
+  align-items: center;
 }
 body .hello-user-box .list li a {
   text-decoration: none;
@@ -1005,16 +1015,22 @@ body .hello-user-box .list li a {
 body .hello-user-box .s1 {
   width: 20px;
   height: 20px;
-  padding: 2px;
-  background-color: #EFCD89;
-  border-radius: 15%;
+  padding: 0px 6px;
+  background-color: #DCF0FE;
+  color: #1d99e3;
+  border-radius: 19%;
   margin-left: 15px;
 }
 body .hello-user-box .s2 {
-  font-size: 6px;
+  font-size: 13px;
   height: 20px;
   line-height: 20px;
   margin-left: 60px;
+  color: #434343;
+}
+
+.login-display:hover .hello-user-box {
+  display: block;
 }
 
 .navigation-right a:nth-child(4) {

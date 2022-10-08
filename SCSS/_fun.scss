@@ -374,18 +374,22 @@ body {
 		}
 	}
 	.hello-user-box{
-		
-		border-radius: 10px;
-		
+
 		.ren{
-			position: relative;
+			
+		z-index: 999999;
+			background-color:$words-color;
+			position: absolute;
+			top: 100px;
+			right: 220px;
 			width: 300px;
-			height: 400px;
+			height: 420px;
 			margin: 0 auto;
 			/* background-color: aqua; */
 			.arr-hello-user{
 				position: absolute;
 				top: -22px;
+				left: 30px;
 				border: 11px solid transparent;
 				border-bottom-color: $bule-color;
 			}
@@ -412,10 +416,12 @@ body {
 			margin-top: 35px;
 		}
 		.text{
+			color: #404040;
 			width: 300px;
-			height: 20px;
+			height: 60px;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 		}
 		.text span{
 			width: 120px;
@@ -425,20 +431,27 @@ body {
 			border-radius: 50px;
 		}
 		.text-z{
+			font-size: 21px;
 			width: 300px;
-			height: 20px;
+			height: 45px;
 			display: flex;
 			justify-content: space-around;
-			margin-top: 40px;
+			align-items: center;
+			color: #EFCD89;
 		}
 		.list{
 			width: 300px;
-			height: 100px;
+			height: 200px;
 			display: flex;
+			justify-content: flex-start;
+
 		}
 		.list li{
 			list-style: none;
-			margin-bottom: 20px;
+			margin-left: 14px;
+			display: flex;
+			height: 35px;
+			align-items: center;
 		}
 		.list li a{
 			text-decoration: none;
@@ -447,16 +460,25 @@ body {
 		.s1{
 			width: 20px;
 			height: 20px;
-			padding: 2px;
-			background-color: #EFCD89;
-			border-radius: 15%;
+			padding: 0px 6px;
+			background-color: #DCF0FE;
+			color: $bule-color;
+			border-radius: 19%;
 			margin-left: 15px;
 		}
 		.s2{
-			font-size: 6px;
+			font-size: 13px;
 			height: 20px;
 			line-height: 20px;
 			margin-left: 60px;
+			color: $huihei-color;
 		}
+
+	}
+
+}
+.login-display{//js生成类名
+	&:hover .hello-user-box{
+		display: block;
 	}
 }
