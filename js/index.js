@@ -304,6 +304,7 @@ spans.onclick = function(){
 // $(function(){
 // 	$('.advert').stop().slideDown(1000).fadeOut.dadeln(1000);
 // })
+// 搜索框焦点显示
 var search_btn= document.querySelector(".search-btn");
 var search = document.querySelector('.search-input');
 search.onfocus = function(){
@@ -324,3 +325,13 @@ search.onblur = function(){
 	this.style.borderLeft="6px solid #fff"
 	this.style.borderRight="6px solid #fff"
 }
+// 点击后返回显示消失
+var return_top_btn = document.querySelector('.shar-to-three')
+document.addEventListener("scroll", function(){
+	console.log(window.pageYOffset)
+	if(window.pageYOffset>=200){
+		return_top_btn.style.display="block"
+	}else{
+		return_top_btn.style.display="none"
+	}
+})
