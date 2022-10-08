@@ -374,7 +374,7 @@ body {
 		}
 	}
 	.hello-user-box{
-
+		display: none;
 		.ren{
 			
 		z-index: 999999;
@@ -427,7 +427,8 @@ body {
 			width: 120px;
 			height: 20px;
 			padding: 5px;
-			background-color: #EFCD89;
+			background-color: $green-color;
+			color: $words-color; 
 			border-radius: 50px;
 		}
 		.text-z{
@@ -437,7 +438,12 @@ body {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			color: #EFCD89;
+			#login-color{
+				color: $bule-color;
+				&:hover{
+					color: $green-color;
+				}
+			}
 		}
 		.list{
 			width: 300px;

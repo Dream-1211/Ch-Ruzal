@@ -932,6 +932,9 @@ body .login-regster-box .login-regster .loginregster-footer a {
 body .login-regster-box .login-regster .loginregster-footer p {
   width: auto;
 }
+body .hello-user-box {
+  display: none;
+}
 body .hello-user-box .ren {
   z-index: 999999;
   background-color: #f3f3f3;
@@ -983,7 +986,8 @@ body .hello-user-box .text span {
   width: 120px;
   height: 20px;
   padding: 5px;
-  background-color: #EFCD89;
+  background-color: rgb(134, 191, 50);
+  color: #f3f3f3;
   border-radius: 50px;
 }
 body .hello-user-box .text-z {
@@ -993,7 +997,12 @@ body .hello-user-box .text-z {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #EFCD89;
+}
+body .hello-user-box .text-z #login-color {
+  color: #1d99e3;
+}
+body .hello-user-box .text-z #login-color:hover {
+  color: rgb(134, 191, 50);
 }
 body .hello-user-box .list {
   width: 300px;
