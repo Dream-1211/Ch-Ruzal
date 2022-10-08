@@ -228,7 +228,6 @@ bannerRight.addEventListener("click", function () {
 	bannerlist[index].className = "active";
 });
 // 鼠标移入左下方导航（小圆点）切换到对应的图片
-<<<<<<< Updated upstream
 for (var n = 0; n <= 2; n++) {
 	bannerlist[n].index = n;
 	bannerlist[n].addEventListener("mouseenter", function () {
@@ -281,7 +280,6 @@ root_login.addEventListener("click", function () {
 	login_regster_btn.style.display = "none";
 	login_regster.style.display = "none";
 });
-=======
 for(var n=0;n<=2;n++){
     bannerlist[n].index=n;
     bannerlist[n].addEventListener('mouseenter',function(){
@@ -306,4 +304,23 @@ spans.onclick = function(){
 // $(function(){
 // 	$('.advert').stop().slideDown(1000).fadeOut.dadeln(1000);
 // })
->>>>>>> Stashed changes
+var search_btn= document.querySelector(".search-btn");
+var search = document.querySelector('.search-input');
+search.onfocus = function(){
+	if(this.value==='请输入内容'){
+		this.value='';
+	}
+	search_btn.style.backgroundColor="#1d99e3"
+	this.style.borderColor="#1d99e3"
+	this.style.borderLeft="6px solid #fff"
+	this.style.borderRight="6px solid #fff"
+}
+search.onblur = function(){
+	if(this.value===''){
+		this.value="请输入内容"
+	}
+	search_btn.style.backgroundColor="#8dc742"
+	this.style.borderColor="#8dc742"
+	this.style.borderLeft="6px solid #fff"
+	this.style.borderRight="6px solid #fff"
+}

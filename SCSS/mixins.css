@@ -493,6 +493,9 @@ body .shar-to .shar-to-two .shar-two:nth-child(3) {
   position: relative;
   top: -32px;
 }
+body .shar-to .shar-to-three {
+  display: none;
+}
 body .shar-to .shar-to-three .shar-three {
   background-color: #F3F3F3;
   color: #494949;
