@@ -679,7 +679,8 @@ body .shar-more-more {
   top: 520px;
   right: 57px;
   width: 150px;
-  height: 240px;
+  height: 165px;
+  transition: height 0.5s;
 }
 body .shar-more-more span {
   position: fixed;
@@ -711,13 +712,14 @@ body .shar-more-more .shar-more-qq {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 40px;
+  transition: height 0.5s;
 }
 body .shar-more-more {
   display: none;
 }
 body .shar-to-two:hover .shar-more-more {
-  display: block; /*这里把里面的内容显示出来*/
+  display: block;
 }
 body .shar-more-more-1 {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -841,7 +843,10 @@ body .login-regster-box .login-regster .login-regster-body {
   align-items: center;
   flex-wrap: wrap;
 }
-body .login-regster-box .login-regster .login-regster-body h2, body .login-regster-box .login-regster .login-regster-body p, body .login-regster-box .login-regster .login-regster-body .login-regster-weixin, body .login-regster-box .login-regster .login-regster-body .login-regster-icon {
+body .login-regster-box .login-regster .login-regster-body h2,
+body .login-regster-box .login-regster .login-regster-body p,
+body .login-regster-box .login-regster .login-regster-body .login-regster-weixin,
+body .login-regster-box .login-regster .login-regster-body .login-regster-icon {
   width: 100%;
   text-align: center;
 }
@@ -881,7 +886,7 @@ body .login-regster-box .login-regster .login-regster-body .login-regster-body-h
   padding: 0 8px;
 }
 body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:not(body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:first-child) {
-  color: #00965E;
+  color: #00965e;
 }
 body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:hover {
   color: #00784b;
@@ -897,13 +902,13 @@ body .login-regster-box .login-regster .login-regster-icon {
   line-height: 62px;
 }
 body .login-regster-box .login-regster .login-regster-icon .fa-google {
-  color: #3182F6;
+  color: #3182f6;
 }
 body .login-regster-box .login-regster .login-regster-icon .fa-github {
   color: #333333;
 }
 body .login-regster-box .login-regster .login-regster-icon .fa-gitlab {
-  color: #E24329;
+  color: #e24329;
 }
 body .login-regster-box .login-regster .login-regster-icon i {
   font-size: 20px;
@@ -926,6 +931,90 @@ body .login-regster-box .login-regster .loginregster-footer a {
 }
 body .login-regster-box .login-regster .loginregster-footer p {
   width: auto;
+}
+body .hello-user-box {
+  border-radius: 10px;
+}
+body .hello-user-box .ren {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+body .hello-user-box .ren .arr-hello-user {
+  position: absolute;
+  top: -22px;
+  border: 11px solid transparent;
+  border-bottom-color: #1d99e3;
+}
+body .hello-user-box .head {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(155deg, #1d99e3, rgb(134, 191, 50));
+  display: flex;
+}
+body .hello-user-box .head-t {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: lightslategray;
+}
+body .hello-user-box .head i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 35px;
+}
+body .hello-user-box .text {
+  width: 300px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+body .hello-user-box .text span {
+  width: 120px;
+  height: 20px;
+  padding: 5px;
+  background-color: #EFCD89;
+  border-radius: 50px;
+}
+body .hello-user-box .text-z {
+  width: 300px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+body .hello-user-box .list {
+  width: 300px;
+  height: 100px;
+  display: flex;
+}
+body .hello-user-box .list li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+body .hello-user-box .list li a {
+  text-decoration: none;
+  color: #000000;
+}
+body .hello-user-box .s1 {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-color: #EFCD89;
+  border-radius: 15%;
+  margin-left: 15px;
+}
+body .hello-user-box .s2 {
+  font-size: 6px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 60px;
 }
 
 .navigation-right a:nth-child(4) {

@@ -248,7 +248,7 @@ var login_regster = document.querySelector(".login-regster-box");
 var closed_login = document.querySelector("#closed-login");
 var root_login = document.querySelector("#root-login");
 var login_regster_btn = document.querySelector("#login-regster-btn");
-var title = document.querySelector('.login-regster-head');
+var title = document.querySelector(".login-regster-head");
 var login_body = document.querySelector(".login-regster");
 //拖拽
 // (1) 鼠标按下， 就获得鼠标在盒子内的坐标
@@ -279,59 +279,66 @@ closed_login.addEventListener("click", function () {
 root_login.addEventListener("click", function () {
 	login_regster_btn.style.display = "none";
 	login_regster.style.display = "none";
+	var login_parent = login_regster_btn.parentNode;
+	login_parent.removeChild(login_regster_btn);
+	var lili = document.createElement('a');
+	login_parent.insertBefore(lili, login_parent.children[0]);
+	login_parent.children[0].innerHTML="您好，游客"
+	login_parent.children[0].href="#"
+	login_parent.children[0].className="hello-user"
 });
-for(var n=0;n<=2;n++){
-    bannerlist[n].index=n;
-    bannerlist[n].addEventListener('mouseenter',function(){
-        for(var n=0;n<=2;n++){
-            bannerImg[n].className='';
-        }
-        index=this.index;
-        for(var n=0;n<=2;n++){
-            bannerlist[n].className='';
-        }
-        bannerImg[index].className='show';
-        bannerlist[index].className='active';
-    })
+
+for (var n = 0; n <= 2; n++) {
+	bannerlist[n].index = n;
+	bannerlist[n].addEventListener("mouseenter", function () {
+		for (var n = 0; n <= 2; n++) {
+			bannerImg[n].className = "";
+		}
+		index = this.index;
+		for (var n = 0; n <= 2; n++) {
+			bannerlist[n].className = "";
+		}
+		bannerImg[index].className = "show";
+		bannerlist[index].className = "active";
+	});
 }
-var advert= document.querySelector('.advert');
-var spans = document.querySelector('.span-s');
-spans.onclick = function(){
+var advert = document.querySelector(".advert");
+var spans = document.querySelector(".span-s");
+spans.onclick = function () {
 	advert.style.display = "none";
-}
+};
 
 // 该效果未实现！！！
 // $(function(){
 // 	$('.advert').stop().slideDown(1000).fadeOut.dadeln(1000);
 // })
 // 搜索框焦点显示
-var search_btn= document.querySelector(".search-btn");
-var search = document.querySelector('.search-input');
-search.onfocus = function(){
-	if(this.value==='请输入内容'){
-		this.value='';
+var search_btn = document.querySelector(".search-btn");
+var search = document.querySelector(".search-input");
+search.onfocus = function () {
+	if (this.value === "请输入内容") {
+		this.value = "";
 	}
-	search_btn.style.backgroundColor="#1d99e3"
-	this.style.borderColor="#1d99e3"
-	this.style.borderLeft="6px solid #fff"
-	this.style.borderRight="6px solid #fff"
-}
-search.onblur = function(){
-	if(this.value===''){
-		this.value="请输入内容"
+	search_btn.style.backgroundColor = "#1d99e3";
+	this.style.borderColor = "#1d99e3";
+	this.style.borderLeft = "6px solid #fff";
+	this.style.borderRight = "6px solid #fff";
+};
+search.onblur = function () {
+	if (this.value === "") {
+		this.value = "请输入内容";
 	}
-	search_btn.style.backgroundColor="#8dc742"
-	this.style.borderColor="#8dc742"
-	this.style.borderLeft="6px solid #fff"
-	this.style.borderRight="6px solid #fff"
-}
+	search_btn.style.backgroundColor = "#8dc742";
+	this.style.borderColor = "#8dc742";
+	this.style.borderLeft = "6px solid #fff";
+	this.style.borderRight = "6px solid #fff";
+};
 // 点击后返回显示消失
-var return_top_btn = document.querySelector('.shar-to-three')
-document.addEventListener("scroll", function(){
-	console.log(window.pageYOffset)
-	if(window.pageYOffset>=200){
-		return_top_btn.style.display="block"
-	}else{
-		return_top_btn.style.display="none"
+var return_top_btn = document.querySelector(".shar-to-three");
+document.addEventListener("scroll", function () {
+	if (window.pageYOffset >= 200) {
+		return_top_btn.style.display = "block";
+	} else {
+		return_top_btn.style.display = "none";
 	}
-})
+});

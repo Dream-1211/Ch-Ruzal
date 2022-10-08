@@ -107,7 +107,8 @@ body {
 		top: 520px;
 		right: 57px;
 		width: 150px;
-		height: 240px;
+		height: 165px;
+		transition: height 0.5s;
 		span {
 			position: fixed;
 
@@ -140,7 +141,8 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 60px;
+			height: 40px;
+			transition: height .5s;
 		}
 	}
 	.shar-more-more {
@@ -149,7 +151,8 @@ body {
 	.shar-to-two {
 		&:hover .shar-more-more {
 			
-			display: block; /*这里把里面的内容显示出来*/
+			display: block;
+			
 		}
 	}
 	.shar-more-more-1 {
@@ -235,9 +238,9 @@ body {
 			}
 		}
 	}
-	.login-regster-box{
+	.login-regster-box {
 		display: none;
-		.login-regster{
+		.login-regster {
 			z-index: 99999;
 			position: relative;
 			background-color: $white-color;
@@ -248,8 +251,7 @@ body {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			.login-regster-head{
-				
+			.login-regster-head {
 				cursor: move;
 				width: 100%;
 				display: flex;
@@ -257,117 +259,204 @@ body {
 				height: 60px;
 				align-items: center;
 				border-bottom: 1px solid $grey-color;
-				h3{
+				h3 {
 					margin-left: 10px;
 					font-size: 20px;
 				}
-				button{
+				button {
 					border: none;
 					background-color: $white-color;
 					margin-right: 10px;
 					font-size: 20px;
 					color: $black-color;
-					&:hover{
+					&:hover {
 						cursor: pointer;
 						color: #404040;
 					}
 				}
 			}
-			.login-regster-body{
+			.login-regster-body {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				flex-wrap: wrap;
-				h2,p,.login-regster-weixin,.login-regster-icon{
+				h2,
+				p,
+				.login-regster-weixin,
+				.login-regster-icon {
 					width: 100%;
 					text-align: center;
 				}
-				.login-regster-weixin{
-					p{
+				.login-regster-weixin {
+					p {
 						width: 100px;
 					}
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					line-height: 60px;
-					i{
+					i {
 						color: #06c152;
 					}
 				}
-				h2{
+				h2 {
 					line-height: 80px;
 					font-size: 30px;
 				}
-				img{
+				img {
 					width: 160px;
 				}
-				.login-regster-body-head{
+				.login-regster-body-head {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					a{
+					a {
 						text-align: center;
 						width: 90px;
-						&:nth-child(2){
+						&:nth-child(2) {
 							border: 1px solid $grey-color;
-							border-top:none;
-							border-bottom:none;
-							padding:  0 8px;
+							border-top: none;
+							border-bottom: none;
+							padding: 0 8px;
 						}
-						&:not(&:first-child){
-							color: #00965E;
+						&:not(&:first-child) {
+							color: #00965e;
 						}
-						
-						&:hover{
+
+						&:hover {
 							color: #00784b;
 						}
-						&:first-child{
+						&:first-child {
 							color: $huihei-color;
 						}
 					}
-					height: 60px;;
+					height: 60px;
 				}
 			}
-			.login-regster-icon{
+			.login-regster-icon {
 				width: 100%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				line-height: 62px;
-				.fa-google{
-					color: #3182F6;
+				.fa-google {
+					color: #3182f6;
 				}
-				.fa-github{
+				.fa-github {
 					color: #333333;
 				}
-				.fa-gitlab{
-					color: #E24329;
+				.fa-gitlab {
+					color: #e24329;
 				}
-				i{
+				i {
 					font-size: 20px;
 				}
-				.points-login-regster{
+				.points-login-regster {
 					font-weight: 600;
 					font-size: 14px;
 					color: $black-color;
 					padding: 0 3px;
 				}
-
-				
 			}
-			.loginregster-footer{
+			.loginregster-footer {
 				display: flex;
-				a{
+				a {
 					color: $black-color;
 					display: block;
 					width: auto;
 					margin: 0 5px;
 				}
-				p{
+				p {
 					width: auto;
 				}
 				line-height: 40px;
 			}
+		}
+	}
+	.hello-user-box{
+		
+		border-radius: 10px;
+		
+		.ren{
+			position: relative;
+			width: 300px;
+			height: 400px;
+			margin: 0 auto;
+			/* background-color: aqua; */
+			.arr-hello-user{
+				position: absolute;
+				top: -22px;
+				border: 11px solid transparent;
+				border-bottom-color: $bule-color;
+			}
+		}
+		.head{
+			width: 300px;
+			height: 100px;
+			background: linear-gradient(155deg,$bule-color,$green-color);
+			display: flex;
+		}
+		.head-t{
+			width: 60px;
+			height: 60px;
+			border-radius: 50px;
+			margin-top: 20px;
+			margin-left: 20px;
+			background-color: lightslategray;
+		}
+		.head i{
+			width: 20px;
+			height: 20px;
+			display: flex;
+			margin-left: 40px;
+			margin-top: 35px;
+		}
+		.text{
+			width: 300px;
+			height: 20px;
+			display: flex;
+			justify-content: center;
+		}
+		.text span{
+			width: 120px;
+			height: 20px;
+			padding: 5px;
+			background-color: #EFCD89;
+			border-radius: 50px;
+		}
+		.text-z{
+			width: 300px;
+			height: 20px;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+		.list{
+			width: 300px;
+			height: 100px;
+			display: flex;
+		}
+		.list li{
+			list-style: none;
+			margin-bottom: 20px;
+		}
+		.list li a{
+			text-decoration: none;
+			color: #000000;
+		}
+		.s1{
+			width: 20px;
+			height: 20px;
+			padding: 2px;
+			background-color: #EFCD89;
+			border-radius: 15%;
+			margin-left: 15px;
+		}
+		.s2{
+			font-size: 6px;
+			height: 20px;
+			line-height: 20px;
+			margin-left: 60px;
 		}
 	}
 }
