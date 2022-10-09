@@ -390,4 +390,5 @@ window.addEventListener("load", function (e) {
 		this.style.borderLeft = "6px solid #fff";
 		this.style.borderRight = "6px solid #fff";
 	};
+	
 });
