@@ -370,4 +370,23 @@ window.addEventListener("load", function (e) {
 			header_footer.style.width = "";
 		}
 	});
+
+	var search_caigou= document.querySelector(".search-caigou");
+	var search_btn_2= document.querySelector(".search-btn-2");
+	search_caigou.onfocus = function () {
+		if (this.value === "请输入内容") {
+			this.value = "";
+		}
+		this.style.borderColor = "#8dc742";
+		this.style.borderLeft = "6px solid #fff";
+		this.style.borderRight = "6px solid #fff";
+	};
+	search_caigou.onblur = function () {
+		if (this.value === "") {
+			this.value = "请输入内容";
+		}
+		this.style.borderColor = "#1d99e3";
+		this.style.borderLeft = "6px solid #fff";
+		this.style.borderRight = "6px solid #fff";
+	};
 });
