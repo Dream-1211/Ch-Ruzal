@@ -1,5 +1,4 @@
-
-window.addEventListener("load", function () {
+window.onload = function() {
 	var advertise = document.querySelector(".header-banner-head");
 	var topbar = document.querySelector(".topbar");
 	var zhuye = document.querySelector(".zhuye");
@@ -46,15 +45,21 @@ window.addEventListener("load", function () {
 			footer_bar[i].style.color = "";
 		}
 	});
-	// 关闭广告
+	// 关闭广告后
 	var ad_btn = document.querySelector(".closed-btn-1");
 	var top_banner_head = document.querySelector(".top-bar-head");
+	shop_car.style.cssText = "padding-top: 150px";
 	ad_btn.addEventListener("click", () => {
 		advertise.style.display = "none";
-		topbar.style.cssText = "top: 0";
 		ele[0].style.cssText = "padding-top: 105px";
 		ele[1].style.cssText = "padding-top: 105px";
 		ele[2].style.cssText = "padding-top: 105px";
+		shop_car.style.cssText = "padding-top: 105px";
+		topbar.style.cssText = "top: 0";
+		for(var i = 0; i < footer_bar.length; i++) {
+			footer_bar[i].style.color = "";
+		}
+		footer_bar[0].style.color = "#1d99e3";
 	});
 
 	var footer_bar = document.querySelectorAll(".footer-banner-header a");
@@ -67,11 +72,26 @@ window.addEventListener("load", function () {
 			this.style.color = "#1d99e3";
 		};
 	}
+	//购物车点击后
 	footer_bar[1].addEventListener("click", () => {
 		shop_car.style.display = "block";
 		zhuye.style.display = "none";
-		for (var i = 0; i < 3; i++) {
-			topbar_ele[i].style.display = "none";
+		for (var i = 0; i < 6; i++) {
+			topbar_ele[i].style.borderBottom = "";
 		}
+		ele[0].style.display = "none";
+		ele[1].style.display = "none";
+		ele[2].style.display = "none";
 	});
-});
+	//主页点击后
+	footer_bar[0].addEventListener("click", () => {
+		shop_car.style.display = "none";
+		zhuye.style.display = "block";
+		for (var i = 0; i < 6; i++) {
+			topbar_ele[i].style.borderBottom = "";
+		}
+		topbar_ele[0].style.borderBottom = "#1d99e3";
+
+	});
+console.log(topbar_ele[0])
+};
