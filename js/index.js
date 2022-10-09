@@ -156,7 +156,8 @@ window.addEventListener("load", function (e) {
 		aixinzhunong.style.display = "none";
 		guanyuwomen.style.display = "none";
 		wangzhanshouye.style.display = "none";
-		zixun.style.display = "block";search_body.style.display = "block";
+		zixun.style.display = "block";
+		search_body.style.display = "block";
 	};
 
 	// 以下为轮播图js
@@ -371,8 +372,8 @@ window.addEventListener("load", function (e) {
 		}
 	});
 
-	var search_caigou= document.querySelector(".search-caigou");
-	var search_btn_2= document.querySelector(".search-btn-2");
+	var search_caigou = document.querySelector(".search-caigou");
+	var search_btn_2 = document.querySelector(".search-btn-2");
 	search_caigou.onfocus = function () {
 		if (this.value === "请输入内容") {
 			this.value = "";
