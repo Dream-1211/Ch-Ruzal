@@ -142,7 +142,7 @@ body {
 			justify-content: center;
 			align-items: center;
 			height: 40px;
-			transition: height .5s;
+			transition: height 0.5s;
 		}
 	}
 	.shar-more-more {
@@ -150,9 +150,7 @@ body {
 	}
 	.shar-to-two {
 		&:hover .shar-more-more {
-			
 			display: block;
-			
 		}
 	}
 	.shar-more-more-1 {
@@ -373,21 +371,19 @@ body {
 			}
 		}
 	}
-	.hello-user-box{
+	.hello-user-box {
 		display: none;
-		.ren{
-			
-		z-index: 999999;
-			background-color:$words-color;
+		.ren {
+			z-index: 999999;
+			background-color: $words-color;
 			position: absolute;
 			top: 33px;
-    right: -220px;
+			right: -220px;
 			width: 300px;
 			height: 420px;
 			margin: 0 auto;
 			/* background-color: aqua; */
-			.arr-hello-user{
-				
+			.arr-hello-user {
 				position: absolute;
 				top: -22px;
 				left: 30px;
@@ -395,13 +391,13 @@ body {
 				border-bottom-color: $bule-color;
 			}
 		}
-		.head{
+		.head {
 			width: 300px;
 			height: 100px;
-			background: linear-gradient(155deg,$bule-color,$green-color);
+			background: linear-gradient(155deg, $bule-color, $green-color);
 			display: flex;
 		}
-		.head-t{
+		.head-t {
 			width: 60px;
 			height: 60px;
 			border-radius: 50px;
@@ -409,14 +405,14 @@ body {
 			margin-left: 20px;
 			background-color: lightslategray;
 		}
-		.head i{
+		.head i {
 			width: 20px;
 			height: 20px;
 			display: flex;
 			margin-left: 40px;
 			margin-top: 35px;
 		}
-		.text{
+		.text {
 			color: #404040;
 			width: 300px;
 			height: 60px;
@@ -424,82 +420,79 @@ body {
 			justify-content: center;
 			align-items: center;
 		}
-		.text span{
+		.text span {
 			width: 120px;
 			height: 20px;
 			padding: 5px;
 			background-color: $green-color;
-			color: $words-color; 
+			color: $words-color;
 			border-radius: 50px;
 		}
-		.text-z{
+		.text-z {
 			font-size: 21px;
 			width: 300px;
 			height: 45px;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			#login-color{
+			#login-color {
 				color: $bule-color;
-				&:hover{
+				&:hover {
 					color: $green-color;
 				}
 			}
 		}
-		.list{
+		.list {
 			width: 300px;
 			height: 200px;
 			display: flex;
 			justify-content: flex-start;
-
 		}
-		.list li{
+		.list li {
 			list-style: none;
 			margin-left: 14px;
 			display: flex;
 			height: 35px;
 			align-items: center;
 		}
-		.list li a{
+		.list li a {
 			text-decoration: none;
 			color: #000000;
 		}
-		.s1{
+		.s1 {
 			width: 20px;
 			height: 20px;
 			padding: 0px 6px;
-			background-color: #DCF0FE;
+			background-color: #dcf0fe;
 			color: $bule-color;
 			border-radius: 19%;
 			margin-left: 15px;
 		}
-		.s2{
+		.s2 {
 			font-size: 13px;
 			height: 20px;
 			line-height: 20px;
 			margin-left: 60px;
 			color: $huihei-color;
 		}
-
-	}
-
-}
-.login-display{//js生成类名
-	position: relative;
-	&:hover .hello-user-box{
-		display: block;
 	}
 }
-.qr{
+.login-display {
+	//js生成类名
 	position: relative;
-	&:hover .qrcode-qrbox{
+	&:hover .hello-user-box {
 		display: block;
 	}
-	&:hover #arrow-qrcode{
+}
+.qr {
+	position: relative;
+	&:hover .qrcode-qrbox {
 		display: block;
 	}
-	#arrow-qrcode{
-		
+	&:hover #arrow-qrcode {
+		display: block;
+	}
+	#arrow-qrcode {
 		display: none;
 		position: absolute;
 		z-index: 999999999;
@@ -510,9 +503,9 @@ body {
 	}
 }
 
-.qrcode-qrbox{
+.qrcode-qrbox {
 	display: none;
-	.qrcode-box-head{
+	.qrcode-box-head {
 		background-color: $words-color;
 		position: absolute;
 		top: 86px;
@@ -524,43 +517,43 @@ body {
 		height: 120px;
 		width: 250px;
 		border: 1px solid $grey-color;
-		
-		img{
+
+		img {
 			height: 100px;
 		}
-		h3{
+		h3 {
 			color: #666666;
 			font-size: 16px;
 			font-weight: 600;
 		}
-		span{
+		span {
 			color: $green-color;
 			display: block;
 			margin: 10px 0;
 		}
-		.fa-android{
+		.fa-android {
 			color: #06c152;
 		}
-		.fa-apple{
+		.fa-apple {
 			color: #000000;
 		}
-		.icon-qrcode{
+		.icon-qrcode {
 			display: flex;
 			flex-flow: column wrap;
 			width: 130px;
 			color: $black-color;
-			.icon-icon-qrcode{
+			.icon-icon-qrcode {
 				display: flex;
 				justify-content: space-between;
 			}
-			.icon-text-qrcode{
+			.icon-text-qrcode {
 				font-size: 12px;
 				display: flex;
 				justify-content: space-between;
 				width: 130px;
 			}
 		}
-		.infor-qrcode{
+		.infor-qrcode {
 			margin: 0 0 0 8px;
 		}
 	}
