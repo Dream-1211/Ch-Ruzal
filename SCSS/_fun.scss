@@ -488,3 +488,47 @@ body {
 		display: block;
 	}
 }
+
+.qrcode-qrbox{
+	
+	.qrcode-box-head{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 120px;
+		width: 250px;
+		border: 1px solid $grey-color;
+		
+		img{
+			height: 100px;
+		}
+		h3{
+			color: #666666;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		span{
+			color: $green-color;
+			display: block;
+			margin: 10px 0;
+		}
+		.icon-qrcode{
+			display: flex;
+			flex-flow: column wrap;
+			width: 130px;
+			.icon-icon-qrcode{
+				display: flex;
+				justify-content: space-between;
+			}
+			.icon-text-qrcode{
+				font-size: 12px;
+				display: flex;
+				justify-content: space-between;
+				width: 130px;
+			}
+		}
+		.infor-qrcode{
+			margin: 0 0 0 8px;
+		}
+	}
+}

@@ -1042,6 +1042,46 @@ body .hello-user-box .s2 {
   display: block;
 }
 
+.qrcode-qrbox .qrcode-box-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+.qrcode-qrbox .qrcode-box-head img {
+  height: 100px;
+}
+.qrcode-qrbox .qrcode-box-head h3 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 600;
+}
+.qrcode-qrbox .qrcode-box-head span {
+  color: rgb(134, 191, 50);
+  display: block;
+  margin: 10px 0;
+}
+.qrcode-qrbox .qrcode-box-head .icon-qrcode {
+  display: flex;
+  flex-flow: column wrap;
+  width: 130px;
+}
+.qrcode-qrbox .qrcode-box-head .icon-qrcode .icon-icon-qrcode {
+  display: flex;
+  justify-content: space-between;
+}
+.qrcode-qrbox .qrcode-box-head .icon-qrcode .icon-text-qrcode {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+.qrcode-qrbox .qrcode-box-head .infor-qrcode {
+  margin: 0 0 0 8px;
+}
+
 .navigation-right a:nth-child(4) {
   background-color: rgb(227, 226, 226);
   color: #009900;
