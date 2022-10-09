@@ -1042,8 +1042,28 @@ body .hello-user-box .s2 {
   display: block;
 }
 
+.qr {
+  position: relative;
+}
+.qr:hover .qrcode-qrbox {
+  display: block;
+}
+.qr #arrow-qrcode {
+  position: absolute;
+  z-index: 999999999;
+  top: 66px;
+  right: 23px;
+  border: 11px solid transparent;
+  border-bottom-color: #f3f3f3;
+}
+
 .qrcode-qrbox .qrcode-box-head {
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 86px;
+  right: -70px;
   display: flex;
+  z-index: 99999999;
   justify-content: center;
   align-items: center;
   height: 120px;
@@ -1063,10 +1083,17 @@ body .hello-user-box .s2 {
   display: block;
   margin: 10px 0;
 }
+.qrcode-qrbox .qrcode-box-head .fa-android {
+  color: #06c152;
+}
+.qrcode-qrbox .qrcode-box-head .fa-apple {
+  color: #000000;
+}
 .qrcode-qrbox .qrcode-box-head .icon-qrcode {
   display: flex;
   flex-flow: column wrap;
   width: 130px;
+  color: #616161;
 }
 .qrcode-qrbox .qrcode-box-head .icon-qrcode .icon-icon-qrcode {
   display: flex;

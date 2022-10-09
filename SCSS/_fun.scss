@@ -488,13 +488,31 @@ body {
 		display: block;
 	}
 }
-
+.qr{
+	position: relative;
+	&:hover .qrcode-qrbox{
+		display: block;
+	}
+	#arrow-qrcode{
+		position: absolute;
+		z-index: 999999999;
+		top: 66px;
+		right: 23px;
+		border: 11px solid transparent;
+		border-bottom-color: $words-color;
+	}
+}
 .qrcode-qrbox{
-	
 	.qrcode-box-head{
+		background-color: $words-color;
+		position: absolute;
+		top: 86px;
+		right: -70px;
 		display: flex;
+		z-index: 99999999;
 		justify-content: center;
 		align-items: center;
+		
 		height: 120px;
 		width: 250px;
 		border: 1px solid $grey-color;
@@ -512,10 +530,17 @@ body {
 			display: block;
 			margin: 10px 0;
 		}
+		.fa-android{
+			color: #06c152;
+		}
+		.fa-apple{
+			color: #000000;
+		}
 		.icon-qrcode{
 			display: flex;
 			flex-flow: column wrap;
 			width: 130px;
+			color: $black-color;
 			.icon-icon-qrcode{
 				display: flex;
 				justify-content: space-between;
