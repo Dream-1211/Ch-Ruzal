@@ -343,3 +343,23 @@ document.addEventListener("scroll", function () {
 		return_top_btn.style.display = "none";
 	}
 });
+
+// 滑动后固定导航栏
+var header_footer = document.querySelector(".header-footer")
+var header_box = document.querySelector(".header-box");
+
+document.addEventListener("scroll", function () {
+	if (window.pageYOffset >= 95) {
+		header_footer.style.position="fixed";
+		header_footer.style.top="0";
+		header_footer.style.zIndex="9999999";
+		header_box.style.height="42px"
+		header_footer.style.width="100%"
+	} else {
+		header_box.style.height=""
+		header_footer.style.position="";
+		header_footer.style.top="";
+		header_footer.style.zIndex="";
+		header_footer.style.width=""
+	}
+})
