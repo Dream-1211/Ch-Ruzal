@@ -7,46 +7,46 @@ body {
 		background-color: #F6F6F4;
 		.buy-head {
 			position: relative;
-			width: 160px;
-			height: 260px;
+			width: 8rem;
+			height: 13rem;
 			img {
-				width: 150px;
+				width: 7.5rem;
 			}
 			text-align: center;
 			h3 {
-				font-size: 16px;
+				font-size: .8rem;
 			}
 			p {
-				font-size: 12px;
+				font-size: .6rem;
 				color: gray;
 				&:nth-child(4) {
 					color: #eb625c;
 				}
-				margin: 5px 0;
+				margin: .25rem 0;
 			}
 			a {
 				display: inline-block;
 				background-color: #eb625c;
 				color: $words-color;
-				padding: 10px 20px;
-				border-radius: 5px;
+				padding: .5rem 1rem;
+				border-radius: .25rem;
 			}
 			.shop-quan {
                 display: flex;
                 justify-content: center;
                 align-items: center;
 				right: 0;
-				top: 130px;
-				width: 158px;
-				height: 20px;
-				border-radius: 50px;
+				top: 6.5rem;
+				width: 7.9rem;
+				height: 1rem;
+				border-radius: 2.5rem;
 				background-color: #eb625c;
 				position: absolute;
 				p {
-                    width: 50px;
+                    width: 2.5rem;
                     text-align: center;
 					color: $words-color;
-					font-size: 12px;
+					font-size: .6rem;
                     margin-right: 0;
 				}
 				

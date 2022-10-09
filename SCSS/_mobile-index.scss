@@ -20,9 +20,9 @@
 	span {
 		font-weight: bold;
 		color: $bule-color;
-		font-size: 18px;
-		border-top: 2px solid $bule-color;
-		margin: 8px 0;
+		font-size: .9rem;
+		border-top: .1rem solid $bule-color;
+		margin: .4rem 0;
 	}
 }
 
@@ -36,8 +36,8 @@ a {
 }
 
 .banneres {
-	width: 375px;
-	height: 110px;
+	width: 18.75rem;
+	height: 5.5rem;
 	margin: 0 auto;
   }
 .banneres img{
@@ -94,7 +94,7 @@ a {
 
 	.cover {
 		img {
-			height: 104px;
+			height: 5.2rem;
 		}
 	}
 }
@@ -121,7 +121,7 @@ a {
 	height: 100%;
 	.right_ {
 		float: left;
-		font-size: 22px;
+		font-size: 1.1rem;
 		font-weight: normal;
 		color: #e40c61;
 	}
@@ -129,7 +129,7 @@ a {
 
 .item .nickname {
 	span {
-		width: 24px;
+		width: 1.2rem;
 	}
 	margin-left: 2rem;
 	font-size: 0.6rem;
@@ -137,16 +137,16 @@ a {
 
 	span {
 		display: inline-block;
-		font-size: 12px;
-		padding: 3px 6px;
+		font-size: .6rem;
+		padding: .15rem .3rem;
 		color: rgb(235, 235, 235);
 		background-color: #3a880e;
-		margin-right: 10px;
+		margin-right: .5rem;
 	}
 }
 body {
 	.footer-banner {
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
 		background-color: $words-color;
 		bottom: 0;
 		position: fixed;
@@ -163,13 +163,13 @@ body {
 			.footer-btn {
 				color: $huihei-color;
 				display: flex;
-				height: 44px;
+				height: 2.2rem;
 				flex-direction: column;
 				text-align: center;
 				align-items: center;
-				margin-top: 5px;
+				margin-top: .25rem;
 				span {
-					font-size: 13px;
+					font-size: .65rem;
 				}
 			}
 		}
@@ -179,31 +179,31 @@ body {
 		position: fixed;
 		z-index: 999;
 		text-align: center;
-		top: 50px;
+		top: 2.5rem;
 		right: 0;
 		left: 0;
 		width: 100%;
 		margin: 0 auto;
 		.top-bar-head {
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
 			.logo {
 				img {
-					width: 90px;
+					width: 4.5rem;
 				}
 			}
 			input {
 				position: relative;
 				box-sizing: border-box;
-				width: 190px;
+				width: 9.5rem;
 				float: left;
-				padding: 0 10px;
-				height: 30px;
-				font-size: 16px;
-				border: 1px solid;
+				padding: 0 .5rem;
+				height: 1.5rem;
+				font-size: .8rem;
+				border: .05rem solid;
 				outline: none;
 				color: rgb(195, 195, 195);
 			}
@@ -211,7 +211,7 @@ body {
 				position: relative;
 			}
 			.fa-user {
-				margin-right: 15px;
+				margin-right: .75rem;
 			}
 			i {
 				color: $black-color;
@@ -221,15 +221,15 @@ body {
 				box-sizing: border-box;
 				position: absolute;
 				right: 0;
-				width: 30px;
-				height: 30px;
+				width: 1.5rem;
+				height: 1.5rem;
 				color: $words-color;
 			}
 			.topbar-footer {
 				p {
-					width: 63px;
-					height: 26px;
-					font-size: 16px;
+					width: 3.15rem;
+					height: 1.3rem;
+					font-size: .8rem;
 					text-align: center;
 					font-family: "myfont";
 					
@@ -242,7 +242,7 @@ body {
 	}
 	.banner {
 		img {
-			margin-top: 160px;
+			margin-top: 8rem;
 		}
 	}
 	.menu {
@@ -264,20 +264,20 @@ body {
 		width: 8.175rem;
 		height: 6.6rem;
 		line-height: 2.6rem;
-		color: $black-color;
+		color: $words-color;
 		border-radius: 0.25rem;
-		background-image: url(../img/index/hot/1.png);
-		background-position: -40px 0;
+		background: url(../img/1.png) ;
+		background-position: -11rem .45rem;
 		i {
-			margin-left: 10px;
+			margin-left: .5rem;
 		}
 		p {
 			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 				sans-serif;
 			line-height: 1rem;
-			width: 65px;
-			font-size: 14px;
-			margin-left: 15px;
+			width: 3.25rem;
+			font-size: .7rem;
+			margin-left: .75rem;
 			font-weight: 600;
 		}
 	}
@@ -291,14 +291,14 @@ body {
 		width: 100%;
 		margin: 0 auto;
 		.header-banner-body {
-			height: 50px;
+			height: 2.5rem;
 			background-color: #eff0f4;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			.head-banner-left {
 				.closed-btn-1 {
-					padding: 6px;
+					padding: .3rem;
 					scale: 0.7;
 					border: none;
 				}
@@ -306,11 +306,11 @@ body {
 				color: $black-color;
 				
 				p {
-					font-size: 16px;
+					font-size: .8rem;
 				}
 				i {
 					color: #ff6900;
-					font-size: 16px;
+					font-size: .8rem;
 				}
 				.ad-price {
 					color: #ff6900;
@@ -323,18 +323,18 @@ body {
 				&:last-child {
 					background-color: #ff6900;
 					color: $words-color;
-					font-size: 16px;
+					font-size: .8rem;
 					font-family: "myfont";
-					border-radius: 12px;
-					padding: 2px 8px;
+					border-radius: .6rem;
+					padding: .1rem .4rem;
 				}
 			}
 		}
 	}
 	.footer-more {
-		margin-bottom: 60px;
-		margin-top: 10px;
-		border: 2px solid $grey-color;
+		margin-bottom: 3rem;
+		margin-top: .5rem;
+		border: .1rem solid $grey-color;
 		border-left: none;
 		border-right: none;
 		.footer-head {
@@ -342,17 +342,17 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 45px;
+			height: 2.25rem;
 			i {
 				display: flex;
 				justify-content: flex-end;
-				width: 44px;
+				width: 2.2rem;
 				align-items: center;
 			}
 		}
 	}
 	.lovef {
-		height: 380px;
+		height: 19rem;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -362,11 +362,11 @@ body {
 			font-family: "myfont";
 		}
 		p {
-			font-size: 14px;
+			font-size: .7rem;
 		}
 
 		.lovef_img {
-			width: 300px;
+			width: 15rem;
 			.lovef_imgs {
 				display: flex;
 				flex-flow: row wrap;
@@ -374,8 +374,8 @@ body {
 				justify-content: space-between;
 				align-content: space-evenly;
 				img {
-					width: 120px;
-					margin-top: 20px;
+					width: 6rem;
+					margin-top: 1rem;
 				}
 			}
 		}
@@ -384,33 +384,33 @@ body {
 			align-items: center;
 			justify-content: center;
 			font-family: "myfont";
-			width: 152px;
-			height: 36px;
+			width: 7.6rem;
+			height: 1.8rem;
 			background-color: #3a880e;
-			border-radius: 46px;
-			line-height: 46px;
-			margin-top: 15px;
-			font-size: 16px;
-			letter-spacing: 3px;
+			border-radius: 2.3rem;
+			line-height: 2.3rem;
+			margin-top: .75rem;
+			font-size: .8rem;
+			letter-spacing: .15rem;
 			color: #ffffff;
 		}
 	}
 	.nolike {
 		color: #999;
 		text-align: center;
-		font-size: 12px;
-		margin: 20px 0;
+		font-size: .6rem;
+		margin: 1rem 0;
 		span {
-			margin: 20px;
+			margin: 1rem;
 		}
 	}
 	.light-box-head {
 		background-color: $words-color;
 		overflow: auto;
-		width: 373px;
-		height: 135px;
-		margin: 20px auto;
-		border: 1px solid $green-color;
+		width: 18.65rem;
+		height: 6.75rem;
+		margin: 1rem auto;
+		border: .05rem solid $green-color;
 		border-left: none;
 		border-right: none;
 		overflow: hidden;
@@ -418,24 +418,24 @@ body {
 			position: relative;
 			z-index: auto;
 			p {
-				font-size: 12px;
+				font-size: .6rem;
 				text-align: center;
-				margin: 10px 0;
+				margin: .5rem 0;
 			}
-			width: 2000px;
-			height: 270px;
+			width: 100rem;
+			height: 13.5rem;
 			animation: move 20s infinite linear;
 			li {
 				border-bottom: none;
 				float: left;
-				margin: 0 20px;
+				margin: 0 1rem;
 				height: auto;
-				padding: 0 8px;
-				border-left: 1px solid $green-color;
-				border-right: 1px solid $green-color;
+				padding: 0 .4rem;
+				border-left: .05rem solid $green-color;
+				border-right: .05rem solid $green-color;
 
 				img {
-					width: 100px;
+					width: 5rem;
 				}
 			}
 		}
@@ -444,7 +444,7 @@ body {
 	/*走马灯动画效果*/
 	@keyframes move {
 		to {
-			transform: translatex(-1400px);
+			transform: translatex(-70rem);
 		}
 	}
 	div:hover ul {

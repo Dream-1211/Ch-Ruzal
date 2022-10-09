@@ -10,18 +10,18 @@ window.onload = function() {
 	var topbar_head = document.querySelector(".topabr");
 	var ele = [zhuye, price_buy, about];
 	price_buy.style.display = "none";
-	topbar_ele[0].style.borderBottom = "3px solid #1d99e3";
+	topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	// 排他算法
 	for (var i = 0; i < topbar_ele.length; i++) {
 		topbar_ele[i].onclick = function () {
 			for (var i = 0; i < topbar_ele.length; i++) {
 				topbar_ele[i].style.borderBottom = "";
 			}
-			this.style.borderBottom = "3px solid #1d99e3";
+			this.style.borderBottom = ".15rem solid #1d99e3";
 		};
 	}
 	for (var i = 0; i < 3; i++) {
-		ele[i].style.paddingTop = "150px";
+		ele[i].style.paddingTop = "7.5rem";
 	}
 	topbar_ele[0].addEventListener("click", () => {
 		ele[0].style.display = "block";
@@ -48,13 +48,13 @@ window.onload = function() {
 	// 关闭广告后
 	var ad_btn = document.querySelector(".closed-btn-1");
 	var top_banner_head = document.querySelector(".top-bar-head");
-	shop_car.style.cssText = "padding-top: 150px";
+	shop_car.style.cssText = "padding-top: 7.5rem";
 	ad_btn.addEventListener("click", () => {
 		advertise.style.display = "none";
-		ele[0].style.cssText = "padding-top: 105px";
-		ele[1].style.cssText = "padding-top: 105px";
-		ele[2].style.cssText = "padding-top: 105px";
-		shop_car.style.cssText = "padding-top: 105px";
+		ele[0].style.cssText = "padding-top: 5.25rem";
+		ele[1].style.cssText = "padding-top: 5.25rem";
+		ele[2].style.cssText = "padding-top: 5.25rem";
+		shop_car.style.cssText = "padding-top: 5.25rem";
 		topbar.style.cssText = "top: 0";
 		for(var i = 0; i < footer_bar.length; i++) {
 			footer_bar[i].style.color = "";

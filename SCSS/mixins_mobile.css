@@ -3,18 +3,18 @@ body .guanyuwomen {
   display: none;
 }
 body .guanyuwomen .image img {
-  width: 373px;
+  width: 18.65rem;
 }
 body .guanyuwomen .about {
-  margin: 20px 0;
+  margin: 1rem 0;
   text-align: center;
   font-family: "myfont";
 }
 body .guanyuwomen .about_contain {
-  font-size: 12px;
+  font-size: 0.6rem;
 }
 body .guanyuwomen .flow-famer {
-  margin: 20px auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-around;
 }
@@ -22,50 +22,50 @@ body .guanyuwomen .flow-famer .print {
   text-align: center;
 }
 body .guanyuwomen .flow-famer .print p {
-  font-size: 12px;
+  font-size: 0.6rem;
   font-family: "myfont";
-  margin-top: 12px;
+  margin-top: 0.6rem;
 }
 body .guanyuwomen .flow-famer .print .print-1 {
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid #616161;
+  border: 0.05rem solid #616161;
 }
 body .guanyuwomen .flow-famer .print .print-1 i {
   scale: 1.2;
-  line-height: 52px;
+  line-height: 2.6rem;
 }
 body .guanyuwomen .issue {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 2.4rem;
 }
 body .guanyuwomen .issue h3 {
-  margin: 70px 0 48px 0;
+  margin: 3.5rem 0 2.4rem 0;
   font-family: "myfont";
-  font-size: 24px;
+  font-size: 1.2rem;
   color: #404040;
 }
 body .guanyuwomen .answer {
-  height: 200px;
-  margin-bottom: 30px;
+  height: 10rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   flex-wrap: wrap;
 }
 body .guanyuwomen .answer .answer-1 {
-  width: 167px;
-  height: 65px;
+  width: 8.35rem;
+  height: 3.25rem;
   display: flex;
   flex-wrap: wrap;
 }
 body .guanyuwomen .answer .answer-1 .a1-text {
-  font-size: 16px;
+  font-size: 0.8rem;
   color: #2e2e2e;
 }
 body .guanyuwomen .answer .answer-1 .a1-text-1 {
-  font-size: 12px;
+  font-size: 0.6rem;
   color: #8b8989;
 }
 
@@ -131,20 +131,20 @@ body .price-buy {
 }
 body .price-buy .buy-head {
   position: relative;
-  width: 160px;
-  height: 260px;
+  width: 8rem;
+  height: 13rem;
   text-align: center;
 }
 body .price-buy .buy-head img {
-  width: 150px;
+  width: 7.5rem;
 }
 body .price-buy .buy-head h3 {
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 body .price-buy .buy-head p {
-  font-size: 12px;
+  font-size: 0.6rem;
   color: gray;
-  margin: 5px 0;
+  margin: 0.25rem 0;
 }
 body .price-buy .buy-head p:nth-child(4) {
   color: #eb625c;
@@ -153,26 +153,26 @@ body .price-buy .buy-head a {
   display: inline-block;
   background-color: #eb625c;
   color: #f3f3f3;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 }
 body .price-buy .buy-head .shop-quan {
   display: flex;
   justify-content: center;
   align-items: center;
   right: 0;
-  top: 130px;
-  width: 158px;
-  height: 20px;
-  border-radius: 50px;
+  top: 6.5rem;
+  width: 7.9rem;
+  height: 1rem;
+  border-radius: 2.5rem;
   background-color: #eb625c;
   position: absolute;
 }
 body .price-buy .buy-head .shop-quan p {
-  width: 50px;
+  width: 2.5rem;
   text-align: center;
   color: #f3f3f3;
-  font-size: 12px;
+  font-size: 0.6rem;
   margin-right: 0;
 }
 
@@ -202,9 +202,9 @@ body .price-buy .buy-head .shop-quan p {
 .course-list span {
   font-weight: bold;
   color: #1d99e3;
-  font-size: 18px;
-  border-top: 2px solid #1d99e3;
-  margin: 8px 0;
+  font-size: 0.9rem;
+  border-top: 0.1rem solid #1d99e3;
+  margin: 0.4rem 0;
 }
 
 html {
@@ -217,8 +217,8 @@ a {
 }
 
 .banneres {
-  width: 375px;
-  height: 110px;
+  width: 18.75rem;
+  height: 5.5rem;
   margin: 0 auto;
 }
 
@@ -275,7 +275,7 @@ a {
   margin-right: 0.6rem;
 }
 .item .cover img {
-  height: 104px;
+  height: 5.2rem;
 }
 
 .item img {
@@ -301,7 +301,7 @@ a {
 }
 .item .avatar .right_ {
   float: left;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: normal;
   color: #e40c61;
 }
@@ -312,22 +312,22 @@ a {
   color: #969393;
 }
 .item .nickname span {
-  width: 24px;
+  width: 1.2rem;
 }
 .item .nickname span {
   display: inline-block;
-  font-size: 12px;
-  padding: 3px 6px;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.3rem;
   color: rgb(235, 235, 235);
   background-color: #3a880e;
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
 body {
   /*走马灯动画效果*/
 }
 body .footer-banner {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   background-color: #f3f3f3;
   bottom: 0;
   position: fixed;
@@ -346,45 +346,45 @@ body .footer-banner .footer-banner-header {
 body .footer-banner .footer-banner-header .footer-btn {
   color: #434343;
   display: flex;
-  height: 44px;
+  height: 2.2rem;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 0.25rem;
 }
 body .footer-banner .footer-banner-header .footer-btn span {
-  font-size: 13px;
+  font-size: 0.65rem;
 }
 body .topbar {
   background-color: #f3f3f3;
   position: fixed;
   z-index: 999;
   text-align: center;
-  top: 50px;
+  top: 2.5rem;
   right: 0;
   left: 0;
   width: 100%;
   margin: 0 auto;
 }
 body .topbar .top-bar-head {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 body .topbar .top-bar-head .logo img {
-  width: 90px;
+  width: 4.5rem;
 }
 body .topbar .top-bar-head input {
   position: relative;
   box-sizing: border-box;
-  width: 190px;
+  width: 9.5rem;
   float: left;
-  padding: 0 10px;
-  height: 30px;
-  font-size: 16px;
-  border: 1px solid;
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  border: 0.05rem solid;
   outline: none;
   color: rgb(195, 195, 195);
 }
@@ -392,7 +392,7 @@ body .topbar .top-bar-head .input-btn {
   position: relative;
 }
 body .topbar .top-bar-head .fa-user {
-  margin-right: 15px;
+  margin-right: 0.75rem;
 }
 body .topbar .top-bar-head i {
   color: #616161;
@@ -402,8 +402,8 @@ body .topbar .top-bar-head .i-btn {
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  width: 30px;
-  height: 30px;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #f3f3f3;
 }
 body .topbar .top-bar-head .topbar-footer {
@@ -412,14 +412,14 @@ body .topbar .top-bar-head .topbar-footer {
   align-items: center;
 }
 body .topbar .top-bar-head .topbar-footer p {
-  width: 63px;
-  height: 26px;
-  font-size: 16px;
+  width: 3.15rem;
+  height: 1.3rem;
+  font-size: 0.8rem;
   text-align: center;
   font-family: "myfont";
 }
 body .banner img {
-  margin-top: 160px;
+  margin-top: 8rem;
 }
 body .menu a {
   color: #434343;
@@ -436,20 +436,20 @@ body .menu a {
   width: 8.175rem;
   height: 6.6rem;
   line-height: 2.6rem;
-  color: #616161;
+  color: #f3f3f3;
   border-radius: 0.25rem;
-  background-image: url(../img/index/hot/1.png);
-  background-position: -40px 0;
+  background: url(../img/1.png);
+  background-position: -11rem 0.45rem;
 }
 body .menu a i {
-  margin-left: 10px;
+  margin-left: 0.5rem;
 }
 body .menu a p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1rem;
-  width: 65px;
-  font-size: 14px;
-  margin-left: 15px;
+  width: 3.25rem;
+  font-size: 0.7rem;
+  margin-left: 0.75rem;
   font-weight: 600;
 }
 body .header-banner-head {
@@ -462,7 +462,7 @@ body .header-banner-head {
   margin: 0 auto;
 }
 body .header-banner-head .header-banner-body {
-  height: 50px;
+  height: 2.5rem;
   background-color: #eff0f4;
   display: flex;
   justify-content: space-between;
@@ -476,16 +476,16 @@ body .header-banner-head .header-banner-body .head-banner-left {
   align-items: center;
 }
 body .header-banner-head .header-banner-body .head-banner-left .closed-btn-1 {
-  padding: 6px;
+  padding: 0.3rem;
   scale: 0.7;
   border: none;
 }
 body .header-banner-head .header-banner-body .head-banner-left p {
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 body .header-banner-head .header-banner-body .head-banner-left i {
   color: #ff6900;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 body .header-banner-head .header-banner-body .head-banner-left .ad-price {
   color: #ff6900;
@@ -493,15 +493,15 @@ body .header-banner-head .header-banner-body .head-banner-left .ad-price {
 body .header-banner-head .header-banner-body span:last-child {
   background-color: #ff6900;
   color: #f3f3f3;
-  font-size: 16px;
+  font-size: 0.8rem;
   font-family: "myfont";
-  border-radius: 12px;
-  padding: 2px 8px;
+  border-radius: 0.6rem;
+  padding: 0.1rem 0.4rem;
 }
 body .footer-more {
-  margin-bottom: 60px;
-  margin-top: 10px;
-  border: 2px solid #ccc;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  border: 0.1rem solid #ccc;
   border-left: none;
   border-right: none;
 }
@@ -510,16 +510,16 @@ body .footer-more .footer-head {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45px;
+  height: 2.25rem;
 }
 body .footer-more .footer-head i {
   display: flex;
   justify-content: flex-end;
-  width: 44px;
+  width: 2.2rem;
   align-items: center;
 }
 body .lovef {
-  height: 380px;
+  height: 19rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -530,10 +530,10 @@ body .lovef h2 {
   font-family: "myfont";
 }
 body .lovef p {
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 body .lovef .lovef_img {
-  width: 300px;
+  width: 15rem;
 }
 body .lovef .lovef_img .lovef_imgs {
   display: flex;
@@ -542,40 +542,40 @@ body .lovef .lovef_img .lovef_imgs {
   align-content: space-evenly;
 }
 body .lovef .lovef_img .lovef_imgs img {
-  width: 120px;
-  margin-top: 20px;
+  width: 6rem;
+  margin-top: 1rem;
 }
 body .lovef .lovef_btn {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "myfont";
-  width: 152px;
-  height: 36px;
+  width: 7.6rem;
+  height: 1.8rem;
   background-color: #3a880e;
-  border-radius: 46px;
-  line-height: 46px;
-  margin-top: 15px;
-  font-size: 16px;
-  letter-spacing: 3px;
+  border-radius: 2.3rem;
+  line-height: 2.3rem;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
   color: #ffffff;
 }
 body .nolike {
   color: #999;
   text-align: center;
-  font-size: 12px;
-  margin: 20px 0;
+  font-size: 0.6rem;
+  margin: 1rem 0;
 }
 body .nolike span {
-  margin: 20px;
+  margin: 1rem;
 }
 body .light-box-head {
   background-color: #f3f3f3;
   overflow: auto;
-  width: 373px;
-  height: 135px;
-  margin: 20px auto;
-  border: 1px solid rgb(134, 191, 50);
+  width: 18.65rem;
+  height: 6.75rem;
+  margin: 1rem auto;
+  border: 0.05rem solid rgb(134, 191, 50);
   border-left: none;
   border-right: none;
   overflow: hidden;
@@ -583,30 +583,30 @@ body .light-box-head {
 body .light-box-head .light-box {
   position: relative;
   z-index: auto;
-  width: 2000px;
-  height: 270px;
+  width: 100rem;
+  height: 13.5rem;
   animation: move 20s infinite linear;
 }
 body .light-box-head .light-box p {
-  font-size: 12px;
+  font-size: 0.6rem;
   text-align: center;
-  margin: 10px 0;
+  margin: 0.5rem 0;
 }
 body .light-box-head .light-box li {
   border-bottom: none;
   float: left;
-  margin: 0 20px;
+  margin: 0 1rem;
   height: auto;
-  padding: 0 8px;
-  border-left: 1px solid rgb(134, 191, 50);
-  border-right: 1px solid rgb(134, 191, 50);
+  padding: 0 0.4rem;
+  border-left: 0.05rem solid rgb(134, 191, 50);
+  border-right: 0.05rem solid rgb(134, 191, 50);
 }
 body .light-box-head .light-box li img {
-  width: 100px;
+  width: 5rem;
 }
 @keyframes move {
   to {
-    transform: translatex(-1400px);
+    transform: translatex(-70rem);
   }
 }
 body div:hover ul {
@@ -617,7 +617,7 @@ body div:hover ul {
   display: none;
 }
 .shop-car-infor .shop-car-infor-head {
-  height: 35px;
+  height: 1.75rem;
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -626,19 +626,19 @@ body div:hover ul {
   color: #616161;
 }
 .shop-car-infor i {
-  margin: 0 15px;
+  margin: 0 0.75rem;
 }
 .shop-car-infor .infor-shop-car {
-  height: 25px;
-  font-size: 12px;
+  height: 1.25rem;
+  font-size: 0.6rem;
   background-color: #f3f3f3;
-  line-height: 25px;
+  line-height: 1.25rem;
 }
 .shop-car-infor .more-shop-car {
-  border: 1.5px solid #ccc;
+  border: 0.075rem solid #ccc;
   border-left: none;
   border-right: none;
-  height: 45px;
+  height: 2.25rem;
   background-color: #f3f3f3;
   display: flex;
   justify-content: space-around;
@@ -646,45 +646,45 @@ body div:hover ul {
   color: #434343;
 }
 .shop-car-infor .more-shop-car h3 {
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 .shop-car-infor .more-shop-car .more-shop-car-right {
-  font-size: 14px;
-  width: 70px;
+  font-size: 0.7rem;
+  width: 3.5rem;
   color: #616161;
   display: flex;
   justify-content: space-around;
 }
 .shop-car-infor .more-shop-car .more-shop-car-right i {
-  margin: 0 10px;
+  margin: 0 0.5rem;
 }
 .shop-car-infor .shop-car-body {
-  height: 50px;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ccc;
   color: #434343;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 .shop-car-infor .shop-car-body span {
   color: #616161;
-  height: 19px;
-  padding: 3px 6px;
-  border: 1px solid;
-  font-size: 13px;
-  line-height: 19px;
+  height: 0.95rem;
+  padding: 0.15rem 0.3rem;
+  border: 0.05rem solid;
+  font-size: 0.65rem;
+  line-height: 0.95rem;
 }
 .shop-car-infor .shop-car-body p {
-  margin: 0 10px;
-  font-size: 14px;
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
 }
 .shop-car-infor .more-goods {
-  height: 35px;
+  height: 1.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 .shop-car-infor .more-goods span {
   border-top: none;
@@ -692,7 +692,7 @@ body div:hover ul {
 }
 .shop-car-infor .more-goods p {
   display: block;
-  margin: 0 10px;
+  margin: 0 0.5rem;
 }
 .shop-car-infor .goods-more-tuijian {
   display: flex;
@@ -700,17 +700,16 @@ body div:hover ul {
   flex-wrap: wrap;
   align-items: center;
   background-color: #f6f6f4;
-  width: 343px;
 }
 .shop-car-infor .goods-more-tuijian .goods-tuijain-body img {
-  width: 150px;
+  width: 7.5rem;
 }
 .shop-car-infor .goods-more-tuijian .goods-tuijain-body h3 {
-  margin: 8px 0;
-  font-size: 15px;
+  margin: 0.4rem 0;
+  font-size: 0.75rem;
 }
 .shop-car-infor .goods-more-tuijian .goods-tuijain-body p {
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
   color: #eb625c;
 }/*# sourceMappingURL=mixins_mobile.css.map */

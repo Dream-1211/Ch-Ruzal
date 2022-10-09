@@ -1,7 +1,7 @@
 .shop-car-infor {
 	display: none;
 	.shop-car-infor-head {
-		height: 35px;
+		height: 1.75rem;
 		width: auto;
 		display: flex;
 		justify-content: space-between;
@@ -10,72 +10,72 @@
 		color: $black-color;
 	}
 	i{
-		margin: 0 15px;
+		margin: 0 .75rem;
 	}
 	.infor-shop-car {
-		height: 25px;
-		font-size: 12px;
+		height: 1.25rem;
+		font-size: .6rem;
 		background-color: $words-color;
-		line-height: 25px;
+		line-height: 1.25rem;
 	}
 	.more-shop-car {
-		border: 1.5px solid $grey-color;
+		border: .075rem solid $grey-color;
 		border-left: none;
 		border-right: none;
-		height: 45px;
+		height: 2.25rem;
 		background-color: $words-color;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		color: $huihei-color;
 		h3 {
-			font-size: 16px;
+			font-size: .8rem;
 		}
 		.more-shop-car-right {
 			i{
-				margin: 0 10px;
+				margin: 0 .5rem;
 			}
-			font-size: 14px;
-			width: 70px;
+			font-size: .7rem;
+			width: 3.5rem;
 			color: $black-color;
 			display: flex;
 			justify-content: space-around;
 		}
 	}
 	.shop-car-body {
-		height: 50px;
+		height: 2.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background-color: $grey-color;
 		color: $huihei-color;
-		font-size: 16px;
+		font-size: .8rem;
 		span {
 			color: $black-color;
-			height: 19px;
-			padding: 3px 6px;
-			border: 1px solid;
-			font-size: 13px;
-			line-height: 19px;
+			height: .95rem;
+			padding: .15rem .3rem;
+			border: .05rem solid;
+			font-size: .65rem;
+			line-height: .95rem;
 		}
 		p {
-			margin: 0 10px;
-			font-size: 14px;
+			margin: 0 .5rem;
+			font-size: .7rem;
 		}
 	}
 	.more-goods {
-		height: 35px;
+		height: 1.75rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 14px;
+		font-size: .7rem;
 		span {
 			border-top: none;
 			color: $black-color;
 		}
 		p {
 			display: block;
-			margin: 0 10px;
+			margin: 0 .5rem;
 		}
 	}
 	.goods-more-tuijian {
@@ -85,19 +85,18 @@
         align-items: center;
 		.goods-tuijain-body {
 			img {
-				width: 150px;
+				width: 7.5rem;
 			}
 			h3 {
-				margin: 8px 0;
-				font-size: 15px;
+				margin: .4rem 0;
+				font-size: .75rem;
 			}
 			p {
-				margin-bottom: 5px;
-				font-size: 14px;
+				margin-bottom: .25rem;
+				font-size: .7rem;
 				color: #eb625c;
 			}
 		}
 		background-color: #f6f6f4;
-		width: 343px;
 	}
 }
