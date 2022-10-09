@@ -219,6 +219,7 @@ a {
 .banneres {
   width: 375px;
   height: 110px;
+  margin: 0 auto;
 }
 
 .banneres img {
