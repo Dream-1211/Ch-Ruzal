@@ -93,5 +93,4 @@ window.onload = function() {
 		topbar_ele[0].style.borderBottom = "#1d99e3";
 
 	});
-console.log(topbar_ele[0])
 };
