@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @font-face {
   /* 指定字体的名字 */
   font-family: "myfont";
@@ -321,7 +322,7 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
-  margin-top: 30px;
+  margin-top: 8px;
   background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
 }
 body .footer-head .footer-header {
@@ -1325,6 +1326,7 @@ body .hello-user-box .s2 {
 }
 
 body .community {
+  padding-bottom: 1px;
   display: none;
 }
 body .community .community-box .community-head-box {
@@ -1434,6 +1436,7 @@ body .forum .forum-box .forum-box-body .forum-info {
   margin-left: 25px;
 }
 body .hot-post .hot-post-body {
+  color: #f3f3f3;
   margin: 20px 0;
 }
 body .hot-post .hot-post-body .post-title {
@@ -1460,6 +1463,7 @@ body .hot-post .hot-post-body .fa-user {
 }
 body .hot-post .hot-post-body .post-1,
 body .hot-post .hot-post-body .post-2 {
+  color: #f3f3f3;
   margin-left: 60px;
   display: flex;
   justify-content: flex-end;
@@ -1520,7 +1524,7 @@ body .community-box .post-blog {
   margin-top: 60px;
 }
 body .community-box .post-blog .post-blog-container-box {
-  margin-bottom: 30PX;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1545,7 +1549,7 @@ body .community-box .post-blog .blog-post-box img {
   width: 300px;
 }
 body .community-box .post-blog .blog-post-box a {
-  color: #616161;
+  color: #1d99e3;
 }
 body .community-box .post-blog .blog-post-box .blog-post-infor {
   margin: 16px 0;
@@ -1604,4 +1608,33 @@ body .community-footer .community-footer-infor a {
 body .community-footer .community-footer-infor a:hover {
   color: #1d99e3;
   background-color: #fff;
+}
+body .color-full {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #1d99e3;
+  background-image: radial-gradient(closest-side, rgb(134, 191, 50), rgba(29, 153, 227, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(29, 153, 227), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(170, 142, 245, 0)), radial-gradient(closest-side, rgb(29, 153, 227), rgba(248, 192, 147, 0));
+  background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax, 110vmax 110vmax, 90vmax 90vmax;
+  background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax, -30vmax -10vmax, 50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+}
+@keyframes movement {
+  0%, 100% {
+    background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax, 110vmax 110vmax, 90vmax 90vmax;
+    background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax, -30vmax -10vmax, 50vmax 50vmax;
+  }
+  25% {
+    background-size: 100vmax 100vmax, 90vmax 90vmax, 100vmax 100vmax, 90vmax 90vmax, 60vmax 60vmax;
+    background-position: -60vmax -90vmax, 50vmax -40vmax, 0vmax -20vmax, -40vmax -20vmax, 40vmax 60vmax;
+  }
+  50% {
+    background-size: 80vmax 80vmax, 110vmax 110vmax, 80vmax 80vmax, 60vmax 60vmax, 80vmax 80vmax;
+    background-position: -50vmax -70vmax, 40vmax -30vmax, 10vmax 0vmax, 20vmax 10vmax, 30vmax 70vmax;
+  }
+  75% {
+    background-size: 90vmax 90vmax, 90vmax 90vmax, 100vmax 100vmax, 90vmax 90vmax, 70vmax 70vmax;
+    background-position: -50vmax -40vmax, 50vmax -30vmax, 20vmax 0vmax, -10vmax 10vmax, 40vmax 60vmax;
+  }
 }/*# sourceMappingURL=mixins.css.map */

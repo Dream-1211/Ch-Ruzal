@@ -120,13 +120,19 @@ window.addEventListener("load", function (e) {
 	var zixun = document.querySelector(".zixun");
 	index.onclick = function () {
 		wangzhanshouye.style.display = "block";
+		color_full.style.display = "none";
 		aixinzhunong.style.display = "none";
 		guanyuwomen.style.display = "none";
 		caigoudating.style.display = "none";
 		zixun.style.display = "none";
+		community_box.style.display = "none";
+		community_footer.style.display = "none";
 		search_body.style.display = "block";
 	};
 	aixin.onclick = function () {
+		community_box.style.display = "none";
+		color_full.style.display = "none";
+		community_footer.style.display = "none";
 		aixinzhunong.style.display = "block";
 		wangzhanshouye.style.display = "none";
 		guanyuwomen.style.display = "none";
@@ -135,6 +141,9 @@ window.addEventListener("load", function (e) {
 		caigoudating.style.display = "none";
 	};
 	guanyu.onclick = function () {
+		community_box.style.display = "none";
+		color_full.style.display = "none";
+		community_footer.style.display = "none";
 		guanyuwomen.style.display = "block";
 		aixinzhunong.style.display = "none";
 		wangzhanshouye.style.display = "none";
@@ -143,6 +152,9 @@ window.addEventListener("load", function (e) {
 		search_body.style.display = "block";
 	};
 	caigou.onclick = function () {
+		community_box.style.display = "none";
+		color_full.style.display = "none";
+		community_footer.style.display = "none";
 		caigoudating.style.display = "block";
 		advert.style.display = "block";
 		aixinzhunong.style.display = "none";
@@ -152,6 +164,9 @@ window.addEventListener("load", function (e) {
 		search_body.style.display = "none";
 	};
 	nongye.onclick = function () {
+		community_box.style.display = "none";
+		color_full.style.display = "none";
+		community_footer.style.display = "none";
 		caigoudating.style.display = "none";
 		aixinzhunong.style.display = "none";
 		guanyuwomen.style.display = "none";
@@ -378,9 +393,11 @@ window.addEventListener("load", function (e) {
 	};
 	//社区显示、隐藏
 	var community_box = document.querySelector(".community");
+	var color_full= document.querySelector(".color-full");
 	var community_footer = document.querySelector(".community-footer");
 	var community = document.querySelector("#community");
 	console.log(community_box);
+	color_full.style.display = "none";
 	community.addEventListener("click", function () {
 		community_box.style.display = "block";
 		community_footer.style.display = "block";
@@ -390,5 +407,6 @@ window.addEventListener("load", function (e) {
 		zixun.style.display = "none";
 		search_body.style.display = "none";
 		caigoudating.style.display = "none";
+		color_full.style.display = "block";
 	});
 });

@@ -1,5 +1,6 @@
 body {
 	.community {
+		padding-bottom: 1px;
 		display: none;
 		.community-box {
 			.community-head-box {
@@ -114,6 +115,8 @@ body {
 	}
 	.hot-post {
 		.hot-post-body {
+			
+			color: $words-color;
 			margin: 20px 0;
 			.post-title {
 				font-size: 30px;
@@ -139,6 +142,7 @@ body {
 			}
 			.post-1,
 			.post-2 {
+				color: $words-color;
 				p {
 					line-height: 25px;
 				}
@@ -180,7 +184,7 @@ body {
 				}
 			}
 			.qus-post {
-				&:hover{
+				&:hover {
 					color: #fff;
 				}
 				cursor: pointer;
@@ -193,45 +197,43 @@ body {
 			}
 		}
 	}
-	.community-box{
-		.post-blog{
-			
-			.post-blog-container-box{
-				margin-bottom: 30PX;
+	.community-box {
+		.post-blog {
+			.post-blog-container-box {
+				margin-bottom: 30px;
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
 			}
 			margin-top: 60px;
-			h3{
+			h3 {
 				font-size: 28px;
 				line-height: 80px;
 			}
-			.blog-post-box{
-				.blog-infor-p{
+			.blog-post-box {
+				.blog-infor-p {
 					width: 340px;
 					margin-bottom: 30px;
 				}
-				img{
+				img {
 					width: 300px;
 				}
 				height: 470px;
 				width: 360px;
-				a{
-					color: $black-color;
+				a {
+					color: $bule-color;
 				}
 				display: flex;
 				background-color: $white-color;
 				align-items: center;
 				flex-direction: column;
-				.blog-post-infor{
+				.blog-post-infor {
 					margin: 16px 0;
 					display: flex;
 					justify-content: space-around;
 					width: 472px;
 				}
-				.post-data{
-
+				.post-data {
 					a {
 						&:nth-child(1) {
 							display: flex;
@@ -259,15 +261,15 @@ body {
 			}
 		}
 	}
-	.community-footer{
+	.community-footer {
 		display: none;
-		.community-footer-infor{
-			h3{
+		.community-footer-infor {
+			h3 {
 				line-height: 40px;
 				font-size: 20px;
 				color: $words-color;
 			}
-			a{
+			a {
 				display: inline-block;
 				line-height: 40px;
 				text-align: center;
@@ -275,7 +277,7 @@ body {
 				width: 130px;
 				background-color: $words-color;
 				color: $green-color;
-				&:hover{
+				&:hover {
 					color: $bule-color;
 					background-color: $white-color;
 				}
@@ -287,5 +289,72 @@ body {
 		}
 		height: 100px;
 		background-color: $bule-color;
+	}
+	.color-full {
+		font-family: "Quicksand", sans-serif;
+		margin: 0;
+		min-height: 100vh;
+		background-color: $bule-color;
+		background-image: radial-gradient(
+				closest-side,
+				rgba(134, 191, 50, 1),
+				rgb(29,153,227, 0)
+			),
+			radial-gradient(
+				closest-side,
+				rgba(134, 191, 50, 1),
+				rgba(243, 11, 164, 0)
+			),
+			radial-gradient(
+				closest-side,
+				rgba(29,153,227, 1),
+				rgba(254, 234, 131, 0)
+			),
+			radial-gradient(
+				closest-side,
+				rgba(134, 191, 50, 1),
+				rgba(170, 142, 245, 0)
+			),
+			radial-gradient(
+				closest-side,
+				rgba(29,153,227, 1),
+				rgba(248, 192, 147, 0)
+			);
+		background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+			110vmax 110vmax, 90vmax 90vmax;
+		background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+			-30vmax -10vmax, 50vmax 50vmax;
+		background-repeat: no-repeat;
+		animation: 10s movement linear infinite;
+	}
+
+
+
+	@keyframes movement {
+		0%,
+		100% {
+			background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+				110vmax 110vmax, 90vmax 90vmax;
+			background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+				-30vmax -10vmax, 50vmax 50vmax;
+		}
+		25% {
+			background-size: 100vmax 100vmax, 90vmax 90vmax, 100vmax 100vmax,
+				90vmax 90vmax, 60vmax 60vmax;
+			background-position: -60vmax -90vmax, 50vmax -40vmax, 0vmax -20vmax,
+				-40vmax -20vmax, 40vmax 60vmax;
+		}
+		50% {
+			background-size: 80vmax 80vmax, 110vmax 110vmax, 80vmax 80vmax,
+				60vmax 60vmax, 80vmax 80vmax;
+			background-position: -50vmax -70vmax, 40vmax -30vmax, 10vmax 0vmax,
+				20vmax 10vmax, 30vmax 70vmax;
+		}
+		75% {
+			background-size: 90vmax 90vmax, 90vmax 90vmax, 100vmax 100vmax,
+				90vmax 90vmax, 70vmax 70vmax;
+			background-position: -50vmax -40vmax, 50vmax -30vmax, 20vmax 0vmax,
+				-10vmax 10vmax, 40vmax 60vmax;
+		}
 	}
 }
