@@ -1418,7 +1418,6 @@ body .forum .forum-box {
 body .forum .forum-box .forum-box-body {
   height: 125px;
   width: 380px;
-  border: 1px solid red;
   color: #f3f3f3;
   background: url(../img/1.png);
 }
@@ -1430,4 +1429,82 @@ body .forum .forum-box .forum-box-body .category-info {
 body .forum .forum-box .forum-box-body .forum-info {
   font-size: 25px;
   margin-left: 25px;
+}
+body .hot-post .hot-post-body {
+  margin: 20px 0;
+}
+body .hot-post .hot-post-body .post-title {
+  font-size: 30px;
+  line-height: 80px;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+body .hot-post .hot-post-body a {
+  color: #0068b5;
+  font-weight: 600;
+}
+body .hot-post .hot-post-body .fa-user {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: #f3f3f3;
+  width: 32px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #0068b5;
+  float: left;
+}
+body .hot-post .hot-post-body .post-1,
+body .hot-post .hot-post-body .post-2 {
+  margin-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+body .hot-post .hot-post-body .post-1 p,
+body .hot-post .hot-post-body .post-2 p {
+  line-height: 25px;
+}
+body .hot-post .hot-post-body .post-1 .post-infor,
+body .hot-post .hot-post-body .post-2 .post-infor {
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+body .hot-post .hot-post-body .post-1 .post-data,
+body .hot-post .hot-post-body .post-2 .post-data {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+body .hot-post .hot-post-body .post-1 .post-data a:nth-child(1),
+body .hot-post .hot-post-body .post-2 .post-data a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+body .hot-post .hot-post-body .post-1 .post-data a:nth-child(2),
+body .hot-post .hot-post-body .post-2 .post-data a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+body .hot-post .hot-post-body .post-1 .post-data i,
+body .hot-post .hot-post-body .post-2 .post-data i {
+  display: flex;
+  align-items: center;
+}
+body .hot-post .hot-post-body .post-1 .post-data .fa-comment,
+body .hot-post .hot-post-body .post-2 .post-data .fa-comment {
+  margin-left: 25px;
+}
+body .hot-post .hot-post-body .qus-post {
+  line-height: 40px;
+  font-size: 16px;
+  width: 110px;
+  background-color: #0068b5;
+  color: #f3f3f3;
+  border: none;
 }/*# sourceMappingURL=mixins.css.map */

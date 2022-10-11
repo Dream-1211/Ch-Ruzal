@@ -54,7 +54,7 @@ body {
 	.community-head-box2 {
 		height: 430px;
 		display: flex;
-        margin: 35px 0;
+		margin: 35px 0;
 		justify-content: space-around;
 		.community-tags {
 			width: 250px;
@@ -67,7 +67,7 @@ body {
 				width: 230px;
 			}
 			h3 {
-                line-height: 30px;
+				line-height: 30px;
 				font-size: 25px;
 			}
 			p {
@@ -78,38 +78,113 @@ body {
 				border-top: 1px solid $grey-color;
 				margin-top: 20px;
 				padding: 15px 30px;
-               a{
-                color: $bule-color;
-                &:hover{
-                    color: $green-color;
-                }
-               }
+				a {
+					color: $bule-color;
+					&:hover {
+						color: $green-color;
+					}
+				}
 			}
 		}
 	}
-    .forum{
-        .forum-box{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            height: 400px;
-            .forum-box-body{
-                height: 125px;
-                width:380px;
-                border: 1px solid red;
-                color: $words-color;
-                background: url(../img/1.png);
-                .category-info{
-                    margin-top: 20px;
-                    line-height: 38px;
-                    margin-left: 25px;
-                }
-                .forum-info{
-                    font-size: 25px;
-                    margin-left: 25px;
-                }
-            }
-        }
-    }
+	.forum {
+		.forum-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			height: 400px;
+			.forum-box-body {
+				height: 125px;
+				width: 380px;
+				color: $words-color;
+				background: url(../img/1.png);
+				.category-info {
+					margin-top: 20px;
+					line-height: 38px;
+					margin-left: 25px;
+				}
+				.forum-info {
+					font-size: 25px;
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+	.hot-post {
+		.hot-post-body {
+			margin: 20px 0;
+			.post-title {
+				font-size: 30px;
+				line-height: 80px;
+				margin: 0 0 30px 0;
+				border-bottom: 1px solid $grey-color;
+			}
+			a {
+				color: #0068b5;
+				font-weight: 600;
+			}
+			.fa-user {
+				display: inline-block;
+				text-align: center;
+				line-height: 40px;
+				color: $words-color;
+				width: 32px;
+				height: 40px;
+				font-size: 25px;
+				border-radius: 50%;
+				background-color: #0068b5;
+				float: left;
+			}
+			.post-1,
+			.post-2 {
+				p {
+					line-height: 25px;
+				}
+				margin-left: 60px;
+				display: flex;
+				justify-content: flex-end;
+				flex-direction: column;
+
+				.post-infor {
+					line-height: 30px;
+					display: flex;
+					justify-content: space-between;
+				}
+				.post-data {
+					border-bottom: 1px solid $grey-color;
+					margin-bottom: 20px;
+					a {
+						&:nth-child(1) {
+							display: flex;
+							align-items: center;
+							margin-right: 10px;
+						}
+						&:nth-child(2) {
+							display: flex;
+							align-items: center;
+							margin-right: 10px;
+						}
+					}
+					i {
+						display: flex;
+						align-items: center;
+					}
+					.fa-comment {
+						margin-left: 25px;
+					}
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+			.qus-post {
+				line-height: 40px;
+				font-size: 16px;
+				width: 110px;
+				background-color: #0068b5;
+				color: $words-color;
+				border: none;
+			}
+		}
+	}
 }
