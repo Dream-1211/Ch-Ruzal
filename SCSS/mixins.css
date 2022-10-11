@@ -1399,4 +1399,10 @@ body .community-head-box2 .community-tags .tags-all {
   border-top: 1px solid #616161;
   margin-top: 20px;
   padding: 15px 30px;
+}
+body .community-head-box2 .community-tags .tags-all a {
+  color: #1d99e3;
+}
+body .community-head-box2 .community-tags .tags-all a:hover {
+  color: rgb(134, 191, 50);
 }/*# sourceMappingURL=mixins.css.map */
