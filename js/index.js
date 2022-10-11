@@ -297,20 +297,6 @@ window.addEventListener("load", function (e) {
 		login_parent.className = "login-display";
 	});
 
-	for (var n = 0; n <= 2; n++) {
-		bannerlist[n].index = n;
-		bannerlist[n].addEventListener("mouseenter", function () {
-			for (var n = 0; n <= 2; n++) {
-				bannerImg[n].className = "";
-			}
-			index = this.index;
-			for (var n = 0; n <= 2; n++) {
-				bannerlist[n].className = "";
-			}
-			bannerImg[index].className = "show";
-			bannerlist[index].className = "active";
-		});
-	}
 	var advert = document.querySelector(".advert");
 	var spans = document.querySelector(".span-s");
 	spans.onclick = function () {
