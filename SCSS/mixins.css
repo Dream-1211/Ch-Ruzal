@@ -1468,7 +1468,7 @@ body .hot-post .hot-post-body .post-2 p {
 }
 body .hot-post .hot-post-body .post-1 .post-infor,
 body .hot-post .hot-post-body .post-2 .post-infor {
-  line-height: 30px;
+  height: 36px;
   display: flex;
   justify-content: space-between;
 }
@@ -1476,6 +1476,7 @@ body .hot-post .hot-post-body .post-1 .post-data,
 body .hot-post .hot-post-body .post-2 .post-data {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: flex-end;
 }
@@ -1501,10 +1502,74 @@ body .hot-post .hot-post-body .post-2 .post-data .fa-comment {
   margin-left: 25px;
 }
 body .hot-post .hot-post-body .qus-post {
+  cursor: pointer;
   line-height: 40px;
   font-size: 16px;
   width: 110px;
   background-color: #0068b5;
   color: #f3f3f3;
   border: none;
+}
+body .hot-post .hot-post-body .qus-post:hover {
+  color: #fff;
+}
+body .community-box .post-blog {
+  margin-top: 60px;
+}
+body .community-box .post-blog .post-blog-container-box {
+  margin-bottom: 30PX;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .community-box .post-blog h3 {
+  font-size: 28px;
+  line-height: 80px;
+}
+body .community-box .post-blog .blog-post-box {
+  height: 470px;
+  width: 360px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  flex-direction: column;
+}
+body .community-box .post-blog .blog-post-box .blog-infor-p {
+  width: 340px;
+  margin-bottom: 30px;
+}
+body .community-box .post-blog .blog-post-box img {
+  width: 300px;
+}
+body .community-box .post-blog .blog-post-box a {
+  color: #616161;
+}
+body .community-box .post-blog .blog-post-box .blog-post-infor {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-around;
+  width: 472px;
+}
+body .community-box .post-blog .blog-post-box .post-data {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+body .community-box .post-blog .blog-post-box .post-data a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+body .community-box .post-blog .blog-post-box .post-data a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+body .community-box .post-blog .blog-post-box .post-data i {
+  display: flex;
+  align-items: center;
+}
+body .community-box .post-blog .blog-post-box .post-data .fa-comment {
+  margin-left: 25px;
 }/*# sourceMappingURL=mixins.css.map */
