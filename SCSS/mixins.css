@@ -322,8 +322,22 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
-  margin-top: 8px;
+  margin-top: 40px;
   background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+  width: 100%;
+  background-size: 1400% 300%;
+  animation: dynamics 5s ease infinite;
+}
+@keyframes dynamics {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 40% 50%;
+  }
+  30% {
+    background-position: 100% 100%;
+  }
 }
 body .footer-head .footer-header {
   /* 固定容器的宽度 */
@@ -359,6 +373,9 @@ body .footer-head .footer-header .introduce .foolter-header-title {
 }
 body .footer-head-body {
   background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+  animation: dynamics 5s ease infinite;
+  width: 100%;
+  background-size: 1400% 300%;
 }
 body .footer-head-body .footer-header-body {
   /* 固定容器的宽度 */
@@ -411,7 +428,7 @@ body .container {
   box-sizing: border-box;
 }
 body .shar-to .shar-to-one .shar-one {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   color: #494949;
   display: inline-block;
   width: 46px;
@@ -441,7 +458,7 @@ body .shar-to {
   display: block;
 }
 body .shar-to .shar-to-two {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   position: fixed;
   top: 519px;
   right: 2px;
@@ -498,7 +515,7 @@ body .shar-to .shar-to-three {
   display: none;
 }
 body .shar-to .shar-to-three .shar-three {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   color: #494949;
   display: inline-block;
   width: 46px;
@@ -1614,7 +1631,7 @@ body .color-full {
   margin: 0;
   min-height: 100vh;
   background-color: #1d99e3;
-  background-image: radial-gradient(closest-side, rgb(134, 191, 50), rgba(29, 153, 227, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(29, 153, 227), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(170, 142, 245, 0)), radial-gradient(closest-side, rgb(29, 153, 227), rgba(248, 192, 147, 0));
+  background-image: radial-gradient(closest-side, rgb(134, 191, 50), rgba(29, 153, 227, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(134, 191, 50), rgba(170, 142, 245, 0)), radial-gradient(closest-side, rgb(29, 153, 227), rgba(248, 192, 147, 0));
   background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax, 110vmax 110vmax, 90vmax 90vmax;
   background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax, -30vmax -10vmax, 50vmax 50vmax;
   background-repeat: no-repeat;
