@@ -194,7 +194,7 @@ body {
 	}
 	.community-box{
 		.post-blog{
-
+			
 			.post-blog-container-box{
 				margin-bottom: 30PX;
 				display: flex;
@@ -257,5 +257,33 @@ body {
 				}
 			}
 		}
+	}
+	.community-footer{
+		.community-footer-infor{
+			h3{
+				line-height: 40px;
+				font-size: 20px;
+				color: $words-color;
+			}
+			a{
+				display: inline-block;
+				line-height: 40px;
+				text-align: center;
+				margin-left: 20px;
+				width: 130px;
+				background-color: $words-color;
+				color: $green-color;
+				&:hover{
+					color: $bule-color;
+					background-color: $white-color;
+				}
+			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		height: 100px;
+		background-color: $bule-color;
 	}
 }
