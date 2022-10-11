@@ -376,5 +376,19 @@ window.addEventListener("load", function (e) {
 		this.style.borderLeft = "6px solid #fff";
 		this.style.borderRight = "6px solid #fff";
 	};
-	
+	//社区显示、隐藏
+	var community_box = document.querySelector(".community");
+	var community_footer = document.querySelector(".community-footer");
+	var community = document.querySelector("#community");
+	console.log(community_box);
+	community.addEventListener("click", function () {
+		community_box.style.display = "block";
+		community_footer.style.display = "block";
+		aixinzhunong.style.display = "none";
+		wangzhanshouye.style.display = "none";
+		guanyuwomen.style.display = "none";
+		zixun.style.display = "none";
+		search_body.style.display = "none";
+		caigoudating.style.display = "none";
+	});
 });

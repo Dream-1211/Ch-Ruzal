@@ -1324,6 +1324,9 @@ body .hello-user-box .s2 {
   margin-left: 25px;
 }
 
+body .community {
+  display: none;
+}
 body .community .community-box .community-head-box {
   height: 300px;
   display: flex;
@@ -1574,6 +1577,7 @@ body .community-box .post-blog .blog-post-box .post-data .fa-comment {
   margin-left: 25px;
 }
 body .community-footer {
+  display: none;
   height: 100px;
   background-color: #1d99e3;
 }
