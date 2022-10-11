@@ -1324,38 +1324,80 @@ body .hello-user-box .s2 {
   margin-left: 25px;
 }
 
-.community .community-box .community-head-box {
-  height: 200px;
+body .community .community-box .community-head-box {
+  height: 300px;
   border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.community .community-box .community-head-box .community-head-infor {
+body .community .community-box .community-head-box .community-head-infor {
   display: flex;
-  height: 50px;
+  height: 150px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.community .community-box .community-head-box .community-head-infor h3 {
+body .community .community-box .community-head-box .community-head-infor h3 {
   font-size: 38px;
   font-family: "myfont";
 }
-.community .community-box .community-head-box .community-head-infor p {
+body .community .community-box .community-head-box .community-head-infor p {
   line-height: 40px;
 }
-.community .community-box .community-head-box .search-community-box {
+body .community .community-box .community-head-box .search-community-box {
   line-height: 75px;
+  display: flex;
   position: relative;
 }
-.community .community-box .community-head-box .search-community-box i {
-  position: absolute;
-  left: 0;
-  top: 0;
+body .community .community-box .community-head-box .search-community-box #community {
+  font-size: 16px;
+  height: 56px;
+  padding: 6px 8px 6px;
+  font-weight: bold;
+  border: none;
+  border-right: 2px solid #efefef;
 }
-.community .community-box .community-head-box .search-community-box .input-community {
-  padding: 10px 30px;
+body .community .community-box .community-head-box .search-community-box i {
+  position: absolute;
+  left: 110px;
+  top: 20px;
+}
+body .community .community-box .community-head-box .search-community-box .input-community {
+  border: none;
+  height: 40px;
+  padding: 8px 34px;
+  width: 420px;
+  font-size: 16px;
+  color: #262626;
+}
+body .community-head-box2 {
+  height: 430px;
+  display: flex;
+  justify-content: space-around;
+}
+body .community-head-box2 .community-tags {
+  width: 250px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .community-head-box2 .community-tags img {
+  width: 230px;
+}
+body .community-head-box2 .community-tags h3 {
+  font-size: 25px;
+}
+body .community-head-box2 .community-tags p {
+  color: #1d99e3;
+  line-height: 35px;
+}
+body .community-head-box2 .community-tags .tags-all {
+  border-top: 1px solid #616161;
+  margin-top: 20px;
+  padding: 15px 30px;
 }/*# sourceMappingURL=mixins.css.map */
