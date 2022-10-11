@@ -1088,7 +1088,8 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;
@@ -1152,9 +1153,13 @@ body .search-wapper .search-plus .camera {
   position: relative;
   right: 29px;
 }
-body .adv {
-  height: 110px;
-  margin: 15px auto;
+body #adv {
+  width: 0px;
+  height: 154px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
 }
 body .product-1 {
   flex-wrap: wrap;
