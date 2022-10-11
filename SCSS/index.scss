@@ -1195,9 +1195,13 @@ body {
 			}
 		}
 	}
-	.adv {
-		height: 110px;
-		margin: 15px auto;
+	#adv {
+	width: 0px;
+	height: 154px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
 	}
 	/* ---------------- 产品导航明细 ------------------ */
 	.product-1 {
