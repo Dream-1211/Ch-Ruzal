@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 	var advertise = document.querySelector(".header-banner-head");
 	var topbar = document.querySelector(".topbar");
 	var zhuye = document.querySelector(".zhuye");
@@ -56,7 +56,7 @@ window.onload = function() {
 		ele[2].style.cssText = "padding-top: 5.25rem";
 		shop_car.style.cssText = "padding-top: 5.25rem";
 		topbar.style.cssText = "top: 0";
-		for(var i = 0; i < footer_bar.length; i++) {
+		for (var i = 0; i < footer_bar.length; i++) {
 			footer_bar[i].style.color = "";
 		}
 		footer_bar[0].style.color = "#1d99e3";
@@ -91,6 +91,21 @@ window.onload = function() {
 			topbar_ele[i].style.borderBottom = "";
 		}
 		topbar_ele[0].style.borderBottom = "#1d99e3";
-
+	});
+	var swiper = new Swiper(".mySwiper", {
+		spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 	});
 };

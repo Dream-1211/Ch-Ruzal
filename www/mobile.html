@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../fonts/fa/css/all.min.css" />
 		<link rel="stylesheet" href="../SCSS/mixins_mobile.css" />
 		<link rel="stylesheet" href="../SCSS/normalize.css" />
+		<link rel="stylesheet" href="../SCSS/swiper.css" />
 	</head>
 
 	<body>
@@ -57,24 +58,20 @@
 		<!-- banner -->
 
 		<div class="zhuye">
-			<div class="banneres" id="banneres-1">
-				<ul>
-					<li><img src="../img/index/banner/banner2.jpg" alt="" /></li>
-					<li>
-						<img
-							src="../img/index/banner/banner3.png"
-							alt=""
-							style="display: none;"
-						/>
-					</li>
-					<li>
-						<img
-							src="../img/index/banner/banner5.png"
-							alt=""
-							style="display: none;"
-						/>
-					</li>
-				</ul>
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../img/index/banner/banner2.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="../img/index/banner/banner3.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="../img/index/banner/banner5.png" alt="" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 
 			<nav class="menu">
@@ -682,5 +679,6 @@
 			</div>
 		</div>
 		<script src="../js/mobile.js"></script>
+		<script src="../js/swiper.js"></script>
 	</body>
 </html>
