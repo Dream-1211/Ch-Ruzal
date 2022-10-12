@@ -91,12 +91,6 @@ Rural-revitalization-agricultural-assistance-services 遵循 [Contributor Covena
 
 <a href="https://github.com/liusxs"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101164913?v=4" /></a>
 <a href="https://github.com/LingASDJ"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/70191651?v=4" /></a>
-<a href="https://github.com/mason369"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/93964390?s=96&v=4" /></a>
-<a href="https://github.com/mason369"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101233711?v=4" /></a>
-<a href="https://github.com/zenbing"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/102287712?v=4" /></a>
-<a href="https://github.com/pujiurong"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/102287710?v=4" /></a>
-<a href="https://github.com/xiaokouhan"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101168929?v=4" /></a>
-<a href="https://github.com/YUANYUAN04"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101186294?v=4" /></a>
 
 ### 特别感谢：
 
