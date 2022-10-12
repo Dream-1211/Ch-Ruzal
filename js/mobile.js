@@ -90,13 +90,13 @@ window.onload = function () {
 		for (var i = 0; i < 6; i++) {
 			topbar_ele[i].style.borderBottom = "";
 		}
-		topbar_ele[0].style.borderBottom = "#1d99e3";
+		topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	});
 	var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2000,
+          delay: 1700,
           disableOnInteraction: false,
         },
         pagination: {

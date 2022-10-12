@@ -621,7 +621,7 @@ body .swiper-pagination-bullet-active {
 }
 body .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 0.9rem;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
