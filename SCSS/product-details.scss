@@ -147,8 +147,7 @@ body {
 							display: flex;
 							p {
 								&:nth-child(1) {
-                                    
-                            margin-left: 5px;
+									margin-left: 5px;
 									font-size: 12px;
 								}
 								&:nth-child(2) {
@@ -165,8 +164,7 @@ body {
 						justify-content: flex-start;
 						p {
 							&:nth-child(1) {
-                                
-                            margin-left: 5px;
+								margin-left: 5px;
 								font-size: 12px;
 							}
 							&:nth-child(3) {
@@ -193,8 +191,7 @@ body {
 						align-items: center;
 						p {
 							&:nth-child(1) {
-                                
-                            margin-left: 5px;
+								margin-left: 5px;
 								font-size: 12px;
 							}
 							&:nth-child(3) {
@@ -206,13 +203,13 @@ body {
 						}
 					}
 					.details-exprss {
-                        padding: 12px 0;
-                        border-bottom: 1px solid $grey-color;
+						padding: 12px 0;
+						border-bottom: 1px solid $grey-color;
 						display: flex;
 						font-size: 12px;
 						flex-wrap: wrap;
 						align-items: center;
-						margin: 12px 0;
+						margin: 5px 0;
 						#exp,
 						#exp-press {
 							margin: 0 5px;
@@ -221,8 +218,7 @@ body {
 						}
 						p {
 							&:nth-child(1) {
-                                
-                            margin-left: 5px;
+								margin-left: 5px;
 								margin-right: 33px;
 							}
 							&:nth-child(5) {
@@ -236,24 +232,152 @@ body {
 					}
 					.details-color {
 						display: flex;
-                        p{
-                            width: 120px;
-                            margin-top: 8px;
-                            font-size: 12px;
-                            margin-left: 5px;
-                        }
-                        .details-color-img{
-                            img{
-                                padding: 5px;
-                                border: 1px solid $grey-color;
-                                width: 25px;
-                                height: 25px;
-                                margin:5px 5px 0 0;
-                            }
-                            display: flex;
-                        flex-wrap: wrap;
-                        }
+						p {
+							width: 85px;
+							margin-top: 8px;
+							font-size: 12px;
+							margin-left: 5px;
+						}
+						.details-color-img {
+							img {
+								padding: 5px;
+								border: 1px solid $grey-color;
+								width: 25px;
+								height: 25px;
+								margin: 5px 5px 0 0;
+							}
+							display: flex;
+							flex-wrap: wrap;
+						}
 					}
+					.details-num {
+						p {
+							&:nth-child(1) {
+								font-size: 12px;
+							}
+							&:last-child {
+								font-size: 12px;
+							}
+							&:nth-child(2) {
+								border: 1px solid $grey-color;
+								width: 80px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+							}
+						}
+						.details-number {
+							margin: 0 20px;
+							display: flex;
+							justify-content: center;
+							width: 100px;
+							a {
+								font-size: 16px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								height: 30px;
+								width: 30px;
+								color: $black-color;
+								background-color: #ededed;
+								border: 1px solid $grey-color;
+							}
+						}
+
+						display: flex;
+						margin-left: 5px;
+						height: 65px;
+						justify-content: flex-start;
+						align-items: center;
+					}
+					.details-btn {
+                        
+                        display: flex;
+                        justify-content: flex-start;
+						button {
+							&:first-child {
+                                margin-left: 5px;
+								color: #e5511d;
+								border-color: #f0cab6;
+								background: #ffe4d0;
+								display: block;
+								cursor: pointer;
+								width: 134px;
+								height: 38px;
+								text-align: center;
+								font-family: "Hiragino Sans GB", "microsoft yahei", sans-serif;
+								font-size: 16px;
+								line-height: 38px;
+								border-width: 1px;
+								border-style: solid;
+								-moz-border-radius: 2px;
+								-webkit-border-radius: 2px;
+								border-radius: 2px;
+							}
+							&:last-child {
+                                margin-left: 12px;
+                                i{
+                                    margin: 0 5px;
+                                }
+								width: 180px;
+								color: #fff;
+								border-color: #f40;
+								background: #f40;
+								display: block;
+								cursor: pointer;
+								width: 134px;
+								height: 38px;
+								text-align: center;
+								font-family: "Hiragino Sans GB", "microsoft yahei", sans-serif;
+								font-size: 16px;
+								line-height: 38px;
+								border-width: 1px;
+								border-style: solid;
+								-moz-border-radius: 2px;
+								-webkit-border-radius: 2px;
+								border-radius: 2px;
+							}
+						}
+					}
+                    .details-footer1{
+                        p{
+                            &:first-child{
+                                font-size: 12px;
+                                margin: 0 18px 0 5px;
+                            }
+                        }
+                        display: flex;
+                        margin-top: 18px;
+                        justify-content: start;
+
+                        .details-footer-box{
+                            .fa-mug-hot{
+                                color: #00BA97;
+                            }
+                            .fa-gifts{
+                                color: #00BA97;
+                            }
+                            .fa-youtube-square{
+                                color: $bule-color;
+                            }
+                            .fa-wallet{
+                                color: #FF9D55;
+                            }
+                            .fa-credit-card{
+                                color: #00BA97;
+                            }
+                            .fa-coins{
+                                color: #e5511d;
+                            }
+                            i{
+                                font-size: 13px;
+                            }
+                            font-size: 12px;
+                            width: 110px;
+                            display: flex;
+                        }
+                        
+                    }
 				}
 			}
 			.details-body-right {
