@@ -123,6 +123,33 @@ body {
 				border: 1px solid red;
 				width: 500px;
 				height: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3{
+                    font-size: 19px;
+                }
+                .details-body-price{
+                    .details-price-head,.details-body-body{
+                        background-color: ;
+                    }
+                    .details-price-head{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .price{
+                            align-items: center;
+                            display: flex;
+                            p{
+                                &:nth-child(2){
+                                    text-decoration: line-through;
+                                    margin-left: 18px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
 			}
 			.details-body-right {
 				border: 1px solid red;
