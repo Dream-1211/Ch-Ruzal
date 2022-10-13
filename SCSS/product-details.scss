@@ -7,61 +7,128 @@
 	src: url(../fonts/FZSuHJW.TTF);
 }
 body {
-    background-color: $words-color;
+	background-color: $words-color;
 	.details-head {
 		.details-head-box {
-            height: 75px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+			height: 75px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			.details-head-logo {
-                display: flex;
-                justify-content: space-between; 
-                align-items: center;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 				img {
 					width: 110px;
 				}
 				.details-head-more {
 					p {
-                        font-size: 14px;
-                        border: 1px solid $grey-color;
-                        padding: 3px 0px 3px 8px ;
+						font-size: 14px;
+						border: 1px solid $grey-color;
+						padding: 3px 0px 3px 8px;
 					}
 				}
 			}
-            .details-head-input{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                input{
-                    width: 280px;
-                    height: 30px;
-                    border: 2px solid $green-color;
-                    vertical-align: middle;
-                   
+			.details-head-input {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				input {
+					width: 280px;
+					height: 30px;
+					border: 2px solid $green-color;
+					vertical-align: middle;
+				}
+				button {
+					height: 31.5px;
+					width: 82px;
+					font-size: 13px !important;
+					padding: 0;
+					border: none;
+					background-color: rgb(134, 191, 50);
+					color: $words-color;
+					font-size: 16px;
+					border: 1px solid rgb(224, 224, 224);
+					border-left: none;
+				}
+				span {
+					line-height: 22px;
+					margin-left: 2px;
+					text-align: center;
+					border: 1px solid $grey-color;
+					padding: 3px 15px;
+					font-size: 12px;
+					background-color: rgb(142, 203, 51);
+				}
+			}
+		}
+	}
+	.details-body {
+		.details-body-box {
+			border: 1px solid red;
+			display: flex;
+			justify-content: space-evenly;
+			.details-body-left {
+				.swiper-container {
+					width: 100%;
+					height: 350px;
+				}
+				.swiper-slide {
+                    
+					text-align: center;
+					font-size: 18px;
+
+					/* Center slide text vertically */
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					-webkit-align-items: center;
+					align-items: center;
+					transition: 300ms;
+					transform: scale(0.8);
+				}
+				.swiper-slide-active,
+				.swiper-slide-duplicate-active {
+					transform: scale(1);
+				}
+                .swiper-pagination-bullet-active{
+                    background-color: $bule-color;
                 }
-                button{
-                    height: 31.5px;
-                    width: 82px;
-                    font-size: 13px !important;
-                    padding: 0;
-                    border: none;
-                    background-color: rgb(134, 191, 50);
-                    color: $words-color;
-                    font-size: 16px;
-                    border: 1px solid rgb(224, 224, 224);
-                    border-left: none;
-                }
-                span{
-                    line-height: 22px;
-                    margin-left: 2px;
-                    text-align: center;
-                    border: 1px solid $grey-color;
-                    padding: 3px 15px;
+				border: 1px solid red;
+				width: 420px;
+				height: 450px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+                .details-body-left-star{
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
                     font-size: 12px;
-                    background-color: rgb(142, 203, 51);
+                    i{
+                        color: gold;
+                        font-size: 14px;
+                    }
                 }
-            }
+			}
+			.details-body-center {
+				border: 1px solid red;
+				width: 500px;
+				height: 450px;
+			}
+			.details-body-right {
+				border: 1px solid red;
+				width: 200px;
+				height: 450px;
+			}
 		}
 	}
 }

@@ -7,6 +7,8 @@
 		<title>商品详情</title>
 		<link rel="stylesheet" href="../SCSS/product-details.css" />
 		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
+        <link rel="stylesheet" href="../SCSS/swiper-min.css">
+        
 	</head>
 	<body>
 		<!-------------- head头部------------ -->
@@ -71,15 +73,13 @@
 			</div>
 		</div>
 
-
-
+		<!-- head-logo 搜索框 -->
 		<div class="details-head">
 			<div class="details-head-box contain">
 				<div class="details-head-logo">
-					<a href="../www/index.html"><img src="../img/logo.png" alt="" />
-					<div class="details-head-more"></a>
+					<a href="../www/index.html"><img src="../img/logo.png" alt="" /></a>
+					<div class="details-head-more">
 						<p>更多市场<i class="fa fa-chevron-down"></i></p>
-                        
 					</div>
 				</div>
 				<div class="details-head-input">
@@ -88,7 +88,31 @@
 			</div>
 		</div>
 
-
+		<div class="details-body">
+			<div class="details-body-box contain">
+				<div class="details-body-left">
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></div>
+							
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="details-body-left-star">
+						<i class="fa fa-star"></i>
+						<p>收藏宝贝 (4141人气)</p>
+					</div>
+				</div>
+				<div class="details-body-center"></div>
+				<div class="details-body-right"></div>
+			</div>
+		</div>
 
 		<!-- /*---------------- 脚部---------------- */ -->
 		<div class="shar-to">
@@ -272,5 +296,7 @@
 				</div>
 			</div>
 		</div>
+        <script src="../js/swiper.min.js"></script>
+        <script src="../js/product-details.js"></script>
 	</body>
 </html>
