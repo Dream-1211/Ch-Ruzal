@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品详情</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>商品详情</title>
+		<link rel="stylesheet" href="../SCSS/product-details.css" />
+		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
+	</head>
+	<body>
+		<!-------------- head头部------------ -->
+		<div class="head" id="translation">
+			<div class="header">
+				<div class="header-box contain">
+					<div class="header-top">
+						<ul class="header-left">
+							<li>
+								<a href="../www/mobile.html"
+									><i class="fa fa-mobile-alt"></i>手机版</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fas fa-user-friends"></i>商家入驻</a
+								>
+							</li>
+						</ul>
+						<ul class="header-right">
+							<li>
+								<a class="loc-an-box" href="javascript:;"
+									><div class="loc-mc-box">
+										<p class="loc-mc-box__text">
+											<i class="fa fa-comments"></i>一条未读
+										</p>
+										<p class="loc-mc-box__text">
+											<i class="fa fa-bell"></i>我的消息
+										</p>
+										<p class="loc-mc-box__text">
+											<i class="fa fa-comments"></i>一条未读
+										</p>
+									</div></a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fa fa-shopping-cart"></i>购物车</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"><i class="fa fa-user"></i>用户中心</a>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fa fa-comment-dots"></i>客户服务</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"><i class="fa fa-globe"></i>网站导航</a>
+							</li>
+							<span>|</span>
+							<li><a href="javascript:;" id="change">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- /*---------------- 脚部---------------- */ -->
+		<div class="shar-to">
+			<div class="shar-to-one">
+				<a href="javascript:;" class="shar-one">
+					<i class="fa fa-phone-alt"></i>
+					<p>客服</p></a
+				>
+
+				<div class="shar-more-more-1">
+					<span></span>
+					<div class="shar-more-qq-1">
+						<a href="#"
+							><i class="fas fa-phone"></i>
+							<p>客服010-38498</p></a
+						>
+					</div>
+					<div class="shar-more-qq-1">
+						<a href="#"
+							><i class="fas fa-phone"></i>
+							<p>客服080-38344</p></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shar-to">
+			<div class="shar-to-two shar-two-two">
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-share-square"></i></p>
+					<p>分享</p></a
+				>
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-paper-plane"></i></p
+				></a>
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-share-square"></i></p>
+					<p>分享</p></a
+				>
+				<div class="shar-more-more">
+					<span></span>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-qq"></i>
+							<p>分享至QQ</p></a
+						>
+					</div>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-weixin"></i>
+							<p>分享至微信</p></a
+						>
+					</div>
+
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-line"></i>
+							<p>分享至Line</p></a
+						>
+					</div>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-github"></i>
+							<p>分享至Github</p></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shar-to">
+			<div class="shar-to-three">
+				<a href="javascript:;" class="shar-three">
+					<i class="fa fa-home"></i>
+					<p>返回顶部</p></a
+				>
+			</div>
+		</div>
+		<div class="footer-head">
+			<div class="footer-header">
+				<div class="introduce">
+					<i class="fa fa-leaf"></i>
+					<div class="foolter-header-title">绿色</div>
+				</div>
+
+				<div class="introduce">
+					<i class="fa fa-cloud"></i>
+					<div class="foolter-header-title">智能</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-tags"></i>
+					<div class="foolter-header-title">实惠</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-paper-plane"></i>
+					<div class="foolter-header-title">安全</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-desktop"></i>
+					<div class="foolter-header-title">便捷</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-head-body">
+			<div class="footer-header-body">
+				<span>xx农产网是一家专注于绿色有机农产品的专业服务网</span>
+
+				<span>xx专注于满足市场需求不断拓展服务区域</span>
+
+				<span>没有中间商，免除差价让交易更加简单</span>
+
+				<span>实名认证登录、注册专业渠道让交易更加有保障</span>
+
+				<span>快速稳定的销往全国各地经销商和个体户</span>
+			</div>
+		</div>
+		<div class="footer-body">
+			<ul class="aboutt">
+				<li><a href="javascript:;">关于我们</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">法律申明</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">使用协议</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">版权隐私</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">友情链接</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">成功案例</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">XX大事件</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品库</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">品种库</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品价格大全</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品地图</a></li>
+			</ul>
+		</div>
+		<div class="foolter-bootm">
+			<ol class="infor">
+				<li>蜀ICP备12345678号-1服务热线:400-008-8888</li>
+				<li>
+					互联网农产品信息服务资格证书:(蜀)–经营性-2019-0001四川xx农产品网营业执照
+				</li>
+				<li>&copy;-2022 Cnhnb B2B SYSTEN ALL Rights Reserved</li>
+			</ol>
+		</div>
+		<div class="login-regster-box">
+			<div class="login-regster">
+				<div class="login-regster-head">
+					<h3>注册登录</h3>
+					<button id="closed-login">X</button>
+				</div>
+				<div class="login-regster-body">
+					<h2>注册登录</h2>
+					<img src="../img/qrcode-login.jpg" alt="" />
+					<div class="login-regster-weixin">
+						<i class="fab fa-weixin"></i>
+						<p>微信扫码登录</p>
+					</div>
+					<div class="login-regster-body-head">
+						<a href="#">微信登录</a>
+						<a href="#" id="root-login">游客登录</a>
+						<a href="#">密码登录</a>
+					</div>
+					<div class="login-regster-icon">
+						<a href="#"><i class="fab fa-google"></i></a>
+						<a href="#"><i class="fab fa-github"></i></a>
+						<a href="#"><i class="fab fa-gitlab"></i></a>
+						<a href="#"><i class="points-login-regster">···</i></a>
+					</div>
+					<div class="loginregster-footer">
+						<p>继续即代表同意</p>
+						<a href="#">《服务协议》</a>
+						<p>和</p>
+						<a href="#">《隐私政策》</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
