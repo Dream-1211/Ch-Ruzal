@@ -9,15 +9,59 @@
 body {
 	.details-head {
 		.details-head-box {
+            height: 75px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 			.details-head-logo {
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
 				img {
-					width: 150px;
+					width: 110px;
 				}
 				.details-head-more {
 					p {
+                        font-size: 14px;
+                        border: 1px solid $grey-color;
+                        padding: 3px 0px 3px 8px ;
 					}
 				}
 			}
+            .details-head-input{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    width: 280px;
+                    height: 30px;
+                    border: 2px solid $green-color;
+                    vertical-align: middle;
+                   
+                }
+                button{
+                    height: 31.5px;
+                    width: 82px;
+                    font-size: 13px !important;
+                    padding: 0;
+                    border: none;
+                    background-color: rgb(134, 191, 50);
+                    color: $words-color;
+                    font-size: 16px;
+                    border: 1px solid rgb(224, 224, 224);
+                    border-left: none;
+                }
+                span{
+                    line-height: 22px;
+                    margin-left: 2px;
+                    text-align: center;
+                    border: 1px solid $grey-color;
+                    padding: 3px 15px;
+                    font-size: 12px;
+                    background-color: rgb(142, 203, 51);
+                }
+            }
 		}
 	}
 }

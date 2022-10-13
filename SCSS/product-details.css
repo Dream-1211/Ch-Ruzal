@@ -1140,6 +1140,55 @@ body .hello-user-box .s2 {
   font-family: "myfont";
   src: url(../fonts/FZSuHJW.TTF);
 }
+body .details-head .details-head-box {
+  height: 75px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .details-head .details-head-box .details-head-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 body .details-head .details-head-box .details-head-logo img {
-  width: 150px;
+  width: 110px;
+}
+body .details-head .details-head-box .details-head-logo .details-head-more p {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 3px 0px 3px 8px;
+}
+body .details-head .details-head-box .details-head-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .details-head .details-head-box .details-head-input input {
+  width: 280px;
+  height: 30px;
+  border: 2px solid rgb(134, 191, 50);
+  vertical-align: middle;
+}
+body .details-head .details-head-box .details-head-input button {
+  height: 31.5px;
+  width: 82px;
+  font-size: 13px !important;
+  padding: 0;
+  border: none;
+  background-color: rgb(134, 191, 50);
+  color: #f3f3f3;
+  font-size: 16px;
+  border: 1px solid rgb(224, 224, 224);
+  border-left: none;
+}
+body .details-head .details-head-box .details-head-input span {
+  line-height: 22px;
+  margin-left: 2px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 3px 15px;
+  font-size: 12px;
+  background-color: rgb(142, 203, 51);
 }/*# sourceMappingURL=product-details.css.map */
