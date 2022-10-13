@@ -1,11 +1,23 @@
-@import'./color';
-@import'./base';
-@import'./reset';
-@import'./fun';
+@import "./color";
+@import "./base";
+@import "./reset";
+@import "./fun";
 @font-face {
-    font-family: "myfont";
-    src: url(../fonts/FZSuHJW.TTF);
+	font-family: "myfont";
+	src: url(../fonts/FZSuHJW.TTF);
 }
-body{
-    
+body {
+	.details-head {
+		.details-head-box {
+			.details-head-logo {
+				img {
+					width: 150px;
+				}
+				.details-head-more {
+					p {
+					}
+				}
+			}
+		}
+	}
 }

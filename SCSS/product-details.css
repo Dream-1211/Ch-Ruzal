@@ -1139,4 +1139,7 @@ body .hello-user-box .s2 {
 @font-face {
   font-family: "myfont";
   src: url(../fonts/FZSuHJW.TTF);
+}
+body .details-head .details-head-box .details-head-logo img {
+  width: 150px;
 }/*# sourceMappingURL=product-details.css.map */
