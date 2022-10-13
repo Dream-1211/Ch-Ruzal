@@ -1259,16 +1259,19 @@ body .details-body .details-body-box .details-body-center {
 body .details-body .details-body-box .details-body-center h3 {
   font-size: 19px;
 }
-body .details-body .details-body-box .details-body-center .details-body-price .details-price-head, body .details-body .details-body-box .details-body-center .details-body-price .details-body-body .details-price-head {
+body .details-body .details-body-box .details-body-center .details-body-price .details-price-head, body .details-body .details-body-box .details-body-center .details-body-price .details-body-body {
+  background-color: #FFF2E8;
+}
+body .details-body .details-body-box .details-body-center .details-body-price .details-price-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .details-body .details-body-box .details-body-center .details-body-price .details-price-head .price, body .details-body .details-body-box .details-body-center .details-body-price .details-body-body .details-price-head .price {
+body .details-body .details-body-box .details-body-center .details-body-price .details-price-head .price {
   align-items: center;
   display: flex;
 }
-body .details-body .details-body-box .details-body-center .details-body-price .details-price-head .price p:nth-child(2), body .details-body .details-body-box .details-body-center .details-body-price .details-body-body .details-price-head .price p:nth-child(2) {
+body .details-body .details-body-box .details-body-center .details-body-price .details-price-head .price p:nth-child(2) {
   text-decoration: line-through;
   margin-left: 18px;
   font-size: 14px;
