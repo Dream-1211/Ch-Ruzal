@@ -1140,9 +1140,11 @@ body .hello-user-box .s2 {
   font-family: "myfont";
   src: url(../fonts/FZSuHJW.TTF);
 }
+body {
+  background-color: #f3f3f3;
+}
 body .details-head .details-head-box {
   height: 75px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;

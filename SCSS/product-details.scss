@@ -7,10 +7,10 @@
 	src: url(../fonts/FZSuHJW.TTF);
 }
 body {
+    background-color: $words-color;
 	.details-head {
 		.details-head-box {
             height: 75px;
-            border: 1px solid red;
             display: flex;
             justify-content: space-between;
             align-items: center;
