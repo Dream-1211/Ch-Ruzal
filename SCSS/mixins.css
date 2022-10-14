@@ -1387,6 +1387,8 @@ body .community .community-box .community-head-box .search-community-box i {
   top: 20px;
 }
 body .community .community-box .community-head-box .search-community-box .input-community {
+  outline: none;
+  padding: 0 10px;
   border: none;
   height: 40px;
   padding: 8px 34px;
@@ -1654,4 +1656,18 @@ body .color-full {
     background-size: 90vmax 90vmax, 90vmax 90vmax, 100vmax 100vmax, 90vmax 90vmax, 70vmax 70vmax;
     background-position: -50vmax -40vmax, 50vmax -30vmax, 20vmax 0vmax, -10vmax 10vmax, 40vmax 60vmax;
   }
+}
+
+[data-theme=light] #theme-toggler:before {
+  content: "🌙";
+}
+[data-theme=dark] #theme-toggler:before {
+  content: "☀";
+}
+
+[data-theme=light] .wangzhanshouye {
+  background-color: #fff;
+}
+[data-theme=dark] .wangzhanshouye {
+  background-color: #000;
 }/*# sourceMappingURL=mixins.css.map */

@@ -1167,6 +1167,8 @@ body .details-head .details-head-box .details-head-input {
 body .details-head .details-head-box .details-head-input input {
   width: 280px;
   height: 30px;
+  padding: 0 10px;
+  outline: none;
   border: 2px solid rgb(134, 191, 50);
   vertical-align: middle;
 }

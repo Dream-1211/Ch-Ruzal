@@ -156,7 +156,7 @@ window.addEventListener("load", function (e) {
 		color_full.style.display = "none";
 		community_footer.style.display = "none";
 		caigoudating.style.display = "block";
-		advert.style.display = "block";
+		// advert.style.display = "block";
 		aixinzhunong.style.display = "none";
 		guanyuwomen.style.display = "none";
 		wangzhanshouye.style.display = "none";
@@ -312,11 +312,11 @@ window.addEventListener("load", function (e) {
 		login_parent.className = "login-display";
 	});
 
-	var advert = document.querySelector(".advert");
-	var spans = document.querySelector(".span-s");
-	spans.onclick = function () {
-		advert.style.display = "none";
-	};
+	// var advert = document.querySelector(".advert");
+	// var spans = document.querySelector(".span-s");
+	// spans.onclick = function () {
+	// 	advert.style.display = "none";
+	// };
 
 	// 该效果未实现！！！
 	// $(function(){
@@ -396,7 +396,6 @@ window.addEventListener("load", function (e) {
 	var color_full= document.querySelector(".color-full");
 	var community_footer = document.querySelector(".community-footer");
 	var community = document.querySelector("#community");
-	console.log(community_box);
 	color_full.style.display = "none";
 	community.addEventListener("click", function () {
 		community_box.style.display = "block";
