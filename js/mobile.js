@@ -39,6 +39,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
 		ele[3].style.display = "none";
+		footer_bar[1].style.color = "";
 		footer_bar[0].style.color = "#1d99e3";
 	});
 	topbar_ele[1].addEventListener("click", () => {
@@ -55,6 +56,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "block";
 		ele[3].style.display = "none";
+		shop_car.style.display = "none";
 		for (var i = 0; i < 4; i++) {
 			footer_bar[i].style.color = "";
 		}
@@ -64,6 +66,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
 		ele[3].style.display = "block";
+		shop_car.style.display = "none";
 		for (var i = 0; i < 4; i++) {
 			footer_bar[i].style.color = "";
 		}
@@ -110,6 +113,7 @@ window.onload = function () {
 	footer_bar[0].addEventListener("click", () => {
 		shop_car.style.display = "none";
 		zhuye.style.display = "block";
+		footer_bar[1].style.color = "";
 		for (var i = 0; i < 6; i++) {
 			topbar_ele[i].style.borderBottom = "";
 		}
