@@ -1662,12 +1662,12 @@ body .color-full {
   content: "🌙";
 }
 [data-theme=dark] #theme-toggler:before {
-  content: "☀";
+  content: "🌞";
 }
 
 [data-theme=light] .wangzhanshouye {
   background-color: #fff;
 }
 [data-theme=dark] .wangzhanshouye {
-  background-color: #000;
+  background-color: #181818;
 }/*# sourceMappingURL=mixins.css.map */
