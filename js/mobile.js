@@ -80,6 +80,7 @@ window.onload = function () {
 		ele[0].style.cssText = "padding-top: 5.25rem";
 		ele[1].style.cssText = "padding-top: 5.25rem";
 		ele[2].style.cssText = "padding-top: 5.25rem";
+		ele[3].style.cssText = "padding-top: 5.25rem";
 		shop_car.style.cssText = "padding-top: 5.25rem";
 		topbar.style.cssText = "top: 0";
 		for (var i = 0; i < topbar_ele.length; i++) {
