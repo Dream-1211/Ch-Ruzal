@@ -13,17 +13,19 @@ function initTheme() {
 	const savedTheme = localStorage.getItem(STORAGE_KEY);
 
 	if (savedTheme) {
-		// Storage theme
+
+		// 将主题存储至本地
 		setTheme(savedTheme);
 	} else if (window.matchMedia && window.matchMedia(QUERY_KEY).matches) {
-		// system theme
+		// 深色主题
 		setTheme(themes.DARK);
 	} else {
-		// Default theme
+		// 默认主题
 		setTheme(themes.LIGHT);
 	}
 
-	// Watch for system theme changes
+	// 查看系统主题
+
 	window.matchMedia(QUERY_KEY).addEventListener("change", (e) => {
 		const newTheme = e.matches ? themes.DARK : themes.LIGHT;
 		setTheme(newTheme);

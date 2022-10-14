@@ -9,10 +9,11 @@
 }
 
 #theme-toggler:before {
-  @include themed(content, "🌙", "☀");
+
+  @include themed(content, "🌙", "🌞");
 }
 .wangzhanshouye{
-  @include themed(background-color,#fff,#000)
+  @include themed(background-color,#fff,#181818)
 }
 // .navbar-themed {
 //   .navbar-brand,

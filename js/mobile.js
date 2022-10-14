@@ -8,8 +8,8 @@ window.onload = function () {
 	var shop_car = document.querySelector(".shop-car-infor");
 	var footer = document.querySelector(".footer-more");
 	var topbar_ele = document.querySelectorAll(".topbar-footer p");
-	var more_top = document.querySelectorAll('.more-top ul li');
-	var more_top_xhx = document.querySelector('.van-tabs__line');
+	var more_top = document.querySelectorAll(".more-top ul li");
+	var more_top_xhx = document.querySelector(".van-tabs__line");
 	var topbar_head = document.querySelector(".topabr");
 	var ele = [zhuye, price_buy, zhunong, about];
 	price_buy.style.display = "none";
@@ -82,10 +82,15 @@ window.onload = function () {
 		ele[2].style.cssText = "padding-top: 5.25rem";
 		shop_car.style.cssText = "padding-top: 5.25rem";
 		topbar.style.cssText = "top: 0";
+		for (var i = 0; i < topbar_ele.length; i++) {
+			topbar_ele[i].style.borderBottom = "";
+		}
 		for (var i = 0; i < footer_bar.length; i++) {
 			footer_bar[i].style.color = "";
 		}
 		footer_bar[0].style.color = "#1d99e3";
+		topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
+		ele[1].style.display = "none";
 	});
 
 	var footer_bar = document.querySelectorAll(".footer-banner-header a");
@@ -119,43 +124,45 @@ window.onload = function () {
 		}
 		topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	});
-	 var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+
+	var swiper = new Swiper(".mySwiper", {
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 1700,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+
 	// 秒杀
-	var hours = document.querySelector('.j_sk_h')
-        var min = document.querySelector('.j_sk_m')
-        var second = document.querySelector('.j_sk_s')
-        var now = +new Date('2022-10-13 21:00:00'); 
-        getDaojishi(); 
-        setInterval(getDaojishi, 1000)
- 
-        function getDaojishi(time) {
-            var date = +new Date(); //返回当前时间总毫秒数
-            var times = (now - date) / 1000; //剩余时间总秒数
-            var t = parseInt(times / 60 / 60 / 24); //天
-            t = t < 10 ? '0' + t : t;
-            var h = parseInt(times / 60 / 60 % 24); //小时
-            h = h < 10 ? '0' + h : h;
-            hours.innerHTML = h;
-            var m = parseInt(times / 60 % 60); //分钟
-            m = m < 10 ? '0' + m : m;
-            min.innerHTML = m;
-            var s = parseInt(times % 60); //秒
-            s = s < 10 ? '0' + s : s;
-            second.innerHTML = s;
-		}
+	var hours = document.querySelector(".j_sk_h");
+	var min = document.querySelector(".j_sk_m");
+	var second = document.querySelector(".j_sk_s");
+	var now = +new Date("2022-10-13 21:00:00");
+	getDaojishi();
+	setInterval(getDaojishi, 1000);
+
+	function getDaojishi(time) {
+		var date = +new Date(); //返回当前时间总毫秒数
+		var times = (now - date) / 1000; //剩余时间总秒数
+		var t = parseInt(times / 60 / 60 / 24); //天
+		t = t < 10 ? "0" + t : t;
+		var h = parseInt((times / 60 / 60) % 24); //小时
+		h = h < 10 ? "0" + h : h;
+		hours.innerHTML = h;
+		var m = parseInt((times / 60) % 60); //分钟
+		m = m < 10 ? "0" + m : m;
+		min.innerHTML = m;
+		var s = parseInt(times % 60); //秒
+		s = s < 10 ? "0" + s : s;
+		second.innerHTML = s;
+	}
 };
