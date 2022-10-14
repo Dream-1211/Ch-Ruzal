@@ -2,7 +2,7 @@
 
 乡村振兴，助农服务前端开发项目
 
-![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E4%B8%AD-green)
+![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%AE%8C%E6%88%90-success)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
 

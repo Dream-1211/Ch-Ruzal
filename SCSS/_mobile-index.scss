@@ -240,6 +240,90 @@ body {
 			}
 		}
 	}
+
+	.miaosha{
+		width: 100%;
+		box-sizing: border-box;
+		.floor-container{
+			height: 7rem;
+			border: 1px solid #f2f2f2;
+			border-radius: 0.6rem;
+			overflow: hidden;
+			.floor-top{
+				height: 1.7694rem;
+				line-height: 1.7694rem;
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=);
+				background-size: contain;
+				.ms{
+					width: 3.4rem;
+				}
+				.ms-time{
+					width: 5.75rem;
+					.seckill-nth{
+						position: relative;
+						left: -1;
+						li{
+							width: 30px;
+						}
+					}
+					.seckill-nth::after{
+						content: '';
+							width: 1.0669rem;
+							height: 0.9106rem;
+							display: inline-block;
+							vertical-align: middle;
+							background-image: url(https://wq.360buyimg.com/jdm-home-page/pages/images/seckill-time-to_1de70c91.png);
+							background-repeat: no-repeat;
+							background-position: 50%;
+							background-size: contain;
+					}
+					.seckill_time{
+						.seckill-time{
+							width: 0.8rem;
+							border-radius: 0.3rem;
+							font-weight: 400;
+							height: 1.25rem;
+							line-height: 1.25rem;
+						}
+					}
+				}
+				.gdtj{
+					ion-icon{
+						width: 1.6rem;
+						height: 1.6rem;
+						svg{
+							width: 1.6rem;
+							height: 1.6rem;
+						}
+					}
+				}
+			}
+			.foorl-bottom{
+				ul{
+					width: 32.2rem;
+					li{
+						width: 2.975rem;
+						.mt-img{
+							padding: 0 0.05rem;
+							img{
+								height: auto;
+								overflow: hidden;
+								min-width: 0.05rem;
+								min-height: 0.05rem;
+							}
+						}
+						.jg{
+							margin: 0 auto;
+							span{
+								height: 0.6rem;
+								line-height: 0.6rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.banner {
 		img {
 			margin-top: 8rem;
@@ -250,7 +334,6 @@ body {
 			color: $huihei-color;
 		}
 	}
-
 	.menu {
 		height: 15.225rem;
 		display: flex;

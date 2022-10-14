@@ -162,14 +162,14 @@ body .price-buy-more .more-box .more-top ul {
   background-color: #fff;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 body .price-buy-more .more-box .more-top ul li {
+  position: relative;
   width: 25%;
   font-family: PingFangSC-Medium;
   font-size: 0.7rem;
@@ -179,12 +179,9 @@ body .price-buy-more .more-box .more-top ul li {
   height: 100%;
   line-height: 1.75rem;
 }
-body .price-buy-more .more-box .more-top .van-tabs__line {
-  background-color: rgb(57, 191, 62);
-  width: 1.05rem;
-  height: 0.15rem;
-  border-radius: 0.15rem;
-  transform: translate(1.7rem, -0.8rem);
+body .price-buy-more .more-box .more-top ul .activ {
+  color: rgb(35, 200, 67);
+  border-bottom: 0.1rem solid rgb(35, 200, 67);
 }
 body .price-buy-more .more-box .box-bottom {
   width: 100%;
@@ -517,6 +514,83 @@ body .topbar .top-bar-head .topbar-footer p {
   text-align: center;
   font-family: "myfont";
 }
+body .miaosha {
+  width: 100%;
+  box-sizing: border-box;
+}
+body .miaosha .floor-container {
+  height: 7rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+body .miaosha .floor-container .floor-top {
+  height: 1.7694rem;
+  line-height: 1.7694rem;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=);
+  background-size: contain;
+}
+body .miaosha .floor-container .floor-top .ms {
+  width: 3.4rem;
+}
+body .miaosha .floor-container .floor-top .ms-time {
+  width: 5.75rem;
+}
+body .miaosha .floor-container .floor-top .ms-time .seckill-nth {
+  position: relative;
+  left: -1;
+}
+body .miaosha .floor-container .floor-top .ms-time .seckill-nth li {
+  width: 30px;
+}
+body .miaosha .floor-container .floor-top .ms-time .seckill-nth::after {
+  content: "";
+  width: 1.0669rem;
+  height: 0.9106rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(https://wq.360buyimg.com/jdm-home-page/pages/images/seckill-time-to_1de70c91.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+body .miaosha .floor-container .floor-top .ms-time .seckill_time .seckill-time {
+  width: 0.8rem;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+body .miaosha .floor-container .floor-top .gdtj ion-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+body .miaosha .floor-container .floor-top .gdtj ion-icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+body .miaosha .floor-container .foorl-bottom ul {
+  width: 32.2rem;
+}
+body .miaosha .floor-container .foorl-bottom ul li {
+  width: 2.975rem;
+}
+body .miaosha .floor-container .foorl-bottom ul li .mt-img {
+  padding: 0 0.05rem;
+}
+body .miaosha .floor-container .foorl-bottom ul li .mt-img img {
+  height: auto;
+  overflow: hidden;
+  min-width: 0.05rem;
+  min-height: 0.05rem;
+}
+body .miaosha .floor-container .foorl-bottom ul li .jg {
+  margin: 0 auto;
+}
+body .miaosha .floor-container .foorl-bottom ul li .jg span {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
 body .banner img {
   margin-top: 8rem;
 }
@@ -684,8 +758,7 @@ body .light-box-head .light-box {
   z-index: auto;
   width: 100rem;
   height: 13.5rem;
-  -webkit-animation: move 20s infinite linear;
-          animation: move 20s infinite linear;
+  animation: move 20s infinite linear;
 }
 body .light-box-head .light-box p {
   font-size: 0.6rem;
@@ -704,19 +777,13 @@ body .light-box-head .light-box li {
 body .light-box-head .light-box li img {
   width: 5rem;
 }
-@-webkit-keyframes move {
-  to {
-    transform: translatex(-70rem);
-  }
-}
 @keyframes move {
   to {
     transform: translatex(-70rem);
   }
 }
 body div:hover ul {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 body .swiper {
   width: 100%;
@@ -730,16 +797,24 @@ body .swiper-slide {
   font-size: 0.9rem;
   background: #fff;
   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 body .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .shop-car-infor {
@@ -885,16 +960,71 @@ body .zn-banner .gmxz {
 }
 body .zn-banner .gmxz .tz {
   height: 2.5rem;
+  width: 5rem;
+  overflow: hidden;
 }
 body .zn-banner .gmxz .tz .lbt {
-  height: 100%;
-  overflow: hidden;
-  transition: 0.5s;
+  -webkit-animation: tz 6s infinite ease-out;
+          animation: tz 6s infinite ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 body .zn-banner .gmxz .tz .lbt span {
   display: block;
   height: 2.5rem;
   line-height: 2.5rem;
+}
+body .zn-banner .gmxz .tz .lbt span:nth-child(1) {
+  position: absolute;
+  top: 0.05rem;
+  left: 0.25rem;
+  text-align: center;
+}
+body .zn-banner .gmxz .tz .lbt span:nth-child(2) {
+  position: absolute;
+  top: 2.75rem;
+  left: 0.25rem;
+  text-align: center;
+}
+body .zn-banner .gmxz .tz .lbt span:nth-child(3) {
+  position: absolute;
+  top: 5.5rem;
+  left: 0.25rem;
+  text-align: center;
+}
+@-webkit-keyframes tz {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-57px);
+  }
+  50% {
+    transform: translateY(-57px);
+  }
+  55% {
+    transform: translateY(-110px);
+  }
+  to {
+    transform: translateY(-110px);
+  }
+}
+@keyframes tz {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-57px);
+  }
+  50% {
+    transform: translateY(-57px);
+  }
+  55% {
+    transform: translateY(-110px);
+  }
+  to {
+    transform: translateY(-110px);
+  }
 }
 body .zn-banner .axjz .ax {
   height: 2rem;
@@ -933,10 +1063,6 @@ body .zn-banner .axjz .nh .text .text-bottom .text-bottom-top .li li::before {
   top: 0;
   left: 0;
   background-color: #ffd80c;
-}
-
-html {
-  font-size: 20px;
 }
 
 .w100 {

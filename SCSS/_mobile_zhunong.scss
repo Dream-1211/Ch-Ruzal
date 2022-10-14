@@ -39,17 +39,57 @@ body{
             height: 2.5rem;
             .tz{
                 height: 2.5rem;
+                width: 5rem;
+                overflow: hidden;
                 .lbt{
-                    height: 100%;
-                    overflow: hidden;
-                    transition: 0.5s;
+                    animation: tz 6s infinite ease-out;
+					animation-delay: 1s;
                     span{
                         display: block;
                         height: 2.5rem;
                         line-height: 2.5rem;
+                        &:nth-child(1){
+                            position: absolute;
+							top: 0.05rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
+                        &:nth-child(2){
+                            position: absolute;
+							top: 2.75rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
+                        &:nth-child(3){
+                            position: absolute;
+							top: 5.5rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
                     }
                 }
             }
+            @keyframes tz {
+					0% {
+						transform: translateY(0);
+					}
+
+					5% {
+						transform: translateY(-57px);
+					}
+
+					50% {
+						transform: translateY(-57px);
+					}
+
+					55% {
+						transform: translateY(-110px);
+					}
+
+					to {
+						transform: translateY(-110px);
+					}
+				}
         }
         .axjz {
            .ax{

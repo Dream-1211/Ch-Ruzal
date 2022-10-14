@@ -26,9 +26,9 @@ window.onload = function () {
 	for (var f = 0; f < more_top.length; f++) {
 		more_top[f].onclick = function () {
 			for (var f = 0; f < more_top.length; f++) {
-				more_top[f].style.color = "";
+				more_top[f].className = "";
 			}
-			this.style.color = "rgb(35, 200, 67)";
+			this.className = "activ";
 		};
 	}
 	for (var i = 0; i < 4; i++) {
@@ -39,6 +39,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
 		ele[3].style.display = "none";
+		footer_bar[1].style.color = "";
 		footer_bar[0].style.color = "#1d99e3";
 	});
 	topbar_ele[1].addEventListener("click", () => {
@@ -55,6 +56,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "block";
 		ele[3].style.display = "none";
+		shop_car.style.display = "none";
 		for (var i = 0; i < 4; i++) {
 			footer_bar[i].style.color = "";
 		}
@@ -64,6 +66,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
 		ele[3].style.display = "block";
+		shop_car.style.display = "none";
 		for (var i = 0; i < 4; i++) {
 			footer_bar[i].style.color = "";
 		}
@@ -110,16 +113,17 @@ window.onload = function () {
 	footer_bar[0].addEventListener("click", () => {
 		shop_car.style.display = "none";
 		zhuye.style.display = "block";
+		footer_bar[1].style.color = "";
 		for (var i = 0; i < 6; i++) {
 			topbar_ele[i].style.borderBottom = "";
 		}
 		topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	});
-	var swiper = new Swiper(".mySwiper", {
-		spaceBetween: 30,
+	 var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 1700,
+          delay: 2500,
           disableOnInteraction: false,
         },
         pagination: {
@@ -130,7 +134,7 @@ window.onload = function () {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-	});
+      });
 	// 秒杀
 	var hours = document.querySelector('.j_sk_h')
         var min = document.querySelector('.j_sk_m')
