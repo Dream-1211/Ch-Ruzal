@@ -147,7 +147,7 @@ window.onload = function () {
 	var hours = document.querySelector(".j_sk_h");
 	var min = document.querySelector(".j_sk_m");
 	var second = document.querySelector(".j_sk_s");
-	var now = +new Date("2022-10-13 21:00:00");
+	var now = +new Date("2022-10-14 21:00:00");
 	getDaojishi();
 	setInterval(getDaojishi, 1000);
 
