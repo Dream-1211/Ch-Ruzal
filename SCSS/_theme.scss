@@ -13,7 +13,7 @@
   @include themed(content, "🌙", "🌞");
 }
 .wangzhanshouye{
-  @include themed(background-color,#fff,#181818)
+  @include themed(background-color,$words-color,#181818)
 }
 // .navbar-themed {
 //   .navbar-brand,
