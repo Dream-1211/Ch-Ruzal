@@ -43,8 +43,7 @@ body {
 	}
 	.aixinzhunong,
 	.guanyuwomen,
-	.zn-banner
-	.caigoudating {
+	.zn-banner .caigoudating {
 		display: none;
 	}
 	.left-menu {
@@ -275,6 +274,86 @@ body {
 				}
 			}
 			.login-regster-body {
+				.user-login-box-1 {
+					display: none;
+				}
+				.user-login-box {
+					height: 300px;
+					width: 380px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					h3 {
+						line-height: 60px;
+						font-size: 30px;
+					}
+
+					.input-user-login-box {
+						position: relative;
+						input {
+							transition: all 0.2s;
+							border: 1px solid $grey-color;
+							border-radius: 5px;
+							outline: none;
+							padding: 5px 10px;
+							font-size: 20px;
+							display: flex;
+							height: 40px;
+							width: 360px;
+							margin: 30px 0;
+							margin-top: 40px;
+							&:first-child {
+								margin-top: 10px;
+							}
+						}
+						i {
+							position: absolute;
+							top: 120px;
+							right: 4px;
+							cursor: pointer;
+						}
+						a {
+							position: absolute;
+							top: 165px;
+							right: 4px;
+							color: #00965e;
+						}
+
+						.pwd-tips,
+						.num-tips {
+							color: red;
+							font-size: 14px;
+						}
+						.pwd-tips{
+							display: none;
+							position: absolute;
+							top: 157px;
+							left: -141px;
+						}
+						.num-tips{
+							display: none;
+							position: absolute;
+							top: 66px;
+							left: -128px;
+						}
+					}
+					.logining-btn {
+						&:hover {
+							background-color: #00784b;
+						}
+						cursor: pointer;
+						display: block;
+						margin-top: 10px;
+						line-height: 45px;
+						border: none;
+						border-radius: 5px;
+						font-size: 20px;
+						color: $words-color;
+						width: 380px;
+						background-color: #00965e;
+					}
+				}
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -285,6 +364,13 @@ body {
 				.login-regster-icon {
 					width: 100%;
 					text-align: center;
+				}
+				.user-regster-box-2 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 300px;
 				}
 				.login-regster-weixin {
 					p {
@@ -324,9 +410,6 @@ body {
 
 						&:hover {
 							color: #00784b;
-						}
-						&:first-child {
-							color: $huihei-color;
 						}
 					}
 					height: 60px;
@@ -559,7 +642,7 @@ body {
 		}
 	}
 }
-.bar-box-black{
+.bar-box-black {
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -567,5 +650,8 @@ body {
 	top: 0;
 	z-index: 999;
 	background-color: #000000;
-	opacity: .5;
+	opacity: 0.5;
+}
+#theme-toggler {
+	cursor: pointer;
 }

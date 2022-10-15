@@ -934,12 +934,97 @@ body .login-regster-box .login-regster .login-regster-body {
   align-items: center;
   flex-wrap: wrap;
 }
+body .login-regster-box .login-regster .login-regster-body .user-login-box-1 {
+  display: none;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box {
+  height: 300px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box h3 {
+  line-height: 60px;
+  font-size: 30px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box {
+  position: relative;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box input {
+  transition: all 0.2s;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  display: flex;
+  height: 40px;
+  width: 360px;
+  margin: 30px 0;
+  margin-top: 40px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box input:first-child {
+  margin-top: 10px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box i {
+  position: absolute;
+  top: 120px;
+  right: 4px;
+  cursor: pointer;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box a {
+  position: absolute;
+  top: 165px;
+  right: 4px;
+  color: #00965e;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box .pwd-tips,
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box .num-tips {
+  color: red;
+  font-size: 14px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box .pwd-tips {
+  display: none;
+  position: absolute;
+  top: 157px;
+  left: -141px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .input-user-login-box .num-tips {
+  display: none;
+  position: absolute;
+  top: 66px;
+  left: -128px;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .logining-btn {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  line-height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #f3f3f3;
+  width: 380px;
+  background-color: #00965e;
+}
+body .login-regster-box .login-regster .login-regster-body .user-login-box .logining-btn:hover {
+  background-color: #00784b;
+}
 body .login-regster-box .login-regster .login-regster-body h2,
 body .login-regster-box .login-regster .login-regster-body p,
 body .login-regster-box .login-regster .login-regster-body .login-regster-weixin,
 body .login-regster-box .login-regster .login-regster-body .login-regster-icon {
   width: 100%;
   text-align: center;
+}
+body .login-regster-box .login-regster .login-regster-body .user-regster-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
 }
 body .login-regster-box .login-regster .login-regster-body .login-regster-weixin {
   display: flex;
@@ -981,9 +1066,6 @@ body .login-regster-box .login-regster .login-regster-body .login-regster-body-h
 }
 body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:hover {
   color: #00784b;
-}
-body .login-regster-box .login-regster .login-regster-body .login-regster-body-head a:first-child {
-  color: #434343;
 }
 body .login-regster-box .login-regster .login-regster-icon {
   width: 100%;
@@ -1219,6 +1301,10 @@ body .hello-user-box .s2 {
   z-index: 999;
   background-color: #000000;
   opacity: 0.5;
+}
+
+#theme-toggler {
+  cursor: pointer;
 }
 
 @font-face {

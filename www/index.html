@@ -65,7 +65,13 @@
 								<a href="javascript:;"><i class="fa fa-globe"></i>网站导航</a>
 							</li>
 							<span>|</span>
-							<li> <span id="theme-toggler" class="nav-item nav-link" onclick="toggleTheme()"></span></li>
+							<li>
+								<span
+									id="theme-toggler"
+									class="nav-item nav-link"
+									onclick="toggleTheme()"
+								></span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -2876,7 +2882,7 @@
 					<div class="hot-post">
 						<div class="hot-post-body">
 							<h3 class="post-title">最新帖子</h3>
-	
+
 							<a href="#"><i class="fa fa-user"></i></a>
 							<div class="post-1">
 								<a href="#"><h3>need help on updated processor</h3></a>
@@ -2904,7 +2910,7 @@
 									>
 								</div>
 							</div>
-	
+
 							<a href="#"><i class="fa fa-user"></i></a>
 							<div class="post-2">
 								<a href="#"><h3>need help on updated processor</h3></a>
@@ -3165,9 +3171,7 @@
 				<li>&copy;-2022 Cnhnb B2B SYSTEN ALL Rights Reserved</li>
 			</ol>
 		</div>
-		<div class="bar-box-black">
-
-		</div>
+		<div class="bar-box-black"></div>
 		<div class="login-regster-box">
 			<div class="login-regster">
 				<div class="login-regster-head">
@@ -3175,13 +3179,36 @@
 					<button id="closed-login">X</button>
 				</div>
 				<div class="login-regster-body">
-					<h2>注册登录</h2>
-					<img src="../img/qrcode-login.jpg" alt="" />
-					
-					<div class="login-regster-weixin">
-						<i class="fab fa-weixin"></i>
-						<p>微信扫码登录</p>
+
+					<div class="user-regster-box-1">
+						<div class="user-regster-box-2">
+							
+						<h2>注册登录</h2>
+						<img src="../img/qrcode-login.jpg" alt="" />
+
+						<div class="login-regster-weixin">
+							<i class="fab fa-weixin"></i>
+							<p>微信扫码登录</p>
+						</div>
 					</div>
+					</div>
+					<div class="user-login-box-1">
+						
+					<div class="user-login-box">
+						<h3>用户登录</h3>
+						<div class="input-user-login-box">
+							<input type="text" placeholder="账号或邮箱" />
+							<input id="login-pwd-input" type="password" placeholder="密码" /><i
+								class="fa fa-eye-slash"
+							></i>
+							<a href="#">账户:admin密码:admin</a>
+							<p class="num-tips">请填写手机号或邮箱</p>
+							<p class="pwd-tips">账号或密码错误</p>
+						</div>
+						<button class="logining-btn">登录</button>
+					</div>
+					
+				</div>
 					<div class="login-regster-body-head">
 						<a href="#">微信登录</a>
 						<a href="#" id="root-login">游客登录</a>
