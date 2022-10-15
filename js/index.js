@@ -267,6 +267,7 @@ window.addEventListener("load", function (e) {
 		});
 	}
 	// 登录显示
+	var bar_black=document.querySelector(".bar-box-black")
 	var login = document.querySelector(".header-body-right");
 	var login_regster = document.querySelector(".login-regster-box");
 	var closed_login = document.querySelector("#closed-login");
@@ -294,15 +295,18 @@ window.addEventListener("load", function (e) {
 
 	login.addEventListener("click", function () {
 		//点击后显示登录注册
+		bar_black.style.display = "block";
 		login_regster.style.display = "block";
 	});
 	closed_login.addEventListener("click", function () {
 		//点击后隐藏登录注册
 		login_regster.style.display = "none";
+		bar_black.style.display = "none";
 	});
 	root_login.addEventListener("click", function () {
 		login_regster_btn.style.display = "none";
 		login_regster.style.display = "none";
+		bar_black.style.display = "none";
 		var login_parent = login_regster_btn.parentNode;
 		login_parent.removeChild(login_regster_btn);
 		var lili = document.createElement("a");
