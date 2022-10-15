@@ -655,3 +655,14 @@ body {
 #theme-toggler {
 	cursor: pointer;
 }
+body{
+	#miaosha-box {
+		width: 0px;
+		height: 154px;
+		position: fixed;
+		bottom: 10px;
+		left: 0px;
+		z-index: 99999999;
+		overflow: hidden;
+	}
+}

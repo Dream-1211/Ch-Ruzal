@@ -1234,6 +1234,16 @@ body .hello-user-box .s2 {
   cursor: pointer;
 }
 
+body #miaosha-box {
+  width: 0px;
+  height: 154px;
+  position: fixed;
+  bottom: 10px;
+  left: 0px;
+  z-index: 99999999;
+  overflow: hidden;
+}
+
 .navigation-right a:nth-child(4) {
   background-color: rgb(227, 226, 226);
   color: #009900;
