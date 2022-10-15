@@ -436,7 +436,6 @@ body .lovef_img .lovef_imgs {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 18px;
 }
 body .lovef_img img {
   transition: all 1.5s;
@@ -1088,8 +1087,7 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;

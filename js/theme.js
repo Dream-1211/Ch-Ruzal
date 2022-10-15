@@ -34,7 +34,7 @@ function initTheme() {
 
 function toggleTheme() {
 	const theme = getTheme();
-	const newTheme = theme === themes.DARK ? themes.LIGHT : themes.DARK;
+	const newTheme = theme === themes.DARK ? themes.LIGHT : themes.DARK;//三元表达式
 	setTheme(newTheme);
 	localStorage.setItem(STORAGE_KEY, newTheme);
 }

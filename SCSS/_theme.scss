@@ -34,7 +34,7 @@ body .header-box .header-body .search .search{
 body .left-menu {
   @include themed(background-color,#5f5750,rgba(0, 0, 0, 0.6))
 }
-body .title .z-dl-head{
+body .title .z-dl-head,body .lovef_img .lovef_imgs{
   @include themed(background-color,$two-text-color-dark,#ffffff)
 }
 body .title .z-dl-head .z-dl-head-l a{
@@ -55,7 +55,7 @@ body .footer-head .footer-header .introduce {
 body .footer-head .footer-header .introduce .foolter-header-title,body .footer-head .footer-header .introduce i,body .footer-head-body .footer-header-body span{
   @include themed(color,$bg-color-dark,#f3f3f3)
 }
-body .footer-body .aboutt li a,body .foolter-bootm .infor li{
+body .footer-body .aboutt li a,body .foolter-bootm .infor li,.headline-text{
   @include themed(color,$three-text-color-dark,#f3f3f3)
 }
 body .shar-to .shar-to-two,body .shar-to .shar-to-one .shar-one,body .shar-to .shar-to-three .shar-three{
@@ -119,8 +119,8 @@ body .map{
   @include themed(background-color,$three-text-color-dark,$bg-color)
 }
 // -------------------------农业资讯------------------------------
-.consulting-text-1 h3{
-  @include themed(color,$three-text-color-dark,$bg-color)
+.consulting-text-1 h3,.geng a,.headline-content h3{
+  @include themed(color,$three-text-color-dark,$bg-color-dark)
 }
 .headline-img-right-1{
   @include themed(border,1px solid $three-text-color-dark,1px solid black)
