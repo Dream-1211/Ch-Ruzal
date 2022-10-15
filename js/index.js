@@ -93,6 +93,7 @@ window.addEventListener("load", function (e) {
 	var aixinzhunong = document.querySelector(".aixinzhunong");
 	var guanyuwomen = document.querySelector(".guanyuwomen");
 	var caigoudating = document.querySelector(".caigoudating");
+	caigoudating.style.display = "none";
 	var topbar = document.querySelectorAll(".topbar li");
 	var index = document.querySelector("#index");
 	var caigou = document.querySelector("#caigou");
