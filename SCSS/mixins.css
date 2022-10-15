@@ -1246,7 +1246,7 @@ body #miaosha-box {
 body .seckill {
   height: 210px;
   width: 250px;
-  background-color: #e83632;
+  background-color: rgb(134, 191, 50);
   padding-top: 31px;
 }
 body .seckill a {
@@ -1256,6 +1256,14 @@ body .seckill a {
 }
 body .seckill a:hover {
   color: #1d99e3;
+}
+body .seckill i {
+  position: absolute;
+  top: 105px;
+  font-size: 30px;
+  color: #f3f3f3;
+  left: 7px;
+  transition: all 1s;
 }
 body .seckill .seckill_title {
   display: block;
