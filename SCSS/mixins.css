@@ -1236,7 +1236,7 @@ body .hello-user-box .s2 {
 
 body #miaosha-box {
   width: 0px;
-  height: 154px;
+  height: 300px;
   position: fixed;
   bottom: 10px;
   left: 0px;
@@ -1244,11 +1244,18 @@ body #miaosha-box {
   overflow: hidden;
 }
 body .seckill {
-  height: 230px;
-  width: 190px;
-  margin: 100px auto;
+  height: 210px;
+  width: 250px;
   background-color: #e83632;
   padding-top: 31px;
+}
+body .seckill a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+body .seckill a:hover {
+  color: #1d99e3;
 }
 body .seckill .seckill_title {
   display: block;
@@ -1259,7 +1266,7 @@ body .seckill .seckill_title {
   color: white;
 }
 body .seckill .seckill_content {
-  height: 116px;
+  height: 76px;
   width: 100%;
 }
 body .seckill .seckill_content p {
@@ -1272,10 +1279,9 @@ body .seckill .seckill_content p {
   text-align: center;
 }
 body .seckill .seckill_content h2 {
-  height: 90px;
   width: 100%;
   text-align: center;
-  line-height: 90px;
+  line-height: 40px;
 }
 body .seckill .seckill_timer {
   margin: 20px auto 0;
@@ -1305,7 +1311,7 @@ body .seckill .seckill_timer .seckill_timer_icon {
   line-height: 30px;
 }
 body .iconfont {
-  font-size: 60px;
+  font-size: 25px;
   color: white;
 }
 

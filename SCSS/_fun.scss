@@ -639,7 +639,7 @@ body {
 		}
 		.infor-qrcode {
 			margin: 0 0 0 8px;
-			
+
 		}
 	}
 }
@@ -659,7 +659,7 @@ body {
 body{
 	#miaosha-box {
 		width: 0px;
-		height: 154px;
+		height: 300px;
 		position: fixed;
 		bottom: 10px;
 		left: 0px;
@@ -669,11 +669,18 @@ body{
 	//秒杀活动
 	
 	.seckill {
-		height: 230px;
-		width: 190px;
-		margin: 100px auto;
+		height: 210px;
+		width: 250px;
 		background-color: #e83632;
 		padding-top: 31px;
+		a{
+			display: block;
+			text-align: center;
+			line-height: 40px;
+			&:hover{
+				color: $bule-color
+			}
+		}
 	}
 	.seckill .seckill_title {
 		display: block;
@@ -684,7 +691,7 @@ body{
 		color: white;
 	}
 	.seckill .seckill_content {
-		height: 116px;
+		height: 76px;
 		width: 100%;
 	}
 	.seckill .seckill_content p {
@@ -697,10 +704,9 @@ body{
 		text-align: center;
 	}
 	.seckill .seckill_content h2 {
-		height: 90px;
 		width: 100%;
 		text-align: center;
-		line-height: 90px;
+		line-height: 40px;
 		
 	}
 	.seckill .seckill_timer {
@@ -731,7 +737,7 @@ body{
 		line-height: 30px;
 	}
 	.iconfont {
-		font-size: 60px;
+		font-size: 25px;
 		color: white;
 	}
 }
