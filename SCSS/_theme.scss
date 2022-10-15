@@ -60,11 +60,77 @@ body .footer-body .aboutt li a,body .foolter-bootm .infor li{
 body .shar-to .shar-to-two,body .shar-to .shar-to-one .shar-one,body .shar-to .shar-to-three .shar-three{
   @include themed(background-color,$one-text-color-dark,#f3f3f3)
 }
-body .shar-to .shar-to-two a i,body .shar-to .shar-to-two a p,body .shar-to .shar-to-one .shar-one a i,body .shar-to .shar-to-three .shar-three i,body .shar-to .shar-to-three .shar-three p,body .shar-to .shar-to-one .shar-one,body .shar-to .shar-to-one .shar-one i{
+body .shar-to .shar-to-two a .fa-paper-plane,body .shar-to .shar-to-two a p,body .shar-to .shar-to-one .shar-one a i,body .shar-to .shar-to-three .shar-three i,body .shar-to .shar-to-three .shar-three p,body .shar-to .shar-to-one .shar-one,body .shar-to .shar-to-one .shar-one .fa-share-square{
   @include themed(color,$three-text-color-dark,#494949)
 }
-
-// --------------------采购大厅----------------------
-body .product-1{
+body .shar-more-more-1 .shar-more-qq-1 a p,body .shar-more-more-1 .shar-more-qq-1 a i{
   @include themed(color,$three-text-color-dark,#494949)
+}
+// --------------------采购大厅、社区----------------------
+body .product-1,body .right-img-3-1{
+  @include themed(background-color,$bg-color-dark,#fff)
+}
+body .search-wapper .search-plus .search,body .community-footer .community-footer-infor a,body .community .community-box .community-head-box .search-community-box .input-community{
+  @include themed(background-color,$one-text-color-dark,#fff)
+}
+body .search-wapper .search-plus .search{
+  @include themed(border-left,6px solid $three-text-color-dark,6px solid #fff)
+}
+body .search-wapper .search-plus .search{
+  @include themed(border-right,6px solid $three-text-color-dark,6px solid #fff)
+}
+body .page .up,body .page .down,body .community-head-box2 .community-tags,body .community-box .post-blog .blog-post-box,body .community .community-box .community-head-box .search-community-box #community{
+  @include themed(background-color,$one-text-color-dark,#fff)
+}
+body .forum .forum-box .forum-box-body{
+  @include themed(color,$one-text-color-dark,$one-text-color-dark)
+}
+body .community-box .post-blog .blog-post-box .blog-infor-p,body .community .community-box .community-head-box .search-community-box .input-community{
+  @include themed(color,$three-text-color,$one-text-color)
+}
+body .community-footer .community-footer-infor h3{
+  @include themed(color,$two-text-color-dark,$one-text-color)
+}
+body .community .community-box .community-head-box .search-community-box #community{
+  @include themed(color,$three-text-color,$bg-color-dark)
+}
+body .community .community-box .community-head-box .search-community-box #community{
+  @include themed(border-right,2px solid $three-text-color-dark,2px solid #efefef)
+}
+// -------------------------爱心助农------------------------------
+body .details,body .finally{
+  @include themed(background-color,$bg-color-dark,$bg-color)
+}
+body .finally .f-content .fc-text .fct-two{
+  @include themed(color,$three-text-color-dark,$bg-color-dark)
+}
+
+body .details{
+  @include themed(border,solid 1px $two-text-color,solid 1px #eeeeee)
+}
+body .finally .f-content .fc-text .fct-data,body .issue h3,body .answer .answer-1 .a1-text{
+  @include themed(color,$three-text-color-dark,#333333)
+}
+body .map .map-case .map-text h3 + p{
+  @include themed(color,$one-text-color-dark,$bg-color-dark)
+}
+body .map{
+  @include themed(background-color,$three-text-color-dark,$bg-color)
+}
+// -------------------------农业资讯------------------------------
+.consulting-text-1 h3{
+  @include themed(color,$three-text-color-dark,$bg-color)
+}
+.headline-img-right-1{
+  @include themed(border,1px solid $three-text-color-dark,1px solid black)
+}
+// -------------------------关于我们------------------------------
+body .about p,body .about_contain .text{
+  @include themed(color,$three-text-color-dark,#404040)
+}
+body .flow-famer .print .print-1{
+  @include themed(border,1px solid $three-text-color-dark,1px solid $bg-color-dark)
+}
+body .flow-famer .print .print-1,body .flow-famer .print p{
+  @include themed(color,$three-text-color-dark,$bg-color-dark)
 }
