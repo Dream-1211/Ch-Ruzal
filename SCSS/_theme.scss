@@ -34,7 +34,7 @@ body .header-box .header-body .search .search{
 body .left-menu {
   @include themed(background-color,#5f5750,rgba(0, 0, 0, 0.6))
 }
-body .title .z-dl-head{
+body .title .z-dl-head,body .lovef_img .lovef_imgs{
   @include themed(background-color,$two-text-color-dark,#ffffff)
 }
 body .title .z-dl-head .z-dl-head-l a{

@@ -1929,13 +1929,13 @@ body .left-menu {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-body .title .z-dl-head {
+body .title .z-dl-head, body .lovef_img .lovef_imgs {
   transition: all 0.3s;
 }
-[data-theme=light] body .title .z-dl-head {
+[data-theme=light] body .title .z-dl-head, [data-theme=light] body .lovef_img .lovef_imgs {
   background-color: #666;
 }
-[data-theme=dark] body .title .z-dl-head {
+[data-theme=dark] body .title .z-dl-head, [data-theme=dark] body .lovef_img .lovef_imgs {
   background-color: #ffffff;
 }
 
