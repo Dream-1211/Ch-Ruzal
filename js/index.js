@@ -267,7 +267,7 @@ window.addEventListener("load", function (e) {
 		});
 	}
 	// 登录显示
-	var bar_black=document.querySelector(".bar-box-black")
+	var bar_black = document.querySelector(".bar-box-black");
 	var login = document.querySelector(".header-body-right");
 	var login_regster = document.querySelector(".login-regster-box");
 	var closed_login = document.querySelector("#closed-login");
@@ -398,7 +398,7 @@ window.addEventListener("load", function (e) {
 	};
 	//社区显示、隐藏
 	var community_box = document.querySelector(".community");
-	var color_full= document.querySelector(".color-full");
+	var color_full = document.querySelector(".color-full");
 	var community_footer = document.querySelector(".community-footer");
 	var community = document.querySelector("#community");
 	color_full.style.display = "none";
@@ -413,4 +413,111 @@ window.addEventListener("load", function (e) {
 		caigoudating.style.display = "none";
 		color_full.style.display = "block";
 	});
+
+	// 注册登录谢欢
+	var user_login_box = document.querySelector(".user-login-box-1");
+	var regster_box = document.querySelector(".user-regster-box-1");
+	var login = document.querySelectorAll(".login-regster-body-head a");
+	login[0].style.color = "#434343";
+	for (var i = 0; i < login.length; i++) {
+		login[i].onclick = function () {
+			for (var i = 0; i < login.length; i++) {
+				login[i].style.color = "#00965e";
+			}
+			this.style.color = "#434343";
+		};
+	}
+	login[0].addEventListener("click", () => {
+		user_login_box.style.display = "none";
+		regster_box.style.display = "block";
+	});
+	login[2].addEventListener("click", () => {
+		user_login_box.style.display = "block";
+		regster_box.style.display = "none";
+	});
+
+	// 密码框眼睛
+	var input_pwd = document.querySelector("#login-pwd-input");
+	var eyes = document.querySelector(".input-user-login-box i");
+	var switch_1 = 0;
+	eyes.addEventListener("click", () => {
+		if (switch_1 == 0) {
+			input_pwd.type = "text";
+			eyes.className = "fa fa-eye";
+			switch_1 = 1;
+		} else {
+			eyes.className = "fa fa fa-eye-slash";
+			input_pwd.type = "password";
+			switch_1 = 0;
+		}
+	});
+	// 账号密码登录
+	var input_input = document.querySelectorAll(".input-user-login-box input");
+	for (var i = 0; i < input_input.length; i++) {
+		input_input[i].onfocus = function () {
+			pwd_tips.style.display = "none";
+			num_tips.style.display = "none";
+			for (var i = 0; i < input_input.length; i++) {
+				input_input[i].style.border = "";
+			}
+			this.style.border = "2px solid #00C97E";
+		};
+	}
+	var num_tips = document.querySelector(".num-tips");
+	var pwd_tips = document.querySelector(".pwd-tips");
+	var login_btn_inser = document.querySelector(".logining-btn");
+	const ADMIN_PWD = "admin";
+	const ADMIN_USER = "admin";
+	login_btn_inser.addEventListener("click", () => {
+		if (input_input[0].value == "" && input_input[1].value == "") {
+			input_input[0].style.border = "1px solid red";
+			num_tips.style.display = "block";
+		} else if (input_input[1].value == "") {
+			input_input[1].style.border = "1px solid red";
+			pwd_tips.style.display = "block";
+		} else if (
+			input_input[1].value !== ADMIN_PWD &&
+			input_input[0].value !== ADMIN_USER
+		) {
+			pwd_tips.style.display = "block";
+
+			input_input[1].style.border = "1px solid red";
+		} else if (
+			input_input[0].value == ADMIN_USER &&
+			input_input[1].value == ADMIN_PWD
+		) {
+			login_regster_btn.style.display = "none";
+			login_regster.style.display = "none";
+			bar_black.style.display = "none";
+			var login_parent = login_regster_btn.parentNode;
+			login_parent.removeChild(login_regster_btn);
+			var lili = document.createElement("a");
+			login_parent.insertBefore(lili, login_parent.children[0]);
+			login_parent.children[0].innerHTML = "您好，admin";
+			login_parent.children[0].href = "#";
+			login_parent.children[0].className = "hello-user";
+			login_parent.className = "login-display";
+		}
+	});
+	
+	var lis = document.querySelectorAll('.seckill_timer_box');
+	countTime();
+	//设置计时器，回调函数设置为封装好的计时函数
+	window.setInterval(countTime,1000);
+	//封装计时函数
+	function countTime(){
+		var endTime = +new Date('2022-10-20 22:20');   //设置秒杀截至时间【手动赋值】
+		var startTime = +new Date();
+		var times = (endTime - startTime)/1000;
+		var hour = parseInt(times/60/60%24);
+		hour = hour<10? '0'+hour : hour;
+		var min = parseInt(times/60%60);
+		min = min<10? '0'+min : min;
+		var sec = parseInt(times%60);
+		sec = sec<10? '0'+sec : sec;
+
+		lis[0].innerHTML = hour;
+		lis[1].innerHTML = min;
+		lis[2].innerHTML = sec;
+	}
 });

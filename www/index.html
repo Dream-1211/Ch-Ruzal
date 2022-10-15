@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="../SCSS/index.css" />
 		<link rel="stylesheet" href="../SCSS/mixins.css" />
 		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
+		<link
+			rel="stylesheet"
+			href="http://at.alicdn.com/t/font_3225174_brp3w7dbhdt.css"
+		/>
 	</head>
 	<body>
 		<!-- /*---------------- head部分---------------- */ -->
@@ -65,7 +69,13 @@
 								<a href="javascript:;"><i class="fa fa-globe"></i>网站导航</a>
 							</li>
 							<span>|</span>
-							<li> <span id="theme-toggler" class="nav-item nav-link" onclick="toggleTheme()"></span></li>
+							<li>
+								<span
+									id="theme-toggler"
+									class="nav-item nav-link"
+									onclick="toggleTheme()"
+								></span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -2876,7 +2886,7 @@
 					<div class="hot-post">
 						<div class="hot-post-body">
 							<h3 class="post-title">最新帖子</h3>
-	
+
 							<a href="#"><i class="fa fa-user"></i></a>
 							<div class="post-1">
 								<a href="#"><h3>need help on updated processor</h3></a>
@@ -2904,7 +2914,7 @@
 									>
 								</div>
 							</div>
-	
+
 							<a href="#"><i class="fa fa-user"></i></a>
 							<div class="post-2">
 								<a href="#"><h3>need help on updated processor</h3></a>
@@ -3165,9 +3175,7 @@
 				<li>&copy;-2022 Cnhnb B2B SYSTEN ALL Rights Reserved</li>
 			</ol>
 		</div>
-		<div class="bar-box-black">
-
-		</div>
+		<div class="bar-box-black"></div>
 		<div class="login-regster-box">
 			<div class="login-regster">
 				<div class="login-regster-head">
@@ -3175,12 +3183,33 @@
 					<button id="closed-login">X</button>
 				</div>
 				<div class="login-regster-body">
-					<h2>注册登录</h2>
-					<img src="../img/qrcode-login.jpg" alt="" />
-					
-					<div class="login-regster-weixin">
-						<i class="fab fa-weixin"></i>
-						<p>微信扫码登录</p>
+					<div class="user-regster-box-1">
+						<div class="user-regster-box-2">
+							<h2>注册登录</h2>
+							<img src="../img/qrcode-login.jpg" alt="" />
+
+							<div class="login-regster-weixin">
+								<i class="fab fa-weixin"></i>
+								<p>微信扫码登录</p>
+							</div>
+						</div>
+					</div>
+					<div class="user-login-box-1">
+						<div class="user-login-box">
+							<h3>用户登录</h3>
+							<div class="input-user-login-box">
+								<input type="text" placeholder="账号或邮箱" />
+								<input
+									id="login-pwd-input"
+									type="password"
+									placeholder="密码"
+								/><i class="fa fa-eye-slash"></i>
+								<a href="#">账户:admin密码:admin</a>
+								<p class="num-tips">请填写手机号或邮箱</p>
+								<p class="pwd-tips">账号或密码错误</p>
+							</div>
+							<button class="logining-btn">登录</button>
+						</div>
 					</div>
 					<div class="login-regster-body-head">
 						<a href="#">微信登录</a>
@@ -3202,9 +3231,26 @@
 				</div>
 			</div>
 		</div>
-
+		<div id="miaosha-box">
+			<div class="seckill">
+				<h1 class="seckill_title">整点秒杀</h1>
+				<div class="seckill_content">
+					<h2 class="iconfont">&#xe8b6;</h2>
+					<p><strong>20:00</strong>点场 距结束</p>
+				</div>
+				<ul class="seckill_timer">
+					<li class="seckill_timer_box"></li>
+					<li class="seckill_timer_icon">:</li>
+					<li class="seckill_timer_box"></li>
+					<li class="seckill_timer_icon">:</li>
+					<li class="seckill_timer_box"></li>
+				</ul>
+				<a href="#">点击前往</a>
+			</div>
+		</div>
 		<script src="../js/jquery-3.6.0.min.js"></script>
 		<script src="../js/index.js"></script>
 		<script src="../js/theme.js"></script>
+		<script src="../js/ad_miaosha.js"></script>
 	</body>
 </html>

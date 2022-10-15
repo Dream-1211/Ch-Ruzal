@@ -87,12 +87,13 @@ Rural-revitalization-agricultural-assistance-services 遵循 [Contributor Covena
 
 ### 贡献者
 
-感谢以下参与项目的人：
 
 
 <a href="https://github.com/liusxs"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/101164913?v=4" /></a>
 <a href="https://github.com/mason369"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/93964390?s=96&v=4" /></a>
 <a href="https://github.com/lcwkbook"><img style="border-radius:50%;height:60px" src="https://avatars.githubusercontent.com/u/91841280?v=4" /></a>
+
+感谢以上参与项目的人：
 ### 特别感谢：
 
 [IntelliJ WebStorm](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一款在各方面最大限度地提高开发人员生产力的 IDE，适用于前端平台语言。
