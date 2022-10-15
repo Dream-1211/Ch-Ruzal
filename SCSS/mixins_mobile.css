@@ -1,64 +1,76 @@
 @charset "UTF-8";
 body .zn-banner,
-body .guanyuwomen {
+body .guanyuwomen,
+body .real_time {
   display: none;
 }
 body .zn-banner .image img,
-body .guanyuwomen .image img {
+body .guanyuwomen .image img,
+body .real_time .image img {
   width: 18.65rem;
 }
 body .zn-banner .about,
-body .guanyuwomen .about {
+body .guanyuwomen .about,
+body .real_time .about {
   margin: 1rem 0;
   text-align: center;
   font-family: "myfont";
 }
 body .zn-banner .about_contain,
-body .guanyuwomen .about_contain {
+body .guanyuwomen .about_contain,
+body .real_time .about_contain {
   font-size: 0.6rem;
 }
 body .zn-banner .flow-famer,
-body .guanyuwomen .flow-famer {
+body .guanyuwomen .flow-famer,
+body .real_time .flow-famer {
   margin: 1rem auto;
   display: flex;
   justify-content: space-around;
 }
 body .zn-banner .flow-famer .print,
-body .guanyuwomen .flow-famer .print {
+body .guanyuwomen .flow-famer .print,
+body .real_time .flow-famer .print {
   text-align: center;
 }
 body .zn-banner .flow-famer .print p,
-body .guanyuwomen .flow-famer .print p {
+body .guanyuwomen .flow-famer .print p,
+body .real_time .flow-famer .print p {
   font-size: 0.6rem;
   font-family: "myfont";
   margin-top: 0.6rem;
 }
 body .zn-banner .flow-famer .print .print-1,
-body .guanyuwomen .flow-famer .print .print-1 {
+body .guanyuwomen .flow-famer .print .print-1,
+body .real_time .flow-famer .print .print-1 {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   border: 0.05rem solid #616161;
 }
 body .zn-banner .flow-famer .print .print-1 i,
-body .guanyuwomen .flow-famer .print .print-1 i {
+body .guanyuwomen .flow-famer .print .print-1 i,
+body .real_time .flow-famer .print .print-1 i {
   scale: 1.2;
   line-height: 2.6rem;
 }
 body .zn-banner .issue,
-body .guanyuwomen .issue {
+body .guanyuwomen .issue,
+body .real_time .issue {
   text-align: center;
   margin-bottom: 2.4rem;
 }
 body .zn-banner .issue h3,
-body .guanyuwomen .issue h3 {
+body .guanyuwomen .issue h3,
+body .real_time .issue h3 {
   margin: 3.5rem 0 2.4rem 0;
   font-family: "myfont";
   font-size: 1.2rem;
   color: #404040;
 }
 body .zn-banner .answer,
-body .guanyuwomen .answer {
+body .guanyuwomen .answer,
+body .real_time .answer {
   height: 10rem;
   margin-bottom: 1.5rem;
   display: flex;
@@ -67,19 +79,22 @@ body .guanyuwomen .answer {
   flex-wrap: wrap;
 }
 body .zn-banner .answer .answer-1,
-body .guanyuwomen .answer .answer-1 {
+body .guanyuwomen .answer .answer-1,
+body .real_time .answer .answer-1 {
   width: 8.35rem;
   height: 3.25rem;
   display: flex;
   flex-wrap: wrap;
 }
 body .zn-banner .answer .answer-1 .a1-text,
-body .guanyuwomen .answer .answer-1 .a1-text {
+body .guanyuwomen .answer .answer-1 .a1-text,
+body .real_time .answer .answer-1 .a1-text {
   font-size: 0.8rem;
   color: #2e2e2e;
 }
 body .zn-banner .answer .answer-1 .a1-text-1,
-body .guanyuwomen .answer .answer-1 .a1-text-1 {
+body .guanyuwomen .answer .answer-1 .a1-text-1,
+body .real_time .answer .answer-1 .a1-text-1 {
   font-size: 0.6rem;
   color: #8b8989;
 }
@@ -839,6 +854,9 @@ body .swiper-slide img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+body .real_time {
+  display: none;
+}
 
 .shop-car-infor {
   display: none;
@@ -1088,6 +1106,80 @@ body .zn-banner .axjz .nh .text .text-bottom .text-bottom-top .li li::before {
   background-color: #ffd80c;
 }
 
+body .iconfont {
+  font-size: 1rem;
+}
+body .real-time {
+  padding-top: 7.5rem;
+}
+body .real-time .search {
+  height: 3.25rem;
+}
+body .real-time .search .sousuo {
+  position: relative;
+  height: 2.5rem;
+  line-height: 2.75rem;
+}
+body .real-time .search .sousuo ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.25rem;
+  transform: translateY(-50%);
+}
+body .real-time .search .sousuo input {
+  border: none;
+  outline: none;
+}
+body .real-time .search .sousuo button {
+  width: 4rem;
+  border: none;
+  letter-spacing: 0.25rem;
+}
+body .real-time .lbt {
+  height: 10.5rem;
+}
+body .real-time .liebiao .zx {
+  height: 1.75rem;
+  line-height: 1.75rem;
+  position: relative;
+}
+body .real-time .liebiao .zx::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 2px;
+  background-color: #000;
+}
+body .real-time .liebiao .zx span {
+  width: 0.15rem;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 0.35rem;
+  border-radius: 0.15rem;
+  transform: translateY(-50%);
+}
+body .real-time .liebiao .zx p {
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+}
+body .real-time .liebiao .wz ol li {
+  height: 2rem;
+  line-height: 2rem;
+  border-top: 1px solid #eaeaea;
+}
+body .real-time .liebiao .wz ol li span {
+  width: 1.5rem;
+  font-style: oblique;
+}
+body .real-time .liebiao .wz ol li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .w100 {
   width: 100%;
 }
@@ -1200,11 +1292,11 @@ body .zn-banner .axjz .nh .text .text-bottom .text-bottom-top .li li::before {
   background-color: #24253d;
 }
 
-.text-lns {
+.text-lans {
   color: #3a84ff;
 }
 
-.bg-lns {
+.bg-lans {
   background-color: #3a84ff;
 }
 

@@ -26,3 +26,14 @@ function animate(obj, target, callback) {
 
     }, 15);
 }
+function init() {
+    var len = $('#img img').length;
+    var html = '';
+    for (var i = 0; i < len; i++) {
+        html += '<li onmouseover="changImg(' + i +
+            ')" onmouseout="reStart(' + i + ')">' + (i + 1) + '</li>';
+    }
+    $('#num').html(html);
+    $('#img img').first().css('display', 'block');
+    $('#num li').eq(0).addClass('active');
+}

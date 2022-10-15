@@ -5,13 +5,14 @@ window.onload = function () {
 	var about = document.querySelector(".guanyuwomen");
 	var price_buy = document.querySelector(".price-buy-box");
 	var zhunong = document.querySelector(".zn-banner");
+	var real_time = document.querySelector(".real-time");
 	var shop_car = document.querySelector(".shop-car-infor");
 	var footer = document.querySelector(".footer-more");
 	var topbar_ele = document.querySelectorAll(".topbar-footer p");
 	var more_top = document.querySelectorAll(".more-top ul li");
 	var more_top_xhx = document.querySelector(".van-tabs__line");
 	var topbar_head = document.querySelector(".topabr");
-	var ele = [zhuye, price_buy, zhunong, about];
+	var ele = [zhuye, price_buy, zhunong, real_time, about];
 	price_buy.style.display = "none";
 	topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	// 排他算法
@@ -31,7 +32,7 @@ window.onload = function () {
 			this.className = "activ";
 		};
 	}
-	for (var i = 0; i < 4; i++) {
+	for (var i = 0; i < 5; i++) {
 		ele[i].style.paddingTop = "7.5rem";
 	}
 	topbar_ele[0].addEventListener("click", () => {
@@ -39,6 +40,7 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
 		ele[3].style.display = "none";
+		ele[4].style.display = "none";
 		footer_bar[1].style.color = "";
 		footer_bar[0].style.color = "#1d99e3";
 	});
@@ -47,7 +49,8 @@ window.onload = function () {
 		ele[1].style.display = "block";
 		ele[2].style.display = "none";
 		ele[3].style.display = "none";
-		for (var i = 0; i < 4; i++) {
+		ele[4].style.display = "none";
+		for (var i = 0; i < 5; i++) {
 			footer_bar[i].style.color = "";
 		}
 	});
@@ -56,8 +59,20 @@ window.onload = function () {
 		ele[1].style.display = "none";
 		ele[2].style.display = "block";
 		ele[3].style.display = "none";
+		ele[4].style.display = "none";
 		shop_car.style.display = "none";
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i < 5; i++) {
+			footer_bar[i].style.color = "";
+		}
+	});
+	topbar_ele[4].addEventListener("click", () => {
+		ele[0].style.display = "none";
+		ele[1].style.display = "none";
+		ele[2].style.display = "none";
+		ele[3].style.display = "block";
+		ele[4].style.display = "none";
+		shop_car.style.display = "none";
+		for (var i = 0; i < 5; i++) {
 			footer_bar[i].style.color = "";
 		}
 	});
@@ -65,9 +80,10 @@ window.onload = function () {
 		ele[0].style.display = "none";
 		ele[1].style.display = "none";
 		ele[2].style.display = "none";
-		ele[3].style.display = "block";
+		ele[3].style.display = "none";
+		ele[4].style.display = "block";
 		shop_car.style.display = "none";
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i < 5; i++) {
 			footer_bar[i].style.color = "";
 		}
 	});
@@ -147,7 +163,7 @@ window.onload = function () {
 	var hours = document.querySelector(".j_sk_h");
 	var min = document.querySelector(".j_sk_m");
 	var second = document.querySelector(".j_sk_s");
-	var now = +new Date("2022-10-14 21:00:00");
+	var now = +new Date("2022-10-15 21:00:00");
 	getDaojishi();
 	setInterval(getDaojishi, 1000);
 
