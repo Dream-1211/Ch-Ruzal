@@ -1194,6 +1194,7 @@ body .real-time .tw .tupian {
   border-bottom: 0.05rem solid #eaeaea;
 }
 body .real-time .tw .tupian .twi {
+  flex: 0 0 46%;
   width: calc(50% - 20px);
   height: 7.5rem;
   overflow: hidden;
@@ -1215,26 +1216,38 @@ body .real-time .xtw .wz .xtw-box {
   border-bottom: 0.05rem solid #eaeaea;
 }
 body .real-time .xtw .wz .xtw-box .box-left .img {
-  width: calc(100% - 10px);
+  width: 6.25rem;
+  height: 4.25rem;
+}
+body .real-time .xtw .wz .xtw-box .box-left .img img {
+  border-radius: 5px;
 }
 body .real-time .xtw .wz .xtw-box .box-right {
   align-items: flex-start;
   justify-content: space-between;
 }
 body .real-time .xtw .wz .xtw-box .box-right .top {
-  overflow: hidden;
-  height: 3.25rem;
-  line-height: 1rem;
-  text-align: justify;
-  position: relative;
+  padding-top: 0.5rem;
 }
-body .real-time .xtw .wz .xtw-box .box-right .top::after {
-  content: "...";
-  width: 1em;
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+body .real-time .xtw .wz .xtw-box .box-right .top span {
+  height: 2.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+body .real-time .fyq {
+  height: 2rem;
+}
+body .real-time .fyq ul {
+  margin: 10px auto;
+  border-radius: 15px;
+  width: 70%;
+  justify-content: space-evenly;
+}
+body .real-time .fyq ul li span:nth-child(1) {
+  font-weight: bold;
 }
 
 .w100 {

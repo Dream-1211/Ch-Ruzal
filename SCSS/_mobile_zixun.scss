@@ -93,6 +93,7 @@ body{
                 justify-content: space-evenly;
                 border-bottom: 0.05rem solid #eaeaea;
                 .twi{
+                    flex: 0 0 46%;
                     width: calc(50% - 20px);
                     height: 7.5rem;
                     overflow: hidden;
@@ -116,26 +117,42 @@ body{
                     border-bottom: 0.05rem solid #eaeaea;
                     .box-left{
                         .img{
-                            width: calc(100% - 10px);
+                           width: 6.25rem;
+                           height: 4.25rem;
+                           img{
+                            border-radius: 5px;
+                           }
                         }
                     }
                     .box-right{
                         align-items: flex-start;
                         justify-content: space-between;
                         .top{
+                            padding-top: 0.5rem;
+                            span{
+                            height: 2.75rem;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 3;
                             overflow: hidden;
-                            height: 3.25rem;
-                            line-height: 1rem;
-                            text-align: justify;
-                            position: relative;
-                            &::after{
-                                content: "...";
-                                width: 1em;
-                                background-color: #fff;
-                                position: absolute;
-                                bottom: 0;
-                                right: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .fyq{
+            height: 2rem;
+            ul{
+                margin: 10px auto;
+                border-radius: 15px;
+                width: 70%;
+                justify-content: space-evenly;
+                li{
+                    span{
+                        &:nth-child(1){
+                            font-weight: bold;
                         }
                     }
                 }
