@@ -1179,6 +1179,33 @@ body .real-time .liebiao .wz ol li p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+body .real-time .tw .wz {
+  height: 1.75rem;
+  line-height: 1.75rem;
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+}
+body .real-time .tw .wz p {
+  font-weight: bold;
+}
+body .real-time .tw .tupian {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .real-time .tw .tupian .twi {
+  width: calc(50% - 20px);
+  height: 150px;
+  overflow: hidden;
+}
+body .real-time .tw .tupian .twi .img {
+  padding: 3px;
+  border: 1px solid #eaeaea;
+}
+body .real-time .tw .tupian .twi span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .w100 {
   width: 100%;

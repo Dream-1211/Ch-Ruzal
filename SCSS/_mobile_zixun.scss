@@ -78,5 +78,34 @@ body{
                 }
             }
         }
+        .tw{
+            .wz{
+                height: 1.75rem;
+                line-height: 1.75rem;
+                position: relative;
+                border-bottom: 1px solid #eaeaea;
+                p{
+                    font-weight: bold;
+                }
+            }
+            .tupian{
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .twi{
+                    width: calc(50% - 20px);
+                    height: 150px;
+                    overflow: hidden;
+                    .img{
+                        padding: 3px;
+                        border: 1px solid #eaeaea;
+                    }
+                    span{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
     }
 }
