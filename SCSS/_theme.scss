@@ -2,7 +2,8 @@
   [data-theme="light"] & {
     #{$property}: $light-value;
   }
-
+  
+	transition: all .3s;
   [data-theme="dark"] & {
     #{$property}: $dark-value;
   }
