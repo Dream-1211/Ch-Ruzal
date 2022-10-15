@@ -1168,7 +1168,7 @@ body .real-time .liebiao .zx p {
 body .real-time .liebiao .wz ol li {
   height: 2rem;
   line-height: 2rem;
-  border-top: 1px solid #eaeaea;
+  border-top: 0.05rem solid #eaeaea;
 }
 body .real-time .liebiao .wz ol li span {
   width: 1.5rem;
@@ -1183,7 +1183,7 @@ body .real-time .tw .wz {
   height: 1.75rem;
   line-height: 1.75rem;
   position: relative;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 0.05rem solid #eaeaea;
 }
 body .real-time .tw .wz p {
   font-weight: bold;
@@ -1191,20 +1191,50 @@ body .real-time .tw .wz p {
 body .real-time .tw .tupian {
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-bottom: 0.05rem solid #eaeaea;
 }
 body .real-time .tw .tupian .twi {
   width: calc(50% - 20px);
-  height: 150px;
+  height: 7.5rem;
   overflow: hidden;
 }
 body .real-time .tw .tupian .twi .img {
-  padding: 3px;
-  border: 1px solid #eaeaea;
+  padding: 0.15rem;
+  border: 0.05rem solid #eaeaea;
 }
 body .real-time .tw .tupian .twi span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+body .real-time .xtw .wz {
+  border-radius: 0.25rem;
+}
+body .real-time .xtw .wz .xtw-box {
+  border-radius: 0.25rem;
+  border-bottom: 0.05rem solid #eaeaea;
+}
+body .real-time .xtw .wz .xtw-box .box-left .img {
+  width: calc(100% - 10px);
+}
+body .real-time .xtw .wz .xtw-box .box-right {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+body .real-time .xtw .wz .xtw-box .box-right .top {
+  overflow: hidden;
+  height: 3.25rem;
+  line-height: 1rem;
+  text-align: justify;
+  position: relative;
+}
+body .real-time .xtw .wz .xtw-box .box-right .top::after {
+  content: "...";
+  width: 1em;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .w100 {
