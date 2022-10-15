@@ -1243,6 +1243,71 @@ body #miaosha-box {
   z-index: 99999999;
   overflow: hidden;
 }
+body .seckill {
+  height: 230px;
+  width: 190px;
+  margin: 100px auto;
+  background-color: #e83632;
+  padding-top: 31px;
+}
+body .seckill .seckill_title {
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+body .seckill .seckill_content {
+  height: 116px;
+  width: 100%;
+}
+body .seckill .seckill_content p {
+  display: inline-block;
+  height: 26px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+}
+body .seckill .seckill_content h2 {
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  line-height: 90px;
+}
+body .seckill .seckill_timer {
+  margin: 20px auto 0;
+  height: 30px;
+  width: 130px;
+  list-style: none;
+}
+body .seckill .seckill_timer .seckill_timer_box {
+  float: left;
+  height: 100%;
+  width: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 30px;
+}
+body .seckill .seckill_timer .seckill_timer_icon {
+  float: left;
+  height: 100%;
+  width: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 30px;
+}
+body .iconfont {
+  font-size: 60px;
+  color: white;
+}
 
 .navigation-right a:nth-child(4) {
   background-color: rgb(227, 226, 226);
