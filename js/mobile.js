@@ -127,9 +127,9 @@ window.onload = function () {
 		for (var i = 0; i < 6; i++) {
 			topbar_ele[i].style.borderBottom = "";
 		}
-		ele[0].style.display = "none";
-		ele[1].style.display = "none";
-		ele[2].style.display = "none";
+		for(var i= 0;i<ele.length; i++) {
+			ele[i].style.display = "none";
+		}
 	});
 	//主页点击后
 	footer_bar[0].addEventListener("click", () => {
