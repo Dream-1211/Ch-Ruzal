@@ -83,7 +83,7 @@
 非常欢迎你的加入！[提一个 Issue](https://github.com/Galaxy-Wish-Star/Rural-revitalization-agricultural-assistance-services/issues) 或者提交一个 Pull Request，在项目文件夹放入自己的代码文件夹。
 
 
-Rural-revitalization-agricultural-assistance-services 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
+Rural-revitalization-agricultural-assistance-services 遵循 [Code of conduct](./CODE_OF_CONDUCT.md) 行为规范。
 
 ### 贡献者
 
