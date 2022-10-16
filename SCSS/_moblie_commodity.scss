@@ -1,0 +1,72 @@
+//购买界面
+body{
+    .fxg_banner{
+        width: 100%;
+        .fh{
+            position: absolute;
+            top: 5%;
+            left: 10px;
+            transform: translateY(-5%);
+            z-index: 99;
+            .iconfont{
+                font-size: 32px;
+            }
+        }
+        .gwc{
+            position: absolute;
+            top: 5%;
+            right: 10px;
+            transform: translateY(-5%);
+            z-index: 99;
+            .iconfont{
+                font-size: 32px;
+            }
+        }
+        .fxg_banner_top{
+            background: #e0e0e0;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img{
+                width: 400px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .fxg_banner_mian{
+            height: 60px;
+            background-color: #e0e0e0;
+            .zhanshi{
+                ul{
+                    width: 400px;
+                    margin: 0 auto;
+                    li{
+                        width: 48px;
+                        height: 44px;
+                        margin: 3px 10px;
+                        border-radius: 15px;
+                        border: 2px solid #a5a5a5;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+        .fxg_banner_bottom{
+            height: 73px;
+            .top{
+                background-image: url(//imgsrc.baidu.com/super/pic/item/7bec54e736d12f2ec3cb5fa00ac2d56284356820.jpg);
+                background-size: 100%;
+            }
+        }
+    }
+}

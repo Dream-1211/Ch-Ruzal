@@ -1251,6 +1251,74 @@ body .real-time .fyq ul li span:nth-child(1) {
   font-weight: bold;
 }
 
+body .fxg_banner {
+  width: 100%;
+}
+body .fxg_banner .fh {
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  transform: translateY(-5%);
+  z-index: 99;
+}
+body .fxg_banner .fh .iconfont {
+  font-size: 32px;
+}
+body .fxg_banner .gwc {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  transform: translateY(-5%);
+  z-index: 99;
+}
+body .fxg_banner .gwc .iconfont {
+  font-size: 32px;
+}
+body .fxg_banner .fxg_banner_top {
+  background: #e0e0e0;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .fxg_banner .fxg_banner_top .img {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+body .fxg_banner .fxg_banner_top .img img {
+  width: 100%;
+  height: auto;
+}
+body .fxg_banner .fxg_banner_mian {
+  height: 60px;
+  background-color: #e0e0e0;
+}
+body .fxg_banner .fxg_banner_mian .zhanshi ul {
+  width: 400px;
+  margin: 0 auto;
+}
+body .fxg_banner .fxg_banner_mian .zhanshi ul li {
+  width: 48px;
+  height: 44px;
+  margin: 3px 10px;
+  border-radius: 15px;
+  border: 2px solid #a5a5a5;
+  overflow: hidden;
+}
+body .fxg_banner .fxg_banner_bottom {
+  height: 73px;
+}
+body .fxg_banner .fxg_banner_bottom .top {
+  background-image: url(//imgsrc.baidu.com/super/pic/item/7bec54e736d12f2ec3cb5fa00ac2d56284356820.jpg);
+  background-size: 100%;
+}
+
 .w100 {
   width: 100%;
 }
@@ -1283,6 +1351,14 @@ body .real-time .fyq ul li span:nth-child(1) {
   background-color: #eaeaea;
 }
 
+.text-bs-3 {
+  color: #e0e0e0;
+}
+
+.bg-bs-3 {
+  background-color: #e0e0e0;
+}
+
 .text-huis {
   color: #999;
 }
@@ -1305,6 +1381,14 @@ body .real-time .fyq ul li span:nth-child(1) {
 
 .bg-huis-2 {
   background-color: #555;
+}
+
+.text-huis-3 {
+  color: #a5a5a5;
+}
+
+.bg-huis-3 {
+  background-color: #a5a5a5;
 }
 
 .text-lvs {
