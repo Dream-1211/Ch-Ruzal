@@ -24,7 +24,7 @@ body{
         }
         .fxg_banner_top{
             background: #e0e0e0;
-            height: 400px;
+            height: 300px;
             margin: 0 auto;
             overflow: hidden;
             display: flex;
@@ -32,13 +32,13 @@ body{
             align-items: center;
             .img{
                 width: 400px;
-                height: 400px;
+                height: 300px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background: #fff;
                 img{
-                    width: 100%;
+                    width: 75%;
                     height: auto;
                 }
             }
@@ -62,10 +62,32 @@ body{
             }
         }
         .fxg_banner_bottom{
-            height: 73px;
-            .top{
+            height: 65px;
+            .cxj{
                 background-image: url(//imgsrc.baidu.com/super/pic/item/7bec54e736d12f2ec3cb5fa00ac2d56284356820.jpg);
                 background-size: 100%;
+                .img{
+                    justify-content: space-between;
+                    .cxj_lft{
+                        .cxj_lft_top{
+                            span{
+                                &:nth-child(2){
+                                    width: 46px;
+                                    height: 21px;
+                                    border-radius: 15px;
+                                    position: relative;
+                                    margin-left: 5px;
+                                }
+                                p{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 8px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
