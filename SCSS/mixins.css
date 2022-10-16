@@ -1919,13 +1919,13 @@ body .header-box .header-body .search .search {
   border-right: 6px solid #fff;
 }
 
-body .left-menu {
+body .left-menu, body .seckill .seckill_timer .seckill_timer_box {
   transition: background-color 0.4s;
 }
-[data-theme=light] body .left-menu {
+[data-theme=light] body .left-menu, [data-theme=light] body .seckill .seckill_timer .seckill_timer_box {
   background-color: #5f5750;
 }
-[data-theme=dark] body .left-menu {
+[data-theme=dark] body .left-menu, [data-theme=dark] body .seckill .seckill_timer .seckill_timer_box {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1989,13 +1989,13 @@ body .footer-head .footer-header .introduce {
   border: 1px solid #f3f3f3;
 }
 
-body .footer-head .footer-header .introduce .foolter-header-title, body .footer-head .footer-header .introduce i, body .footer-head-body .footer-header-body span {
+body .footer-head .footer-header .introduce .foolter-header-title, body .footer-head .footer-header .introduce i, body .footer-head-body .footer-header-body span, body .seckill .seckill_title, body .iconfont, body .seckill .seckill_content p, body .seckill .seckill_timer .seckill_timer_box {
   transition: color 0.4s;
 }
-[data-theme=light] body .footer-head .footer-header .introduce .foolter-header-title, [data-theme=light] body .footer-head .footer-header .introduce i, [data-theme=light] body .footer-head-body .footer-header-body span {
+[data-theme=light] body .footer-head .footer-header .introduce .foolter-header-title, [data-theme=light] body .footer-head .footer-header .introduce i, [data-theme=light] body .footer-head-body .footer-header-body span, [data-theme=light] body .seckill .seckill_title, [data-theme=light] body .iconfont, [data-theme=light] body .seckill .seckill_content p, [data-theme=light] body .seckill .seckill_timer .seckill_timer_box {
   color: #181818;
 }
-[data-theme=dark] body .footer-head .footer-header .introduce .foolter-header-title, [data-theme=dark] body .footer-head .footer-header .introduce i, [data-theme=dark] body .footer-head-body .footer-header-body span {
+[data-theme=dark] body .footer-head .footer-header .introduce .foolter-header-title, [data-theme=dark] body .footer-head .footer-header .introduce i, [data-theme=dark] body .footer-head-body .footer-header-body span, [data-theme=dark] body .seckill .seckill_title, [data-theme=dark] body .iconfont, [data-theme=dark] body .seckill .seckill_content p, [data-theme=dark] body .seckill .seckill_timer .seckill_timer_box {
   color: #f3f3f3;
 }
 

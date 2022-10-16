@@ -5,15 +5,20 @@ window.addEventListener('load', ()=>{
 var box = document.getElementById("miaosha-box");
 box.style.display = "none";
 var i = document.getElementById("arrow-ad-animeat");
-var caigou= document.querySelector(".caigoudating");
 var top_bar = document.querySelectorAll(".footer-bar .topbar li");
 top_bar[1].addEventListener("click",() => {
 	box.style.display = "block";
 	// 设置进入动画
 	setTimeout(function () {
 		animation(box, {
-			width: 369,
+			width: 250,
 		});
+		
+		var deg=180
+		//长度加上单位deg
+		var d = deg + "deg";
+		//拼接控制旋转的方法
+		i.style.transform = "rotate(" + d + ")";
 	}, 1500);
 	
 	// 设置移出动画
@@ -21,11 +26,16 @@ top_bar[1].addEventListener("click",() => {
 		animation(box, {
 			width: 35,
 		});
+		var deg=0
+		//长度加上单位deg
+		var d = deg + "deg";
+		//拼接控制旋转的方法
+		i.style.transform = "rotate(" + d + ")";
 	}, 6000);
 	box.addEventListener("mouseenter", function () {
 		setTimeout(function () {
 			animation(box, {
-				width: 369,
+				width: 250,
 			});
 		}, 0);
 		var deg=180

@@ -36,7 +36,7 @@ body .header-box .header-body .search .search{
   transition: border-right .4s,background-color .4s,border-right .4s,border-left .4s;
   @include themed(border-right,6px solid $three-text-color-dark,6px solid #fff)
 }
-body .left-menu {
+body .left-menu ,body .seckill .seckill_timer .seckill_timer_box{
 	transition: background-color .4s;
   @include themed(background-color,#5f5750,rgba(0, 0, 0, 0.6))
 }
@@ -64,7 +64,7 @@ body .footer-head .footer-header .introduce {
   transition: border .4s;
   @include themed(border,1px solid $bg-color-dark,1px solid #f3f3f3)
 }
-body .footer-head .footer-header .introduce .foolter-header-title,body .footer-head .footer-header .introduce i,body .footer-head-body .footer-header-body span{
+body .footer-head .footer-header .introduce .foolter-header-title,body .footer-head .footer-header .introduce i,body .footer-head-body .footer-header-body span,body .seckill .seckill_title,body .iconfont,body .seckill .seckill_content p,body .seckill .seckill_timer .seckill_timer_box{
   transition: color .4s;
   @include themed(color,$bg-color-dark,#f3f3f3)
 }
