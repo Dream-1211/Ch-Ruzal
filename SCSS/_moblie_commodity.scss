@@ -86,8 +86,42 @@ body{
                                 }
                             }
                         }
+                        .cxj_lft_bottom{
+                            .msj{
+                                p{
+                                    font-weight: bold;
+                                    &:nth-child(2){
+                                        transform: translateY(-10px);
+                                    }
+                                }
+                            }
+                            .yj{
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                    .cxj_right{
+                        .cxj_right_btn{
+                            .seckill_tm{
+                                width: 25px;
+                                    height: 25px;
+                                    line-height: 25px;
+                                    border-radius: 5px;
+                                    background: linear-gradient( #ff6900, #efaf66);
+                            }
+                        }
                     }
                 }
+            }
+        }
+    }
+    .fxg_mian{
+        .fxg_mian_box{
+            .spmc{
+                font-weight: bold;
+            }
+            .reidu{
+                
             }
         }
     }

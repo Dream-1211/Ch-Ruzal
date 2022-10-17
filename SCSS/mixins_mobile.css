@@ -1334,7 +1334,25 @@ body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_lft .cxj_lft_top span p {
   left: 8px;
   transform: translateY(-50%);
 }
-
+body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_lft .cxj_lft_bottom .msj p {
+  font-weight: bold;
+}
+body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_lft .cxj_lft_bottom .msj p:nth-child(2) {
+  transform: translateY(-10px);
+}
+body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_lft .cxj_lft_bottom .yj {
+  text-decoration: line-through;
+}
+body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_right .cxj_right_btn .seckill_tm {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(#ff6900, #efaf66);
+}
+body .fxg_mian .fxg_mian_box .spmc {
+  font-weight: bold;
+}
 .w100 {
   width: 100%;
 }
@@ -1509,6 +1527,22 @@ body .fxg_banner .fxg_banner_bottom .cxj .img .cxj_lft .cxj_lft_top span p {
 
 .bg-huangs-1 {
   background-color: #ffd80c;
+}
+
+.text-chengs {
+  color: rgb(255, 145, 0);
+}
+
+.bg-chengs {
+  background-color: rgb(255, 145, 0);
+}
+
+.text-chengs-1 {
+  color: rgb(230, 115, 14);
+}
+
+.bg-chengs-1 {
+  background-color: rgb(230, 115, 14);
 }
 
 .text-left {

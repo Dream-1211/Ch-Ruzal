@@ -27,6 +27,8 @@ $colors:(
     "hongs-2": #e40c61,
     "huangs": rgb(202, 174, 18),
     "huangs-1": #ffd80c,
+    "chengs": rgb(255, 145, 0),
+    "chengs-1": rgb(230, 115, 14),
 );
 @each $colorKey, $color in $colors {
     .text-#{$colorKey} {
