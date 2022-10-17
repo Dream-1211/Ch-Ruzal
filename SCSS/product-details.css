@@ -1830,6 +1830,7 @@ body .details-body .details-body-box .details-body-right .details-body-right-box
 }
 body .details-infor-box {
   margin-top: 20px;
+  margin-bottom: 160px;
   display: flex;
   border: none;
   border-left: 1px solid #E5E5E5;
@@ -1862,8 +1863,13 @@ body .details-infor-box .qrcode-mobile-buy .qrcode-buy-body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 body .details-infor-box .qrcode-mobile-buy .qrcode-buy-body img {
+  position: absolute;
+  top: 50px;
+  z-index: 99999;
+  right: 0;
   display: none;
   height: 150px;
   width: 150px;
@@ -1880,4 +1886,10 @@ body .details-body-infor-class {
   border-top: 2px solid #e5511d;
   background-color: #f6f6f6;
   color: #e5511d;
+}
+body .qrcode-mobile-buy:hover .qrcode-buy-body img {
+  display: block; /*这里把里面的内容显示出来*/
+}
+body .qrcode-mobile-buy:hover .qrcode-buy-body {
+  background-color: #f6f6f6;
 }/*# sourceMappingURL=product-details.css.map */
