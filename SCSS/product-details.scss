@@ -562,26 +562,25 @@ body {
 			height: 50px;
 
 			.details-head-box {
+				cursor: pointer;
 				font-size: 14px;
 				display: flex;
 				align-items: center;
 				width: 150px;
 				justify-content: center;
-				border-left: 1px solid #a0a0a0;
-				border-right: 1px solid #a0a0a0;
+				border-left: 1px solid #d2d2d2;
+				border-right: 1px solid #d2d2d2;
 			}
 		}
 		.qrcode-mobile-buy {
 			.qrcode-buy-body{
+				cursor: pointer;
 				font-size: 14px;
 				width: 150px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				height: 100%;
-				p{
-
-				}
 				img{
 					display: none;
 					height: 150px;
@@ -591,6 +590,14 @@ body {
 		}
 	}
 	.details-body-infor-class{
+		cursor: pointer;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		width: 150px;
+		justify-content: center;
+		border-left: 1px solid #d2d2d2;
+		border-right: 1px solid #d2d2d2;
 		border-top: 2px solid #e5511d;
 		background-color: #f6f6f6;
 		color: #e5511d;
