@@ -2333,4 +2333,11 @@ body .flow-famer .print .print-1 {
 }
 [data-theme=dark] body .flow-famer .print .print-1, [data-theme=dark] body .flow-famer .print p {
   color: #181818;
+}
+
+[data-theme=light] .up-btn a {
+  color: #666;
+}
+[data-theme=dark] .up-btn a {
+  color: #181818;
 }/*# sourceMappingURL=mixins.css.map */

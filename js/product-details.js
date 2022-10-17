@@ -17,14 +17,14 @@ window.addEventListener("load", function () {
 			swiper: swiper,
 		},
 	});
-	var details_head_box = document.querySelectorAll(".details-head-box");
+	//商品详情切换
+	var details_head_box = document.querySelectorAll(".details-head-box-footer");
 	for (var i = 0; i < details_head_box.length; i++) {
-		details_head_box[i].onclick = function (){
+		details_head_box[i].onclick = function () {
 			for (var j = 0; j < details_head_box.length; j++) {
-				details_head_box[j].className = "details-head-box";
+				details_head_box[j].className = "details-head-box-footer";
 			}
 			this.className = "details-body-infor-class";
-			
 		};
 	}
 });

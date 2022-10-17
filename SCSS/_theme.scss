@@ -171,3 +171,6 @@ body .flow-famer .print .print-1{
 body .flow-famer .print .print-1,body .flow-famer .print p{
   @include themed(color,$three-text-color-dark,$bg-color-dark)
 }
+.up-btn a{
+  @include themed(color,$two-text-color-dark,$bg-color-dark)
+}
