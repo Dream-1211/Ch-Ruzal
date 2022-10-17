@@ -45,7 +45,7 @@ body {
 	.guanyuwomen,
 	.zn-banner,
 	.real-time,
-	 .caigoudating {
+	.caigoudating {
 		display: none;
 	}
 	.left-menu {
@@ -327,13 +327,13 @@ body {
 							color: red;
 							font-size: 14px;
 						}
-						.pwd-tips{
+						.pwd-tips {
 							display: none;
 							position: absolute;
 							top: 157px;
 							left: -141px;
 						}
-						.num-tips{
+						.num-tips {
 							display: none;
 							position: absolute;
 							top: 66px;
@@ -641,7 +641,6 @@ body {
 		}
 		.infor-qrcode {
 			margin: 0 0 0 8px;
-
 		}
 	}
 }
@@ -658,7 +657,7 @@ body {
 #theme-toggler {
 	cursor: pointer;
 }
-body{
+body {
 	#miaosha-box {
 		width: 0px;
 		height: 300px;
@@ -669,21 +668,21 @@ body{
 		overflow: hidden;
 	}
 	//秒杀活动
-	
+
 	.seckill {
 		height: 210px;
 		width: 250px;
 		background-color: $green-color;
 		padding-top: 31px;
-		a{
+		a {
 			display: block;
 			text-align: center;
 			line-height: 40px;
-			&:hover{
-				color: $bule-color
+			&:hover {
+				color: $bule-color;
 			}
 		}
-		i{
+		i {
 			position: absolute;
 			top: 105px;
 			font-size: 30px;
@@ -693,7 +692,7 @@ body{
 		}
 	}
 	.seckill .seckill_title {
-		font-family: 'myfont';
+		font-family: "myfont";
 		display: block;
 		width: 100%;
 		font-size: 30px;
@@ -718,7 +717,6 @@ body{
 		width: 100%;
 		text-align: center;
 		line-height: 40px;
-		
 	}
 	.seckill .seckill_timer {
 		margin: 20px auto 0;
