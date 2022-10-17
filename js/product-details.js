@@ -17,4 +17,14 @@ window.addEventListener("load", function () {
 			swiper: swiper,
 		},
 	});
+	var details_head_box = document.querySelectorAll(".details-head-box");
+	for (var i = 0; i < details_head_box.length; i++) {
+		details_head_box[i].onclick = function (){
+			for (var j = 0; j < details_head_box.length; j++) {
+				details_head_box[j].className = "details-head-box";
+			}
+			this.className = "details-body-infor-class";
+			
+		};
+	}
 });
