@@ -525,15 +525,15 @@ window.addEventListener("load", function (e) {
 	var hot_lists = document.querySelectorAll(".item-new");
 	var flage = 1;
 	var fa_sync= document.querySelector(".fa-sync");
-	(a,b,c)=>{
+	function transtion(a,b){
 		var deg=a
 		//长度加上单位deg
 		var d = deg + "deg";
 		//拼接控制旋转的方法
-		fa_sync.style.transform = "rotate(" + d + ")";
+		return b.style.transform = "rotate(" + d + ")";
 	}
 	news_return.onclick = ()=> {
-		
+		transtion(270,fa_sync)
 		for (var i = 0; i < 32; i++) {
 			hot_lists[i].style.display = "none";
 		}

@@ -366,27 +366,27 @@ body .nic-text h3 {
 }
 body .nic-text .nict-title {
   /*
-  文字显示一行思路
-  1.设置inline-block换行
-  2.强制不换行
-  3.固定高度
-  4.隐藏超出部分
-  5.显示“...”
+    文字显示一行思路
+    1.设置inline-block换行
+    2.强制不换行
+    3.固定高度
+    4.隐藏超出部分
+    5.显示“...”
 
-  display: inline-block;
-  white-space: nowrap;
-  width: 120px;
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  */
+    display: inline-block;
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    */
   /*
-  文字显示二行思路
-  1.超出的文本隐藏
-  2.溢出用省略号代替
-  3.溢出不换行
-  4.将对象作为弹性伸缩盒子模型显示
-  5.从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
-  */
+    文字显示二行思路
+    1.超出的文本隐藏
+    2.溢出用省略号代替
+    3.溢出不换行
+    4.将对象作为弹性伸缩盒子模型显示
+    5.从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+    */
   width: 160px;
   word-break: break-all;
   display: -webkit-box;
@@ -1374,9 +1374,7 @@ body .news-list .news-list-container .news-list-box .news-list-header h3 {
 }
 body .news-list .news-list-container .news-list-box .news-list-header i {
   line-height: 27px;
-}
-body .news-list .news-list-container .news-list-box .news-list-header i .fa-sync {
-  transition: transform 0.9;
+  transition: transform 0.9s;
 }
 body .news-list .news-list-container .news-list-box .news-list-header a {
   color: #616161;
