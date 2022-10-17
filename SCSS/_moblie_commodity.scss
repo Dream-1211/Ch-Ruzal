@@ -45,10 +45,8 @@ body{
         }
         .fxg_banner_mian{
             height: 60px;
-            background-color: #e0e0e0;
             .zhanshi{
                 ul{
-                    width: 400px;
                     margin: 0 auto;
                     li{
                         width: 48px;
@@ -115,14 +113,90 @@ body{
             }
         }
     }
-    .fxg_mian{
-        .fxg_mian_box{
-            .spmc{
-                font-weight: bold;
+    .fxg_main{
+        .spmc{
+            font-weight: bold;
+        }
+        .fxgw{
+            .fxgimg{
+                width: 80px;
             }
-            .reidu{
-                
+        }
+    }
+    .fxg_footer{
+        .tj{
+            .sp{
+                .img{
+                    width: 120px;
+                    height: 120px;
+                }
             }
+            .cxjg{
+                span{
+                    width: 48px;
+                    height: 22px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 22px;
+                    border-radius: 5px;
+                    border: 2px solid #ff6900;
+                    color: #ff6900;
+                }
+            }
+            .jg{
+                span{
+                    &:nth-child(1){
+                        font-weight: bold;
+                    }
+                }
+                .yhj{
+                    transform: translateY(-2px);
+                }
+                .yj{
+                    text-decoration: line-through;
+                }
+            }
+            .miaoshajg{
+                width: 95px;
+                height: 45px;
+                .msbox{
+                    position: relative;
+                    border-radius: 30px;
+                    line-height: 30px;
+                    background: linear-gradient(to right, rgb(245, 145, 5), rgb(255, 183, 52));
+                    .msdjs{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -40%);
+                        .miaosha_tm{
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .goumai{
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        line-height: 60px;
+        align-items: center;
+        border-top: 1px solid #e0e0e0;
+        .dp,
+        .gwc{
+            flex-wrap: nowrap;
+            ion-icon{
+                height: 22px;
+            }
+        }
+        .ljgm{
+            width: 180px;
+            height: 50px;
+            background: linear-gradient(177deg, red, #ff8d8d);
+            border-radius: 30px;
+            line-height: 50px;
         }
     }
 }
