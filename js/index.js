@@ -524,16 +524,16 @@ window.addEventListener("load", function (e) {
 	var news_return = document.querySelector(".news-return");
 	var hot_lists = document.querySelectorAll(".item-new");
 	var flage = 1;
-	var fa_sync= document.querySelector(".fa-sync");
-	function transtion(a,b){
-		var deg=a
+	var fa_sync = document.querySelector(".fa-sync");
+	function transtion(a, b) {
+		var deg = a;
 		//长度加上单位deg
 		var d = deg + "deg";
 		//拼接控制旋转的方法
-		return b.style.transform = "rotate(" + d + ")";
+		return (b.style.transform = "rotate(" + d + ")");
 	}
-	news_return.onclick = ()=> {
-		transtion(270,fa_sync)
+	news_return.onclick = () => {
+		transtion(270, fa_sync);
 		for (var i = 0; i < 32; i++) {
 			hot_lists[i].style.display = "none";
 		}
@@ -576,4 +576,6 @@ window.addEventListener("load", function (e) {
 			flage = 1;
 		}
 	};
+
+	
 });
