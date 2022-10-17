@@ -1844,7 +1844,7 @@ body .details-infor-box .details-box-head {
   width: 1200px;
   height: 50px;
 }
-body .details-infor-box .details-box-head .details-head-box {
+body .details-infor-box .details-box-head .details-head-box-footer {
   cursor: pointer;
   font-size: 14px;
   display: flex;
