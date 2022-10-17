@@ -17,6 +17,7 @@ window.addEventListener("load", function () {
 			swiper: swiper,
 		},
 	});
+	//商品详情切换
 	var details_head_box = document.querySelectorAll(".details-head-box-footer");
 	for (var i = 0; i < details_head_box.length; i++) {
 		details_head_box[i].onclick = function () {

@@ -499,25 +499,81 @@ window.addEventListener("load", function (e) {
 			login_parent.className = "login-display";
 		}
 	});
-	
-	var lis = document.querySelectorAll('.seckill_timer_box');
+
+	var lis = document.querySelectorAll(".seckill_timer_box");
 	countTime();
 	//设置计时器，回调函数设置为封装好的计时函数
-	window.setInterval(countTime,1000);
+	window.setInterval(countTime, 1000);
 	//封装计时函数
-	function countTime(){
-		var endTime = +new Date('2022-10-20 22:20');   //设置秒杀截至时间【手动赋值】
+	function countTime() {
+		var endTime = +new Date("2022-10-20 22:20"); //设置秒杀截至时间【手动赋值】
 		var startTime = +new Date();
-		var times = (endTime - startTime)/1000;
-		var hour = parseInt(times/60/60%24);
-		hour = hour<10? '0'+hour : hour;
-		var min = parseInt(times/60%60);
-		min = min<10? '0'+min : min;
-		var sec = parseInt(times%60);
-		sec = sec<10? '0'+sec : sec;
+		var times = (endTime - startTime) / 1000;
+		var hour = parseInt((times / 60 / 60) % 24);
+		hour = hour < 10 ? "0" + hour : hour;
+		var min = parseInt((times / 60) % 60);
+		min = min < 10 ? "0" + min : min;
+		var sec = parseInt(times % 60);
+		sec = sec < 10 ? "0" + sec : sec;
 
 		lis[0].innerHTML = hour;
 		lis[1].innerHTML = min;
 		lis[2].innerHTML = sec;
 	}
+	//热搜换一换
+	var news_return = document.querySelector(".news-return");
+	var hot_lists = document.querySelectorAll(".item-new");
+	var flage = 1;
+	var fa_sync= document.querySelector(".fa-sync");
+	(a,b,c)=>{
+		var deg=a
+		//长度加上单位deg
+		var d = deg + "deg";
+		//拼接控制旋转的方法
+		fa_sync.style.transform = "rotate(" + d + ")";
+	}
+	news_return.onclick = ()=> {
+		
+		for (var i = 0; i < 32; i++) {
+			hot_lists[i].style.display = "none";
+		}
+		if (hot_lists[0].style.display === "none" && flage === 1) {
+			for (var i = 0; i < 32; i++) {
+				hot_lists[i].style.display = "none";
+			}
+			for (var j = 0; j < 10; j++) {
+				hot_lists[j].style.display = "block";
+			}
+			flage = 2;
+		}
+		if (hot_lists[9].style.display === "none" && flage === 2) {
+			for (var i = 0; i < 32; i++) {
+				hot_lists[i].style.display = "none";
+			}
+			for (var j = 10; j < 20; j++) {
+				hot_lists[j].style.display = "block";
+			}
+			flage = 3;
+		}
+
+		if (hot_lists[19].style.display === "none" && flage === 3) {
+			for (var i = 0; i < 32; i++) {
+				hot_lists[i].style.display = "none";
+			}
+			for (var j = 20; j < 30; j++) {
+				hot_lists[j].style.display = "block";
+			}
+			flage = 4;
+		}
+
+		if (hot_lists[29].style.display === "none" && flage === 4) {
+			for (var i = 0; i < 32; i++) {
+				hot_lists[i].style.display = "none";
+			}
+			for (var j = 30; j < 32; j++) {
+				hot_lists[j].style.display = "block";
+			}
+			flage = 1;
+		}
+	};
 });

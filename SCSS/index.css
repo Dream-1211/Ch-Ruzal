@@ -1375,6 +1375,9 @@ body .news-list .news-list-container .news-list-box .news-list-header h3 {
 body .news-list .news-list-container .news-list-box .news-list-header i {
   line-height: 27px;
 }
+body .news-list .news-list-container .news-list-box .news-list-header i .fa-sync {
+  transition: transform 0.9;
+}
 body .news-list .news-list-container .news-list-box .news-list-header a {
   color: #616161;
   display: block;

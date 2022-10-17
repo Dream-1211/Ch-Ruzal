@@ -1411,6 +1411,9 @@ body {
 					}
 					i {
 						line-height: 27px;
+						.fa-sync{
+							transition: transform 0.9;
+						}
 					}
 					line-height: 25px;
 					a {
