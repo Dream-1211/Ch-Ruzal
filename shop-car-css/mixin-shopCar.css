@@ -1936,7 +1936,6 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 .t-checkbox,
 .p-checkbox {
   height: 18px;
-  line-height: 18px;
   padding-top: 7px;
   width: 122px;
   padding-left: 11px;
@@ -1969,6 +1968,7 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 
 .cart-item {
   height: 160px;
+  line-height: 160px;
   border-style: solid;
   border-width: 2px 1px 1px;
   border-color: #aaa #f1f1f1 #f1f1f1;
@@ -1991,9 +1991,19 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 }
 
 .p-img {
+  width: 100px;
+  height: 100px;
   float: left;
   border: 1px solid #ccc;
-  padding: 5px;
+  text-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.p-img img{
+  margin-top: 5px;
+  width: 90px;
+  height: 90px;
 }
 
 .p-msg {
@@ -2013,6 +2023,7 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 
 .p-num {
   width: 170px;
+  margin-top: 70px;
 }
 
 .decrement,
@@ -2083,11 +2094,16 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 
 .clear-all {
   font-weight: 700;
-  margin: 0 20px;
+  margin: 0 1px;
 }
 
 .toolbar-right {
   float: right;
+}
+
+.operation a,
+.p-action a{
+  color: #000000;
 }
 
 .amount-sum {
