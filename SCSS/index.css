@@ -28,6 +28,10 @@ body {
   /* -------------------------常见问题--------------------------- */
   /* ---------------- 产品导航明细 ------------------ */
   /* 轮播图基础设置    不能删！！！*/
+  /*推荐模块*/
+  /*floor 楼层区*/
+  /*我们鼠标经过图片 往右走 8px*/
+  /*电梯导航*/
 }
 body .header-wrapper {
   /* 固定容器的宽度 */
@@ -1500,6 +1504,7 @@ body .recommend-box .recommend-box-body {
   flex-direction: column;
 }
 body .recommend-box .recommend-box-body .recommend {
+  margin-top: 0;
   border: 1px solid rgba(29, 153, 227, 0.3607843137);
   display: flex;
   justify-content: space-around;
@@ -1581,8 +1586,284 @@ body .img-list .show {
   /* 轮播图显示时间 */
   opacity: 1;
 }
+body .main {
+  width: 980px;
+  height: 455px;
+  margin-left: 219px;
+  margin-top: 10px;
+}
+body .focus {
+  position: relative;
+  width: 721px;
+  height: 455px;
+  background-color: purple;
+  overflow: hidden;
+}
+body .focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+body .focus ul li {
+  float: left;
+}
+body .arrow-l,
+body .arrow-r {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-family: "icomoon";
+  font-size: 18px;
+  z-index: 2;
+}
+body .arrow-r {
+  right: 0;
+}
+body .circle {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+body .circle li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  /*background-color: #fff;*/
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 0 3px;
+  border-radius: 50%;
+  /*鼠标经过显示小手*/
+  cursor: pointer;
+}
+body .current {
+  background-color: #fff;
+}
+body .newsflash {
+  width: 250px;
+  height: 455px;
+}
+body .news-hd {
+  height: 32px;
+  /*dotted 点线  dashed  虚线*/
+  border-bottom: 1px dotted #ccc;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 32px;
+}
+body .news-hd a {
+  float: right;
+  font-size: 12px;
+  font-family: "icomoon";
+}
+body .news-bd {
+  padding: 10px 0 0 15px;
+}
+body .news-bd li {
+  height: 23px;
+}
+body .lifeservice {
+  overflow: hidden;
+  height: 208px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+body .lifeservice ul {
+  width: 252px;
+}
+body .lifeservice li {
+  position: relative;
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+body .lifeservice li a {
+  display: block;
+  /* overflow: hidden; 解决i 引起的 外边距塌陷合并的问题*/
+  overflow: hidden;
+  height: 100%;
+}
+body .lifeservice li p {
+  text-align: center;
+}
+body .hot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 15px;
+  background: url(../img/jian.jpg) no-repeat;
+}
+body .service_ico {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icons.png) no-repeat;
+  margin: 10px auto;
+}
+body .service_ico_huafei {
+  background-position: -17px -16px;
+}
+body .service_ico_feiji {
+  width: 26px;
+  background-position: -78px -16px;
+}
+body .bargain {
+  height: 75px;
+  margin-top: 5px;
+}
+body .recommend {
+  height: 163px;
+  margin-top: 10px;
+}
+body .recom-hd {
+  width: 200px;
+  height: 163px;
+  background-color: #5c5251;
+  text-align: center;
+}
+body .recom-hd img {
+  margin: 30px 0 10px 0;
+}
+body .recom-hd h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+body .recom-bd {
+  width: 1000px;
+  height: 163px;
+  background-color: #ebebeb;
+}
+body .recom-bd li {
+  float: left;
+  width: 249px;
+  height: 145px;
+  border-right: 1px solid #ccc;
+  margin-top: 10px;
+}
+body .recom-bd .last {
+  border-right: 0;
+}
+body .box-hd {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  /* border-bottom: 2px solid #c81623; */
+  border: 4px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
+  margin-top: 25px;
+}
+body .box-hd h3 {
+  padding-left: 18px;
+}
+body .tab-list li a, body .tab-con li a {
+  color: #5c5251;
+}
+body .box-hd h3 {
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+}
+body .tab-list {
+  float: right;
+  line-height: 30px;
+}
+body .tab-list li {
+  float: left;
+}
+body .tab-list li a {
+  margin: 0 15px;
+}
+body .box-bd {
+  height: 360px;
+}
+body .w209 {
+  width: 209px;
+  background-color: #f9f9f9;
+}
+body .w329 {
+  width: 329px;
+}
+body .w219 {
+  width: 219px;
+  border-right: 1px solid #ccc;
+}
+body .w220 {
+  width: 220px;
+  border-right: 1px solid #ccc;
+}
+body .tab-con li {
+  float: left;
+  height: 360px;
+}
+body .tab-con-item {
+  border-bottom: 1px solid #ccc;
+}
+body .tab-con-list {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+body .tab-con-list li {
+  width: 86px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+  text-align: center;
+}
+body .box-bd li {
+  overflow: hidden;
+}
+body .box-bd img {
+  /*过渡写到本身上， 谁做动画，给谁加*/
+  transition: all 0.2s;
+}
+body .box-bd img:hover {
+  margin-left: 8px;
+}
+body .fixedtool {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  margin-left: -676px;
+  width: 66px;
+  background-color: #fff;
+  display: none;
+}
+body .fixedtool li {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+body .fixedtool .current {
+  background-color: rgb(134, 191, 50);
+  color: #fff;
+}
 body .floor .jiadian, body .floor .shouji, body .floor .diannao, body .floor .jiaju {
   margin: 10px 0;
+}
+body .floor .jiadian .box-bd .tab-con .w209, body .floor .shouji .box-bd .tab-con .w209, body .floor .diannao .box-bd .tab-con .w209, body .floor .jiaju .box-bd .tab-con .w209 {
+  border-right: 1px solid #ccc;
 }
 body .floor .jiadian .box-bd .tab-con .w209 .img1-activity-box, body .floor .shouji .box-bd .tab-con .w209 .img1-activity-box, body .floor .diannao .box-bd .tab-con .w209 .img1-activity-box, body .floor .jiaju .box-bd .tab-con .w209 .img1-activity-box {
   padding: 20px 0;
