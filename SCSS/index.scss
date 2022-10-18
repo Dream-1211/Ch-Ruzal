@@ -1410,8 +1410,11 @@ body {
 						line-height: 30px;
 					}
 					i {
-						line-height: 27px;
-						transition: transform 0.9s;
+						display: flex;
+						align-items: center;
+						transition: transform 0.6s;
+						height: 0;
+						margin-top: 16px;
 					}
 					line-height: 25px;
 					a {

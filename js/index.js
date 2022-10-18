@@ -523,7 +523,7 @@ window.addEventListener("load", function (e) {
 	//热搜换一换
 	var news_return = document.querySelector(".news-return");
 	var hot_lists = document.querySelectorAll(".item-new");
-	var flage = 1;
+	var flage = 2;
 	var fa_sync = document.querySelector(".fa-sync");
 	function transtion(a, b) {
 		var deg = a;
@@ -533,11 +533,11 @@ window.addEventListener("load", function (e) {
 		return (b.style.transform = "rotate(" + d + ")");
 	}
 	news_return.onclick = () => {
-		transtion(270, fa_sync);
+		transtion(180, fa_sync);
 		for (var i = 0; i < 32; i++) {
 			hot_lists[i].style.display = "none";
 		}
-		if (hot_lists[0].style.display === "none" && flage === 1) {
+		if (hot_lists[1].style.display === "none" && flage === 1) {
 			for (var i = 0; i < 32; i++) {
 				hot_lists[i].style.display = "none";
 			}
@@ -545,6 +545,8 @@ window.addEventListener("load", function (e) {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 2;
+			
+		transtion(180*2, fa_sync);
 		}
 		if (hot_lists[9].style.display === "none" && flage === 2) {
 			for (var i = 0; i < 32; i++) {
@@ -554,6 +556,8 @@ window.addEventListener("load", function (e) {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 3;
+			
+		transtion(180*4, fa_sync);
 		}
 
 		if (hot_lists[19].style.display === "none" && flage === 3) {
@@ -564,6 +568,8 @@ window.addEventListener("load", function (e) {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 4;
+			
+		transtion(180*6, fa_sync);
 		}
 
 		if (hot_lists[29].style.display === "none" && flage === 4) {
@@ -574,8 +580,8 @@ window.addEventListener("load", function (e) {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 1;
+			
+		transtion(180*4, fa_sync);
 		}
 	};
-
-
 });
