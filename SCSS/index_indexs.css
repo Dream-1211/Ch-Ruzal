@@ -211,7 +211,14 @@
 
 .box-hd {
     height: 30px;
-    border-bottom: 2px solid #c81623;
+    /* border-bottom: 2px solid #c81623; */
+    border: 4px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
     margin-top: 25px;
 }
 .tab-list li a,.tab-con li a{
