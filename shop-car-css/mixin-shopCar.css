@@ -1936,7 +1936,7 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 .t-checkbox,
 .p-checkbox {
   height: 18px;
-  padding-top: 7px;
+  padding-top: 2px;
   width: 122px;
   padding-left: 11px;
 }
