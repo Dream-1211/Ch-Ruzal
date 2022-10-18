@@ -320,6 +320,7 @@ body .news {
   display: flex;
   justify-content: space-evenly;
   margin-top: 60px;
+  border: none;
 }
 body .news-item {
   width: 350px;

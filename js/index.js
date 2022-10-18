@@ -1,4 +1,4 @@
-window.addEventListener("load", function (e) {
+$(function(){
 	// 滚动动画
 	var speed = 20; //速度数值越大速度越慢
 	var colee_right2 = document.getElementById("colee_right2");
@@ -584,4 +584,4 @@ window.addEventListener("load", function (e) {
 		transtion(180*4, fa_sync);
 		}
 	};
-});
+})
