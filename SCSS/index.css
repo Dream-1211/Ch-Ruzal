@@ -1087,8 +1087,7 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;
@@ -1374,8 +1373,11 @@ body .news-list .news-list-container .news-list-box .news-list-header h3 {
   line-height: 30px;
 }
 body .news-list .news-list-container .news-list-box .news-list-header i {
-  line-height: 27px;
-  transition: transform 0.9s;
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s;
+  height: 0;
+  margin-top: 16px;
 }
 body .news-list .news-list-container .news-list-box .news-list-header a {
   color: #616161;
