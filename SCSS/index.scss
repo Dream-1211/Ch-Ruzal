@@ -1639,50 +1639,60 @@ body {
 		/* 轮播图显示时间 */
 		opacity: 1;
 	}
-	.floor{
-		.jiadian{
-			.box-bd{
-				.tab-con{
-					.w209{
-						.img1-activity-box{
+	.floor {
+		.jiadian {
+			.box-bd {
+				.tab-con {
+					.w209 {
+						.img1-activity-box {
+							padding: 20px 0;
+							background-color: #fff;
 							display: flex;
 							flex-direction: column;
 							align-items: center;
 							justify-content: center;
-							span,p{
-								color: #D1343E;
+							span,
+							p {
+								color: #d1343e;
 							}
-							p{
+							p {
 								font-size: 12px;
 							}
-							img{
-								height: 100%;
-								width: 100%;
+							img {
+								height: 80%;
+								width: 90%;
 							}
-							span{
+							span {
 								font-size: 24px;
-								font-family: 'myfont';
+								font-family: "myfont";
 							}
-							
 						}
 					}
-					.w329{
+					.swiper-button-next,
+					.swiper-button-prev ,.swiper-pagination-bullet{
+						color: #1d99e3;
+					}
+					.swiper-slide {
 						display: flex;
 						justify-content: center;
 						align-items: center;
 						flex-direction: column;
-						span{
-							margin: 14px 0;
+						span {
 							font-size: 24px;
-							font-family: 'myfont';
-							color: #D1343E;
+							font-family: "myfont";
+							color: #d1343e;
 						}
-						img{
-							width: 80%;
+						img {
+							height: 70%;
 						}
-						p{
+						p {
 							font-size: 12px;
-							color: #D1343E;
+							color: #d1343e;
+						}
+					}
+					.w219{
+						.tab-con-item{
+							
 						}
 					}
 				}
@@ -1690,34 +1700,34 @@ body {
 		}
 	}
 	.swiper {
-        width: 100%;
-        height: 100%;
-      }
+		width: 100%;
+		height: 100%;
+	}
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
