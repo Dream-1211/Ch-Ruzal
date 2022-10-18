@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../SCSS/index.css" />
 		<link rel="stylesheet" href="../SCSS/mixins.css" />
 		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
+		<link rel="stylesheet" href="../SCSS/swiper-bul.css" />
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 		<link
 			rel="stylesheet"
@@ -265,9 +266,10 @@
 								</ul>
 								<ul class="more-box-head">
 									<a
-										><img src="data:image/jpeg;base64,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" alt="" /><span
-											>火星土豆</span
-										></a
+										><img
+											src="data:image/jpeg;base64,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"
+											alt=""
+										/><span>火星土豆</span></a
 									>
 									<a
 										><img src="../img/zjsp/东北大白菜菜叶.jpg" alt="" /><span
@@ -1672,39 +1674,65 @@
 										<a href="#">电热水器</a>
 									</li>
 								</ul>
-								<img src="../img/upload/floor-1-1.png" alt="">
+								<div class="img1-activity-box">
+									<span>福建蜜薯</span>
+									<p>抽奖送好礼</p>
+									<img src="../img/zjsp/福建蜜薯.jpg" alt="" />
+								</div>
 							</li>
 							<li class="w329">
-								<img src="../img/upload/pic1.jpg" alt="">
+								<!-- Swiper -->
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="../img/zjsp/兴城多宝鱼.jpg" alt="" />
+											<span>美味兴城多宝鱼</span>
+											<p>满299减40</p>
+										</div>
+										<div class="swiper-slide">
+											<img src="../img/zjsp/兴城多宝鱼.jpg" alt="" />
+											<span>美味兴城多宝鱼</span>
+											<p>满299减40</p>
+										</div>
+										<div class="swiper-slide">
+											<img src="../img/zjsp/兴城多宝鱼.jpg" alt="" />
+											<span>美味兴城多宝鱼</span>
+											<p>满299减40</p>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
 							</li>
 							<li class="w219">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-2.png" alt="">
+										<img src="../img/zjsp/湖南有机黄瓜.jpg" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-3.png" alt="">
-									</a>
-								</div>
-							</li>
-							<li class="w220">
-								<div class="tab-con-item">
-									<a href="#">
-										<img src="../img/upload/floor-1-4.png" alt="">
+										<img src="../img/zjsp/新疆哈密瓜.jpg" alt="" />
 									</a>
 								</div>
 							</li>
 							<li class="w220">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-5.png" alt="">
+										<img src="../img/zjsp/云南雪莲果.jpg" alt="" />
+									</a>
+								</div>
+							</li>
+							<li class="w220">
+								<div class="tab-con-item">
+									<a href="#">
+										<img src="../img/zjsp/四川韭菜.jpg" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-6.png" alt="">
+										<img src="../img/zjsp/新鲜脐橙.jpg" alt="" />
 									</a>
 								</div>
 							</li>
@@ -1758,39 +1786,39 @@
 										<a href="#">电热水器</a>
 									</li>
 								</ul>
-								<img src="../img/upload/floor-1-1.png" alt="">
+								<img src="../img/upload/floor-1-1.png" alt="" />
 							</li>
 							<li class="w329">
-								<img src="../img/upload/pic1.jpg" alt="">
+								<img src="../img/upload/pic1.jpg" alt="" />
 							</li>
 							<li class="w219">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-2.png" alt="">
+										<img src="../img/upload/floor-1-2.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-3.png" alt="">
-									</a>
-								</div>
-							</li>
-							<li class="w220">
-								<div class="tab-con-item">
-									<a href="#">
-										<img src="../img/upload/floor-1-4.png" alt="">
+										<img src="../img/upload/floor-1-3.png" alt="" />
 									</a>
 								</div>
 							</li>
 							<li class="w220">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-5.png" alt="">
+										<img src="../img/upload/floor-1-4.png" alt="" />
+									</a>
+								</div>
+							</li>
+							<li class="w220">
+								<div class="tab-con-item">
+									<a href="#">
+										<img src="../img/upload/floor-1-5.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-6.png" alt="">
+										<img src="../img/upload/floor-1-6.png" alt="" />
 									</a>
 								</div>
 							</li>
@@ -1844,39 +1872,39 @@
 										<a href="#">电热水器</a>
 									</li>
 								</ul>
-								<img src="../img/upload/floor-1-1.png" alt="">
+								<img src="../img/upload/floor-1-1.png" alt="" />
 							</li>
 							<li class="w329">
-								<img src="../img/upload/pic1.jpg" alt="">
+								<img src="../img/upload/pic1.jpg" alt="" />
 							</li>
 							<li class="w219">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-2.png" alt="">
+										<img src="../img/upload/floor-1-2.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-3.png" alt="">
-									</a>
-								</div>
-							</li>
-							<li class="w220">
-								<div class="tab-con-item">
-									<a href="#">
-										<img src="../img/upload/floor-1-4.png" alt="">
+										<img src="../img/upload/floor-1-3.png" alt="" />
 									</a>
 								</div>
 							</li>
 							<li class="w220">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-5.png" alt="">
+										<img src="../img/upload/floor-1-4.png" alt="" />
+									</a>
+								</div>
+							</li>
+							<li class="w220">
+								<div class="tab-con-item">
+									<a href="#">
+										<img src="../img/upload/floor-1-5.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-6.png" alt="">
+										<img src="../img/upload/floor-1-6.png" alt="" />
 									</a>
 								</div>
 							</li>
@@ -1930,39 +1958,39 @@
 										<a href="#">电热水器</a>
 									</li>
 								</ul>
-								<img src="../img/upload/floor-1-1.png" alt="">
+								<img src="../img/upload/floor-1-1.png" alt="" />
 							</li>
 							<li class="w329">
-								<img src="../img/upload/pic1.jpg" alt="">
+								<img src="../img/upload/pic1.jpg" alt="" />
 							</li>
 							<li class="w219">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-2.png" alt="">
+										<img src="../img/upload/floor-1-2.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-3.png" alt="">
-									</a>
-								</div>
-							</li>
-							<li class="w220">
-								<div class="tab-con-item">
-									<a href="#">
-										<img src="../img/upload/floor-1-4.png" alt="">
+										<img src="../img/upload/floor-1-3.png" alt="" />
 									</a>
 								</div>
 							</li>
 							<li class="w220">
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-5.png" alt="">
+										<img src="../img/upload/floor-1-4.png" alt="" />
+									</a>
+								</div>
+							</li>
+							<li class="w220">
+								<div class="tab-con-item">
+									<a href="#">
+										<img src="../img/upload/floor-1-5.png" alt="" />
 									</a>
 								</div>
 								<div class="tab-con-item">
 									<a href="#">
-										<img src="../img/upload/floor-1-6.png" alt="">
+										<img src="../img/upload/floor-1-6.png" alt="" />
 									</a>
 								</div>
 							</li>
@@ -1988,11 +2016,10 @@
 					<li>电脑办公</li>
 					<li>电脑办公</li>
 					<li>农业资讯</li>
-		
 				</ul>
 			</div>
 			<!-- 农业咨询 -->
-			<div class="far_question ">
+			<div class="far_question">
 				<div class="container consulting navigation">
 					<h2>农/业/咨/询</h2>
 					<div class="news">
@@ -2053,7 +2080,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		<!-- -------------------------爱心助农---------------------------  -->
 		<div class="aixinzhunong">
@@ -3618,6 +3644,7 @@
 		</div>
 
 		<script src="../js/jquery-3.6.0.min.js"></script>
+		<script src="../js/swiper-bundle.min.js"></script>
 		<script src="../js/index.js"></script>
 		<script src="../js/theme.js"></script>
 		<script src="../js/topsCar.js"></script>
