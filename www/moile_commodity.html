@@ -27,19 +27,19 @@
             <div class="zhanshi h100">
                 <ul class="h100 d-flex ai-center jc-center w100">
                     <li class="d-flex ai-center jc-center">
-                        <img class="lst w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" onclick="aaa(this)" src="../img/zjsp/西安西红柿.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="lst w100" src="../img/zjsp/东北大白菜批发.jpg" alt="">
+                        <img class="lst w100"  onclick="aaa(this)" src="../img/zjsp/东北大白菜批发.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="lst w100" src="../img/zjsp/东北大葱.jpg" alt="">
+                        <img class="lst w100"  onclick="aaa(this)" src="../img/zjsp/东北大葱.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="lst w100" src="../img/zjsp/东山岛鱿鱼.jpg" alt="">
+                        <img class="lst w100"  onclick="aaa(this)" src="../img/zjsp/东山岛鱿鱼.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="lst w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100"  onclick="aaa(this)" src="../img/zjsp/西安西红柿.jpg" alt="">
                     </li>
                 </ul>
             </div>
@@ -234,20 +234,28 @@
         </div>
     </div>
     <script>
-        var zs = document.querySelectorAll('.zhanshi ul li');
+        // var zs = document.querySelectorAll('.zhanshi ul li');
+        // var lst = document.querySelectorAll('.lst');
+        // // console.log(lst);
+        // for (var i = 0; i < zs.length; i++){
+        //     // console.log(lst[i].currentSrc);
+        //     var url = lst[i].currentSrc
+        //     lst[i].addEventListener('click', ()=>{
+        //         // console.log(i);
+        //         // zst.src = url;
+        //         console.log(zs);
+        //         zst.setAttribute('src', lst[i].currentSrc)
+        //     })
+        //     console.log(zs);
+        // }
+
+       function aaa(e){
+        // console.log(e.src);
         var zst = document.querySelector('.zst');
+        zst.setAttribute('src',e.src)
+       }
+       var zs = document.querySelectorAll('.zhanshi ul li');
         var lst = document.querySelectorAll('.lst');
-        // console.log(lst);
-        for (var i = 0; i < zs.length; i++){
-            // console.log(lst[i].currentSrc);
-            var url = lst[i].currentSrc
-            zs[i].addEventListener('click', ()=>{
-                console.log(i);
-                zst.src = url;
-                console.log(zs);
-            })
-            console.log(zs);
-        }
     </script>
 </body>
 </html>
