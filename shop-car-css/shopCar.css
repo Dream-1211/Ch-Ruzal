@@ -32,10 +32,6 @@
   position: relative;
 }
 
-.cart-thead > div,
-.cart-item > div {
-  float: left;
-}
 
 .t-checkbox,
 .p-checkbox {
