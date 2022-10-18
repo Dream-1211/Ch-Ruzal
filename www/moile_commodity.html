@@ -20,26 +20,26 @@
         </div>
         <div class="fxg_banner_top">
             <div class="img">
-                <img src="../img/zjsp/西安西红柿.jpg" alt="">
+                <img class="zst" src="../img/zjsp/西安西红柿.jpg" alt="">
             </div>
         </div>
         <div class="fxg_banner_mian w100 bg-bs-2">
             <div class="zhanshi h100">
                 <ul class="h100 d-flex ai-center jc-center w100">
                     <li class="d-flex ai-center jc-center">
-                        <img class="w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" src="../img/zjsp/西安西红柿.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" src="../img/zjsp/东北大白菜批发.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" src="../img/zjsp/东北大葱.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" src="../img/zjsp/东山岛鱿鱼.jpg" alt="">
                     </li>
                     <li class="d-flex ai-center jc-center">
-                        <img class="w100" src="../img/zjsp/西安西红柿.jpg" alt="">
+                        <img class="lst w100" src="../img/zjsp/西安西红柿.jpg" alt="">
                     </li>
                 </ul>
             </div>
@@ -233,5 +233,21 @@
             <span>立即抢购</span>
         </div>
     </div>
+    <script>
+        var zs = document.querySelectorAll('.zhanshi ul li');
+        var zst = document.querySelector('.zst');
+        var lst = document.querySelectorAll('.lst');
+        // console.log(lst);
+        for (var i = 0; i < zs.length; i++){
+            // console.log(lst[i].currentSrc);
+            var url = lst[i].currentSrc
+            zs[i].addEventListener('click', ()=>{
+                console.log(i);
+                zst.src = url;
+                console.log(zs);
+            })
+            console.log(zs);
+        }
+    </script>
 </body>
 </html>
