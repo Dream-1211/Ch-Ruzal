@@ -600,4 +600,20 @@ $(function(){
           prevEl: ".swiper-button-prev",
         },
       });
+
+	var todolist=[
+		{
+			title: ".swiper-button-next",
+			done: false
+		},
+		{
+			title: ".swiper-button-next",
+			done: false
+		}
+	]
+	localStorage.setItem(".swiper-button-next", JSON.stringify(todolist));
+	var data = localStorage.getItem(".swiper-button-next");
+	data =JSON.parse(data);
+	console.log(data);
+
 })

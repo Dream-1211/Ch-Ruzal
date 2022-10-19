@@ -1092,8 +1092,7 @@ body .price-buy-container .price-buy-infor {
   margin: 0 8px;
   height: 270px;
   width: 80px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   background-color: rgb(134, 191, 50);
   display: flex;
   justify-content: center;
