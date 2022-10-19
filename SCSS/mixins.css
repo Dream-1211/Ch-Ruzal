@@ -770,6 +770,19 @@ body .caigoudating .caigounote #secaton-2 ul li a {
 body .caigoudating .caigounote #secaton-2 h2 {
   font-size: 23px;
   font-family: "myfont";
+  display: flex;
+  justify-content: space-between;
+}
+body .caigoudating .caigounote #secaton-2 #todocount, body .caigoudating .caigounote #secaton-2 #donecount {
+  display: inline-block;
+  padding: 0 5px;
+  height: 20px;
+  border-radius: 20px;
+  background: #E6E6FA;
+  line-height: 22px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
 body .left-menu .menu-btn:hover .more-box-hover {
   display: block; /*这里把里面的内容显示出来*/

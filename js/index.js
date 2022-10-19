@@ -618,6 +618,7 @@ $(function () {
 		}
 	});
 	load();
+
 	//读取本地存储数据方法
 	function getDate() {
 		var data = localStorage.getItem("todolist");
@@ -631,11 +632,23 @@ $(function () {
 	//删除操作
 	$("#todolist").on("click", "a", function () {
 		var data = getDate(); //获取本地存储
-		var index = $(this).attr("id");//通过id获取索引号
-		data.splice(index, 1);//删除
-		saveDate(data)//保存到本地存储
-		load()//重新渲染页面
-	
+		var index = $(this).attr("id"); //通过id获取索引号
+		data.splice(index, 1); //删除
+		saveDate(data); //保存到本地存储
+		load(); //重新渲染页面
+	});
+
+	//正在进行和已完成操作
+	$("#todolist,#donelist").on("click", "input", function () {
+		//获取本地存储的数据
+		var data = getDate();
+		//修改数据
+		var index = $(this).siblings("a").attr("id");
+		data[index].done = $(this).prop("checked");
+		//保存到本地存储
+		saveDate(data);
+		//重新渲染页面
+		load();
 	});
 
 	//保存本地存储数据
@@ -647,15 +660,34 @@ $(function () {
 		var data = getDate();
 		// console.log(data);
 		//调用前清空ol元素
-		$("ol").empty();
+		$("#todolist,#donelist").empty();
+
+		var todoCount = 0; //正在进行个数
+		var doneCount = 0; //已完成个数
+
 		$.each(data, function (i, n) {
-			$("#todolist").prepend(
-				"<li><input type='checkbox'><p>" +
-					n.title +
-					"</p><a href='javascript:;'id=" +
-					i +
-					"></a></li>",
-			);
+			//遍历整个数据
+			if (n.done === true) {
+				$("#donelist").prepend(
+					"<li><input type='checkbox' checked='checked'><p>" +
+						n.title +
+						"</p><a href='javascript:;'id=" +
+						i +
+						"></a></li>",
+					
+				);doneCount++;
+			} else {
+				$("#todolist").prepend(
+					"<li><input type='checkbox'><p>" +
+						n.title +
+						"</p><a href='javascript:;'id=" +
+						i +
+						"></a></li>",
+				);
+				todoCount++;
+			}
 		});
+		$("#todocount").text(todoCount);
+		$("#donecount").text(doneCount);
 	}
 });

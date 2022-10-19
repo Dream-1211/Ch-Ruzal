@@ -178,6 +178,19 @@ body {
 				h2 {
 					font-size: 23px;
 					font-family: "myfont";
+					display: flex;
+					justify-content: space-between;
+				}
+				#todocount,#donecount{
+					display: inline-block;
+					padding: 0 5px;
+					height: 20px;
+					border-radius: 20px;
+					background: #E6E6FA;
+					line-height: 22px;
+					text-align: center;
+					color: #666;
+					font-size: 14px;
 				}
 			}
 		}
