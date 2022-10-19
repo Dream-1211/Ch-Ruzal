@@ -69,12 +69,17 @@ body {
 			perspective: 3000px;
 		}
 		.box .front {
+			img{
+				width: 80%;
+				
+			}
 			background-color: #fff;
-			width: 100%;
-			height: 350px;
+			width: 80%;
+			height: 280px;
 			/* 弹性布局 垂直排列 垂直居中 */
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			justify-content: center;
 			/* 阴影 */
 			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -107,8 +112,8 @@ body {
 			top: 0;
 			left: 0;
 			z-index: 1;
-			width: 100%;
-			height: 290px;
+			width: 62%;
+			height: 222px;
 			background: linear-gradient(220deg, #02dbb0, #007adf);
 			padding: 30px;
 			color: #fff;
