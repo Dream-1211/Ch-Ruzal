@@ -333,8 +333,6 @@ body {
 		height: 350px;
 	}
 	.consulting h2 {
-		height: 70px;
-		line-height: 70px;
 		background: url(../img/public/leaf1.png) center no-repeat;
 		font-size: 32px;
 		font-weight: normal;
@@ -1286,21 +1284,20 @@ body {
 		width: 197px;
 		height: 380px;
 		background-image: url("../img/index/display/1.png");
+		padding-top: 117px;
+		padding-left: 22px;
 	}
 	.title .z-dl .z-dl-left h4 {
 		font-size: 36px;
 		letter-spacing: 4px;
 		color: #ffffff;
-		margin-bottom: 15px;
-		padding-top: 117px;
-		padding-left: 22px;
+		margin-bottom: 8px;
 	}
 	.title .z-dl .z-dl-left p {
 		font-size: 20px;
 		letter-spacing: 1px;
 		color: #ffffff;
 		margin-bottom: 24px;
-		padding-left: 22px;
 	}
 	.z-dl-left a {
 		width: 111px;
@@ -1308,12 +1305,7 @@ body {
 		background-color: #fbd4c688;
 		border-radius: 14px;
 		color: #fff;
-		margin-left: 22px;
 		font-size: 20px;
-	}
-	.z-dl-left a:hover{
-		background-color: #c4c4c4;
-		color: white;
 	}
 	.z-dl-right {
 		width: 400px;
