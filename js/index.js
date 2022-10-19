@@ -605,16 +605,21 @@ $(function () {
 	$("#title").on("keydown", function (event) {
 		//获取回车
 		if (event.keyCode === 13) {
-			//先读取本地存储的数据
-			var local = getDate();
-			console.log(local);
-			//新数组追加给local数组
-			local.push({ title: $(this).val(), done: "false" });
-			//local数组存储至本地存储
-			// saveDate(local);
-			//todolist本地存储渲染到页面
-			saveDate(local);
-			load();
+			if ($(this).val() === "") {
+				alert("请输入内容");
+			} else {
+				//先读取本地存储的数据
+				var local = getDate();
+				console.log(local);
+				//新数组追加给local数组
+				local.push({ title: $(this).val(), done: "false" });
+				//local数组存储至本地存储
+				// saveDate(local);
+				//todolist本地存储渲染到页面
+				saveDate(local);
+				load();
+				$(this).val("");
+			}
 		}
 	});
 	load();
@@ -630,7 +635,7 @@ $(function () {
 		}
 	}
 	//删除操作
-	$("#todolist").on("click", "a", function () {
+	$("#todolist,#donelist").on("click", "a", function () {
 		var data = getDate(); //获取本地存储
 		var index = $(this).attr("id"); //通过id获取索引号
 		data.splice(index, 1); //删除
@@ -674,8 +679,8 @@ $(function () {
 						"</p><a href='javascript:;'id=" +
 						i +
 						"></a></li>",
-					
-				);doneCount++;
+				);
+				doneCount++;
 			} else {
 				$("#todolist").prepend(
 					"<li><input type='checkbox'><p>" +
