@@ -1,4 +1,4 @@
-$(function () {
+$(function(){
 	// 滚动动画
 	var speed = 20; //速度数值越大速度越慢
 	var colee_right2 = document.getElementById("colee_right2");
@@ -545,8 +545,8 @@ $(function () {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 2;
-
-			transtion(180 * 2, fa_sync);
+			
+		transtion(180*2, fa_sync);
 		}
 		if (hot_lists[9].style.display === "none" && flage === 2) {
 			for (var i = 0; i < 32; i++) {
@@ -556,8 +556,8 @@ $(function () {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 3;
-
-			transtion(180 * 4, fa_sync);
+			
+		transtion(180*4, fa_sync);
 		}
 
 		if (hot_lists[19].style.display === "none" && flage === 3) {
@@ -568,8 +568,8 @@ $(function () {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 4;
-
-			transtion(180 * 6, fa_sync);
+			
+		transtion(180*6, fa_sync);
 		}
 
 		if (hot_lists[29].style.display === "none" && flage === 4) {
@@ -580,82 +580,40 @@ $(function () {
 				hot_lists[j].style.display = "block";
 			}
 			flage = 1;
-
-			transtion(180 * 4, fa_sync);
+			
+		transtion(180*4, fa_sync);
 		}
 	};
 	var swiper = new Swiper(".mySwiper", {
-		spaceBetween: 30,
-		centeredSlides: true,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	});
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-	//采购清单
-	$("#title").on("keydown", function (event) {
-		//获取回车
-		if (event.keyCode === 13) {
-			//先读取本地存储的数据
-			var local = getDate();
-			console.log(local);
-			//新数组追加给local数组
-			local.push({ title: $(this).val(), done: "false" });
-			//local数组存储至本地存储
-			// saveDate(local);
-			//todolist本地存储渲染到页面
-			saveDate(local);
-			load();
+	var todolist=[
+		{
+			title: ".swiper-button-next",
+			done: false
+		},
+		{
+			title: ".swiper-button-next",
+			done: false
 		}
-	});
-	load();
-	//读取本地存储数据方法
-	function getDate() {
-		var data = localStorage.getItem("todolist");
-		if (data !== null) {
-			//字符串转换对象
-			return JSON.parse(data);
-		} else {
-			return [];
-		}
-	}
-	//删除操作
-	$("#todolist").on("click", "a", function () {
-		var data = getDate(); //获取本地存储
-		var index = $(this).attr("id");//通过id获取索引号
-		data.splice(index, 1);//删除
-		saveDate(data)//保存到本地存储
-		load()//重新渲染页面
-	
-	});
+	]
+	localStorage.setItem(".swiper-button-next", JSON.stringify(todolist));
+	var data = localStorage.getItem(".swiper-button-next");
+	data =JSON.parse(data);
+	console.log(data);
 
-	//保存本地存储数据
-	function saveDate(data) {
-		localStorage.setItem("todolist", JSON.stringify(data));
-	}
-	//渲染加载数据
-	function load() {
-		var data = getDate();
-		// console.log(data);
-		//调用前清空ol元素
-		$("ol").empty();
-		$.each(data, function (i, n) {
-			$("#todolist").prepend(
-				"<li><input type='checkbox'><p>" +
-					n.title +
-					"</p><a href='javascript:;'id=" +
-					i +
-					"></a></li>",
-			);
-		});
-	}
-});
+})
