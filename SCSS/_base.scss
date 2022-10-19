@@ -1,3 +1,4 @@
+@import'./color';
 @font-face {
 	/* 指定字体的名字 */
 	font-family: "myfont";
@@ -221,6 +222,7 @@ body {
 				}
 			}
 			.search {
+				z-index: 999999999999;
 				position: relative;
 				.search {
 					box-sizing: border-box;
@@ -572,6 +574,33 @@ body {
 				}
 				&:hover {
 					background-color: #e3e5e7;
+				}
+			}
+		}
+	}
+	#ul {
+		border: 1px solid #ddd;
+		border-top: 0;
+		background-color: #fff;
+		box-shadow: 0 6px 6px rgb(0 0 0 / 30%);
+		position: absolute;
+		z-index: 99999999;
+		width: 100%;
+		li {
+			a {
+				
+				color: #333;
+				display: inline-block;
+				width: 579px;
+				height: 100%;
+				padding: 10px 0 3px 14px;
+				&:last-child{
+					padding-bottom: 10px;
+				}
+				&:hover{
+					
+					background-color: #1d99e3;
+					color : #f3f3f3;
 				}
 			}
 		}

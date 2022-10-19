@@ -696,3 +696,39 @@ $(function () {
 		$("#donecount").text(doneCount);
 	}
 });
+
+//搜索关键词联想
+var input = document.querySelector(".search-input");
+var oUl = document.getElementById("ul");
+input.onkeyup = function () {
+	var value = this.value;
+	var oScript = document.createElement("script");
+	oScript.src =
+		"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" +
+		value +
+		"&cb=aa";
+	// 核心在这里，
+	// 1.实时获取参数 value
+	// 2.cb=返回值的处理函数（aa）
+	document.body.appendChild(oScript);
+};
+function aa(data) {
+	oUl.style.display = "block";
+	var list = data.s;
+	var str = "";
+	if (list.length > 0) {
+		list.forEach(function (ele, index) {
+			str +=
+				'<li><a href ="https://www.baidu.com/s?wd=' +
+				ele +
+				'">' +
+				ele +
+				"</li>";
+		});
+		oUl.innerHTML = str;
+	}
+	input.onblur= function () {
+		oUl.style.display = "none";
+		input.value = "请输入内容"
+	};
+}
