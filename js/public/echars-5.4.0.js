@@ -24326,7 +24326,7 @@
 
       SeriesModel.prototype.isAnimationEnabled = function () {
         var ecModel = this.ecModel; // Disable animation if using echarts in node but not give ssr flag.
-        // In ssr mode, renderToString will generate svg with css animation.
+        // In ssr mode, renderToString will generate svg with _css animation.
 
         if (env.node && !(ecModel && ecModel.ssr)) {
           return false;
@@ -67652,7 +67652,7 @@
               x: pmin[0],
               y: pmin[1],
               width:  candleWidth ,
-              height:  pmax[1] - pmin[1] 
+              height:  pmax[1] - pmin[1]
             };
           }
 
@@ -78823,7 +78823,7 @@
           }
 
           var parentEl = el.parent;
-          var isParentRoot = parentEl === rootGroup; // Like 'position:absolut' in css, default 0.
+          var isParentRoot = parentEl === rootGroup; // Like 'position:absolut' in _css, default 0.
 
           var elInner = inner$e(el);
           var parentElInner = inner$e(parentEl);
@@ -82040,10 +82040,10 @@
         // tooltip border width, unit is px, default is 0 (no border)
         borderWidth: 1,
         // Tooltip inside padding, default is 5 for all direction
-        // Array is allowed to set up, right, bottom, left, same with css
+        // Array is allowed to set up, right, bottom, left, same with _css
         // The default value: See `tooltip/tooltipMarkup.ts#getPaddingFromTooltipModel`.
         padding: null,
-        // Extra css text
+        // Extra _css text
         extraCssText: '',
         // axis indicator, trigger by axis
         axisPointer: {

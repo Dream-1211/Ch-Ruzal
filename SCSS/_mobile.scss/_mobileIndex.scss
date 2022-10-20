@@ -3,7 +3,7 @@
 	/* 指定字体的名字 */
 	font-family: "myfont";
 	/* 服务器中字体的路径 */
-	src: url("../fonts/FZSuHJW.TTF") format("truetype");
+	src: url("../../fonts/FZSuHJW.TTF") format("truetype");
 }
 * {
 	margin: 0;
@@ -351,7 +351,7 @@ body {
 		line-height: 2.6rem;
 		color: $words-color;
 		border-radius: 0.25rem;
-		background: url(../img/1.png) ;
+		background: url(../../img/1.png) ;
 		background-position: -11rem .45rem;
 		i {
 			margin-left: .5rem;
@@ -389,7 +389,7 @@ body {
 				}
 				font-weight: 600;
 				color: $black-color;
-				
+
 				p {
 					font-size: .8rem;
 				}

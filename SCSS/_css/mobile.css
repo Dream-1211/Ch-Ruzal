@@ -18,7 +18,7 @@ body .guanyuwomen .picture-2 img {
   float: right;
 }
 /* v2.0 | 20110126
-  http://meyerweb.com/eric/tools/css/reset/ 
+  http://meyerweb.com/eric/tools/css/reset/
   License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
@@ -75,7 +75,7 @@ table {
   /* 指定字体的名字 */
   font-family: "myfont";
   /* 服务器中字体的路径 */
-  src: url("../fonts/FZSuHJW.TTF") format("truetype");
+  src: url("../../fonts/FZSuHJW.TTF") format("truetype");
 }
 * {
   margin: 0;
@@ -332,7 +332,7 @@ body .menu a {
   line-height: 2.6rem;
   color: #616161;
   border-radius: 0.25rem;
-  background-image: url(../img/index/hot/1.png);
+  background-image: url(../../img/index/hot/1.png);
   background-position: -40px 0;
 }
 body .menu a i {
@@ -506,4 +506,4 @@ body .light-box-head .light-box li img {
 }
 body div:hover ul {
   animation-play-state: paused;
-}/*# sourceMappingURL=mobile.css.map */
+}/*# sourceMappingURL=mobile._css.map */

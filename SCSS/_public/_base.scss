@@ -1,9 +1,9 @@
-@import'./color';
+@import 'color';
 @font-face {
 	/* 指定字体的名字 */
 	font-family: "myfont";
 	/* 服务器中字体的路径 */
-	src: url("../fonts/FZSuHJW.TTF") format("truetype");
+	src: url("../../fonts/FZSuHJW.TTF") format("truetype");
 }
 body {
 	$bule-color: #1d99e3;
@@ -285,7 +285,7 @@ body {
 			.broder {
 				position: absolute;
 				inset: 0;
-				background: url(../img/Qrcode/border.png);
+				background: url(../../img/Qrcode/border.png);
 				background-size: $size;
 				background-repeat: no-repeat;
 				animation: animateText 2s linear infinite;
@@ -295,7 +295,7 @@ body {
 				position: relative;
 				width: $size;
 				height: $size;
-				background: url(../img/Qrcode/QR_Code01.png);
+				background: url(../../img/Qrcode/QR_Code01.png);
 				background-size: $size;
 				&::before {
 					content: "";
@@ -303,7 +303,7 @@ body {
 					top: 0;
 					left: 0;
 					width: 100%;
-					background: url(../img/Qrcode/QR_Code02.png);
+					background: url(../../img/Qrcode/QR_Code02.png);
 					background-size: $size;
 					overflow: hidden;
 					animation: animate 4s ease-in-out infinite;
@@ -588,7 +588,7 @@ body {
 		width: 100%;
 		li {
 			a {
-				
+
 				color: #333;
 				display: inline-block;
 				width: 579px;
@@ -598,7 +598,7 @@ body {
 					padding-bottom: 10px;
 				}
 				&:hover{
-					
+
 					background-color: #1d99e3;
 					color : #f3f3f3;
 				}

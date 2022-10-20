@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "myfont";
-  src: url(../fonts/FZSuHJW.TTF);
+  src: url(../../fonts/FZSuHJW.TTF);
 }
 .car-logo img {
   vertical-align: middle;
@@ -274,4 +274,4 @@ body .c-contaiiner .w-box {
 }
 body .c-contaiiner .w-box .cart-filter-bar {
   margin-top: 20px;
-}/*# sourceMappingURL=shopCar.css.map */
+}/*# sourceMappingURL=shopCar._css.map */

@@ -1,4 +1,4 @@
-@import "./color";
+@import "../_public/color";
 body {
 	$bule-color: #1d99e3;
 	$green-color: rgb(134, 191, 50);
@@ -153,7 +153,7 @@ body {
 	.prev-next a {
 		width: 41px;
 		height: 69px;
-		background-image: url(../img/icon-slides.png);
+		background-image: url(../../img/icon-slides.png);
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -329,11 +329,11 @@ body {
 	}
 	/* 农业咨询 */
 	.far_question {
-		background: url(../img/index/footer/footer.png) no-repeat center;
+		background: url(../../img/index/footer/footer.png) no-repeat center;
 		height: 350px;
 	}
 	.consulting h2 {
-		background: url(../img/public/leaf1.png) center no-repeat;
+		background: url(../../img/public/leaf1.png) center no-repeat;
 		font-size: 32px;
 		font-weight: normal;
 		letter-spacing: 3px;
@@ -398,12 +398,12 @@ body {
     3.固定高度
     4.隐藏超出部分
     5.显示“...”
-    
+
     display: inline-block;
     white-space: nowrap;
     width: 120px;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
     */
 
 		/*
@@ -438,7 +438,7 @@ body {
 		font-weight: normal;
 		letter-spacing: 3px;
 		color: #404040;
-		background: url(../img/public/leaf1.png) center no-repeat;
+		background: url(../../img/public/leaf1.png) center no-repeat;
 		text-align: center;
 		margin-bottom: 25px;
 	}
@@ -489,7 +489,7 @@ body {
 	}
 	/* -----------------产品展示----------------- */
 	.showpro h2 {
-		background: url(../img/public/leaf1.png) center no-repeat;
+		background: url(../../img/public/leaf1.png) center no-repeat;
 		font-size: 32px;
 		letter-spacing: 3px;
 		color: #404040;
@@ -625,7 +625,7 @@ body {
 	.about {
 		width: 1199px;
 		height: 35px;
-		background-image: url(../img/public/leaf1.png);
+		background-image: url(../../img/public/leaf1.png);
 		text-align: center;
 		line-height: 30px;
 		margin-bottom: 51px;
@@ -694,7 +694,7 @@ body {
 		height: 180px;
 		background-color: #000000;
 		margin-bottom: 91px;
-		background-image: url(../img/aboutus/广告位.jpg);
+		background-image: url(../../img/aboutus/广告位.jpg);
 		position: relative;
 	}
 	.image-1 a {
@@ -800,7 +800,7 @@ body {
 		margin: 0 auto;
 		height: 309px;
 		background-color: #222222;
-		background-image: url(../img/lovetofarmer/main_bg_03.png);
+		background-image: url(../../img/lovetofarmer/main_bg_03.png);
 	}
 	.flow h2 {
 		font-weight: 900;
@@ -829,7 +829,7 @@ body {
 		width: 100%;
 		height: 600px;
 		background-color: #f6f6f6;
-		
+
 		margin-bottom: 10px;
 	}
 	.map .map-case {
@@ -860,7 +860,7 @@ body {
 	--> */
 	.t-background {
 		height: 39px;
-		background-image: url(../img/public/leaf1.png);
+		background-image: url(../../img/public/leaf1.png);
 		text-align: center;
 		background-repeat: no-repeat;
 		margin-bottom: 47px;
@@ -1283,7 +1283,7 @@ body {
 	.z-dl .z-dl-left {
 		width: 197px;
 		height: 380px;
-		background-image: url("../img/index/display/1.png");
+		background-image: url("../../img/index/display/1.png");
 		padding-top: 117px;
 		padding-left: 22px;
 	}
@@ -1592,7 +1592,7 @@ body {
 				.img-background {
 					width: 111px;
 					height: 111px;
-					background: url(../img/news/background/12.png);
+					background: url(../../img/news/background/12.png);
 					background-position: -157px -92px;
 				}
 			}
@@ -1606,18 +1606,18 @@ body {
 		width: 948px;
 		margin: 0 auto;
 	}
-	
-		
+
+
 	.shoufengqin-box{
 		margin: 20px 0;
 		img {
 			display: block;
 		}
-		
+
 		ul {
 			list-style: none;
 		}
-		
+
 		.king {
 			width: 1000px;
 			margin: 0 auto;
@@ -1625,32 +1625,32 @@ body {
 			overflow: hidden;
 			padding: 10px;
 		}
-		
+
 		.king ul {
 			overflow: hidden;
 		}
-		
+
 		.king li {
-			
+
 			position: relative;
 			float: left;
 			width: 69px;
 			height: 69px;
 			margin-right: 10px;
 		}
-		
+
 		.king li.current {
 			width: 224px;
 		}
-		
+
 		.king li.current .big {
 			display: block;
 		}
-		
+
 		.king li.current .small {
 			display: none;
 		}
-		
+
 		.big {
 			position: relative;
 			img{
@@ -1676,7 +1676,7 @@ body {
 			width: 224px;
 			display: none;
 		}
-		
+
 		.small {
 			position: absolute;
 			top: 0;
@@ -1720,7 +1720,7 @@ body {
 		/* 轮播图显示时间 */
 		opacity: 1;
 	}
-	
+
 .main {
     width: 980px;
     height: 455px;
@@ -1856,14 +1856,14 @@ body {
     top: 0;
     width: 12px;
     height: 15px;
-    background: url(../img/jian.jpg) no-repeat;
+    background: url(../../img/jian.jpg) no-repeat;
 }
 
 .service_ico {
     display: block;
     width: 24px;
     height: 24px;
-    background: url(../img/icons.png) no-repeat;
+    background: url(../../img/icons.png) no-repeat;
     margin: 10px auto;
 }
 
@@ -2137,7 +2137,7 @@ body {
 					.w220 {
 						.tab-con-item {
 							img{
-								
+
 							width: 145px;
 							}
 							a {

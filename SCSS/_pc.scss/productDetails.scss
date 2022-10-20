@@ -1,10 +1,10 @@
-@import "./color";
-@import "./base";
-@import "./reset";
-@import "./fun";
+@import "../_public/color";
+@import "../_public/base";
+@import "../_public/reset";
+@import "fun";
 @font-face {
 	font-family: "myfont";
-	src: url(../fonts/FZSuHJW.TTF);
+	src: url(../../fonts/FZSuHJW.TTF);
 }
 body {
 	.details-head {
