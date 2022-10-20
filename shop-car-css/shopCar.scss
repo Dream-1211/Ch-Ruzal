@@ -7,7 +7,17 @@
 .car-logo img {
     vertical-align: middle;
 }
-
+.cart-item .p-action a{
+    color: #666;
+}
+.p-sum,.p-price{
+    color:#E2231A;
+}
+.cart-item,.check-cart-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .car-logo b {
     font-size: 20px;
 }
