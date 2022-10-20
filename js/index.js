@@ -851,7 +851,7 @@ setTimeout(function () {
   });
 
   $(function() {
-	// 鼠标经过某个小li 有两步操作：
+	// 鼠标经过某个小li 两步操作：
 	$(".king li").mouseenter(function() {
 		// 1.当前小li 宽度变为 224px， 同时里面的小图片淡出，大图片淡入
 		$(this).stop().animate({
