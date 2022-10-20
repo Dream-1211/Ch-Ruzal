@@ -539,11 +539,12 @@ body .topbar .top-bar-head .i-btn {
   color: #f3f3f3;
 }
 body .topbar .top-bar-head .topbar-footer {
+  width: 19.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-body .topbar .top-bar-head .topbar-footer p {
+body .topbar .top-bar-head .topbar-footer p:not(:nth-child(3)) {
   width: 3.15rem;
   height: 1.3rem;
   font-size: 0.8rem;
@@ -556,7 +557,7 @@ body .miaosha {
 }
 body .miaosha .floor-container {
   height: 7rem;
-  border: 1px solid #f2f2f2;
+  border: 0.05rem solid #f2f2f2;
   border-radius: 0.6rem;
   overflow: hidden;
 }
@@ -577,7 +578,7 @@ body .miaosha .floor-container .floor-top .ms-time .seckill-nth {
   left: -1;
 }
 body .miaosha .floor-container .floor-top .ms-time .seckill-nth li {
-  width: 30px;
+  width: 1.5rem;
 }
 body .miaosha .floor-container .floor-top .ms-time .seckill-nth::after {
   content: "";
@@ -832,7 +833,7 @@ body .swiper .swiper-button-next::after {
 }
 body .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 0.9rem;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;

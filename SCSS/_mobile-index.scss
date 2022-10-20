@@ -227,13 +227,15 @@ body {
 			}
 			.topbar-footer {
 				p {
-					width: 3.15rem;
+					&:not(:nth-child(3)){
+						width: 3.15rem;
 					height: 1.3rem;
 					font-size: .8rem;
 					text-align: center;
 					font-family: "myfont";
-					
+					}
 				}
+				width: 19.5rem;
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
@@ -246,7 +248,7 @@ body {
 		box-sizing: border-box;
 		.floor-container{
 			height: 7rem;
-			border: 1px solid #f2f2f2;
+			border: .05rem solid #f2f2f2;
 			border-radius: 0.6rem;
 			overflow: hidden;
 			.floor-top{
@@ -263,7 +265,7 @@ body {
 						position: relative;
 						left: -1;
 						li{
-							width: 30px;
+							width: 1.5rem;
 						}
 					}
 					.seckill-nth::after{
@@ -547,7 +549,7 @@ body {
 
       .swiper-slide {
         text-align: center;
-        font-size: 18px;
+        font-size: .9rem;
         background: #fff;
 
         /* Center slide text vertically */
