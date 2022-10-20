@@ -1762,7 +1762,7 @@ body .community .community-box .community-head-box .search-community-box .input-
 }
 body .community-head-box2 {
   /* 鼠标移入卡片，两个面做出相应的变化 */
-  height: 430px;
+  height: 300px;
   display: flex;
   margin: 35px 0;
   justify-content: space-around;

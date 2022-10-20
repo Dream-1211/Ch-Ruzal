@@ -1606,6 +1606,64 @@ body {
 		width: 948px;
 		margin: 0 auto;
 	}
+	
+		
+	.shoufengqin-box{
+		margin: 20px 0;
+		img {
+			display: block;
+		}
+		
+		ul {
+			list-style: none;
+		}
+		
+		.king {
+			width: 1000px;
+			margin: 0 auto;
+			background: url(images/bg.png) no-repeat;
+			overflow: hidden;
+			padding: 10px;
+		}
+		
+		.king ul {
+			overflow: hidden;
+		}
+		
+		.king li {
+			position: relative;
+			float: left;
+			width: 69px;
+			height: 69px;
+			margin-right: 10px;
+		}
+		
+		.king li.current {
+			width: 224px;
+		}
+		
+		.king li.current .big {
+			display: block;
+		}
+		
+		.king li.current .small {
+			display: none;
+		}
+		
+		.big {
+			width: 224px;
+			display: none;
+		}
+		
+		.small {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 69px;
+			height: 69px;
+			border-radius: 5px;
+		}
+	}
 	.table-box {
 		width: 980px;
 		margin: 0 auto;

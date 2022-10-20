@@ -1554,6 +1554,53 @@ body .right-btn {
   width: 948px;
   margin: 0 auto;
 }
+body .shoufengqin-box {
+  margin: 20px 0;
+}
+body .shoufengqin-box img {
+  display: block;
+}
+body .shoufengqin-box ul {
+  list-style: none;
+}
+body .shoufengqin-box .king {
+  width: 1000px;
+  margin: 0 auto;
+  background: url(images/bg.png) no-repeat;
+  overflow: hidden;
+  padding: 10px;
+}
+body .shoufengqin-box .king ul {
+  overflow: hidden;
+}
+body .shoufengqin-box .king li {
+  position: relative;
+  float: left;
+  width: 69px;
+  height: 69px;
+  margin-right: 10px;
+}
+body .shoufengqin-box .king li.current {
+  width: 224px;
+}
+body .shoufengqin-box .king li.current .big {
+  display: block;
+}
+body .shoufengqin-box .king li.current .small {
+  display: none;
+}
+body .shoufengqin-box .big {
+  width: 224px;
+  display: none;
+}
+body .shoufengqin-box .small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 69px;
+  height: 69px;
+  border-radius: 5px;
+}
 body .table-box {
   width: 980px;
   margin: 0 auto;
