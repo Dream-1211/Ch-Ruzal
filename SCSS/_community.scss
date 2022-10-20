@@ -57,6 +57,8 @@ body {
 	}
 	.community-head-box2 {
 		.box {
+			padding-bottom: 0;
+			padding-right: 0;
 			cursor: pointer;
 			width: 350px;
 			margin: 10px;
@@ -74,7 +76,6 @@ body {
 				
 			}
 			background-color: #fff;
-			width: 80%;
 			height: 280px;
 			/* 弹性布局 垂直排列 垂直居中 */
 			display: flex;
@@ -112,7 +113,6 @@ body {
 			top: 0;
 			left: 0;
 			z-index: 1;
-			width: 62%;
 			height: 222px;
 			background: linear-gradient(220deg, #02dbb0, #007adf);
 			padding: 30px;

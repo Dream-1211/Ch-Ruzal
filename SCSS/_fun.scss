@@ -105,7 +105,7 @@ body {
 						position: relative;
 						padding: 0 15px;
 						border-radius: 3px;
-						border-left: 5px solid #629a9c;
+						border-left: 5px solid #1d99e3;
 						box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
 						input {
 							width: 22px;
@@ -145,7 +145,7 @@ body {
 						position: relative;
 						padding: 0 15px;
 						border-radius: 3px;
-						border-left: 5px solid #629a9c;
+						border-left: 5px solid $green-color;
 						box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
 						input {
 							width: 22px;
@@ -895,5 +895,15 @@ body {
 	.iconfont {
 		font-size: 25px;
 		color: white;
+	}
+	.echars-box-head{
+		display: flex;
+		justify-content: space-around;
+		#main,#main-2{
+			width: 500px;
+			height: 350px;
+			border: 1px solid $grey-color;
+		}
+		margin-bottom: 60px;
 	}
 }

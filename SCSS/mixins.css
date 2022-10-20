@@ -728,7 +728,7 @@ body .caigoudating .caigounote #secaton-2 ol li {
   position: relative;
   padding: 0 15px;
   border-radius: 3px;
-  border-left: 5px solid #629a9c;
+  border-left: 5px solid #1d99e3;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 body .caigoudating .caigounote #secaton-2 ol li input {
@@ -766,7 +766,7 @@ body .caigoudating .caigounote #secaton-2 ul li {
   position: relative;
   padding: 0 15px;
   border-radius: 3px;
-  border-left: 5px solid #629a9c;
+  border-left: 5px solid rgb(134, 191, 50);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 body .caigoudating .caigounote #secaton-2 ul li input {
@@ -1490,6 +1490,16 @@ body .iconfont {
   font-size: 25px;
   color: white;
 }
+body .echars-box-head {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+body .echars-box-head #main, body .echars-box-head #main-2 {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #ccc;
+}
 
 .navigation-right a:nth-child(4) {
   background-color: rgb(227, 226, 226);
@@ -1758,6 +1768,8 @@ body .community-head-box2 {
   justify-content: space-around;
 }
 body .community-head-box2 .box {
+  padding-bottom: 0;
+  padding-right: 0;
   cursor: pointer;
   width: 350px;
   margin: 10px;
@@ -1771,7 +1783,6 @@ body .community-head-box2 .box {
 }
 body .community-head-box2 .box .front {
   background-color: #fff;
-  width: 80%;
   height: 280px;
   /* 弹性布局 垂直排列 垂直居中 */
   display: flex;
@@ -1812,7 +1823,6 @@ body .community-head-box2 .box .back {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 62%;
   height: 222px;
   background: linear-gradient(220deg, #02dbb0, #007adf);
   padding: 30px;

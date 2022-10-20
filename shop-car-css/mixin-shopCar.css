@@ -727,7 +727,7 @@ body .caigoudating .caigounote #secaton-2 ol li {
   position: relative;
   padding: 0 15px;
   border-radius: 3px;
-  border-left: 5px solid #629a9c;
+  border-left: 5px solid #1d99e3;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 body .caigoudating .caigounote #secaton-2 ol li input {
@@ -765,7 +765,7 @@ body .caigoudating .caigounote #secaton-2 ul li {
   position: relative;
   padding: 0 15px;
   border-radius: 3px;
-  border-left: 5px solid #629a9c;
+  border-left: 5px solid rgb(134, 191, 50);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 body .caigoudating .caigounote #secaton-2 ul li input {
@@ -1488,6 +1488,16 @@ body .seckill .seckill_timer .seckill_timer_icon {
 body .iconfont {
   font-size: 25px;
   color: white;
+}
+body .echars-box-head {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+body .echars-box-head #main, body .echars-box-head #main-2 {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #ccc;
 }
 
 @font-face {
