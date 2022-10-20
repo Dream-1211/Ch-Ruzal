@@ -186,8 +186,11 @@
 
 .operation {
   float: left;
-  width: 200px;
+  width: 20%;
   margin-left: 40px;
+}
+.operation a {
+  color: #999;
 }
 
 .clear-all {
