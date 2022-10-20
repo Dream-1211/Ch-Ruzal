@@ -12,7 +12,7 @@
 </head>
 <body>
     <banner class="fxg_banner">
-        <div class="fh">
+        <div class="fh" onclick="window.history.back()">
             <ion-icon class="iconfont icon-fanhui5"></ion-icon>
         </div>
         <div class="gwc">
@@ -66,16 +66,12 @@
                             </span>
                         </div>  
                     </div>
-                    <div class="cxj_right mr-1 mt-1">
+                    <div class="cxj_right mr-1 mt-1 d-flex flex-column ai-center">
                         <div class="cxj_right_top">
                             <span class="fs-m text-chengs">距离秒杀结束</span>
                         </div>
                         <div class="cxj_right_btn d-flex mt-1">
                             <div class="seckill_tm time-h text-bs fs-m text-center">00</div>
-                            <span class="mx-1 text-chengs">:</span>
-                            <div class="seckill_tm time-m text-bs fs-m text-center">00</div>
-                            <span class="mx-1 text-chengs">:</span>
-                            <div class="seckill_tm time-s text-bs fs-m text-center">00</div>
                         </div>
                     </div>
                 </div>
@@ -137,11 +133,7 @@
                     <div class="msbox w100 h100 text-center text-bs fs-m">
                         <span>秒杀</span>
                         <div class="msdjs d-flex mt-1">
-                            <div class="miaosha_tm time-h text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-m text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-s text-bs fs-xs text-center">00</div>
+                            <div class="miaosha_tm time-ms text-bs fs-xs text-center">00</div>
                         </div>
                     </div>
                 </div>
@@ -173,11 +165,7 @@
                     <div class="msbox w100 h100 text-center text-bs fs-m">
                         <span>秒杀</span>
                         <div class="msdjs d-flex mt-1">
-                            <div class="miaosha_tm time-h text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-m text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-s text-bs fs-xs text-center">00</div>
+                            <div class="miaosha_tm time-ms text-bs fs-xs text-center">00</div>
                         </div>
                     </div>
                 </div>
@@ -209,11 +197,7 @@
                     <div class="msbox w100 h100 text-center text-bs fs-m">
                         <span>秒杀</span>
                         <div class="msdjs d-flex mt-1">
-                            <div class="miaosha_tm time-h text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-m text-bs fs-xs text-center">00</div>
-                            <span class="text-chengs text-bs">:</span>
-                            <div class="miaosha_tm time-s text-bs fs-xs text-center">00</div>
+                            <div class="miaosha_tm time-ms text-bs fs-xs text-center">00</div>
                         </div>
                     </div>
                 </div>
@@ -234,28 +218,30 @@
         </div>
     </div>
     <script>
-        // var zs = document.querySelectorAll('.zhanshi ul li');
-        // var lst = document.querySelectorAll('.lst');
-        // // console.log(lst);
-        // for (var i = 0; i < zs.length; i++){
-        //     // console.log(lst[i].currentSrc);
-        //     var url = lst[i].currentSrc
-        //     lst[i].addEventListener('click', ()=>{
-        //         // console.log(i);
-        //         // zst.src = url;
-        //         console.log(zs);
-        //         zst.setAttribute('src', lst[i].currentSrc)
-        //     })
-        //     console.log(zs);
-        // }
-
        function aaa(e){
-        // console.log(e.src);
         var zst = document.querySelector('.zst');
         zst.setAttribute('src',e.src)
        }
-       var zs = document.querySelectorAll('.zhanshi ul li');
-        var lst = document.querySelectorAll('.lst');
+        function countDown( maxtime,fn ) {  
+  var timer = setInterval(function() { 
+    if( !!maxtime ){  
+     var day = Math.floor(maxtime / 86400),
+     hour = Math.floor((maxtime % 86400) / 3600),
+    minutes = Math.floor((maxtime % 3600) / 60), 
+    seconds = Math.floor(maxtime%60), 
+    msg = hour+":"+minutes+":"+seconds;  
+    fn( msg ); 
+    --maxtime;  
+   } else {  
+    clearInterval( timer ); 
+    fn("时间到，结束!"); 
+   }  
+  }, 1000); 
+ } 
+ countDown( 86400,function( msg ) { 
+  document.querySelector(".time-h").innerHTML = msg; 
+  document.querySelector(".time-ms").innerHTML = msg; 
+ }) 
     </script>
 </body>
 </html>

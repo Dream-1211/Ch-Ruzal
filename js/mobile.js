@@ -163,21 +163,15 @@ window.onload = function () {
 	var hours = document.querySelector(".j_sk_h");
 	var min = document.querySelector(".j_sk_m");
 	var second = document.querySelector(".j_sk_s");
-	
-
 	var date =  new Date()
-
 	var mon = date.getMonth()+1;
 	var day = date.getDate();
 	var dateStr = '2022-'+mon+'-'+day+" "+'21:00:00'
 	// var now = +new Date("2022-10-20 21:00:00");
 	console.log(dateStr);
 	var now = +new Date(dateStr);
-
-
 	getDaojishi();
 	setInterval(getDaojishi, 1000);
-
 	function getDaojishi(time) {
 		var date = +new Date(); //返回当前时间总毫秒数
 		var times = (now - date) / 1000; //剩余时间总秒数
