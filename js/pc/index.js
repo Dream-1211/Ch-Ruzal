@@ -379,7 +379,6 @@ $(function () {
 	});
 
 	var search_caigou = document.querySelector(".search-caigou");
-	var search_btn_2 = document.querySelector(".search-btn-2");
 	search_caigou.onfocus = function () {
 		if (this.value === "请输入内容") {
 			this.value = "";
@@ -707,9 +706,8 @@ input.onkeyup = function () {
 		"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" +
 		value +
 		"&cb=aa";
-	// 核心在这里，
-	// 1.实时获取参数 value
-	// 2.cb=返回值的处理函数（aa）
+	// 实时获取参数 value
+	// cb=返回值的处理函数（aa）
 	document.body.appendChild(oScript);
 };
 function aa(data) {
@@ -728,8 +726,14 @@ function aa(data) {
 		oUl.innerHTML = str;
 	}
 	input.onblur = function () {
+		var search =document.querySelector(".search-btn")
+
 		oUl.style.display = "none";
 		input.value = "请输入内容";
+		input.style.borderColor = "#8dc742";
+		input.style.borderLeft = "6px solid #fff";
+		input.style.borderRight = "6px solid #fff";
+		search_btn.style.backgroundColor = "#8dc742";
 	};
 }
 

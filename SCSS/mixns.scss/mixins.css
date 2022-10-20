@@ -206,7 +206,7 @@ body .header-box .header-body .header-body-right a:hover {
   color: #1d99e3;
 }
 body .header-box .header-body .search {
-  z-index: 999999999999;
+  z-index: 9999;
   position: relative;
 }
 body .header-box .header-body .search .search {
@@ -571,7 +571,7 @@ body #ul li a:hover {
 }
 
 /* v2.0 | 20110126
-  http://meyerweb.com/eric/tools/css/reset/
+  http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
@@ -987,7 +987,7 @@ body .login-regster-box {
   display: none;
 }
 body .login-regster-box .login-regster {
-  z-index: 99999;
+  z-index: 999999999999;
   position: relative;
   background-color: #fff;
   height: 550px;
@@ -1392,7 +1392,7 @@ body .hello-user-box .s2 {
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9999999999;
   background-color: #000000;
   opacity: 0.5;
 }
@@ -1770,6 +1770,9 @@ body .community-head-box2 {
   display: flex;
   margin: 35px 0;
   justify-content: space-around;
+}
+body .community-head-box2:nth-child(3) {
+  height: 440px;
 }
 body .community-head-box2 .box {
   padding-bottom: 0;
@@ -2507,4 +2510,4 @@ body .flow-famer .print .print-1 {
 }
 [data-theme=dark] .up-btn a {
   color: #181818;
-}/*# sourceMappingURL=mixins._css.map */
+}/*# sourceMappingURL=mixins.css.map */

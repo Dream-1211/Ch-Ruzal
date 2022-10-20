@@ -56,6 +56,9 @@ body {
 		}
 	}
 	.community-head-box2 {
+		&:nth-child(3){
+			height:440px;
+		}
 		.box {
 			padding-bottom: 0;
 			padding-right: 0;
