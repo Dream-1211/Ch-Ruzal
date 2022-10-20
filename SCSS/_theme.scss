@@ -52,7 +52,7 @@ body .right_pro-l{
 	transition: background-color .4s;
   @include themed(background-color,$three-text-color-dark,rgb(230, 230, 230))
 }
-body .consulting h2 ,body .shoufengqin-box .big p{
+body .consulting h2 {
   transition: color .4s;
   @include themed(color,$three-text-color-dark,#ffffff)
 }
@@ -80,7 +80,7 @@ body .shar-to .shar-to-two a .fa-paper-plane,body .shar-to .shar-to-two a p,body
   transition: color .4s,border .4s,background-color .4s;
   @include themed(color,$three-text-color-dark,#494949)
 }
-body .shar-more-more-1 .shar-more-qq-1 a p,body .shar-more-more-1 .shar-more-qq-1 a i{
+body .shar-more-more-1 .shar-more-qq-1 a p,body .shar-more-more-1 .shar-more-qq-1 a i,body .shoufengqin-box .big p{
   transition: color .4s;
   @include themed(color,$three-text-color-dark,#494949)
 }

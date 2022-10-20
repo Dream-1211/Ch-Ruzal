@@ -2218,13 +2218,13 @@ body .right_pro-l {
   background-color: rgb(230, 230, 230);
 }
 
-body .consulting h2, body .shoufengqin-box .big p {
+body .consulting h2 {
   transition: color 0.4s;
 }
-[data-theme=light] body .consulting h2, [data-theme=light] body .shoufengqin-box .big p {
+[data-theme=light] body .consulting h2 {
   color: #999;
 }
-[data-theme=dark] body .consulting h2, [data-theme=dark] body .shoufengqin-box .big p {
+[data-theme=dark] body .consulting h2 {
   color: #ffffff;
 }
 
@@ -2288,13 +2288,13 @@ body .shar-to .shar-to-two a .fa-paper-plane, body .shar-to .shar-to-two a p, bo
   color: #494949;
 }
 
-body .shar-more-more-1 .shar-more-qq-1 a p, body .shar-more-more-1 .shar-more-qq-1 a i {
+body .shar-more-more-1 .shar-more-qq-1 a p, body .shar-more-more-1 .shar-more-qq-1 a i, body .shoufengqin-box .big p {
   transition: color 0.4s;
 }
-[data-theme=light] body .shar-more-more-1 .shar-more-qq-1 a p, [data-theme=light] body .shar-more-more-1 .shar-more-qq-1 a i {
+[data-theme=light] body .shar-more-more-1 .shar-more-qq-1 a p, [data-theme=light] body .shar-more-more-1 .shar-more-qq-1 a i, [data-theme=light] body .shoufengqin-box .big p {
   color: #999;
 }
-[data-theme=dark] body .shar-more-more-1 .shar-more-qq-1 a p, [data-theme=dark] body .shar-more-more-1 .shar-more-qq-1 a i {
+[data-theme=dark] body .shar-more-more-1 .shar-more-qq-1 a p, [data-theme=dark] body .shar-more-more-1 .shar-more-qq-1 a i, [data-theme=dark] body .shoufengqin-box .big p {
   color: #494949;
 }
 
