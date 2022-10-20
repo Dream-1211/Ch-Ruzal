@@ -2218,13 +2218,13 @@ body .right_pro-l {
   background-color: rgb(230, 230, 230);
 }
 
-body .consulting h2 {
+body .consulting h2, body .shoufengqin-box .big p {
   transition: color 0.4s;
 }
-[data-theme=light] body .consulting h2 {
+[data-theme=light] body .consulting h2, [data-theme=light] body .shoufengqin-box .big p {
   color: #999;
 }
-[data-theme=dark] body .consulting h2 {
+[data-theme=dark] body .consulting h2, [data-theme=dark] body .shoufengqin-box .big p {
   color: #ffffff;
 }
 
@@ -2368,13 +2368,13 @@ body .community-box .post-blog .blog-post-box .blog-infor-p, body .community .co
   color: #333;
 }
 
-body .community-footer .community-footer-infor h3 {
+body .community-footer .community-footer-infor h3, body .caigoudating .caigounote header section label, body .caigoudating .caigounote #secaton-2 h2 {
   transition: color 0.4s;
 }
-[data-theme=light] body .community-footer .community-footer-infor h3 {
+[data-theme=light] body .community-footer .community-footer-infor h3, [data-theme=light] body .caigoudating .caigounote header section label, [data-theme=light] body .caigoudating .caigounote #secaton-2 h2 {
   color: #666;
 }
-[data-theme=dark] body .community-footer .community-footer-infor h3 {
+[data-theme=dark] body .community-footer .community-footer-infor h3, [data-theme=dark] body .caigoudating .caigounote header section label, [data-theme=dark] body .caigoudating .caigounote #secaton-2 h2 {
   color: #333;
 }
 

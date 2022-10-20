@@ -52,7 +52,7 @@ body .right_pro-l{
 	transition: background-color .4s;
   @include themed(background-color,$three-text-color-dark,rgb(230, 230, 230))
 }
-body .consulting h2 {
+body .consulting h2 ,body .shoufengqin-box .big p{
   transition: color .4s;
   @include themed(color,$three-text-color-dark,#ffffff)
 }
@@ -113,7 +113,8 @@ body .community-box .post-blog .blog-post-box .blog-infor-p,body .community .com
   transition: color .4s;
   @include themed(color,$three-text-color,$one-text-color)
 }
-body .community-footer .community-footer-infor h3{
+body .community-footer .community-footer-infor h3 ,body .caigoudating .caigounote header section label,body .caigoudating .caigounote #secaton-2 h2{
+  
   transition: color .4s;
   @include themed(color,$two-text-color-dark,$one-text-color)
 }
