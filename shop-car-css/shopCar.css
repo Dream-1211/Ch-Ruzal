@@ -93,11 +93,16 @@
   margin-top: 8px;
   width: 565px;
 }
+.p-goods img {
+  width: 100%;
+}
 
 .p-img {
   float: left;
   border: 1px solid #ccc;
   padding: 5px;
+  width: 130px;
+  height: 130px;
 }
 
 .p-msg {
