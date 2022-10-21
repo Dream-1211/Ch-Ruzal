@@ -31,7 +31,7 @@ $(function () {
 		// 	.css({ "background-color": "#434343", color: "#fff" });
    
 		$.get(
-			"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
+			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			function (res) {
 				if (res.code !== 1) {
 					return alert("数据请求失败");
