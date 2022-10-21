@@ -726,7 +726,7 @@ function aa(data) {
 		oUl.innerHTML = str;
 	}
 	input.onblur = function () {
-		var search =document.querySelector(".search-btn")
+		var search = document.querySelector(".search-btn");
 
 		oUl.style.display = "none";
 		input.value = "请输入内容";
@@ -765,114 +765,139 @@ var option = {
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
 
-
-
-
 //动画数据
 var myChart = echarts.init(document.getElementById("main-2"));
 setTimeout(function () {
 	option = {
-	  legend: {},
-	  tooltip: {
-		trigger: 'axis',
-		showContent: false
-	  },
-	  dataset: {
-		source: [
-		  ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
-		  ['河南省', 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
-		  ['湖北省', 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
-		  ['安徽省', 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
-		  ['重庆', 25.2, 37.1, 41.2, 18, 33.9, 49.1]
-		]
-	  },
-	  xAxis: { type: 'category' },
-	  yAxis: { gridIndex: 0 },
-	  grid: { top: '55%' },
-	  series: [
-		{
-		  type: 'line',
-		  smooth: true,
-		  seriesLayoutBy: 'row',
-		  emphasis: { focus: 'series' }
+		legend: {},
+		tooltip: {
+			trigger: "axis",
+			showContent: false,
 		},
-		{
-		  type: 'line',
-		  smooth: true,
-		  seriesLayoutBy: 'row',
-		  emphasis: { focus: 'series' }
+		dataset: {
+			source: [
+				["product", "2012", "2013", "2014", "2015", "2016", "2017"],
+				["河南省", 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
+				["湖北省", 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
+				["安徽省", 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
+				["重庆", 25.2, 37.1, 41.2, 18, 33.9, 49.1],
+			],
 		},
-		{
-		  type: 'line',
-		  smooth: true,
-		  seriesLayoutBy: 'row',
-		  emphasis: { focus: 'series' }
-		},
-		{
-		  type: 'line',
-		  smooth: true,
-		  seriesLayoutBy: 'row',
-		  emphasis: { focus: 'series' }
-		},
-		{
-		  type: 'pie',
-		  id: 'pie',
-		  radius: '30%',
-		  center: ['50%', '25%'],
-		  emphasis: {
-			focus: 'self'
-		  },
-		  label: {
-			formatter: '{b}: {@2012} ({d}%)'
-		  },
-		  encode: {
-			itemName: 'product',
-			value: '2012',
-			tooltip: '2012'
-		  }
-		}
-	  ]
-	};
-	myChart.on('updateAxisPointer', function (event) {
-	  const xAxisInfo = event.axesInfo[0];
-	  if (xAxisInfo) {
-		const dimension = xAxisInfo.value + 1;
-		myChart.setOption({
-		  series: {
-			id: 'pie',
-			label: {
-			  formatter: '{b}: {@[' + dimension + ']} ({d}%)'
+		xAxis: { type: "category" },
+		yAxis: { gridIndex: 0 },
+		grid: { top: "55%" },
+		series: [
+			{
+				type: "line",
+				smooth: true,
+				seriesLayoutBy: "row",
+				emphasis: { focus: "series" },
 			},
-			encode: {
-			  value: dimension,
-			  tooltip: dimension
-			}
-		  }
-		});
-	  }
+			{
+				type: "line",
+				smooth: true,
+				seriesLayoutBy: "row",
+				emphasis: { focus: "series" },
+			},
+			{
+				type: "line",
+				smooth: true,
+				seriesLayoutBy: "row",
+				emphasis: { focus: "series" },
+			},
+			{
+				type: "line",
+				smooth: true,
+				seriesLayoutBy: "row",
+				emphasis: { focus: "series" },
+			},
+			{
+				type: "pie",
+				id: "pie",
+				radius: "30%",
+				center: ["50%", "25%"],
+				emphasis: {
+					focus: "self",
+				},
+				label: {
+					formatter: "{b}: {@2012} ({d}%)",
+				},
+				encode: {
+					itemName: "product",
+					value: "2012",
+					tooltip: "2012",
+				},
+			},
+		],
+	};
+	myChart.on("updateAxisPointer", function (event) {
+		const xAxisInfo = event.axesInfo[0];
+		if (xAxisInfo) {
+			const dimension = xAxisInfo.value + 1;
+			myChart.setOption({
+				series: {
+					id: "pie",
+					label: {
+						formatter: "{b}: {@[" + dimension + "]} ({d}%)",
+					},
+					encode: {
+						value: dimension,
+						tooltip: dimension,
+					},
+				},
+			});
+		}
 	});
 	myChart.setOption(option);
-  });
+});
 
-  $(function() {
+$(function () {
 	// 鼠标经过某个小li 两步操作：
-	$(".king li").mouseenter(function() {
+	$(".king li").mouseenter(function () {
 		// 1.当前小li 宽度变为 224px， 同时里面的小图片淡出，大图片淡入
-		$(this).stop().animate({
-			width: 224
-		}).find(".small").stop().fadeOut().siblings(".big").stop().fadeIn();
+		$(this)
+			.stop()
+			.animate({
+				width: 224,
+			})
+			.find(".small")
+			.stop()
+			.fadeOut()
+			.siblings(".big")
+			.stop()
+			.fadeIn();
 		// 2.其余兄弟小li宽度变为69px， 小图片淡入， 大图片淡出
-		$(this).siblings("li").stop().animate({
-			width: 69
-		}).find(".small").stop().fadeIn().siblings(".big").stop().fadeOut();
-	})
+		$(this)
+			.siblings("li")
+			.stop()
+			.animate({
+				width: 69,
+			})
+			.find(".small")
+			.stop()
+			.fadeIn()
+			.siblings(".big")
+			.stop()
+			.fadeOut();
+	});
 });
 
 //新闻列表
-
-$(function(){
-
-	function getNewsList(){
-		$.get(' https://www.mxnzp.com/api/news/types')
-	}//获取新闻列表的函数
-})
+$(function () {
+	$(".page1").on("click", function () {
+		function getNewsList() {
+			$.get(
+				"https://www.mxnzp.com/api/news/list?typeId=511&page=3&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
+				function (res) {
+					if (res.code !== 1) {
+						return alert("数据请求失败");
+					}
+					var htmlList = template("tpl-news", res);
+					$(".news-time-box ").html(htmlList);
+				},
+			);
+			
+		} //获取新闻列表的函数
+		getNewsList();
+	});
+});

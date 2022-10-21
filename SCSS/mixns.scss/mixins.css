@@ -1715,6 +1715,9 @@ body .echars-box-head #main, body .echars-box-head #main-2 {
 body .zixun .news-time-box {
   border: 1px solid #ccc;
 }
+body .zixun .news-time-box a {
+  color: #333;
+}
 body .zixun .news-time-box .news-time-list {
   display: flex;
   justify-content: space-between;

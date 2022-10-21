@@ -176,6 +176,9 @@
 body {
 	.zixun {
 		.news-time-box {
+            a{
+                color:#333 ;
+            }
 			border: 1px solid $grey-color;
 			.news-time-list {
 				display: flex;
@@ -187,8 +190,8 @@ body {
 					color: #333;
 				}
 				.list-new-item {
-                    height: 300px;
-                flex-direction: column;
+					height: 300px;
+					flex-direction: column;
 					display: flex;
 					justify-content: space-around;
 					align-items: center;
