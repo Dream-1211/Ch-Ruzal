@@ -881,23 +881,3 @@ $(function () {
 			.fadeOut();
 	});
 });
-
-//新闻列表
-$(function () {
-	$(".page1").on("click", function () {
-		function getNewsList() {
-			$.get(
-				"https://www.mxnzp.com/api/news/list?typeId=511&page=3&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
-				function (res) {
-					if (res.code !== 1) {
-						return alert("数据请求失败");
-					}
-					var htmlList = template("tpl-news", res);
-					$(".news-time-box ").html(htmlList);
-				},
-			);
-			
-		} //获取新闻列表的函数
-		getNewsList();
-	});
-});

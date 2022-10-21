@@ -176,20 +176,22 @@
 body {
 	.zixun {
 		.news-time-box {
+			border-top: 1px solid $grey-color;
             a{
                 color:#333 ;
             }
-			border: 1px solid $grey-color;
 			.news-time-list {
+                overflow: hidden;
 				display: flex;
 				justify-content: space-between;
-				height: 250px;
+				height: 320px;
 				margin: 30px 0;
 				align-items: center;
 				a {
 					color: #333;
 				}
 				.list-new-item {
+                    margin: 0 26px;
 					height: 300px;
 					flex-direction: column;
 					display: flex;
@@ -216,7 +218,7 @@ body {
 						display: flex;
 						justify-content: space-between;
 						flex-direction: column;
-						height: 114px;
+						height: 134px;
 						.infor-news-box {
 							#source {
 								color: #898b89;
@@ -231,41 +233,45 @@ body {
 					img {
 						width: 200px;
 						border-radius: 8px;
+                        height: 124px;
 					}
 				}
 			}
-			.up-dw-box {
-				a {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					margin: 0 8px;
-					background-color: #fff;
-					border: 1px solid #ccc;
-					color: #333;
-					&:hover {
-						color: $words-color;
-						background-color: $huihei-color;
-					}
-				}
-				.up-page,
-				.down-page {
-					margin: 0 35px;
-					cursor: pointer;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-
-					width: 80px;
-					height: 40px;
-					background-color: #fff;
-					border: 1px solid #ccc;
-					&:hover {
-						color: $words-color;
-						background-color: $huihei-color;
-					}
-				}
-			}
+			
 		}
+        .up-dw-box {
+            padding-bottom: 20px;
+			border-bottom: 1px solid $grey-color;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 8px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                color: #333;
+                &:hover {
+                    color: $words-color;
+                    background-color: $huihei-color;
+                }
+            }
+            .up-page,
+            .down-page {
+                margin: 0 35px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 80px;
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                &:hover {
+                    color: $words-color;
+                    background-color: $huihei-color;
+                }
+            }
+        }
 	}
 }
