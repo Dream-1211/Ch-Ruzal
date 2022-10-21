@@ -867,3 +867,12 @@ setTimeout(function () {
 		}).find(".small").stop().fadeIn().siblings(".big").stop().fadeOut();
 	})
 });
+
+//新闻列表
+
+$(function(){
+
+	function getNewsList(){
+		$.get(' https://www.mxnzp.com/api/news/types')
+	}//获取新闻列表的函数
+})
