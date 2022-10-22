@@ -413,7 +413,7 @@ $(function () {
 		color_full.style.display = "block";
 	});
 
-	// 注册登录谢欢
+	// 注册登录切换
 	var user_login_box = document.querySelector(".user-login-box-1");
 	var regster_box = document.querySelector(".user-regster-box-1");
 	var login = document.querySelectorAll(".login-regster-body-head a");
@@ -452,6 +452,11 @@ $(function () {
 	});
 	// 账号密码登录
 	var input_input = document.querySelectorAll(".input-user-login-box input");
+	var num_tips = document.querySelector(".num-tips");
+	var pwd_tips = document.querySelector(".pwd-tips");
+	var login_btn_inser = document.querySelector(".logining-btn");
+	const ADMIN_PWD = "admin";
+	const ADMIN_USER = "admin";
 	for (var i = 0; i < input_input.length; i++) {
 		input_input[i].onfocus = function () {
 			pwd_tips.style.display = "none";
@@ -462,11 +467,6 @@ $(function () {
 			this.style.border = "2px solid #00C97E";
 		};
 	}
-	var num_tips = document.querySelector(".num-tips");
-	var pwd_tips = document.querySelector(".pwd-tips");
-	var login_btn_inser = document.querySelector(".logining-btn");
-	const ADMIN_PWD = "admin";
-	const ADMIN_USER = "admin";
 	login_btn_inser.addEventListener("click", () => {
 		if (input_input[0].value == "" && input_input[1].value == "") {
 			input_input[0].style.border = "1px solid red";
@@ -499,26 +499,28 @@ $(function () {
 		}
 	});
 
+	//计时器
 	var lis = document.querySelectorAll(".seckill_timer_box");
 	countTime();
 	//设置计时器，回调函数设置为封装好的计时函数
 	window.setInterval(countTime, 1000);
 	//封装计时函数
 	function countTime() {
-		var endTime = +new Date("2022-10-20 22:20"); //设置秒杀截至时间【手动赋值】
+		var endTime = +new Date("2022-10-30 22:20"); //设置秒杀截至时间【手动赋值】
 		var startTime = +new Date();
 		var times = (endTime - startTime) / 1000;
 		var hour = parseInt((times / 60 / 60) % 24);
-		hour = hour < 10 ? "0" + hour : hour;
+		hour = hour < 10 ?  hour : hour;
 		var min = parseInt((times / 60) % 60);
-		min = min < 10 ? "0" + min : min;
+		min = min < 10 ?  min : min;
 		var sec = parseInt(times % 60);
-		sec = sec < 10 ? "0" + sec : sec;
+		sec = sec < 10 ?  sec : sec;
 
 		lis[0].innerHTML = hour;
 		lis[1].innerHTML = min;
 		lis[2].innerHTML = sec;
 	}
+
 	//热搜换一换
 	var news_return = document.querySelector(".news-return");
 	var hot_lists = document.querySelectorAll(".item-new");
@@ -583,6 +585,7 @@ $(function () {
 			transtion(180 * 4, fa_sync);
 		}
 	};
+	//swiper轮播
 	var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 30,
 		centeredSlides: true,
@@ -849,12 +852,12 @@ setTimeout(function () {
 		}
 	});
 	myChart.setOption(option);
-	
+
 	lazyLoadInit();
 	lazyLoadInit({
 		//懒加载
 		coverColor: "white",
-		coverDiv:"<h1></h1>",
+		coverDiv: "<h1></h1>",
 		offsetBottom: 0,
 		offsetTopm: -100,
 		showTime: 350,

@@ -1,7 +1,7 @@
 //新闻列表
 $(function () {
 	function getNewsList() {
-		$(".page1").css({ "background-color": "#434343", "color": "#fff" });
+		$(".page1").css({ "background-color": "#434343", color: "#fff" });
 		$.get(
 			"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			function (res) {
@@ -29,7 +29,7 @@ $(function () {
 		// $(this)
 		// 	.siblings("button")
 		// 	.css({ "background-color": "#434343", color: "#fff" });
-   
+
 		$.get(
 			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			function (res) {
@@ -40,16 +40,20 @@ $(function () {
 				$("#tpl-news1").html(htmlList);
 			},
 		);
-        $(this).css({"background-color":"#434343","color":"#fff"});
-        // 3. 其余的兄弟去掉背景颜色 隐式迭代
-        $(this).siblings('a').css({"background":"","color":"#434343"});
+		$(this).css({ "background-color": "#434343", color: "#fff" });
+		// 3. 其余的兄弟去掉背景颜色 隐式迭代
+		$(this).siblings("a").css({ background: "", color: "#434343" });
 	});
 	$(".up-page,.down-page").click(function () {
 		// $(this).css({ "background-color": "#fff", color: "#434343" });
 		// $(this)
 		// 	.siblings("button")
 		// 	.css({ "background-color": "#434343", color: "#fff" });
-   
+		// var url = "https://www.mxnzp.com/api/news/list";
+		// var resObj = { typeId: 511, page: 4 };
+		// axios.get(url, { params: resObj }).then(function (res) {
+		// 	console, log(res);
+		// });
 		$.get(
 			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			function (res) {
