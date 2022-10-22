@@ -7,7 +7,7 @@ $(function () {
 				"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			)
 			.then(function (res) {
-				if (res.data.code !== 1) {
+				if (res.data.code !== 1|| res.code ==102) {
 					return alert("数据请求失败");
 				}
 				for (var i = 0; i < 9; i++) {

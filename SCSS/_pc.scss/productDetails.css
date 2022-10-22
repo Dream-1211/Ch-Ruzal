@@ -420,6 +420,23 @@ body .foolter-bootm .infor {
 body .foolter-bootm .infor li {
   padding-top: 5px;
 }
+body .foolter-bootm .infor li:last-child {
+  padding-bottom: 10px;
+}
+body .foolter-bootm .ip-infor {
+  display: flex;
+  justify-content: center;
+}
+body .foolter-bootm .ip-infor li {
+  margin: 10px 10px;
+}
+body .foolter-bootm .ip-infor li a:hover {
+  color: #1d99e3;
+}
+body .foolter-bootm .ip-infor li:nth-child(2n) {
+  color: rgb(134, 191, 50) !important;
+  font-weight: bold;
+}
 body .container {
   /* 固定容器的宽度 */
   width: 1200px;
