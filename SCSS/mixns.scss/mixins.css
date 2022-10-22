@@ -2221,6 +2221,16 @@ body .color-full {
   content: "🌞";
 }
 
+body .fixedtool li {
+  transition: color 0.4s;
+}
+[data-theme=light] body .fixedtool li {
+  color: #ccc;
+}
+[data-theme=dark] body .fixedtool li {
+  color: #434343;
+}
+
 .wangzhanshouye, body, body .fixedtool {
   transition: background-color 0.4s;
 }

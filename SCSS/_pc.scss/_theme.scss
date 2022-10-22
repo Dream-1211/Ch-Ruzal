@@ -12,6 +12,11 @@
 transition: all .4s;
   @include themed(content, "🌙", "🌞");
 }
+body .fixedtool li{
+  
+  transition: color .4s;
+  @include themed(color,$grey-color,$huihei-color)
+}
 .wangzhanshouye,body,body .fixedtool{
 	transition: background-color .4s;
   @include themed(background-color,$bg-color-dark,$bg-color)
