@@ -1713,6 +1713,9 @@ body .echars-box-head #main, body .echars-box-head #main-2 {
 }
 
 body .zixun .news-time-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   border-top: 1px solid #ccc;
 }
 body .zixun .news-time-box a {

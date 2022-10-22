@@ -176,6 +176,9 @@
 body {
 	.zixun {
 		.news-time-box {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 			border-top: 1px solid $grey-color;
             a{
                 color:#333 ;

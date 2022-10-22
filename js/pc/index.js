@@ -702,7 +702,7 @@ $(function () {
 //首页搜索关键词联想
 var input = document.querySelector(".search-input");
 var oUl = document.getElementById("ul");
-var btn_secarh_index=document.querySelector('.search-btn')
+var btn_secarh_index = document.querySelector(".search-btn");
 input.onkeyup = function () {
 	var value = this.value;
 	var oScript = document.createElement("script");
@@ -737,7 +737,7 @@ function aa(data) {
 			this.value = "请输入内容";
 		}
 		setTimeout(() => {
-		oUl.style.display = "none";
+			oUl.style.display = "none";
 		}, 100);
 		search_btn.style.backgroundColor = "#8dc742";
 		this.style.borderColor = "#8dc742";

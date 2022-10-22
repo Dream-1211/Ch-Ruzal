@@ -1,77 +1,47 @@
 //新闻列表
 $(function () {
+	$(".page1").css({ "background-color": "#434343", color: "#fff" });
 	function getNewsList() {
-		$(".page1").css({ "background-color": "#434343", color: "#fff" });
-		$.get(
-			"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
-			function (res) {
-				if (res.code !== 1) {
+		axios
+			.get(
+				"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
+			)
+			.then(function (res) {
+				if (res.data.code !== 1) {
 					return alert("数据请求失败");
 				}
-				// $.each(res.data, function (i, ele) {
-				// 	if (ele.imgList[0]) {
-				// 	} else [$.get("https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09")];
-				// 	console.log(ele.imgList);
-				// });
-				// if (res.data.imgList[0]) {
-				// 	res.data.imgList[0] = "";
-				// } else {
-				// 	res.data.imgList[0] = res.data.imgList[0];
-				// }
-				var htmlList = template("tpl-news2", res);
+				for (var i = 0; i < 9; i++) {
+					if (res.data.data.length !== 4) {
+						//重新请求
+						axios.get(
+							"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
+						);
+					} else {
+						//删除多余值
+						res.data.data.shift();
+					}
+				}
+				res.data.data.imgList === undefined
+					? axios.get(
+							//重新请求
+							"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
+					  )
+					: console.log("请求成功!");
+				var htmlList = template("tpl-news2", res.data.data);
 				$("#tpl-news1").html(htmlList);
-			},
-		);
-	} //获取新闻列表的函数
+			});
+	} //切换新闻列表的函数
 	getNewsList();
 	$(".up-dw-box a").click(function () {
 		// $(this).css({ "background-color": "#fff", color: "#434343" });
 		// $(this)
 		// 	.siblings("button")
 		// 	.css({ "background-color": "#434343", color: "#fff" });
-
-		$.get(
-			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
-			function (res) {
-				if (res.code !== 1) {
-					return alert("数据请求失败");
-				}
-				var htmlList = template("tpl-news2", res);
-				$("#tpl-news1").html(htmlList);
-			},
-		);
 		$(this).css({ "background-color": "#434343", color: "#fff" });
 		// 3. 其余的兄弟去掉背景颜色 隐式迭代
 		$(this).siblings("a").css({ background: "", color: "#434343" });
 	});
 	$(".up-page,.down-page").click(function () {
-		// $(this).css({ "background-color": "#fff", color: "#434343" });
-		// $(this)
-		// 	.siblings("button")
-		// 	.css({ "background-color": "#434343", color: "#fff" });
-		// var url = "https://www.mxnzp.com/api/news/list";
-		// var resObj = {
-		// 	typeId: 511,
-		// 	page: 4,
-		// 	app_id: qhoalrrshsilrpkg,
-		// 	app_secret: Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09,
-		// };
-		// axios.get(url, { params: resObj }).then(function (res) {
-		// 	console, log(res);
-		// });
-		// var typeId = "typeId=511";
-		// var page = "page=4";
-		// var app_id = "add_id=qhoalrrshsilrpkg";
-		// var app_secret = "app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09";
-		$.get(
-			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
-			function (res) {
-				if (res.code !== 1) {
-					return alert("数据请求失败");
-				}
-				var htmlList = template("tpl-news2", res);
-				$("#tpl-news1").html(htmlList);
-			},
-		);
+		getNewsList()
 	});
 });
