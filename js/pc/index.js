@@ -510,11 +510,11 @@ $(function () {
 		var startTime = +new Date();
 		var times = (endTime - startTime) / 1000;
 		var hour = parseInt((times / 60 / 60) % 24);
-		hour = hour < 10 ?  hour : hour;
+		hour = hour < 10 ? hour : hour;
 		var min = parseInt((times / 60) % 60);
-		min = min < 10 ?  min : min;
+		min = min < 10 ? min : min;
 		var sec = parseInt(times % 60);
-		sec = sec < 10 ?  sec : sec;
+		sec = sec < 10 ? sec : sec;
 
 		lis[0].innerHTML = hour;
 		lis[1].innerHTML = min;
@@ -702,6 +702,7 @@ $(function () {
 //首页搜索关键词联想
 var input = document.querySelector(".search-input");
 var oUl = document.getElementById("ul");
+var btn_secarh_index=document.querySelector('.search-btn')
 input.onkeyup = function () {
 	var value = this.value;
 	var oScript = document.createElement("script");
@@ -728,15 +729,21 @@ function aa(data) {
 		});
 		oUl.innerHTML = str;
 	}
-	input.onblur = function () {
-		var search = document.querySelector(".search-btn");
 
+	var search_btn = document.querySelector(".search-btn");
+	var search = document.querySelector(".search-input");
+	search.onblur = function () {
+		if (this.value === "") {
+			this.value = "请输入内容";
+		}
+		setTimeout(() => {
 		oUl.style.display = "none";
-		input.value = "请输入内容";
-		input.style.borderColor = "#8dc742";
-		input.style.borderLeft = "6px solid #fff";
-		input.style.borderRight = "6px solid #fff";
+		}, 100);
 		search_btn.style.backgroundColor = "#8dc742";
+		this.style.borderColor = "#8dc742";
+		this.style.borderLeft = "6px solid #fff";
+		this.style.borderRight = "6px solid #fff";
+		input.value = "请输入内容";
 	};
 }
 
@@ -852,39 +859,12 @@ setTimeout(function () {
 		}
 	});
 	myChart.setOption(option);
-
-	lazyLoadInit();
-	lazyLoadInit({
-		//懒加载
-		coverColor: "white",
-		coverDiv: "<h1></h1>",
-		offsetBottom: 0,
-		offsetTopm: -100,
-		showTime: 350,
-		// onLoadBackEnd: function (i, e) {
-		// 	console.log("onLoadBackEnd:" + i);
-		// },
-		// onLoadBackStart: function (i, e) {
-		// 	console.log("onLoadBackStart:" + i);
-		// },
-		// 		coverColor：图片即将显示时覆盖层的颜色
-
-		// coverDiv：图片即将显示时覆盖层可显示的土自定义组件
-
-		// offsetBottom：图片距离屏幕底部出现时间点的距离差值（注解：延迟加载图片会在图片顶部接触屏幕底部时出现，如果想要让图片顶部距离屏幕底部有一定距离时出现，请设置此值）
-
-		// offsetTopm：图片距离屏幕底部出现时间点的距离差值（注解：同上，距离顶部）
-
-		// onLoadBackEnd：图片已经完全出现时的回调函数，参数为（index，event）加载的图片下标，以及dom对象（dom对象为jquerydom或zeptodom对象）
-
-		// onLoadBackStart：图片已经下载完成，即将开始显示时的回调函数（参数同上）
-	});
 });
 
 $(function () {
-	// 鼠标经过某个小li 两步操作：
+	// 鼠标经过某个小li 操作：
 	$(".king li").mouseenter(function () {
-		// 1.当前小li 宽度变为 224px， 同时里面的小图片淡出，大图片淡入
+		// 当前小li 宽度变为 224px， 同时里面的小图片淡出，大图片淡入
 		$(this)
 			.stop()
 			.animate({
@@ -896,7 +876,7 @@ $(function () {
 			.siblings(".big")
 			.stop()
 			.fadeIn();
-		// 2.其余兄弟小li宽度变为69px， 小图片淡入， 大图片淡出
+		// 其余兄弟小li宽度变为69px， 小图片淡入， 大图片淡出
 		$(this)
 			.siblings("li")
 			.stop()

@@ -1112,6 +1112,9 @@ body .nolike {
   font-size: 16px;
   margin: 20px 0;
 }
+body button {
+  cursor: pointer;
+}
 body .search-wapper .search-plus {
   display: flex;
   justify-content: center;

@@ -12,7 +12,7 @@
 transition: all .4s;
   @include themed(content, "🌙", "🌞");
 }
-.wangzhanshouye,body{
+.wangzhanshouye,body,body .fixedtool{
 	transition: background-color .4s;
   @include themed(background-color,$bg-color-dark,$bg-color)
 }

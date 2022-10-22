@@ -50,10 +50,19 @@ $(function () {
 		// 	.siblings("button")
 		// 	.css({ "background-color": "#434343", color: "#fff" });
 		// var url = "https://www.mxnzp.com/api/news/list";
-		// var resObj = { typeId: 511, page: 4 };
+		// var resObj = {
+		// 	typeId: 511,
+		// 	page: 4,
+		// 	app_id: qhoalrrshsilrpkg,
+		// 	app_secret: Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09,
+		// };
 		// axios.get(url, { params: resObj }).then(function (res) {
 		// 	console, log(res);
 		// });
+		// var typeId = "typeId=511";
+		// var page = "page=4";
+		// var app_id = "add_id=qhoalrrshsilrpkg";
+		// var app_secret = "app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09";
 		$.get(
 			"https://www.mxnzp.com/api/news/list?typeId=511&page=4&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			function (res) {

@@ -2221,13 +2221,13 @@ body .color-full {
   content: "🌞";
 }
 
-.wangzhanshouye, body {
+.wangzhanshouye, body, body .fixedtool {
   transition: background-color 0.4s;
 }
-[data-theme=light] .wangzhanshouye, [data-theme=light] body {
+[data-theme=light] .wangzhanshouye, [data-theme=light] body, [data-theme=light] body .fixedtool {
   background-color: #181818;
 }
-[data-theme=dark] .wangzhanshouye, [data-theme=dark] body {
+[data-theme=dark] .wangzhanshouye, [data-theme=dark] body, [data-theme=dark] body .fixedtool {
   background-color: #f7f7f7;
 }
 
