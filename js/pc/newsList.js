@@ -1,14 +1,14 @@
 //新闻列表
 $(function () {
 	$(".page1").css({ "background-color": "#434343", color: "#fff" });
-	function getNewsList() {
+	function getNewsList() {//刷新新闻列表
 		axios
 			.get(
 				"https://www.mxnzp.com/api/news/list?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			)
 			.then(function (res) {
 				if (res.data.code !== 1 || res.code == 102) {
-					return alert("数据请求失败");
+					return alert("新闻列表数据请求失败");
 				}
 				for (var i = 0; i < 8; i++) {
 					if (res.data.data.length > 4) {
@@ -23,7 +23,7 @@ $(function () {
 						for (var i = 0; i < 4; i++) {
 							if (res.data.data[i].imgList === null) {
 								res.data.data[i].imgList=['../img/zjsp/云南雪莲果.jpg']//添加图片路径
-								console.log(res.data.data[i].imgList[i]);
+								// console.log(res.data.data[i].imgList[i]);
 							}
 						}
 					}

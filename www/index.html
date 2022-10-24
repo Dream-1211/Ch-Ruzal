@@ -14,6 +14,7 @@
 			rel="stylesheet"
 			href="http://at.alicdn.com/t/font_3225174_brp3w7dbhdt.css"
 		/>
+		
 	</head>
 	<body>
 		<!-- /*---------------- head部分---------------- */ -->
@@ -61,14 +62,103 @@
 								<a href="javascript:;"><i class="fa fa-user"></i>用户中心</a>
 							</li>
 							<span>|</span>
-							<li>
+							<li class="user-sever-box">
 								<a href="javascript:;"
-									><i class="fa fa-comment-dots"></i>客户服务</a
-								>
+									><i class="fa fa-comment-dots"></i>客户服务<i
+										class="fa fa-angle-down"
+									></i
+								></a>
+								<div class="user-sever">
+									<ul>
+										<li><i class="fa fa-clock"></i> (08:30-22:00)</li>
+										<li><i class="fa fa-envelope"></i>kefu@yiwugo.com</li>
+										<li>
+											<a>帮助中心</a>
+											<a>意见反馈</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<span>|</span>
-							<li>
-								<a href="javascript:;"><i class="fa fa-globe"></i>网站导航</a>
+							<li class="daohang-box">
+								<a href="javascript:;"
+									><i class="fa fa-globe"></i>网站导航<i
+										class="fa fa-angle-down"
+									></i
+								></a>
+								<div class="wdzhc show_z">
+									<table>
+										<tbody>
+											<tr>
+												<th>新手入门</th>
+												<td>
+													<a href="javascript:;">义乌购介绍</a>
+													<a href="javascript:;">注册</a>
+													<a href="javascript:;">帮助中心</a>
+													<a href="javascript:;">意见反馈</a>
+												</td>
+											</tr>
+											<tr>
+												<th>义乌购产品</th>
+												<td>
+													<a href="javascript:;">排行榜</a>
+													<a href="javascript:;">市场地图</a>
+													<a href="javascript:;">经侦平台</a>
+													<a href="javascript:;">转租转让</a>
+													<a href="javascript:;">限时秒杀</a>
+													<a href="javascript:;">尾货清仓</a>
+													<a href="javascript:;">WAP版</a>
+													<a href="javascript:;">论坛</a>
+												</td>
+											</tr>
+											<tr>
+												<th>买家服务</th>
+												<td>
+													<a href="javascript:;">我的订单</a>
+													<a href="javascript:;">发布求购</a>
+													<a href="javascript:;">找供应商</a>
+													<a href="javascript:;">找商品</a>
+												</td>
+											</tr>
+											<tr>
+												<th>卖家服务</th>
+												<td>
+													<a href="javascript:;">发布商品</a>
+													<a href="javascript:;">管理订单</a>
+													<a href="javascript:;">视频</a>
+													<a href="javascript:;">发布库存</a>
+													<a href="javascript:;">商铺代运营</a>
+													<a href="javascript:;">义乌购营业执照</a>
+												</td>
+											</tr>
+											<tr>
+												<th>热门行业</th>
+												<td>
+													<a href="javascript:;">玩具</a>
+													<a href="javascript:;">仿真花</a>
+													<a href="javascript:;">头饰</a>
+													<a href="javascript:;">珠宝首饰</a>
+													<a href="javascript:;">箱包</a>
+													<a href="javascript:;">日用百货</a>
+													<a href="javascript:;">装饰工艺</a>
+													<a href="javascript:;">饰品配件</a>
+													<a href="javascript:;">袜类</a>
+													<a href="javascript:;">办公学习用品</a>
+													<a href="javascript:;">文胸内衣</a>
+													<a href="javascript:;">五金工具/配件</a>
+													<a href="javascript:;">文化体育用品</a>
+													<a href="javascript:;">五金厨卫</a>
+													<a href="javascript:;">女装</a>
+													<a href="javascript:;">床上用品</a>
+													<a href="javascript:;">小家电</a>
+													<a href="javascript:;">汽车用品</a>
+													<a href="javascript:;">伞具</a>
+													<a href="javascript:;">陶瓷水晶</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</li>
 							<span>|</span>
 							<li>
@@ -1436,7 +1526,7 @@
 																	<td
 																		align="center"
 																		valign="middle"
-																		background="../../images/i_07-7.jpg"
+																		background=""
 																	>
 																		<a
 																			href="../../V20/SHXX/ttc/202207/t20220713_7873468.htm"
@@ -1472,7 +1562,7 @@
 																	<td
 																		align="center"
 																		valign="middle"
-																		background="../../images/i_07-7.jpg"
+																		background=""
 																	>
 																		<a
 																			href="../../V20/SHXX/ttc/202207/t20220713_7873468.htm"
@@ -1508,7 +1598,7 @@
 																	<td
 																		align="center"
 																		valign="middle"
-																		background="../../images/i_07-7.jpg"
+																		background=""
 																	>
 																		<a
 																			href="../../V20/SHXX/ttc/202207/t20220713_7873467.htm"
@@ -4052,6 +4142,15 @@
 									type="password"
 									placeholder="密码"
 								/><i class="fa fa-eye-slash"></i>
+								<input
+									id="login-yanzhengma"
+									type="text"
+									placeholder="验证码"
+								/>
+								<div id="img-yanzhengma">
+									
+								</div>
+								<p class="pwd-tips-2">验证码错误</p>
 								<a href="#">账户:admin密码:admin</a>
 								<p class="num-tips">请填写手机号或邮箱</p>
 								<p class="pwd-tips">账号或密码错误</p>
@@ -4081,6 +4180,7 @@
 		</div>
 
 		<script src="../js/public/jquery-3.6.0.min.js"></script>
+		<script src="../js/public/axios.js"></script>
 		<script src="https://jsd.cdn.zzko.cn/gh/apache/echarts@5.4.0/dist/echarts.min.js"></script>
 		<script src="../js/public/swiper-bundle.min.js"></script>
 		<script src="../js/pc/index.js"></script>
@@ -4089,8 +4189,9 @@
 		<script src="../js/pc/adMiaosha.js"></script>
 		<script src="../js/public/template-web.js"></script>
 		<script src="../js/pc/newsList.js"></script>
+		<script src="../js//pc/loginCode.js"></script>
 		<script src="../js/public/EasyLazyload.min.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
 
 		<!-- 新闻请求模板 -->
 		<script type="text/html" id="tpl-news2">
@@ -4120,7 +4221,7 @@
 		<script src="../js/pc/ipadressInfor.js"></script>
 		<!-- 当前位置显示 -->
 		<script type="text/html" id="ipadress">
-			
+
 			<li>当前IP:</li>
 			<li>{{data.ip}}</li>
 			<li>当前位置:</li>
@@ -4128,6 +4229,10 @@
 			<li><a href="javascript:;">根据您的活动记录
 				- 更新位置信息</a></li>
 		</script>
-		<script src="../js/public/lazyLoadInt.js"></script>
+		<script src="../js/public/lazyLoadInt.js" id="img-code"></script>
+
+		<script type="text/html" id="imgcode">
+			<img id="yanzhengma" src="{{data.verifyCodeImgUrl}}" alt="">
+		</script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-@import 'color';
+@import "color";
 @font-face {
 	/* 指定字体的名字 */
 	font-family: "myfont";
@@ -120,6 +120,80 @@ body {
 				align-items: center;
 			}
 			.header-right {
+				li:nth-child(9) {
+					position: relative;
+					.show_z {
+						display: none;
+						position: absolute;
+						top: 19px;
+						right: -140px;
+						width: 500px;
+						z-index: 99999;
+						tbody {
+							display: flex;
+							justify-content: flex-start;
+							flex-direction: column;
+							font-size: 12px;
+							th{
+								padding-left: 5px;
+								width: 75px;
+								vertical-align: top;
+								font-weight: bold;
+								color: $words-color;
+							}
+							tr{
+								height: 30px;
+							}
+							padding: 16px;
+							top: 40px;
+							width: 470px;
+							border: 1px solid #ddd;
+							background: $green-color;
+							z-index: 999;
+							height: 180px;
+							right: -53px;
+							box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 20%);
+							line-height: 24px;
+						}
+					}
+				}
+				li:nth-child(7) {
+					position: relative;
+					a {
+						padding: 5px 0;
+					}
+					.user-sever {
+						display: none;
+						position: absolute;
+						top: 19px;
+						background-color: $green-color;
+						padding: 8px 6px;
+						width: 155px;
+						right: -43px;
+						box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 20%);
+						ul {
+							li {
+								i {
+									margin-right: 6px;
+								}
+								height: 20px;
+								&:last-child {
+									display: flex;
+									justify-content: space-between;
+									align-items: center;
+								}
+								a {
+									cursor: pointer;
+								}
+								&:last-child {
+									padding: 5px;
+									margin-top: 10px;
+									border-top: 1px solid $grey-color;
+								}
+							}
+						}
+					}
+				}
 				a {
 					&:hover {
 						color: #1d99e3;
@@ -197,7 +271,7 @@ body {
 					}
 				}
 				height: 100%;
-				width: 520px;
+				width: 560px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -445,23 +519,23 @@ body {
 			text-align: center;
 			li {
 				padding-top: 5px;
-				&:last-child{
+				&:last-child {
 					padding-bottom: 10px;
 				}
 			}
 		}
-		.ip-infor{
+		.ip-infor {
 			display: flex;
 			justify-content: center;
-			li{
+			li {
 				margin: 10px 10px;
-				a{
-					&:hover{
+				a {
+					&:hover {
 						color: $bule-color;
 					}
 				}
-				&:nth-child(2n){
-					color: $green-color!important;
+				&:nth-child(2n) {
+					color: $green-color !important;
 					font-weight: bold;
 				}
 			}
@@ -607,19 +681,17 @@ body {
 		width: 100%;
 		li {
 			a {
-
 				color: #333;
 				display: inline-block;
 				width: 579px;
 				height: 100%;
 				padding: 10px 0 3px 14px;
-				&:last-child{
+				&:last-child {
 					padding-bottom: 10px;
 				}
-				&:hover{
-
+				&:hover {
 					background-color: #1d99e3;
-					color : #f3f3f3;
+					color: #f3f3f3;
 				}
 			}
 		}

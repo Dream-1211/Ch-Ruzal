@@ -1,3 +1,4 @@
+
 $(function () {
 	// 滚动动画
 	var speed = 20; //速度数值越大速度越慢
@@ -77,18 +78,13 @@ $(function () {
 	// 关闭二维码
 	// 1. 获取元素
 	var btn = document.querySelector(".close-btn");
-	var box = document.querySelector(".box-qr");
+	// var box = document.querySelector(".box-qr");
 	// 2.注册事件 程序处理
 	btn.onclick = function () {
-		box.style.display = "none";
+		btn.parentNode.style.display = "none";
 	};
 
-	//弹出广告
-	// var ad = document.querySelector(".ad");
-	// setTimeout(function () {
-	// 	ad.style.display = "none";
-	// }, 4000);
-
+	//导航栏切换
 	var wangzhanshouye = document.querySelector(".wangzhanshouye");
 	var aixinzhunong = document.querySelector(".aixinzhunong");
 	var guanyuwomen = document.querySelector(".guanyuwomen");
@@ -461,29 +457,57 @@ $(function () {
 		input_input[i].onfocus = function () {
 			pwd_tips.style.display = "none";
 			num_tips.style.display = "none";
+			$(".pwd-tips-2").hide();
 			for (var i = 0; i < input_input.length; i++) {
 				input_input[i].style.border = "";
 			}
 			this.style.border = "2px solid #00C97E";
 		};
 	}
+	//声明变量供全局使用
+	let imgcode_arr
+	let imgCode
+	$('#img-yanzhengma').click(function(){//点击验证码图片刷新本地存储
+		setTimeout(function(){
+			imgCode=sessionStorage.getItem('imgCode')
+			imgcode_arr= imgCode[56]+imgCode[57]+imgCode[58]+imgCode[59]+imgCode[60]
+			console.log(imgcode_arr)
+		},1000)
+	})
+	setTimeout(function(){//第一次加载完毕后读取本地验证码
+	imgCode=sessionStorage.getItem('imgCode')
+	imgcode_arr= imgCode[56]+imgCode[57]+imgCode[58]+imgCode[59]+imgCode[60]
+		console.log(imgcode_arr)
+	},1000)
 	login_btn_inser.addEventListener("click", () => {
 		if (input_input[0].value == "" && input_input[1].value == "") {
+			//当值为空
 			input_input[0].style.border = "1px solid red";
 			num_tips.style.display = "block";
 		} else if (input_input[1].value == "") {
+			//当密码没输入
 			input_input[1].style.border = "1px solid red";
 			pwd_tips.style.display = "block";
 		} else if (
+			//当账号和密码错误
 			input_input[1].value !== ADMIN_PWD &&
 			input_input[0].value !== ADMIN_USER
 		) {
 			pwd_tips.style.display = "block";
-
 			input_input[1].style.border = "1px solid red";
 		} else if (
+			//当验证码错误
 			input_input[0].value == ADMIN_USER &&
-			input_input[1].value == ADMIN_PWD
+			input_input[1].value == ADMIN_PWD &&
+			input_input[2].value !==imgcode_arr
+		) {
+			$(".pwd-tips-2").show();
+			$("#login-yanzhengma").css('border',"1px solid red")
+		} else if (
+			//当密码正确
+			input_input[0].value == ADMIN_USER &&
+			input_input[1].value == ADMIN_PWD &&
+			input_input[2].value == imgcode_arr
 		) {
 			login_regster_btn.style.display = "none";
 			login_regster.style.display = "none";
@@ -890,4 +914,8 @@ $(function () {
 			.stop()
 			.fadeOut();
 	});
+});
+// var user_sever =document.querySelector(".header-right").children[6]
+$(".user-sever-box,.daohang-box").hover(function () {
+	$(this).children(".user-sever,.wdzhc").stop().slideToggle();
 });

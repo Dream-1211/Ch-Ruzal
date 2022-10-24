@@ -399,6 +399,7 @@ body {
 			left: 50%;
 			transform: translate(-50%, -50%);
 			.login-regster-head {
+				margin-bottom: 15px;
 				cursor: move;
 				width: 100%;
 				display: flex;
@@ -427,7 +428,7 @@ body {
 					display: none;
 				}
 				.user-login-box {
-					height: 300px;
+					height: 320px;
 					width: 380px;
 					display: flex;
 					justify-content: center;
@@ -440,6 +441,19 @@ body {
 
 					.input-user-login-box {
 						position: relative;
+						#img-yanzhengma{
+							cursor: pointer;
+							position:absolute;
+							width: 110px;
+							height: 52px;
+							top: 168px;
+							right: 70px;
+						}
+						position: relative;
+						#login-yanzhengma{
+							width: 150px;
+							margin: 30px 0;
+						}
 						input {
 							transition: all 0.2s;
 							border: 1px solid $grey-color;
@@ -450,21 +464,21 @@ body {
 							display: flex;
 							height: 40px;
 							width: 360px;
-							margin: 30px 0;
-							margin-top: 40px;
+							margin-top: 25px;
 							&:first-child {
 								margin-top: 10px;
 							}
 						}
+						
 						i {
 							position: absolute;
-							top: 120px;
+							top: 105px;
 							right: 4px;
 							cursor: pointer;
 						}
 						a {
 							position: absolute;
-							top: 165px;
+							top: 226px;
 							right: 4px;
 							color: #00965e;
 						}
@@ -477,8 +491,15 @@ body {
 						.pwd-tips {
 							display: none;
 							position: absolute;
-							top: 157px;
+							top: 144px;
 							left: -141px;
+						}
+						.pwd-tips-2{
+							display: none;
+							position: absolute;
+							top: 227px;
+							right: 150px;
+							color: red;
 						}
 						.num-tips {
 							display: none;
@@ -493,7 +514,6 @@ body {
 						}
 						cursor: pointer;
 						display: block;
-						margin-top: 10px;
 						line-height: 45px;
 						border: none;
 						border-radius: 5px;
@@ -538,7 +558,7 @@ body {
 					font-size: 30px;
 				}
 				img {
-					width: 160px;
+					width: 145px;
 				}
 				.login-regster-body-head {
 					display: flex;
@@ -561,6 +581,7 @@ body {
 							color: #00784b;
 						}
 					}
+					margin-top: 20px;
 					height: 60px;
 				}
 			}
@@ -569,7 +590,6 @@ body {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				line-height: 62px;
 				.fa-google {
 					color: #3182f6;
 				}
