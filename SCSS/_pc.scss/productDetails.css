@@ -394,7 +394,7 @@ body .header-box .scan .qrcode::after {
   }
 }
 body .footer-head {
-  margin-top: 40px;
+  padding-top: 40px;
   background-image: linear-gradient(to right, #1d99e3, rgb(134, 191, 50));
   width: 100%;
   background-size: 1400% 300%;
