@@ -505,7 +505,7 @@ $(function () {
             //当验证码错误
             input_input[0].value == ADMIN_USER &&
             input_input[1].value == ADMIN_PWD &&
-            input_input[2].value !== imgcode_arr || input_input[2].value !== imgcode_arr.toLowerCase()
+            input_input[2].value !== imgcode_arr 
         ) {
             $(".pwd-tips-2").show();
             $("#login-yanzhengma").css('border', "1px solid red")
@@ -513,7 +513,7 @@ $(function () {
             //当密码正确
             input_input[0].value == ADMIN_USER &&
             input_input[1].value == ADMIN_PWD &&
-            input_input[2].value == imgcode_arr || input_input[2].value !== imgcode_arr.toLowerCase()
+            input_input[2].value == imgcode_arr 
         ) {
             login_regster_btn.style.display = "none";
             login_regster.style.display = "none";
