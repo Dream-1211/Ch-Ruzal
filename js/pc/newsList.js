@@ -47,8 +47,7 @@ $(function () {
 		});
 	} //切换新闻列表的函数
 	getNewsList();
-	$(".up-dw-box a").click(function () {
-		//分页按钮
+	$(".up-dw-box a").click(function () {//分页按钮
 		$(this).css({ "background-color": "#434343", color: "#fff" });
 		// 3. 其余的兄弟去掉背景颜色 隐式迭代
 		$(this).siblings("a").css({ background: "", color: "#434343" });

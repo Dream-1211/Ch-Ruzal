@@ -885,6 +885,11 @@ body .right-img-3 {
   justify-content: space-between;
   align-content: space-between;
 }
+body div#right-img-matherbox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 body .right-img-3 a img {
   transition: all 1s;
 }
