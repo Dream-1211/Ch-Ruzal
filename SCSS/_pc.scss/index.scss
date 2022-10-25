@@ -1038,8 +1038,12 @@ body {
 			cursor: pointer;
 		}
 	}
-
+	.up-conp {
+		cursor: pointer;
+	}
 	.page .up-2,
+	.up-conp,
+	.up-to,
 	.up-1,
 	.up-3,
 	.up-4,
@@ -1091,7 +1095,7 @@ body {
 					margin-right: 0;
 				}
 				.right-img-3-1 {
-					.it-2{
+					.it-2 {
 						text-align: center;
 					}
 					img {

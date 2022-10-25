@@ -1001,7 +1001,12 @@ body .page .down {
 body .page .up-6 {
   cursor: pointer;
 }
+body .up-conp {
+  cursor: pointer;
+}
 body .page .up-2,
+body .up-conp,
+body .up-to,
 body .up-1,
 body .up-3,
 body .up-4,

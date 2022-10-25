@@ -18,6 +18,7 @@ $(function () {
 			},
 		}).then(function (res) {
 			function getGoodsDate(a) {
+				//计算商品上架日期
 				var date = new Date(a * 1000); // 参数需要毫秒数，所以这里将秒数乘于 1000
 				Y = date.getFullYear() + "-";
 				M =
@@ -31,25 +32,27 @@ $(function () {
 				return (a = Y + M + D + h + m + s);
 			}
 
-			console.log(res.data.message.goods[6].goods_small_logo);
 			// getGoodsDate(res.data.message.goods)
 			// console.log(res);
 			// console.log(res.data);
 			// console.log(res.data.message);
 			// console.log(res.data.message.goods);
 			for (var length = 0; length < 10; length++) {
-				if (res.data.message.goods[length].goods_small_logo === null) {
+				//如果图片为空换其他图片替补
+				if (res.data.message.goods[length].goods_small_logo === "") {
 					//图片链接为空执行
-					for (var i = 0; i < 4; i++) {
+					for (var i = 0; i < 10; i++) {
 						if (res.data.message.goods[length].goods_small_logo === "") {
-							res.data.message.goods[length].goods_small_logo = "../img/zjsp/云南雪莲果.jpg"; //添加图片路径
+							res.data.message.goods[length].goods_small_logo =
+								"../img/zjsp/云南雪莲果.jpg"; //添加图片路径
 							// console.log(res.data.data[i].imgList[i]);
 						}
 					}
 				}
 				// console.log(res.data.data[length].imgList[0]);
 			}
-			for (let i = 0; i < 10; i++) {//时间戳转换
+			for (let i = 0; i < 10; i++) {
+				//时间戳转换
 				res.data.message.goods[i].upd_time = getGoodsDate(
 					res.data.message.goods[i].upd_time,
 				);
@@ -61,7 +64,15 @@ $(function () {
 		});
 	} //切换新闻列表的函数
 	getGoodsList();
-	$(".up-1").css({ "background-color": "#1d99e3", color: "#fff" });
+	$(".in-in").val("1"); //页面刷新默认页码
+	function btn_color(number) {
+		//按钮颜色
+		$(".up-" + number).css({ "background-color": "#1d99e3", color: "#fff" });
+		$(".up-" + number)
+			.siblings()
+			.css({ background: "", color: "#434343", color: "626262" });
+	}
+	btn_color(1);
 	$(".up-btn").click(function () {
 		//分页按钮
 		$(this).css({ "background-color": "#1d99e3", color: "#fff" });
@@ -70,15 +81,31 @@ $(function () {
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
 	});
-	let number = 1;
+
+	let number = 1; //声明默认页码
+
 	$(".down").click(function () {
-		number = number+1;
-		console.log(number);
+		//下一页
+		number = number + 1;
+		$(".in-in").val(number); //自定义页码
+		// console.log(number);
 		getGoodsList(number);
+		btn_color(number);
 	});
 	$(".up").click(function () {
-		number = number-1;
-		console.log(number);
+		//上一页
+		number = number - 1;
+		if (number < 0) {
+			number = 0;
+		}
+		// console.log(number);
+		$(".in-in").val(number); //自定义页码
+		getGoodsList(number);
+		btn_color(number);
+	});
+	$(".up-conp").click(function () {
+		//自定义页码
+		let number = $(".in-in").val();
 		getGoodsList(number);
 	});
 });
