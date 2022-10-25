@@ -29,7 +29,7 @@ $(function () {
 					$("#img-yanzhengma").html(htmlImgCode);
 					saveDate(response);
 				});
-		}, 550);
+		}, 250);
 	}
 	getImgICode();
 	var imgCodeObj = getDate();
