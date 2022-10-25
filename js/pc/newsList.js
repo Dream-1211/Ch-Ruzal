@@ -42,6 +42,8 @@ $(function () {
 				}
 				// console.log(res.data.data[length].imgList[0]);
 			}
+			// console.log(res)
+			// console.log(res.data)
 			var htmlList = template("tpl-news2", res.data);
 			$("#tpl-news1").html(htmlList);
 		});

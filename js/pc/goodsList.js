@@ -1,16 +1,15 @@
 //新闻列表
 $(function () {
-	$(".page1").css({ "background-color": "#434343", color: "#fff" });
-	function getNewsList() {
+	function getGoodsList(number) {
 		//刷新新闻列表
 		axios({
 			method: "get", //请求方式
 			url: "https://api-hmugo-web.itheima.net/api/public/v1/goods/search", //请求地址,
 			params: {
 				//url参数
-				query:"特产",//关键字
-				pagenum:1,//页码
-				pagesize:10,//单页内容
+				query: "特产", //关键字
+				pagenum: 1 + number, //页码
+				pagesize: 10, //单页内容
 			},
 			// headers: {//头信息
 			// },
@@ -18,19 +17,68 @@ $(function () {
 				//请求体参数
 			},
 		}).then(function (res) {
+			function getGoodsDate(a) {
+				var date = new Date(a * 1000); // 参数需要毫秒数，所以这里将秒数乘于 1000
+				Y = date.getFullYear() + "-";
+				M =
+					(date.getMonth() + 1 < 10
+						? "0" + (date.getMonth() + 1)
+						: date.getMonth() + 1) + "-";
+				D = date.getDate() + " ";
+				h = date.getHours() + ":";
+				m = date.getMinutes() + ":";
+				s = date.getSeconds();
+				return (a = Y + M + D + h + m + s);
+			}
 
-			var htmlList = template("tpl-news2", res.data);
-			$("#tpl-news1").html(htmlList);
+			console.log(res.data.message.goods[6].goods_small_logo);
+			// getGoodsDate(res.data.message.goods)
+			// console.log(res);
+			// console.log(res.data);
+			// console.log(res.data.message);
+			// console.log(res.data.message.goods);
+			for (var length = 0; length < 10; length++) {
+				if (res.data.message.goods[length].goods_small_logo === null) {
+					//图片链接为空执行
+					for (var i = 0; i < 4; i++) {
+						if (res.data.message.goods[length].goods_small_logo === "") {
+							res.data.message.goods[length].goods_small_logo = "../img/zjsp/云南雪莲果.jpg"; //添加图片路径
+							// console.log(res.data.data[i].imgList[i]);
+						}
+					}
+				}
+				// console.log(res.data.data[length].imgList[0]);
+			}
+			for (let i = 0; i < 10; i++) {//时间戳转换
+				res.data.message.goods[i].upd_time = getGoodsDate(
+					res.data.message.goods[i].upd_time,
+				);
+				// console.log(res.data.message.goods[i].upd_time);
+			}
+			// console.log(res.data.message.goods)
+			var htmlGoodsList = template("tpl-goodslist", res.data.message);
+			$("#right-img-mather-box").html(htmlGoodsList);
 		});
 	} //切换新闻列表的函数
-	getNewsList();
-	$(".up-dw-box a").click(function () {
+	getGoodsList();
+	$(".up-1").css({ "background-color": "#1d99e3", color: "#fff" });
+	$(".up-btn").click(function () {
 		//分页按钮
-		$(this).css({ "background-color": "#434343", color: "#fff" });
+		$(this).css({ "background-color": "#1d99e3", color: "#fff" });
 		// 3. 其余的兄弟去掉背景颜色 隐式迭代
-		$(this).siblings("a").css({ background: "", color: "#434343" });
+		$(this)
+			.siblings()
+			.css({ background: "", color: "#434343", color: "626262" });
 	});
-	$(".up-page,.down-page").click(function () {
-		getNewsList();
+	let number = 1;
+	$(".down").click(function () {
+		number = number+1;
+		console.log(number);
+		getGoodsList(number);
+	});
+	$(".up").click(function () {
+		number = number-1;
+		console.log(number);
+		getGoodsList(number);
 	});
 });
