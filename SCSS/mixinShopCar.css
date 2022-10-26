@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@import '../_css/list.css';
+@import '_css/list.css';
 @font-face {
   /* 指定字体的名字 */
   font-family: "myfont";
   /* 服务器中字体的路径 */
-  src: url("../../fonts/FZSuHJW.TTF") format("truetype");
+  src: url("../fonts/FZSuHJW.TTF") format("truetype");
 }
 body {
   overflow-x: hidden;
@@ -265,7 +265,7 @@ body .header-box .scan {
 body .header-box .scan .broder {
   position: absolute;
   inset: 0;
-  background: url(../../img/Qrcode/border.png);
+  background: url(../img/Qrcode/border.png);
   background-size: 65px;
   background-repeat: no-repeat;
   animation: animateText 2s linear infinite;
@@ -274,7 +274,7 @@ body .header-box .scan .qrcode {
   position: relative;
   width: 65px;
   height: 65px;
-  background: url(../../img/Qrcode/QR_Code01.png);
+  background: url(../img/Qrcode/QR_Code01.png);
   background-size: 65px;
 }
 body .header-box .scan .qrcode::before {
@@ -283,7 +283,7 @@ body .header-box .scan .qrcode::before {
   top: 0;
   left: 0;
   width: 100%;
-  background: url(../../img/Qrcode/QR_Code02.png);
+  background: url(../img/Qrcode/QR_Code02.png);
   background-size: 65px;
   overflow: hidden;
   animation: animate 4s ease-in-out infinite;
@@ -1502,7 +1502,7 @@ body .echars-box-head #main, body .echars-box-head #main-2 {
 
 @font-face {
   font-family: "myfont";
-  src: url(../../fonts/FZSuHJW.TTF);
+  src: url(../fonts/FZSuHJW.TTF);
 }
 body .details-head .details-head-box {
   height: 75px;
@@ -2071,7 +2071,7 @@ body .qrcode-mobile-buy:hover .qrcode-buy-body {
 
 @font-face {
   font-family: "myfont";
-  src: url(../../fonts/FZSuHJW.TTF);
+  src: url(../fonts/FZSuHJW.TTF);
 }
 .car-logo img {
   vertical-align: middle;
