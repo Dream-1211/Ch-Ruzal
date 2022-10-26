@@ -13,11 +13,11 @@ $(function () {
 				app_id: "qhoalrrshsilrpkg",
 				app_secret: "Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 			},
-			// headers: {//头信息
+			// // headers: {//头信息
+			// // },
+			// data: {
+			// 	//请求体参数
 			// },
-			data: {
-				//请求体参数
-			},
 		}).then(function (res) {
 			if (res.data.code !== 1 || res.code == 102) {
 				return alert("新闻列表数据请求失败");
