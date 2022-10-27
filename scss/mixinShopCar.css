@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '_css/list.css';
+@import 'css/list.css';
 @font-face {
   /* 指定字体的名字 */
   font-family: "myfont";
@@ -2344,4 +2344,4 @@ body .c-contaiiner .w-box {
 }
 body .c-contaiiner .w-box .cart-filter-bar {
   margin-top: 20px;
-}/*# sourceMappingURL=mixin-shopCar._css.map */
+}/*# sourceMappingURL=mixin-shopCar.css.map */

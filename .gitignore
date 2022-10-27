@@ -1,7 +1,7 @@
 
 *.map
 *.map
-SCSS/_pc.scss/productDetails.css.map
+scss/pc.scss/productDetails.css.map
 *.map
 *.map
 *.map
@@ -10,8 +10,8 @@ SCSS/_pc.scss/productDetails.css.map
 *.map
 *.map
 *.map
-SCSS/_pc.scss/index.css.map
-SCSS/mixins.css.map
-SCSS/_pc.scss/productDetails.css.map
+scss/pc.scss/index.css.map
+scss/mixins.css.map
+scss/pc.scss/productDetails.css.map
 *.map
 *.map
