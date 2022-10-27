@@ -100,7 +100,7 @@ body .real-time .answer .answer-1 .a1-text-1 {
 }
 
 /* v2.0 | 20110126
-  http://meyerweb.com/eric/tools/css/reset/
+  http://meyerweb.com/eric/tools/css/reset/ 
   License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
@@ -312,7 +312,7 @@ body .price-buy .buy-head .shop-quan p {
   /* 指定字体的名字 */
   font-family: "myfont";
   /* 服务器中字体的路径 */
-  src: url("../fonts/FZSuHJW.TTF") format("truetype");
+  src: url("../../fonts/FZSuHJW.TTF") format("truetype");
 }
 * {
   margin: 0;
@@ -648,7 +648,7 @@ body .menu a {
   line-height: 2.6rem;
   color: #f3f3f3;
   border-radius: 0.25rem;
-  background: url(../img/1.png);
+  background: url(../../img/1.png);
   background-position: -11rem 0.45rem;
 }
 body .menu a i {
