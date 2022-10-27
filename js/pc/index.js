@@ -6,7 +6,6 @@ $(function () {
 	var colee_right = document.getElementById("colee_right");
 	colee_right2.innerHTML = colee_right1.innerHTML;
 	var fx = 0;
-	var icount = 1;
 	var MyMar4;
 
 	function Marquee() {
@@ -16,7 +15,7 @@ $(function () {
 			Marquee4();
 		}
 	}
-
+    
 	function Marquee3() {
 		if (colee_right2.offsetWidth - colee_right.scrollLeft <= 0)
 			//offsetWidth 是对象的可见宽度

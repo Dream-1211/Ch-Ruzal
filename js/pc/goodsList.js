@@ -62,19 +62,19 @@ $(function () {
 			var htmlGoodsList = template("tpl-goodslist", res.data.message);
 			$("#right-img-mather-box").html(htmlGoodsList);
 		});
-	} //切换新闻列表的函数
+	} 
 	getGoodsList();
+
 	$(".in-in").val("1"); //页面刷新默认页码
-	function btn_color(number) {
-		//按钮颜色
+	function btn_color(number) {//按钮颜色
+
 		$(".up-" + number).css({ "background-color": "#1d99e3", color: "#fff" });
 		$(".up-" + number)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
 	}
 	btn_color(1);
-	$(".up-btn").click(function () {
-		//分页按钮
+	$(".up-btn").click(function () {//分页按钮
 		$(this).css({ "background-color": "#1d99e3", color: "#fff" });
 		// 3. 其余的兄弟去掉背景颜色 隐式迭代
 		$(this)
@@ -87,7 +87,7 @@ $(function () {
 	$(".down").click(function () {
 		//下一页
 		number = number + 1;
-		$(".in-in").val(number); //自定义页码
+		$(".in-in").val(number); //页码
 		// console.log(number);
 		getGoodsList(number);
 		btn_color(number);
@@ -99,13 +99,14 @@ $(function () {
 			number = 0;
 		}
 		// console.log(number);
-		$(".in-in").val(number); //自定义页码
+		$(".in-in").val(number); //页码
 		getGoodsList(number);
 		btn_color(number);
 	});
 	$(".up-conp").click(function () {
 		//自定义页码
 		let number = $(".in-in").val();
+		btn_color(number)
 		getGoodsList(number);
 	});
 });
