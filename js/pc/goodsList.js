@@ -8,7 +8,7 @@ $(function () {
 			params: {
 				//url参数
 				query: "特产", //关键字
-				pagenum: 1 + number, //页码
+				pagenum: number++, //页码
 				pagesize: 10, //单页内容
 			},
 			// headers: {//头信息
@@ -83,8 +83,8 @@ $(function () {
 		$(this)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
-		number=$(this).text()
-		getGoodsList(number)
+		number = $(this).text();//接收自带number值
+		getGoodsList(number);
 		$(".in-in").val(number);
 	});
 
@@ -110,8 +110,10 @@ $(function () {
 	$(".up-conp").click(function () {
 		//自定义页码
 		number = $(".in-in").val();
+		if (number >= 8 || number <= 1) {//大于或小于页码隐藏
+			$(".up-btn").css({ "background-color": "" });
+		}
 		btn_color(number);
 		getGoodsList(number);
 	});
-
 });

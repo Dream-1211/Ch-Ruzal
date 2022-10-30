@@ -15,7 +15,7 @@ $(function () {
 			Marquee4();
 		}
 	}
-    
+
 	function Marquee3() {
 		if (colee_right2.offsetWidth - colee_right.scrollLeft <= 0)
 			//offsetWidth 是对象的可见宽度
@@ -311,16 +311,6 @@ $(function () {
 		login_parent.className = "login-display";
 	});
 
-	// var advert = document.querySelector(".advert");
-	// var spans = document.querySelector(".span-s");
-	// spans.onclick = function () {
-	// 	advert.style.display = "none";
-	// };
-
-	// 该效果未实现！！！
-	// $(function(){
-	// 	$('.advert').stop().slideDown(1000).fadeOut.dadeln(1000);
-	// })
 	// 搜索框焦点显示
 	var search_btn = document.querySelector(".search-btn");
 	var search = document.querySelector(".search-input");
@@ -563,11 +553,14 @@ $(function () {
 	}
 
 	news_return.onclick = () => {
+		//热搜换一换
 		transtion(180, fa_sync);
 		for (var i = 0; i < 32; i++) {
+			//所有子元素隐藏
 			hot_lists[i].style.display = "none";
 		}
 		if (hot_lists[1].style.display === "none" && flage === 1) {
+			//将其他元素隐藏，自己显示
 			for (var i = 0; i < 32; i++) {
 				hot_lists[i].style.display = "none";
 			}
@@ -579,6 +572,7 @@ $(function () {
 			transtion(180 * 2, fa_sync);
 		}
 		if (hot_lists[9].style.display === "none" && flage === 2) {
+			//将其他元素隐藏，自己显示
 			for (var i = 0; i < 32; i++) {
 				hot_lists[i].style.display = "none";
 			}
@@ -591,6 +585,7 @@ $(function () {
 		}
 
 		if (hot_lists[19].style.display === "none" && flage === 3) {
+			//将其他元素隐藏，自己显示
 			for (var i = 0; i < 32; i++) {
 				hot_lists[i].style.display = "none";
 			}
@@ -603,6 +598,7 @@ $(function () {
 		}
 
 		if (hot_lists[29].style.display === "none" && flage === 4) {
+			//将其他元素隐藏，自己显示
 			for (var i = 0; i < 32; i++) {
 				hot_lists[i].style.display = "none";
 			}
