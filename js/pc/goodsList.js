@@ -67,6 +67,7 @@ $(function () {
 	let number = 1; //声明默认页码
 
 	$(".in-in").val("1"); //页面内容框默认页码
+
 	function btn_color(number) {
 		//按钮颜色
 		$(".up-" + number).css({ "background-color": "#1d99e3", color: "#fff" });
@@ -86,26 +87,26 @@ $(function () {
 
 	$(".down").click(function () {
 		//下一页
-		number = number + 1;
-		$(".in-in").val(number); //页码
+		number++;
+		$(".in-in").val(number); //输入框页码
 		// console.log(number);
-		getGoodsList(number);
-		btn_color(number);
+		getGoodsList(number); //请求页码
+		btn_color(number); //分页按钮页码
 	});
 	$(".up").click(function () {
 		//上一页
-		number = number - 1;
+		number--;
 		if (number < 0) {
 			number = 0;
 		}
 		// console.log(number);
-		$(".in-in").val(number); //页码
-		getGoodsList(number);
-		btn_color(number);
+		$(".in-in").val(number); //输入框页码
+		getGoodsList(number); //请求页码
+		btn_color(number); //分页按钮页码
 	});
 	$(".up-conp").click(function () {
 		//自定义页码
-		let number = $(".in-in").val();
+		number = $(".in-in").val();
 		btn_color(number);
 		getGoodsList(number);
 	});
