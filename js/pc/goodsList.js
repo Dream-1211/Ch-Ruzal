@@ -62,27 +62,27 @@ $(function () {
 			var htmlGoodsList = template("tpl-goodslist", res.data.message);
 			$("#right-img-mather-box").html(htmlGoodsList);
 		});
-	} 
+	}
 	getGoodsList();
+	let number = 1; //声明默认页码
 
-	$(".in-in").val("1"); //页面刷新默认页码
-	function btn_color(number) {//按钮颜色
-
+	$(".in-in").val("1"); //页面内容框默认页码
+	function btn_color(number) {
+		//按钮颜色
 		$(".up-" + number).css({ "background-color": "#1d99e3", color: "#fff" });
 		$(".up-" + number)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
 	}
 	btn_color(1);
-	$(".up-btn").click(function () {//分页按钮
+	$(".up-btn").click(function () {
+		//分页按钮
 		$(this).css({ "background-color": "#1d99e3", color: "#fff" });
 		// 3. 其余的兄弟去掉背景颜色 隐式迭代
 		$(this)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
 	});
-
-	let number = 1; //声明默认页码
 
 	$(".down").click(function () {
 		//下一页
@@ -106,7 +106,7 @@ $(function () {
 	$(".up-conp").click(function () {
 		//自定义页码
 		let number = $(".in-in").val();
-		btn_color(number)
+		btn_color(number);
 		getGoodsList(number);
 	});
 });
