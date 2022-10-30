@@ -83,6 +83,9 @@ $(function () {
 		$(this)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
+		number=$(this).text()
+		getGoodsList(number)
+		$(".in-in").val(number);
 	});
 
 	$(".down").click(function () {
@@ -110,4 +113,5 @@ $(function () {
 		btn_color(number);
 		getGoodsList(number);
 	});
+
 });
