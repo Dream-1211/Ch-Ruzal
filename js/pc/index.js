@@ -449,7 +449,7 @@ $(function () {
 			for (var i = 0; i < input_input.length; i++) {
 				input_input[i].style.border = "";
 			}
-			this.style.border = "2px solid #00C97E";
+			this.style.border = "1px solid #00C97E";
 		};
 	}
 	//声明变量供全局使用

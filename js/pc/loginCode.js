@@ -1,6 +1,7 @@
 $(function () {
-	//保存本地存储数据
+
 	function saveDate(data) {
+		//保存本地存储数据
 		sessionStorage.setItem("imgCode", JSON.stringify(data));
 	}
 	function getDate() {
