@@ -8,7 +8,7 @@ $(function () {
 			params: {
 				//url参数
 				query: "特产", //关键字
-				pagenum: 1 + number, //页码
+				pagenum: number++, //页码
 				pagesize: 10, //单页内容
 			},
 			// headers: {//头信息
@@ -62,9 +62,12 @@ $(function () {
 			var htmlGoodsList = template("tpl-goodslist", res.data.message);
 			$("#right-img-mather-box").html(htmlGoodsList);
 		});
-	} //切换新闻列表的函数
+	}
 	getGoodsList();
-	$(".in-in").val("1"); //页面刷新默认页码
+	let number = 1; //声明默认页码
+
+	$(".in-in").val("1"); //页面内容框默认页码
+
 	function btn_color(number) {
 		//按钮颜色
 		$(".up-" + number).css({ "background-color": "#1d99e3", color: "#fff" });
@@ -80,32 +83,37 @@ $(function () {
 		$(this)
 			.siblings()
 			.css({ background: "", color: "#434343", color: "626262" });
+		number = $(this).text();//接收自带number值
+		getGoodsList(number);
+		$(".in-in").val(number);
 	});
-
-	let number = 1; //声明默认页码
 
 	$(".down").click(function () {
 		//下一页
-		number = number + 1;
-		$(".in-in").val(number); //自定义页码
+		number++;
+		$(".in-in").val(number); //输入框页码
 		// console.log(number);
-		getGoodsList(number);
-		btn_color(number);
+		getGoodsList(number); //请求页码
+		btn_color(number); //分页按钮页码
 	});
 	$(".up").click(function () {
 		//上一页
-		number = number - 1;
+		number--;
 		if (number < 0) {
 			number = 0;
 		}
 		// console.log(number);
-		$(".in-in").val(number); //自定义页码
-		getGoodsList(number);
-		btn_color(number);
+		$(".in-in").val(number); //输入框页码
+		getGoodsList(number); //请求页码
+		btn_color(number); //分页按钮页码
 	});
 	$(".up-conp").click(function () {
 		//自定义页码
-		let number = $(".in-in").val();
+		number = $(".in-in").val();
+		if (number >= 8 || number <= 1) {//大于或小于页码隐藏
+			$(".up-btn").css({ "background-color": "" });
+		}
+		btn_color(number);
 		getGoodsList(number);
 	});
 });

@@ -1,4 +1,4 @@
-@import "../_public/color";
+@import "../public/color";
 body {
 	.box-qr {
 		background-color: $words-color;
@@ -469,7 +469,7 @@ body {
 								margin-top: 10px;
 							}
 						}
-						
+
 						i {
 							position: absolute;
 							top: 105px;

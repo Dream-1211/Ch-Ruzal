@@ -5,10 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>美香稻</title>
-		<link rel="stylesheet" href="../SCSS/_pc.scss/index.css" />
-		<link rel="stylesheet" href="../SCSS/mixns.scss/mixins.css" />
+		<link rel="stylesheet" href="../scss/pc.scss/index.css" />
+		<link rel="stylesheet" href="../scss/mixins.css" />
 		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
-		<link rel="stylesheet" href="../SCSS/_css/swiper-bul.css" />
+		<link rel="stylesheet" href="../scss/css/swiper-bul.css" />
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 		<link
 			rel="stylesheet"
@@ -3501,6 +3501,7 @@
 							<p>&lt;</p>
 							<p>&nbsp;上一页</p>
 						</div>
+						<div class="up-0 up-btn" style="display: none;"><a></a></div>
 						<div class="up-1 up-btn"><a>1</a></div>
 						<div class="up-2 up-btn"><a>2</a></div>
 						<div class="up-3 up-btn"><a>3</a></div>
@@ -3508,6 +3509,7 @@
 						<div class="up-5 up-btn"><a>5</a></div>
 						<div class="up-6 up-btn"><a>6</a></div>
 						<div class="up-7 up-btn"><a>7</a></div>
+						<div class="up-8 up-btn" style="display: none;"><a></a></div>
 						<p class="up-">...</p>
 						<div class="down">
 							<p>下一页&nbsp;</p>
@@ -4014,7 +4016,7 @@
 
 		<!-- 新闻请求模板 -->
 		<script type="text/html" id="tpl-news2">
-			{{each goods}}
+			{{each data}}
 			<div class="news-time-list" >
 					<div class="list-new-item">
 						<img
@@ -4045,11 +4047,10 @@
 			<li>{{data.ip}}</li>
 			<li>当前位置:</li>
 			<li>{{data.desc}}</li>
-			<li><a href="javascript:;">根据您的活动记录
+			<li><a id="now_ip" href="javascript:;">根据您的活动记录
 				- 更新位置信息</a></li>
 		</script>
 		<script src="../js/public/lazyLoadInt.js" id="img-code"></script>
-
 		<script type="text/html" id="imgcode">
 			<img id="yanzhengma" src="{{data.verifyCodeImgUrl}}" alt="">
 		</script>
