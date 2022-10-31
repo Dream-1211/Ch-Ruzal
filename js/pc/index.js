@@ -523,7 +523,7 @@ $(function () {
 
 	//封装计时函数
 	function countTime() {
-		var endTime = +new Date("2022-10-30 22:20"); //设置秒杀截至时间【手动赋值】
+		var endTime = +new Date("2022-11-30 22:20"); //设置秒杀截至时间【手动赋值】
 		var startTime = +new Date();
 		var times = (endTime - startTime) / 1000;
 		var hour = parseInt((times / 60 / 60) % 24);

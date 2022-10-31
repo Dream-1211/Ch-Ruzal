@@ -1,20 +1,20 @@
 window.onload = function () {
 	var advertise = document.querySelector(".header-banner-head");
-	var topbar = document.querySelector(".topbar");
-	var zhuye = document.querySelector(".zhuye");
-	var about = document.querySelector(".guanyuwomen");
-	var price_buy = document.querySelector(".price-buy-box");
-	var zhunong = document.querySelector(".zn-banner");
-	var real_time = document.querySelector(".real-time");
-	var shop_car = document.querySelector(".shop-car-infor");
-	var footer = document.querySelector(".footer-more");
-	var topbar_ele = document.querySelectorAll(".topbar-footer p");
-	var more_top = document.querySelectorAll(".more-top ul li");
-	var more_top_xhx = document.querySelector(".van-tabs__line");
-	var topbar_head = document.querySelector(".topabr");
-	var ele = [zhuye, price_buy, zhunong, real_time, about];
-	price_buy.style.display = "none";
-	topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
+		topbar = document.querySelector(".topbar");
+		zhuye = document.querySelector(".zhuye");
+		about = document.querySelector(".guanyuwomen");
+		price_buy = document.querySelector(".price-buy-box");
+		zhunong = document.querySelector(".zn-banner");
+		real_time = document.querySelector(".real-time");
+		shop_car = document.querySelector(".shop-car-infor");
+		footer = document.querySelector(".footer-more");
+		topbar_ele = document.querySelectorAll(".topbar-footer p");
+		more_top = document.querySelectorAll(".more-top ul li");
+		more_top_xhx = document.querySelector(".van-tabs__line");
+		topbar_head = document.querySelector(".topabr");
+		ele = [zhuye, price_buy, zhunong, real_time, about];
+		price_buy.style.display = "none";
+		topbar_ele[0].style.borderBottom = ".15rem solid #1d99e3";
 	// 排他算法
 	for (var i = 0; i < topbar_ele.length; i++) {
 		topbar_ele[i].onclick = function () {
@@ -127,7 +127,7 @@ window.onload = function () {
 		for (var i = 0; i < 6; i++) {
 			topbar_ele[i].style.borderBottom = "";
 		}
-		for(var i= 0;i<ele.length; i++) {
+		for (var i = 0; i < ele.length; i++) {
 			ele[i].style.display = "none";
 		}
 	});
@@ -143,30 +143,30 @@ window.onload = function () {
 	});
 
 	var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
 
 	// 秒杀
 	var hours = document.querySelector(".j_sk_h");
 	var min = document.querySelector(".j_sk_m");
 	var second = document.querySelector(".j_sk_s");
-	var date =  new Date()
-	var mon = date.getMonth()+1;
+	var date = new Date();
+	var mon = date.getMonth() + 1;
 	var day = date.getDate();
-	var dateStr = '2022-'+mon+'-'+day+" "+'21:00:00'
+	var dateStr = "2022-" + mon + "-" + day + " " + "21:00:00";
 	// var now = +new Date("2022-10-20 21:00:00");
 	console.log(dateStr);
 	var now = +new Date(dateStr);
