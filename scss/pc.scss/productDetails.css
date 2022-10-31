@@ -1920,8 +1920,17 @@ body .details-body .details-body-box .details-body-center .details-body-price .d
   border: 1px solid #ccc;
 }
 body .details-body .details-body-box .details-body-center .details-body-price .details-btn {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
+}
+body .details-body .details-body-box .details-body-center .details-body-price .details-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .details-body .details-body-box .details-body-center .details-body-price .details-btn a:hover {
+  color: #fff;
 }
 body .details-body .details-body-box .details-body-center .details-body-price .details-btn button:first-child {
   margin-left: 5px;
