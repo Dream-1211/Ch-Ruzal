@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--//移动端识别//-->
+		<meta http-equiv="mobile-agent" content="format=xhtml;url=../www/mobile_index.html" />
 		<title>美香稻</title>
 		<link rel="stylesheet" href="../scss/pc.scss/index.css" />
 		<link rel="stylesheet" href="../scss/mixins.css" />
@@ -3492,9 +3494,7 @@
 			</div>
 			<div class="right-img-contain">
 				<div class="right-img-box">
-					<div class="right-img-3-1" id="right-img-mather-box">
-
-					</div>
+					<div class="right-img-3-1" id="right-img-mather-box"></div>
 
 					<div class="container page">
 						<div class="up">
@@ -4055,30 +4055,29 @@
 			<img id="yanzhengma" src="{{data.verifyCodeImgUrl}}" alt="">
 		</script>
 
-
 		<!--商品列表-->
 		<script src="../js/pc/goodsList.js"></script>
 		<script type="text/html" id="tpl-goodslist">
-		{{each goods}}
-		<div class="right-img-3-1">
-			<div class="img-3">
-				<a href="../www/product-details.html"
-					><img src="{{$value.goods_small_logo}}" alt=""
-				/></a>
+			{{each goods}}
+			<div class="right-img-3-1">
+				<div class="img-3">
+					<a href="../www/product-details.html"
+						><img src="{{$value.goods_small_logo}}" alt=""
+					/></a>
+				</div>
+				<div class="img-nuber">
+					<p class="nuber-1">￥<span>{{$value.goods_price}}</span>元</p>
+					<p class="nuber-2">重量:{{$value.goods_weight}}KG</p>
+				</div>
+				<div class="img-text">
+					<p>{{$value.goods_name}}</p>
+				</div>
+				<div class="img-text-1">
+					<p class="it-1">库存：{{$value.goods_number}}</p>
+					<p class="it-2">上架时间:{{$value.upd_time}}</p>
+				</div>
 			</div>
-			<div class="img-nuber">
-				<p class="nuber-1">￥<span>{{$value.goods_price}}</span>元</p>
-				<p class="nuber-2">重量:{{$value.goods_weight}}KG</p>
-			</div>
-			<div class="img-text">
-				<p>{{$value.goods_name}}</p>
-			</div>
-			<div class="img-text-1">
-				<p class="it-1">库存：{{$value.goods_number}}</p>
-				<p class="it-2">上架时间:{{$value.upd_time}}</p>
-			</div>
-		</div>
-		{{/each}}
+			{{/each}}
 		</script>
 	</body>
 </html>
