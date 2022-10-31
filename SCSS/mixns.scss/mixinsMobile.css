@@ -177,7 +177,8 @@ body .price-buy-more .more-box .more-top ul {
   background-color: #fff;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -795,7 +796,8 @@ body .light-box-head .light-box {
   z-index: auto;
   width: 100rem;
   height: 13.5rem;
-  animation: move 20s infinite linear;
+  -webkit-animation: move 20s infinite linear;
+          animation: move 20s infinite linear;
 }
 body .light-box-head .light-box p {
   font-size: 0.6rem;
@@ -814,13 +816,19 @@ body .light-box-head .light-box li {
 body .light-box-head .light-box li img {
   width: 5rem;
 }
+@-webkit-keyframes move {
+  to {
+    transform: translatex(-70rem);
+  }
+}
 @keyframes move {
   to {
     transform: translatex(-70rem);
   }
 }
 body div:hover ul {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 body .swiper {
   width: 100%;
@@ -836,24 +844,16 @@ body .swiper-slide {
   font-size: 0.9rem;
   background: #fff;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 body .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .real_time {
   display: none;
@@ -1006,8 +1006,10 @@ body .zn-banner .gmxz .tz {
   overflow: hidden;
 }
 body .zn-banner .gmxz .tz .lbt {
-  animation: tz 6s infinite ease-out;
-  animation-delay: 1s;
+  -webkit-animation: tz 6s infinite ease-out;
+          animation: tz 6s infinite ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 body .zn-banner .gmxz .tz .lbt span {
   display: block;
@@ -1031,6 +1033,23 @@ body .zn-banner .gmxz .tz .lbt span:nth-child(3) {
   top: 5.5rem;
   left: 0.25rem;
   text-align: center;
+}
+@-webkit-keyframes tz {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-57px);
+  }
+  50% {
+    transform: translateY(-57px);
+  }
+  55% {
+    transform: translateY(-110px);
+  }
+  to {
+    transform: translateY(-110px);
+  }
 }
 @keyframes tz {
   0% {
