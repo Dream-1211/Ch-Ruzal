@@ -1,12 +1,12 @@
 $(function () {
 	// 滚动动画
 	var speed = 20; //速度数值越大速度越慢
-	var colee_right2 = document.getElementById("colee_right2");
-	var colee_right1 = document.getElementById("colee_right1");
-	var colee_right = document.getElementById("colee_right");
+		colee_right2 = document.getElementById("colee_right2");
+		colee_right1 = document.getElementById("colee_right1");
+		colee_right = document.getElementById("colee_right");
 	colee_right2.innerHTML = colee_right1.innerHTML;
 	var fx = 0;
-	var MyMar4;
+		MyMar4;
 
 	function Marquee() {
 		if (fx == 0) {
@@ -83,15 +83,15 @@ $(function () {
 
 	//导航栏切换
 	var wangzhanshouye = document.querySelector(".wangzhanshouye");
-	var aixinzhunong = document.querySelector(".aixinzhunong");
-	var guanyuwomen = document.querySelector(".guanyuwomen");
-	var caigoudating = document.querySelector(".caigoudating");
+		aixinzhunong = document.querySelector(".aixinzhunong");
+		guanyuwomen = document.querySelector(".guanyuwomen");
+		caigoudating = document.querySelector(".caigoudating");
 	caigoudating.style.display = "none";
 	var topbar = document.querySelectorAll(".topbar li");
-	var index = document.querySelector("#index");
-	var caigou = document.querySelector("#caigou");
-	var aixin = document.querySelector("#aixin");
-	var guanyu = document.querySelector("#guanyu");
+		index = document.querySelector("#index");
+		caigou = document.querySelector("#caigou");
+		aixin = document.querySelector("#aixin");
+		guanyu = document.querySelector("#guanyu");
 	//导航颜色切换
 	topbar[0].style.backgroundColor = "#f3f3f3";
 	topbar[0].childNodes[0].style.color = "rgb(134,191, 50";
@@ -261,13 +261,13 @@ $(function () {
 	}
 	// 登录显示
 	var bar_black = document.querySelector(".bar-box-black");
-	var login = document.querySelector(".header-body-right");
-	var login_regster = document.querySelector(".login-regster-box");
-	var closed_login = document.querySelector("#closed-login");
-	var root_login = document.querySelector("#root-login");
-	var login_regster_btn = document.querySelector("#login-regster-btn");
-	var title = document.querySelector(".login-regster-head");
-	var login_body = document.querySelector(".login-regster");
+		login = document.querySelector(".header-body-right");
+		login_regster = document.querySelector(".login-regster-box");
+		closed_login = document.querySelector("#closed-login");
+		root_login = document.querySelector("#root-login");
+		login_regster_btn = document.querySelector("#login-regster-btn");
+		title = document.querySelector(".login-regster-head");
+		login_body = document.querySelector(".login-regster");
 	//拖拽
 	// (1) 鼠标按下， 就获得鼠标在盒子内的坐标
 	title.addEventListener("mousedown", function (e) {
@@ -381,9 +381,9 @@ $(function () {
 	};
 	//社区显示、隐藏
 	var community_box = document.querySelector(".community");
-	var color_full = document.querySelector(".color-full");
-	var community_footer = document.querySelector(".community-footer");
-	var community = document.querySelector("#community");
+		color_full = document.querySelector(".color-full");
+		community_footer = document.querySelector(".community-footer");
+		community = document.querySelector("#community");
 	color_full.style.display = "none";
 	community.addEventListener("click", function () {
 		community_box.style.display = "block";
@@ -436,9 +436,9 @@ $(function () {
 	});
 	// 账号密码登录
 	var input_input = document.querySelectorAll(".input-user-login-box input");
-	var num_tips = document.querySelector(".num-tips");
-	var pwd_tips = document.querySelector(".pwd-tips");
-	var login_btn_inser = document.querySelector(".logining-btn");
+		num_tips = document.querySelector(".num-tips");
+		pwd_tips = document.querySelector(".pwd-tips");
+		login_btn_inser = document.querySelector(".logining-btn");
 	const ADMIN_PWD = "admin";
 	const ADMIN_USER = "admin";
 	for (var i = 0; i < input_input.length; i++) {
@@ -454,7 +454,7 @@ $(function () {
 	}
 	//声明变量供全局使用
 	let imgcode_arr;
-	let imgCode;
+		imgCode;
 	$("#img-yanzhengma").click(function () {
 		//点击验证码图片刷新本地存储
 		setTimeout(function () {
@@ -540,9 +540,9 @@ $(function () {
 
 	//热搜换一换
 	var news_return = document.querySelector(".news-return");
-	var hot_lists = document.querySelectorAll(".item-new");
-	var flage = 2;
-	var fa_sync = document.querySelector(".fa-sync");
+		hot_lists = document.querySelectorAll(".item-new");
+		flage = 2;
+		fa_sync = document.querySelector(".fa-sync");
 
 	function transtion(a, b) {
 		var deg = a;
@@ -728,8 +728,8 @@ $(function () {
 
 //首页搜索关键词联想
 var input = document.querySelector(".search-input");
-var oUl = document.getElementById("ul");
-var btn_secarh_index = document.querySelector(".search-btn");
+	oUl = document.getElementById("ul");
+	btn_secarh_index = document.querySelector(".search-btn");
 input.onkeyup = function () {
 	var value = this.value;
 	var oScript = document.createElement("script");
@@ -759,7 +759,7 @@ function aa(data) {
 	}
 
 	var search_btn = document.querySelector(".search-btn");
-	var search = document.querySelector(".search-input");
+		search = document.querySelector(".search-input");
 	search.onblur = function () {
 		if (this.value === "") {
 			this.value = "请输入内容";
