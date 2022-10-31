@@ -454,7 +454,7 @@ $(function () {
 	}
 	//声明变量供全局使用
 	let imgcode_arr;
-		imgCode;
+	let imgCode;
 	$("#img-yanzhengma").click(function () {
 		//点击验证码图片刷新本地存储
 		setTimeout(function () {
