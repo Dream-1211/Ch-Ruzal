@@ -532,7 +532,6 @@ $(function () {
 		min = min < 10 ? min : min;
 		var sec = parseInt(times % 60);
 		sec = sec < 10 ? sec : sec;
-
 		lis[0].innerHTML = hour;
 		lis[1].innerHTML = min;
 		lis[2].innerHTML = sec;
