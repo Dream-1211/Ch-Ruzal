@@ -1,6 +1,6 @@
 $(function () {
 	setTimeout(() => {
-		function getIp() {
+		getIp = () => {
 			$.get(
 				"https://www.mxnzp.com/api/ip/self?typeId=511&page=1&app_id=qhoalrrshsilrpkg&app_secret=Rm9qSElZZDJzaXZ5UHNuMGZtWThzZz09",
 				function (res) {
@@ -11,7 +11,7 @@ $(function () {
 					$("#ipadrees-infor").html(htmlIp);
 				},
 			);
-		}
+		};
 		getIp();
 	}, 1200);
 });
