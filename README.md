@@ -6,9 +6,12 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
 
+## 项目简介
+Rural-revitalization-agricultural-assistance-services 是一个乡村振兴，助农服务前端开发项目，项目主要是为了解决农民的问题，让农民能够更好的生活，更好的发展，更好的生产，更好的生活。由于现实问题，我们的项目还有很多不足，还有很多需要改进的地方，我们希望能够得到大家的帮助，帮助我们改进我们的项目，让我们的项目能够更好的发展，更好的服务于农民，让农民能够更好的生活，更好的发展，更好的生产，更好的生活。
 ## 内容列表
 
 - [Rural-revitalization-agricultural-assistance-services](#rural-revitalization-agricultural-assistance-services)
+  - [项目简介](#项目简介)
   - [内容列表](#内容列表)
   - [对代码的提交规定如下：](#对代码的提交规定如下)
     - [主题：](#主题)
